@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Unresolved Case Review — Vu Le · QEM™ Constitutional Medicine</title>
+<meta name="description" content="A 90-minute constitutional assessment for patients whose IBS — or complex chronic condition — has not resolved despite prior conventional or integrative treatment. Vu Le, R.TCMP, R.Ac. Mono, Ontario. Virtual across Canada.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --gold:#9A7C4A;--gold-lt:#C4A76A;--gold-pale:#F2EBD9;--gold-ultra:#FAF6EE;
+  --ink:#0E0C0A;--ink-2:#1A1612;--ink-3:#221E18;
+  --cream:#F8F5F0;--cream-2:#EFE9DF;--muted:#7A6E64;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+  --ease:cubic-bezier(0.22,1,0.36,1);
+}
+body{font-family:var(--serif);background:var(--ink);color:#fff;font-size:18px;line-height:1.75;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 4rem;transition:background 0.4s,padding 0.4s}
+nav.scrolled{background:rgba(14,12,10,0.97);backdrop-filter:blur(12px);padding:1rem 4rem;border-bottom:1px solid rgba(154,124,74,0.12)}
+.nav-home{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.nav-home:hover{color:var(--gold-lt)}
+.nav-links{display:flex;align-items:center;gap:2.5rem}
+.nav-links a{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.4);text-decoration:none;transition:color 0.2s}
+.nav-links a:hover{color:#fff}
+.nav-links a.cta{color:var(--gold-lt);border-bottom:1px solid rgba(154,124,74,0.4);padding-bottom:1px}
+.nav-links a.cta:hover{color:#fff;border-color:#fff}
+
+/* HERO */
+.hero{min-height:100vh;background:var(--ink);display:flex;align-items:center;padding:9rem 4rem 6rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 80%,rgba(154,124,74,0.16) 0%,transparent 52%),radial-gradient(ellipse at 80% 20%,rgba(154,124,74,0.07) 0%,transparent 45%);pointer-events:none}
+.hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(154,124,74,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(154,124,74,0.035) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
+.hero-inner{max-width:900px;margin:0 auto;width:100%;position:relative;z-index:1}
+.hero-eyebrow{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5rem;opacity:0;animation:up 0.9s 0.2s var(--ease) both}
+.hero-h1{font-family:var(--serif);font-size:clamp(3.5rem,7vw,7rem);font-weight:300;line-height:1;color:#fff;margin-bottom:2.5rem;opacity:0;animation:up 0.9s 0.4s var(--ease) both}
+.hero-h1 em{font-style:italic;color:var(--gold-lt);display:block}
+.hero-rule{width:64px;height:1px;background:var(--gold);margin-bottom:2.5rem;opacity:0;animation:up 0.9s 0.6s var(--ease) both}
+.hero-sub{font-size:1.2rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.52);max-width:680px;margin-bottom:1.5rem;opacity:0;animation:up 0.9s 0.7s var(--ease) both}
+.hero-sub strong{color:rgba(255,255,255,0.85);font-weight:400}
+.hero-price-line{font-family:var(--sans);font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(154,124,74,0.7);margin-bottom:3rem;opacity:0;animation:up 0.9s 0.8s var(--ease) both}
+.hero-price-line strong{color:var(--gold-lt)}
+.hero-btns{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;opacity:0;animation:up 0.9s 0.95s var(--ease) both}
+.btn-p{font-family:var(--sans);font-size:0.68rem;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;background:var(--gold);color:#fff;padding:1.1rem 2.5rem;text-decoration:none;transition:background 0.2s,transform 0.15s;display:inline-block}
+.btn-p:hover{background:var(--gold-lt);transform:translateY(-1px)}
+.btn-g{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
+.btn-g:hover{color:var(--gold-lt)}
+
+/* PROOF / AUTHORITY BAR */
+.authority-bar{background:rgba(154,124,74,0.06);border-top:1px solid rgba(154,124,74,0.14);border-bottom:1px solid rgba(154,124,74,0.14);padding:2.5rem 4rem}
+.authority-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:3rem}
+.auth-item{display:flex;gap:1.2rem;align-items:flex-start}
+.auth-n{font-family:var(--serif);font-size:2rem;font-weight:300;color:var(--gold-lt);line-height:1;flex-shrink:0}
+.auth-title{font-family:var(--serif);font-size:0.95rem;font-weight:500;color:#fff;margin-bottom:0.25rem;line-height:1.3}
+.auth-body{font-family:var(--sans);font-size:0.72rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.38)}
+
+/* FOR WHOM — DARK */
+.whom-sec{background:var(--ink-2);padding:7rem 4rem}
+.whom-inner{max-width:900px;margin:0 auto}
+.lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sec-title{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:300;line-height:1.15;margin-bottom:1.5rem}
+.sec-title em{font-style:italic;font-weight:300;color:var(--gold-lt)}
+.whom-body{font-size:1.05rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.5);max-width:680px;margin-bottom:3rem}
+.whom-body strong{color:rgba(255,255,255,0.85);font-weight:400}
+.whom-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(154,124,74,0.1)}
+.whom-col{padding:2.5rem}
+.whom-col:first-child{background:var(--ink-3)}
+.whom-col:last-child{background:#1A160E}
+.whom-col-lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem}
+.whom-col:last-child .whom-col-lbl{color:rgba(154,124,74,0.4)}
+.whom-item{display:flex;gap:1rem;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.whom-item:last-child{border:none}
+.whom-dash{color:var(--gold);flex-shrink:0;line-height:1.7}
+.whom-col:last-child .whom-dash{color:rgba(154,124,74,0.28)}
+.whom-text{font-size:0.95rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.72)}
+.whom-col:last-child .whom-text{color:rgba(255,255,255,0.3)}
+
+/* WHAT'S INCLUDED */
+.incl-sec{background:var(--ink);padding:7rem 4rem}
+.incl-inner{max-width:900px;margin:0 auto}
+.incl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(154,124,74,0.1);margin-top:3rem}
+.incl-card{background:var(--ink-2);padding:2.5rem 2.2rem}
+.incl-card:hover{background:#1E1A12}
+.incl-n{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.incl-title{font-family:var(--serif);font-size:1.1rem;font-weight:500;color:#fff;margin-bottom:0.6rem;line-height:1.3}
+.incl-body{font-size:0.9rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.42)}
+
+/* PROCESS */
+.process-sec{background:var(--ink-2);padding:7rem 4rem}
+.process-inner{max-width:900px;margin:0 auto}
+.process-steps{margin-top:3rem}
+.p-step{display:grid;grid-template-columns:5rem 1fr;gap:2rem;padding:3rem 0;border-bottom:1px solid rgba(154,124,74,0.1)}
+.p-step:last-child{border:none}
+.p-num{font-family:var(--serif);font-size:4rem;font-weight:300;color:rgba(154,124,74,0.15);line-height:1;padding-top:0.2rem}
+.p-title{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff;margin-bottom:0.8rem;line-height:1.3}
+.p-body{font-size:1rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.45)}
+.p-body strong{color:rgba(255,255,255,0.8);font-weight:400}
+.p-tag{display:inline-block;margin-top:1rem;font-family:var(--sans);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(154,124,74,0.3);padding:0.25rem 0.65rem}
+
+/* PRICE BLOCK */
+.price-sec{background:var(--ink);padding:7rem 4rem}
+.price-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+.price-block{background:rgba(154,124,74,0.07);border:1px solid rgba(154,124,74,0.2);padding:3rem}
+.price-lbl{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(154,124,74,0.7);margin-bottom:1rem}
+.price-amt{font-family:var(--serif);font-size:5rem;font-weight:300;color:var(--gold-lt);line-height:1;margin-bottom:1rem}
+.price-desc{font-family:var(--sans);font-size:0.78rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.38);margin-bottom:2.5rem}
+.price-desc strong{color:rgba(255,255,255,0.65);font-weight:400}
+.price-rule{width:40px;height:1px;background:rgba(154,124,74,0.3);margin-bottom:2rem}
+.price-note-lbl{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(154,124,74,0.55);margin-bottom:0.8rem}
+.price-note-body{font-size:0.88rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.32);font-style:italic}
+.price-right{}
+.price-right-title{font-family:var(--serif);font-size:1.5rem;font-weight:300;line-height:1.3;color:#fff;margin-bottom:1.5rem}
+.price-right-title em{font-style:italic;color:var(--gold-lt)}
+.price-right-body{font-size:1rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.45);margin-bottom:2rem}
+.price-right-body strong{color:rgba(255,255,255,0.8);font-weight:400}
+.faq-item{padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.faq-item:last-child{border:none}
+.faq-q{font-family:var(--serif);font-size:1rem;font-weight:500;color:rgba(255,255,255,0.75);margin-bottom:0.4rem;line-height:1.4}
+.faq-a{font-size:0.9rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.35)}
+
+/* ABOUT / AUTHORITY */
+.about-sec{background:var(--ink-2);padding:7rem 4rem}
+.about-inner{max-width:900px;margin:0 auto}
+.about-body{font-size:1.1rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,0.5);margin-bottom:1.5rem;max-width:700px}
+.about-body strong{color:rgba(255,255,255,0.85);font-weight:400}
+.cred-row{display:flex;gap:3rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(154,124,74,0.12)}
+.cred-item{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(154,124,74,0.6)}
+
+/* CTA */
+.cta-sec{background:var(--ink);padding:9rem 4rem;text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(154,124,74,0.16) 0%,transparent 55%);pointer-events:none}
+.cta-inner{max-width:640px;margin:0 auto;position:relative;z-index:1}
+.cta-title{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:300;line-height:1.1;color:#fff;margin-bottom:1.5rem}
+.cta-title em{font-style:italic;color:var(--gold-lt)}
+.cta-body{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.45);margin-bottom:3rem}
+.cta-btns{display:flex;justify-content:center;align-items:center;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.cta-contact{font-family:var(--sans);font-size:.65rem;letter-spacing:.1em;color:rgba(255,255,255,0.2)}
+.cta-contact a{color:rgba(154,124,74,0.55);text-decoration:none;transition:color 0.2s}
+.cta-contact a:hover{color:var(--gold-lt)}
+footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(255,255,255,0.04)}
+.foot-l{font-family:var(--sans);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,0.18)}
+.foot-l a{color:var(--gold);text-decoration:none;opacity:.7;transition:opacity .2s}
+.foot-l a:hover{opacity:1}
+.foot-d{font-family:var(--sans);font-size:.6rem;color:rgba(255,255,255,0.14);max-width:500px;line-height:1.6;text-align:right}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media(max-width:1024px){
+  nav{padding:1.2rem 2rem}nav.scrolled{padding:.9rem 2rem}
+  .hero{padding:8rem 2rem 5rem}
+  .authority-bar{padding:2rem}.authority-inner{grid-template-columns:1fr;gap:2rem}
+  .whom-sec,.incl-sec,.process-sec,.price-sec,.about-sec,.cta-sec{padding:5rem 2rem}
+  .whom-list{grid-template-columns:1fr}.incl-grid{grid-template-columns:1fr}
+  .price-inner{grid-template-columns:1fr;gap:3rem}
+  .nav-links{display:none}
+}
+@media(max-width:640px){footer{flex-direction:column;align-items:flex-start}.foot-d{text-align:left}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="https://vule.ca/" class="nav-home">← Vu Le</a>
+  <div class="nav-links">
+    <a href="/ibs-resolution.html">IBS Resolution</a>
+    <a href="https://vule.ca/#books">Books</a>
+    <a href="https://vule.ca/#contact">Enquire</a>
+    <a href="#enquire" class="cta">Book the Review — $750</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">For patients whose condition has not resolved</p>
+    <h1 class="hero-h1">The Unresolved<br><em>Case Review.</em></h1>
+    <div class="hero-rule"></div>
+    <p class="hero-sub">A single, 90-minute constitutional assessment for patients who have received a diagnosis, invested in treatment, and still have not found resolution. <strong>You bring the complete history. I apply a diagnostic framework that most prior practitioners have not had access to.</strong></p>
+    <p class="hero-price-line">Single session · 90 minutes · Written case summary included · <strong>$750 CAD</strong></p>
+    <div class="hero-btns">
+      <a href="#enquire" class="btn-p">Enquire About the Review</a>
+      <a href="#process" class="btn-g">How it works ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHORITY BAR -->
+<div class="authority-bar">
+  <div class="authority-inner">
+    <div class="auth-item">
+      <div class="auth-n">20+</div>
+      <div>
+        <p class="auth-title">Years of complex-case clinical practice</p>
+        <p class="auth-body">R.TCMP, R.Ac · NCCAOM Diplomate · Licensed Ontario · Practising across multiple continents</p>
+      </div>
+    </div>
+    <div class="auth-item">
+      <div class="auth-n">5</div>
+      <div>
+        <p class="auth-title">Influences assessed simultaneously</p>
+        <p class="auth-body">Constitutional blueprint, environmental field, timing cycles, conscious belief, subconscious habit — the full QEM™ framework</p>
+      </div>
+    </div>
+    <div class="auth-item">
+      <div class="auth-n">1</div>
+      <div>
+        <p class="auth-title">Written summary delivered within 48 hours</p>
+        <p class="auth-body">Your constitutional profile, diagnostic interpretation, protocol outline — yours to keep, act on, or share with other providers</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOR WHOM -->
+<section class="whom-sec">
+  <div class="whom-inner">
+    <p class="lbl">Who this is for</p>
+    <h2 class="sec-title">For the patient who has<br>already <em>tried everything.</em></h2>
+    <p class="whom-body">The Unresolved Case Review is not for patients who are new to their condition. It is designed specifically for those who have accumulated a treatment history — who have seen multiple practitioners, tried multiple protocols, and still do not have lasting resolution. <strong>The prior treatment history is not a liability in this assessment. It is diagnostic data.</strong></p>
+    <div class="whom-list">
+      <div class="whom-col">
+        <p class="whom-col-lbl">You are in the right place if —</p>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have a confirmed diagnosis and have not found lasting resolution through prior care</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have seen multiple practitioners — conventional, integrative, or both — without resolution</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You suspect something deeper is driving the condition — beyond standard clinical variables</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You want to understand what has been missed, in writing, with a clear path forward</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">Your condition is IBS, a chronic digestive disorder, or another complex treatment-resistant presentation</p></div>
+      </div>
+      <div class="whom-col">
+        <p class="whom-col-lbl">This may not be suited if —</p>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have not yet received a formal diagnosis or seen a physician about your condition</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You require emergency or acute medical management</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are not open to constitutional, environmental, or timing-based assessment</p></div>
+        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are at the beginning of your diagnostic journey with no prior treatment history</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="incl-sec">
+  <div class="incl-inner">
+    <p class="lbl">What the review includes</p>
+    <h2 class="sec-title" style="color:#fff">A complete assessment.<br>A written record. <em>A clear path.</em></h2>
+    <div class="incl-grid">
+      <div class="incl-card">
+        <p class="incl-n">01</p>
+        <h3 class="incl-title">Full QEM™ constitutional assessment</h3>
+        <p class="incl-body">Your elemental type, organ vulnerability profile, and seasonal cycle patterns — read against your case history to identify the constitutional basis of your condition and why prior approaches reached a ceiling.</p>
+      </div>
+      <div class="incl-card">
+        <p class="incl-n">02</p>
+        <h3 class="incl-title">Environmental field review</h3>
+        <p class="incl-body">Assessment of home and workplace environmental pressures on your condition — an influence that standard treatment frameworks do not evaluate and which is frequently a significant maintaining factor in complex cases.</p>
+      </div>
+      <div class="incl-card">
+        <p class="incl-n">03</p>
+        <h3 class="incl-title">Diagnostic explanation of prior treatment gaps</h3>
+        <p class="incl-body">A clear account of why prior treatments produced partial or temporary results — not as a critique of previous practitioners, but as a framework explanation. Understanding the gap is the first step toward addressing it.</p>
+      </div>
+      <div class="incl-card">
+        <p class="incl-n">04</p>
+        <h3 class="incl-title">Sequenced protocol outline</h3>
+        <p class="incl-body">What I would do, in what order, and why — specific to your constitutional pattern, not a generic protocol. You leave with a clinical roadmap you can act on independently or continue with me in the full program.</p>
+      </div>
+      <div class="incl-card">
+        <p class="incl-n">05</p>
+        <h3 class="incl-title">Written case summary — delivered within 48 hours</h3>
+        <p class="incl-body">A 2–3 page document: your constitutional profile, the diagnostic interpretation, the protocol recommendation, and what prior approaches missed. Yours to keep, share with your physician, or bring to another provider.</p>
+      </div>
+      <div class="incl-card">
+        <p class="incl-n">06</p>
+        <h3 class="incl-title">Credit toward the full program</h3>
+        <p class="incl-body">If the assessment reveals your case is well-suited to the QEM™ IBS Resolution Program, the review fee is credited in full toward the program investment. There is no obligation — the review stands alone as a complete service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-sec" id="process">
+  <div class="process-inner">
+    <p class="lbl">How it works</p>
+    <h2 class="sec-title" style="color:#fff">Three stages.<br><em>One clear outcome.</em></h2>
+    <div class="process-steps">
+      <div class="p-step">
+        <div class="p-num">01</div>
+        <div>
+          <p class="p-title">Structured intake — before we meet</p>
+          <p class="p-body">On booking, you receive a structured intake document. It covers your full treatment history and what was tried, your current symptom picture with timing and triggers, your birth date and time (for constitutional profiling via BaZi), and your current home and work location (for environmental assessment). <strong>This is where the assessment begins — not in the room.</strong> I review your intake before the session. You will not be repeating your history to me from scratch.</p>
+          <span class="p-tag">Completed before the session</span>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="p-num">02</div>
+        <div>
+          <p class="p-title">The 90-minute session</p>
+          <p class="p-body">The session is structured in three parts. <strong>The first 30 minutes are mine:</strong> I present my constitutional findings — your elemental profile, the environmental pressures I have identified, the timing patterns in your case. You will hear a diagnosis first. This is by design — it immediately demonstrates what a different framework produces. <strong>The middle 30 minutes are collaborative:</strong> you refine the picture, fill in nuances the intake didn't capture, and we build the complete assessment together. <strong>The final 30 minutes are the protocol:</strong> what I would do, in what sequence, and a clear explanation of what prior treatment missed and why.</p>
+          <span class="p-tag">In-person · Mono, Ontario or Virtual · Canada-wide</span>
+        </div>
+      </div>
+      <div class="p-step">
+        <div class="p-num">03</div>
+        <div>
+          <p class="p-title">Written case summary — within 48 hours</p>
+          <p class="p-body">Within 48 hours of the session, you receive a written case summary: your constitutional profile, the diagnostic interpretation, the protocol recommendation, and a clear account of what prior approaches missed. This document is professional in format — it can be shared with your physician, brought to another provider, or simply retained as a reference for your own decision-making. <strong>It is the tangible deliverable of the assessment.</strong></p>
+          <span class="p-tag">Delivered within 48 hours</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING + FAQ -->
+<section class="price-sec" id="pricing">
+  <div class="price-inner">
+    <div>
+      <div class="price-block">
+        <p class="price-lbl">Investment</p>
+        <p class="price-amt">$750</p>
+        <p class="price-desc">Single session · 90 minutes<br>In-person (Mono, Ontario) or virtual across Canada<br><strong>Written case summary included.</strong><br>A $200 non-refundable intake fee is collected at booking and applied to the full session fee on the day.</p>
+        <div class="price-rule"></div>
+        <p class="price-note-lbl">Credit toward full program</p>
+        <p class="price-note-body">The full review fee of $750 is credited toward the QEM™ IBS Resolution Program ($2,800) if you choose to continue — making the program effectively $2,050 for review clients.</p>
+      </div>
+      <a href="#enquire" class="btn-p" style="margin-top:2rem;display:inline-block">Enquire About the Review</a>
+    </div>
+    <div class="price-right">
+      <h3 class="price-right-title">Common questions<br><em>before booking.</em></h3>
+      <p class="price-right-body">If you have a question not answered here, <strong>write to vu@vule.ca</strong> — you will receive a direct response, not an automated reply.</p>
+      <div class="faq-item">
+        <p class="faq-q">Is this for IBS specifically, or other conditions?</p>
+        <p class="faq-a">The QEM™ framework is constitutional — it applies to any complex or treatment-resistant condition where standard care has reached a ceiling. IBS is a particular area of clinical depth, but the review is open to other presentations. Enquire with your condition and I will confirm whether the assessment is appropriate.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">I've had acupuncture before and it didn't help. Is this different?</p>
+        <p class="faq-a">The Unresolved Case Review is a constitutional diagnostic assessment, not an acupuncture session. The framework — QEM™ — integrates constitutional profiling, environmental assessment, and timing analysis. This is not standard TCM or generic acupuncture practice.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I do this virtually?</p>
+        <p class="faq-a">Yes. The session is available by video for patients anywhere in Canada. The written summary is delivered digitally. The constitutional and environmental assessment does not require in-person attendance.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">What if the assessment finds my case isn't suited to the program?</p>
+        <p class="faq-a">You will be told that directly — and told why, and what I would recommend instead. This happens. The review is not a funnel into the program. It is an honest clinical assessment.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Do you take insurance for this?</p>
+        <p class="faq-a">The review and program fees are not currently covered under extended health benefits. Acupuncture and herbal medicine sessions delivered separately within the program are CTCMPAO-registered and benefits-eligible where your plan provides coverage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec">
+  <div class="about-inner">
+    <p class="lbl">Why this framework reaches what prior treatment has not</p>
+    <h2 class="sec-title" style="color:#fff">A different lens<br>produces <em>different findings.</em></h2>
+    <p class="about-body">Over more than two decades of practice — across clinical settings on multiple continents — the cases that consistently prove most revealing are the ones that arrive after years of failed treatment. Not because they are unusual, but because the prior treatment was applied through a framework that was simply not equipped to see the full picture.</p>
+    <p class="about-body">The QEM™ framework — Quantum Elemental Medicine™ — integrates Classical Feng Shui systems, constitutional profiling through BaZi, traditional Chinese medicine, and constitutional nutrition into a single diagnostic model. Most practitioners have one or two of these tools. <strong>The integration of all of them, applied simultaneously to a single case, is what produces findings that prior treatment has not surfaced.</strong></p>
+    <p class="about-body">This is not a claim about other practitioners' skill or care. It is a structural observation: a framework that addresses five influences simultaneously will find things that a framework addressing two will not. That is the nature of the diagnostic gap — and the reason the Unresolved Case Review exists.</p>
+    <div class="cred-row">
+      <span class="cred-item">R.TCMP, R.Ac — Ontario (CTCMPAO)</span>
+      <span class="cred-item">NCCAOM Diplomate of Oriental Medicine</span>
+      <span class="cred-item">20+ years clinical practice</span>
+      <span class="cred-item">Quantum Elemental Medicine™</span>
+      <span class="cred-item">Trueform Publishing — vule.ca</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="enquire">
+  <div class="cta-inner">
+    <p class="lbl" style="text-align:center">Begin here</p>
+    <h2 class="cta-title">Bring the history.<br><em>Receive the picture.</em></h2>
+    <p class="cta-body">Send a brief note — your condition, how long you have been dealing with it, and what you have tried. I will confirm whether the review is appropriate for your case and send you the intake document to begin.</p>
+    <div class="cta-btns">
+      <a href="mailto:vu@vule.ca?subject=Unresolved%20Case%20Review%20Enquiry" class="btn-p" style="font-size:.75rem;padding:1.1rem 2.6rem">Enquire — vu@vule.ca</a>
+    </div>
+    <p class="cta-contact">In-person · Mono, Ontario  ·  Virtual across Canada<br><a href="mailto:vu@vule.ca">vu@vule.ca</a>  ·  <a href="tel:4168719239">(416) 871-9239</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-l"><a href="https://vule.ca/">← Back to Vu Le</a>  ·  <a href="/ibs-resolution.html">IBS Resolution Program</a>  ·  <a href="mailto:vu@vule.ca">vu@vule.ca</a></div>
+  <p class="foot-d">The Unresolved Case Review is a constitutional assessment and health education service. Acupuncture and herbal medicine are delivered separately by Vu Le and Van Lam, Registered TCM Practitioners (CTCMPAO). This page does not constitute medical advice.</p>
+</footer>
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+</script>
+</body>
+</html>
