@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Receive a free clinical guide from Vu Minh Le, R.TCMP, R.Ac — Why You're Still Sick: the three layers conventional medicine rarely examines.">
+<title>Why You're Still Sick — Free Guide | Vu Minh Le, R.TCMP</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2277127');
+</script>
+<!-- End MailerLite Universal -->
+
+<style>
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --gold: #9A7C4A;
+    --gold-light: #C4A97A;
+    --ink: #151210;
+    --cream: #F7F4EF;
+    --cream-dark: #EDE9E1;
+    --muted: #5A4E3C;
+    --faint: #A89880;
+  }
+
+  html, body {
+    min-height: 100vh;
+  }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background-color: var(--cream);
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ── TOP GOLD RULE ── */
+  .top-rule {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 45%, transparent 100%);
+    flex-shrink: 0;
+  }
+
+  /* ── PAGE WRAPPER ── */
+  .page {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  /* ── WORDMARK ── */
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  /* ── MAIN CARD ── */
+  .card {
+    background: #ffffff;
+    border: 1px solid rgba(154, 124, 74, 0.18);
+    border-top: 3px solid var(--gold);
+    width: 100%;
+    max-width: 540px;
+    padding: 3rem 2.75rem 2.75rem;
+  }
+
+  /* ── EYEBROW ── */
+  .eyebrow {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+
+  /* ── HEADLINE ── */
+  .headline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+  }
+
+  .headline em {
+    font-style: italic;
+  }
+
+  /* ── SUBHEAD ── */
+  .subhead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(154,124,74,0.3) 0%, transparent 100%);
+    margin-bottom: 1.75rem;
+  }
+
+  /* ── OFFER BOX ── */
+  .offer-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+
+  .offer-box {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .offer-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.35rem;
+  }
+
+  .offer-desc {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  /* ── SOCIAL PROOF ── */
+  .proof {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid rgba(154,124,74,0.15);
+  }
+
+  .proof-line {
+    width: 2px;
+    height: 100%;
+    background: var(--gold);
+    flex-shrink: 0;
+    align-self: stretch;
+    min-height: 48px;
+  }
+
+  .proof-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+
+  .proof-attr {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-top: 0.4rem;
+  }
+
+  /* ── MAILERLITE FORM OVERRIDES ── */
+  .ml-embedded {
+    font-family: 'Jost', sans-serif !important;
+  }
+
+  .ml-embedded * {
+    font-family: 'Jost', sans-serif !important;
+    border-radius: 0 !important;
+  }
+
+  .ml-embedded .ml-field-group input,
+  .ml-embedded .ml-field-group select {
+    border: 1px solid rgba(154,124,74,0.35) !important;
+    background: #ffffff !important;
+    color: var(--ink) !important;
+    font-size: 14px !important;
+    padding: 0.7rem 0.9rem !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  .ml-embedded .ml-field-group input:focus,
+  .ml-embedded .ml-field-group select:focus {
+    border-color: var(--gold) !important;
+    box-shadow: none !important;
+  }
+
+  .ml-embedded .ml-field-group label {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+    color: var(--muted) !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .ml-embedded .primary {
+    background: var(--ink) !important;
+    color: var(--cream) !important;
+    font-family: 'Jost', sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.2em !important;
+    text-transform: uppercase !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0.9rem 1.5rem !important;
+    width: 100% !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .ml-embedded .primary:hover {
+    background: #2A2420 !important;
+  }
+
+  .ml-embedded .ml-form-successContent {
+    text-align: center !important;
+    padding: 1.5rem 0 !important;
+  }
+
+  .ml-embedded .ml-form-successContent h4 {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 1.5rem !important;
+    font-weight: 300 !important;
+    color: var(--ink) !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .ml-embedded .ml-form-successContent p {
+    font-size: 13.5px !important;
+    color: var(--muted) !important;
+    line-height: 1.65 !important;
+  }
+
+  /* ── FOOTER NOTE ── */
+  .footer-note {
+    font-size: 11px;
+    color: var(--faint);
+    text-align: center;
+    margin-top: 1.1rem;
+    line-height: 1.6;
+  }
+
+  /* ── THREE PILLARS ── */
+  .pillars {
+    width: 100%;
+    max-width: 540px;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(154,124,74,0.15);
+    border: 1px solid rgba(154,124,74,0.15);
+  }
+
+  .pillar {
+    background: #ffffff;
+    padding: 1.25rem 1rem;
+    text-align: center;
+  }
+
+  .pillar-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: rgba(154,124,74,0.35);
+    line-height: 1;
+    margin-bottom: 0.35rem;
+  }
+
+  .pillar-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+
+  .pillar-sub {
+    font-size: 11px;
+    color: var(--faint);
+    line-height: 1.5;
+  }
+
+  /* ── PAGE FOOTER ── */
+  .page-footer {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1.25rem;
+    border-top: 1px solid rgba(154,124,74,0.12);
+    margin-top: 3rem;
+  }
+
+  .page-footer p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    color: var(--faint);
+    line-height: 1.8;
+  }
+
+  .page-footer a {
+    color: var(--gold);
+    text-decoration: none;
+  }
+
+  .page-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 560px) {
+    .card {
+      padding: 2rem 1.25rem 2rem;
+    }
+    .headline {
+      font-size: 1.7rem;
+    }
+    .pillars {
+      grid-template-columns: 1fr;
+      gap: 1px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="top-rule"></div>
+
+<div class="page">
+
+  <div class="wordmark">Vu Minh Le &nbsp;&middot;&nbsp; R.TCMP, R.Ac &nbsp;&middot;&nbsp; NCCAOM Diplomate</div>
+
+  <div class="card">
+
+    <div class="eyebrow">Complimentary Clinical Guide</div>
+
+    <h1 class="headline">Why You're Still Sick<br><em>&mdash; and what's been missed</em></h1>
+
+    <p class="subhead">A plain-language guide to the three layers behind chronic conditions and complex cases that conventional medicine rarely examines.</p>
+
+    <div class="divider"></div>
+
+    <div class="offer-label">What you'll receive</div>
+    <div class="offer-box">
+      <div class="offer-title">Why You're Still Sick &mdash; Free PDF Guide</div>
+      <div class="offer-desc">Written from 20+ years of clinical practice across four continents. No jargon. No protocols. Just a clear framework for understanding why the standard approach keeps falling short &mdash; and what to look at instead.</div>
+    </div>
+
+    <div class="proof">
+      <div class="proof-line"></div>
+      <div>
+        <div class="proof-text">"For the first time in years, someone explained why nothing was working. Not what to try next &mdash; why the whole approach was incomplete."</div>
+        <div class="proof-attr">Clinical patient &nbsp;&middot;&nbsp; Complex case, 7-year history</div>
+      </div>
+    </div>
+
+    <!-- MailerLite Embedded Form -->
+    <div class="ml-embedded" data-form="IJ0RJa"></div>
+
+    <p class="footer-note">
+      Occasional insights only &mdash; never more than once or twice a month.<br>
+      Unsubscribe at any time, instantly. Your information is never shared or sold.
+    </p>
+
+  </div>
+
+  <!-- THREE PILLARS -->
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-num">I</div>
+      <div class="pillar-title">Constitution</div>
+      <div class="pillar-sub">Who you are — your inherited pattern</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">II</div>
+      <div class="pillar-title">Environment</div>
+      <div class="pillar-sub">Where you live and work — the invisible field</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-num">III</div>
+      <div class="pillar-title">Nourishment</div>
+      <div class="pillar-sub">What you feed — and what feeds on you</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="page-footer">
+  <p>
+    Vu Minh Le, R.TCMP, R.Ac &nbsp;&middot;&nbsp; NCCAOM Diplomate &nbsp;&middot;&nbsp; Quantum Elemental Medicine&trade;<br>
+    <a href="https://vule.ca">vule.ca</a> &nbsp;&middot;&nbsp; Ontario, Canada
+  </p>
+</div>
+
+</body>
+</html>
