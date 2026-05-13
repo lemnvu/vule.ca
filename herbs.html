@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preparing Your Herbal Medicine — Vu Le & Van Lam</title>
+<meta name="description" content="Step-by-step guide to preparing your customized Chinese herbal medicine sachets at home. From the practice of Vu Le and Van Lam, Mono, Ontario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --gold: #9A7C4A;
+  --gold-lt: #C4A76A;
+  --gold-pale: #F2EBD9;
+  --ink: #0E0C0A;
+  --ink-2: #1A1612;
+  --ink-3: #221E18;
+  --cream: #F8F5F0;
+  --cream-2: #EFE9DF;
+  --cream-3: #E5DDD0;
+  --muted: #5A5048;
+  --on-dark: rgba(255,255,255,0.72);
+  --on-dark-2: rgba(255,255,255,0.55);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22,1,0.36,1);
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.85;
+  overflow-x: hidden;
+}
+
+p, li, td, th, label { font-weight: 400; line-height: 1.85; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.5rem 5vw;
+  background: rgba(14,12,10,0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(154,124,74,0.15);
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.1rem; font-weight: 500;
+  color: #fff; text-decoration: none; letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex; align-items: center; gap: 2.5rem;
+}
+.nav-links a {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: #fff; }
+.nav-links a.nav-cta {
+  background: var(--gold); color: #fff;
+  padding: 0.5rem 1.2rem;
+  transition: background 0.2s;
+}
+.nav-links a.nav-cta:hover { background: var(--gold-lt); }
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px;
+  background: none; border: none; outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: rgba(255,255,255,0.8); transition: all 0.3s;
+}
+.mobile-nav {
+  display: none; position: fixed; inset: 0;
+  background: var(--ink); z-index: 90;
+  flex-direction: column; align-items: center;
+  justify-content: center; gap: 2.5rem;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--serif); font-size: 2rem;
+  color: #fff; text-decoration: none; transition: color 0.2s;
+}
+.mobile-nav a:hover { color: var(--gold-lt); }
+.mobile-close {
+  position: absolute; top: 1.8rem; right: 5vw;
+  font-size: 1.6rem; cursor: pointer;
+  color: rgba(255,255,255,0.7); background: none; border: none;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 60vh; background: var(--ink);
+  display: flex; align-items: center;
+  padding: 9rem 5vw 6rem;
+  position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 80%, rgba(154,124,74,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 20%, rgba(154,124,74,0.06) 0%, transparent 40%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 860px; margin: 0 auto; width: 100%;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 400;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.6rem;
+  opacity: 0; animation: up 0.9s 0.2s var(--ease) both;
+}
+.hero-h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-weight: 400; line-height: 1.1;
+  color: #fff; margin-bottom: 1.4rem;
+  opacity: 0; animation: up 0.9s 0.4s var(--ease) both;
+}
+.hero-h1 em { font-style: italic; color: var(--gold-lt); }
+.hero-sub {
+  font-family: var(--serif);
+  font-size: 1.15rem; font-weight: 400;
+  line-height: 1.85; color: var(--on-dark);
+  max-width: 560px; margin-bottom: 2.5rem;
+  opacity: 0; animation: up 0.9s 0.6s var(--ease) both;
+}
+.hero-meta {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 400;
+  letter-spacing: 0.12em; color: rgba(255,255,255,0.4);
+  display: flex; align-items: center; gap: 0.9rem;
+  opacity: 0; animation: up 0.9s 0.8s var(--ease) both;
+}
+.hero-meta::before {
+  content: ''; display: block; width: 24px; height: 1px;
+  background: var(--gold);
+}
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ── SHARED ── */
+.sec { padding: 6rem 5vw; }
+.sec-inner { max-width: 900px; margin: 0 auto; }
+.sec-inner-wide { max-width: 1100px; margin: 0 auto; }
+.sec-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 400;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1rem;
+}
+.sec-title {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+  font-weight: 400; line-height: 1.15;
+  color: var(--ink); margin-bottom: 1.2rem;
+}
+.sec-title em { font-style: italic; }
+.sec-body {
+  font-family: var(--serif);
+  font-size: 1.1rem; font-weight: 400;
+  line-height: 1.9; color: var(--muted);
+  max-width: 640px; margin-bottom: 2.5rem;
+}
+.gold-rule {
+  width: 38px; height: 1.5px;
+  background: var(--gold); margin-bottom: 2rem;
+}
+
+/* ── SUPPLY OVERVIEW ── */
+.supply-sec { background: var(--cream-2); }
+.supply-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: rgba(154,124,74,0.15);
+  margin-top: 2.5rem;
+}
+.supply-card {
+  background: var(--cream-2); padding: 2.2rem 2rem;
+}
+.supply-num {
+  font-family: var(--serif);
+  font-size: 3rem; font-weight: 300;
+  color: var(--gold); line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.supply-label {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.6rem;
+}
+.supply-desc {
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+  line-height: 1.8; color: var(--muted);
+}
+
+/* ── STEPS ── */
+.steps-sec { background: var(--ink); }
+.steps-sec .sec-eyebrow { color: var(--gold); }
+.steps-sec .sec-title { color: #fff; }
+.steps-sec .sec-body { color: var(--on-dark); }
+
+.steps-grid {
+  display: grid; gap: 1px;
+  background: rgba(255,255,255,0.05);
+  margin-top: 3rem;
+}
+.step-card {
+  background: #1C1810;
+  display: grid; grid-template-columns: 80px 1fr;
+  gap: 2rem; padding: 2.4rem 2.5rem;
+  align-items: start;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.step-card:last-child { border-bottom: none; }
+.step-num {
+  font-family: var(--serif);
+  font-size: 3.2rem; font-weight: 300;
+  color: rgba(154,124,74,0.2); line-height: 1;
+  padding-top: 0.15rem;
+}
+.step-body {}
+.step-title {
+  font-family: var(--serif);
+  font-size: 1.3rem; font-weight: 500;
+  color: #fff; margin-bottom: 0.5rem; line-height: 1.3;
+}
+.step-text {
+  font-family: var(--serif);
+  font-size: 1.05rem; font-weight: 400;
+  line-height: 1.85; color: rgba(255,255,255,0.62);
+}
+.step-note {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold);
+  border-left: 2px solid var(--gold);
+  padding: 0.3rem 0.8rem;
+  background: rgba(154,124,74,0.07);
+}
+
+/* ── TIPS ── */
+.tips-sec { background: var(--cream-3); }
+.tips-grid {
+  display: grid; grid-template-columns: repeat(2,1fr);
+  gap: 1px; background: rgba(154,124,74,0.15);
+  margin-top: 2.5rem;
+}
+.tip-card {
+  background: var(--cream-3); padding: 2rem 2.2rem;
+}
+.tip-icon {
+  font-size: 1.3rem; margin-bottom: 0.8rem;
+  color: var(--gold);
+}
+.tip-title {
+  font-family: var(--serif);
+  font-size: 1.1rem; font-weight: 500;
+  color: var(--ink); margin-bottom: 0.4rem;
+}
+.tip-text {
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+  line-height: 1.8; color: var(--muted);
+}
+
+/* ── PRACTITIONERS ── */
+.prac-sec { background: var(--ink-2); }
+.prac-sec .sec-eyebrow { color: var(--gold); }
+.prac-sec .sec-title { color: #fff; }
+.prac-sec .sec-body { color: var(--on-dark); max-width: 580px; }
+.prac-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: rgba(255,255,255,0.05);
+  margin-top: 3rem;
+}
+.prac-card {
+  background: #1C1810; padding: 2.8rem 2.5rem;
+  display: flex; flex-direction: column;
+}
+.prac-card:last-child { background: #1E1A12; border-top: 2px solid var(--gold); }
+.prac-name {
+  font-family: var(--serif);
+  font-size: 1.6rem; font-weight: 500;
+  color: #fff; margin-bottom: 0.3rem;
+}
+.prac-cred {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.2rem;
+}
+.prac-body {
+  font-family: var(--serif);
+  font-size: 1.05rem; font-weight: 400;
+  line-height: 1.85; color: rgba(255,255,255,0.62);
+  flex: 1; margin-bottom: 1.8rem;
+}
+.prac-link {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  transition: gap 0.2s, color 0.2s; align-self: flex-start;
+}
+.prac-link:hover { gap: 0.7rem; color: var(--gold-lt); }
+.prac-link::after { content: '→'; }
+
+/* ── EXPLORE ── */
+.explore-sec { background: var(--cream); }
+.explore-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 1px; background: rgba(154,124,74,0.15);
+  margin-top: 2.5rem;
+}
+.explore-card {
+  background: var(--cream); padding: 2.2rem 2rem;
+  transition: background 0.2s;
+}
+.explore-card:hover { background: var(--gold-pale); }
+.explore-tag {
+  font-family: var(--sans);
+  font-size: 0.65rem; font-weight: 400;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.6rem;
+}
+.explore-title {
+  font-family: var(--serif);
+  font-size: 1.15rem; font-weight: 500;
+  color: var(--ink); margin-bottom: 0.5rem; line-height: 1.3;
+}
+.explore-body {
+  font-family: var(--serif);
+  font-size: 0.98rem; font-weight: 400;
+  line-height: 1.8; color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+.explore-link {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  transition: gap 0.2s, color 0.2s;
+}
+.explore-link:hover { gap: 0.7rem; color: var(--ink); }
+.explore-link::after { content: '→'; }
+
+/* ── CONTACT ── */
+.contact-sec { background: var(--ink); }
+.contact-sec .sec-eyebrow { color: var(--gold); }
+.contact-sec .sec-title { color: #fff; }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 6rem; margin-top: 3rem; align-items: start;
+}
+.contact-intro {
+  font-family: var(--serif);
+  font-size: 1.1rem; font-weight: 400;
+  line-height: 1.9; color: var(--on-dark);
+  margin-bottom: 2rem;
+}
+.contact-meta-row {
+  display: grid; grid-template-columns: 100px 1fr;
+  gap: 1rem; padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+}
+.contact-meta-row strong {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  align-self: center;
+}
+.contact-meta-row span { color: var(--on-dark); }
+.contact-meta-row a { color: var(--gold); text-decoration: none; }
+.contact-meta-row a:hover { color: var(--gold-lt); }
+
+/* Form */
+.contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.form-group label {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+  padding: 0.75rem 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+  appearance: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(255,255,255,0.25); }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--gold); }
+.form-group select { cursor: pointer; }
+.form-group select option { background: var(--ink-2); color: #fff; }
+.form-group textarea { min-height: 110px; resize: vertical; }
+.btn-gold {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 400;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--gold); color: #fff;
+  padding: 0.9rem 2rem; border: none; cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  align-self: flex-start;
+}
+.btn-gold:hover { background: var(--gold-lt); transform: translateY(-1px); }
+.form-note {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 400;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.7; margin-top: 0.5rem;
+}
+.form-success {
+  display: none;
+  background: rgba(154,124,74,0.1);
+  border: 1px solid rgba(154,124,74,0.3);
+  padding: 1.5rem 2rem;
+  font-family: var(--serif);
+  font-size: 1.05rem; font-weight: 400;
+  color: var(--gold-lt); line-height: 1.7;
+}
+
+/* ── FEEL BETTER BAND ── */
+.feel-band {
+  background: var(--gold);
+  padding: 3.5rem 5vw;
+  text-align: center;
+}
+.feel-band-text {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 400; font-style: italic;
+  color: #fff; line-height: 1.3;
+}
+.feel-band-sub {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 400;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-top: 0.7rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--ink-3);
+  padding: 2.5rem 5vw;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid rgba(154,124,74,0.12);
+}
+.footer-left {
+  font-family: var(--serif);
+  font-size: 0.95rem; font-weight: 400;
+  color: rgba(255,255,255,0.35);
+}
+.footer-links {
+  display: flex; gap: 2rem; align-items: center;
+}
+.footer-links a {
+  font-family: var(--sans);
+  font-size: 0.68rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--gold-lt); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  nav { padding: 1rem 5vw; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+
+  .hero { padding: 7rem 5vw 4rem; min-height: auto; }
+
+  .sec { padding: 4rem 5vw; }
+
+  .supply-grid,
+  .tips-grid,
+  .prac-grid,
+  .explore-grid,
+  .contact-grid { grid-template-columns: 1fr; }
+
+  .step-card { grid-template-columns: 56px 1fr; gap: 1.2rem; padding: 1.8rem 1.5rem; }
+
+  .prac-card:last-child { border-top: none; border-left: 2px solid var(--gold); }
+
+  footer { flex-direction: column; gap: 1rem; text-align: center; }
+  .footer-links { justify-content: center; flex-wrap: wrap; gap: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="https://vule.ca">Vu Le</a>
+  <div class="nav-links">
+    <a href="https://vule.ca">Home</a>
+    <a href="https://vule.ca/ibs-resolution.html">IBS Resolution</a>
+    <a href="https://vule.ca/case-review.html">Case Review</a>
+    <a href="https://vanlam.ca">Van Lam</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </div>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="toggleNav()">✕</button>
+  <a href="https://vule.ca" onclick="toggleNav()">Home</a>
+  <a href="https://vule.ca/ibs-resolution.html" onclick="toggleNav()">IBS Resolution</a>
+  <a href="https://vule.ca/case-review.html" onclick="toggleNav()">Case Review</a>
+  <a href="https://vanlam.ca" onclick="toggleNav()">Van Lam</a>
+  <a href="#contact" onclick="toggleNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Patient guide &nbsp;·&nbsp; Chinese herbal medicine</p>
+    <h1 class="hero-h1">
+      Preparing your<br><em>herbal medicine</em><br>at home.
+    </h1>
+    <p class="hero-sub">
+      Your formula has been customized specifically for you. These instructions will help you prepare it correctly — so that every dose delivers its full intended effect.
+    </p>
+    <div class="hero-meta">
+      From the practice of Vu Le &amp; Van Lam &nbsp;·&nbsp; Mono, Ontario
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLY OVERVIEW -->
+<section class="sec supply-sec">
+  <div class="sec-inner">
+    <p class="sec-eyebrow">Understanding your supply</p>
+    <h2 class="sec-title">What's in your bag.</h2>
+    <p class="sec-body">Your herbal prescription is not generic — it has been assembled specifically for your constitutional profile. Before you begin, take a moment to understand what you have received.</p>
+    <div class="supply-grid">
+      <div class="supply-card">
+        <div class="supply-num">5</div>
+        <div class="supply-label">Daily bags</div>
+        <div class="supply-desc">A typical supply covers five days. Each numbered bag contains everything you need for one complete daily dose — prepared fresh each day.</div>
+      </div>
+      <div class="supply-card">
+        <div class="supply-num">10–20</div>
+        <div class="supply-label">Sachets per bag</div>
+        <div class="supply-desc">Each daily bag holds between ten and twenty small individual sachets. Every sachet contains a single herbal component of your formula. All of them together make up your dose.</div>
+      </div>
+      <div class="supply-card">
+        <div class="supply-num">1</div>
+        <div class="supply-label">Dose per day</div>
+        <div class="supply-desc">One full bag — all sachets combined — equals one daily dose. Do not split a day's bag across multiple sessions. Each dose is calibrated as a complete formula.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec steps-sec" id="steps">
+  <div class="sec-inner">
+    <p class="sec-eyebrow">Preparation method</p>
+    <h2 class="sec-title" style="color:#fff">Step by step. <em>Nothing skipped.</em></h2>
+    <p class="sec-body">The order and timing of these steps matters. Follow them as written — particularly the resting period, which is not optional.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <div class="step-title">Boil fresh water</div>
+          <p class="step-text">Bring fresh water to a full boil. Set it aside briefly — you want it as hot as possible when you pour, but not actively rolling. Freshly boiled water is essential for properly dissolving and activating the herbal compounds.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <div class="step-title">Open every sachet into your mug</div>
+          <p class="step-text">Take out your daily bag. Cut open each sachet — there will be ten to twenty of them — and empty all the contents into a regular coffee mug or glass. Every sachet must be included. Together they form your complete formula for the day. A pair of scissors makes this easier.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <div class="step-title">Add boiling water — ¼ to ⅓ of a mug</div>
+          <p class="step-text">Pour boiling hot water over the herbs, filling to about one quarter to one third of a regular coffee mug — approximately 60 to 100 ml. The water should be as hot as possible when it meets the herbs. You do not need a full mug. This is a concentrated preparation.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <div class="step-title">Do not disturb — rest for 15 minutes</div>
+          <p class="step-text">Leave the mixture completely undisturbed for a full fifteen minutes. Do not stir, swirl, or touch it during this time. This resting period allows the herbs to soak, dissolve, and undergo the necessary interaction with the hot water. It is not optional.</p>
+          <span class="step-note">Important — the 15 minutes begins the moment you add water</span>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <div class="step-title">Stir thoroughly</div>
+          <p class="step-text">After fifteen minutes, stir the mixture well to combine everything evenly. Some herbal material may remain at the bottom — this is normal. Stir until the liquid is as uniform as possible.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">06</div>
+        <div class="step-body">
+          <div class="step-title">Check the temperature</div>
+          <p class="step-text">Test the temperature before drinking. The liquid should feel comfortably warm on your wrist — not scalding. Allow it to cool further if needed. Drinking it warm is preferable to drinking it cold.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">07</div>
+        <div class="step-body">
+          <div class="step-title">Drink while warm</div>
+          <p class="step-text">Drink the herbal liquid steadily while it is still warm. You do not need to drink it in a single gulp — a few steady sips is fine. Do not let it sit and cool once you begin drinking.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">08</div>
+        <div class="step-body">
+          <div class="step-title">Follow with warm water</div>
+          <p class="step-text">Chase with a small amount of additional warm water. This helps clear any residual herb taste and ensures nothing is left behind. You may repeat this once or twice if you prefer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="sec tips-sec">
+  <div class="sec-inner">
+    <p class="sec-eyebrow">Practical notes</p>
+    <h2 class="sec-title">A few things worth knowing.</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-icon">◎</div>
+        <div class="tip-title">Consistency matters</div>
+        <p class="tip-text">Take your dose at the same time each day. Herbal medicine works cumulatively — regularity reinforces the pattern your formula is designed to shift.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">◎</div>
+        <div class="tip-title">Avoid strong flavours nearby</div>
+        <p class="tip-text">Try not to eat or drink strongly flavoured food immediately before or after your dose. Coffee, mint, and pungent foods in particular can interfere with how the herbs are received.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">◎</div>
+        <div class="tip-title">Store with care</div>
+        <p class="tip-text">Keep unused daily bags in a cool, dry place — away from direct sunlight, heat, and moisture. Do not refrigerate unless specifically advised.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon">◎</div>
+        <div class="tip-title">Questions about your formula</div>
+        <p class="tip-text">If something seems different from a previous supply, or if you have any concerns about your prescription, contact us before continuing. Your formula may have been adjusted intentionally.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEEL BETTER BAND -->
+<div class="feel-band">
+  <div class="feel-band-text">Your formula was prepared for you. Trust the process.</div>
+  <div class="feel-band-sub">Feel better &nbsp;·&nbsp; Vu Le &amp; Van Lam &nbsp;·&nbsp; Mono, Ontario</div>
+</div>
+
+<!-- PRACTITIONERS -->
+<section class="sec prac-sec">
+  <div class="sec-inner-wide">
+    <p class="sec-eyebrow">Your practitioners</p>
+    <h2 class="sec-title" style="color:#fff">Two practitioners. <em>One practice.</em></h2>
+    <p class="sec-body">Vu Le and Van Lam work together within the Quantum Elemental Medicine™ framework — and each brings a distinct clinical focus. If you are not yet sure whose care you fall under, or would like to explore what the other practitioner offers, you are welcome to reach out.</p>
+    <div class="prac-grid">
+      <div class="prac-card">
+        <div class="prac-name">Vu Minh Le</div>
+        <div class="prac-cred">R.TCMP · R.Ac · NCCAOM · Integrative Constitutional Medicine</div>
+        <p class="prac-body">Vu's practice centres on integrative constitutional medicine, classical Chinese herbal prescription, classical Feng Shui, and the full breadth of the QEM™ framework. His clinical approach is pattern-based and often addresses complex or unresolved cases — including the IBS Resolution Program and the Unresolved Case Review. He is licensed in both Canada and the United States.</p>
+        <a href="https://vule.ca" class="prac-link">Visit vule.ca</a>
+      </div>
+      <div class="prac-card">
+        <div class="prac-name">Van Thi Bich Lam</div>
+        <div class="prac-cred">R.TCMP · R.Ac · QEM™ Framework · Evolved-NLP</div>
+        <p class="prac-body">Van's practice is anchored in the conversation before treatment — a deep listening methodology grounded in Evolved-NLP that helps patients understand their own constitutional picture in plain language. She practises acupuncture, TCM, and constitutional consulting within the QEM™ framework. Her patients often come to her after years of being dismissed or misunderstood by conventional medicine.</p>
+        <a href="https://vanlam.ca" class="prac-link">Visit vanlam.ca</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section class="sec explore-sec">
+  <div class="sec-inner-wide">
+    <p class="sec-eyebrow">Explore the practice</p>
+    <h2 class="sec-title">There is more <em>available to you.</em></h2>
+    <p class="sec-body">Your herbal prescription is one expression of a broader framework. If you are curious about what else may be relevant to your situation, these are worth exploring.</p>
+    <div class="explore-grid">
+      <div class="explore-card">
+        <div class="explore-tag">Clinical program</div>
+        <div class="explore-title">QEM™ IBS Resolution Program</div>
+        <p class="explore-body">A structured protocol for resolving IBS at the constitutional level — not symptom management, but genuine pattern correction using the Quantum Elemental Medicine™ framework.</p>
+        <a href="https://vule.ca/ibs-resolution.html" class="explore-link">Learn more</a>
+      </div>
+      <div class="explore-card">
+        <div class="explore-tag">Complex cases</div>
+        <div class="explore-title">The Unresolved Case Review</div>
+        <p class="explore-body">A 90-minute constitutional deep-dive for patients with complex, treatment-resistant presentations. For those who have tried many things and are still searching for a clear picture.</p>
+        <a href="https://vule.ca/case-review.html" class="explore-link">Learn more</a>
+      </div>
+      <div class="explore-card">
+        <div class="explore-tag">Van Lam's practice</div>
+        <div class="explore-title">Constitutional Consulting &amp; Acupuncture</div>
+        <p class="explore-body">Van Lam's clinic offers something specific: the conversation that changes everything before a single needle is placed. For those who need to be heard as much as treated.</p>
+        <a href="https://vanlam.ca" class="explore-link">Visit vanlam.ca</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact-sec" id="contact">
+  <div class="sec-inner-wide">
+    <p class="sec-eyebrow">Get in touch</p>
+    <h2 class="sec-title" style="color:#fff">Questions? We will <em>get back to you.</em></h2>
+    <div class="contact-grid">
+      <div>
+        <p class="contact-intro">Whether you have a question about your herbal prescription, want to book a consultation, or would like to learn more about what this practice offers — use this form. All enquiries receive a personal response within 48 hours.</p>
+        <div class="contact-meta-row">
+          <strong>Location</strong>
+          <span>Mono, Ontario, Canada</span>
+        </div>
+        <div class="contact-meta-row">
+          <strong>Vu Le</strong>
+          <a href="mailto:vu@vule.ca">vu@vule.ca</a>
+        </div>
+        <div class="contact-meta-row">
+          <strong>Van Lam</strong>
+          <a href="https://vanlam.ca#contact">vanlam.ca → contact</a>
+        </div>
+        <div class="contact-meta-row">
+          <strong>Response</strong>
+          <span>Within 48 hours</span>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/myknqnek" method="POST">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="practitioner">Your practitioner</label>
+            <select id="practitioner" name="practitioner">
+              <option value="">Please select</option>
+              <option>Vu Le — vule.ca</option>
+              <option>Van Lam — vanlam.ca</option>
+              <option>Not sure / new enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="interest">Area of interest</label>
+            <select id="interest" name="interest">
+              <option value="">Please select</option>
+              <option>Question about my herbal prescription</option>
+              <option>Book a consultation — Vu Le</option>
+              <option>Book a consultation — Van Lam</option>
+              <option>QEM™ IBS Resolution Program</option>
+              <option>The Unresolved Case Review</option>
+              <option>Discovery Conversation ($75)</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" placeholder="No need to have everything figured out. Share what's on your mind."></textarea>
+          </div>
+          <button type="submit" class="btn-gold">Send enquiry →</button>
+          <p class="form-note">All enquiries are treated with complete confidentiality and receive a personal response within 48 hours.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          Thank you. Your enquiry has been received. You will hear back within 48 hours.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">Vu Le &amp; Van Lam &nbsp;·&nbsp; Mono, Ontario &nbsp;·&nbsp; © 2026</div>
+  <div class="footer-links">
+    <a href="https://vule.ca">vule.ca</a>
+    <a href="https://vanlam.ca">vanlam.ca</a>
+    <a href="https://vule.ca/ibs-resolution.html">IBS Resolution</a>
+    <a href="https://vule.ca/case-review.html">Case Review</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script>
+function toggleNav(){
+  const m = document.getElementById('mobileNav');
+  const open = m.classList.toggle('open');
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+const form = document.getElementById('contactForm');
+if(form){
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST', body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }).catch(() => {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  });
+}
+</script>
+</body>
+</html>
