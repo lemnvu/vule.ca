@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Unresolved Case Review — 90-Minute Constitutional Assessment | Vu Le, R.TCMP | Ontario</title>
-<meta name="description" content="A 90-minute constitutional assessment for patients whose IBS or complex chronic condition has not resolved despite prior treatment. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
+<title>Unresolved Case Review — Vu Le, R.TCMP | Mono, Ontario</title>
+<meta name="description" content="90-minute constitutional assessment for unresolved IBS and complex chronic illness. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
-  --gold:#9A7C4A;--gold-lt:#C4A76A;--gold-pale:#F2EBD9;--gold-ultra:#FAF6EE;
+  --gold:#7A6238;--gold-lt:#A08040;--gold-pale:#F2EBD9;--gold-ultra:#FAF6EE;
   --ink:#0E0C0A;--ink-2:#1A1612;--ink-3:#221E18;
-  --cream:#F8F5F0;--cream-2:#EFE9DF;--muted:#7A6E64;
+  --cream:#F8F5F0;--cream-2:#EFE9DF;--muted:#4A4038;
   --serif:'Cormorant Garamond',Georgia,serif;
   --sans:'Jost',system-ui,sans-serif;
   --ease:cubic-bezier(0.22,1,0.36,1);
@@ -155,20 +155,60 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
   .nav-links{display:none}
 }
 @media(max-width:640px){footer{flex-direction:column;align-items:flex-start}.foot-d{text-align:left}}
+
+  /* === Accessibility fixes === */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    background: #0E0C0A;
+    color: #F8F5F0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0 0 6px 6px;
+    font-family: var(--sans, system-ui, sans-serif);
+    font-size: 0.875rem;
+    font-weight: 500;
+    z-index: 9999;
+    text-decoration: none;
+    transition: top 0.1s;
+  }
+  .skip-link:focus { top: 0; }
+  /* Visible focus ring for all interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #7A6238;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  /* Visually hidden utility (for sr-only labels) */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
 </style>
 
   <!-- Open Graph / Social -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://vule.ca/case-review.html">
   <meta property="og:site_name"   content="Vu Le — Constitutional Medicine & Classical Feng Shui">
-  <meta property="og:title"       content="The Unresolved Case Review — 90-Minute Constitutional Assessment | Vu Le, R.TCMP | Ontario">
-  <meta property="og:description" content="A 90-minute constitutional assessment for patients whose IBS or complex chronic condition has not resolved despite prior treatment. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
+  <meta property="og:title"       content="Unresolved Case Review — Vu Le, R.TCMP | Mono, Ontario">
+  <meta property="og:description" content="90-minute constitutional assessment for unresolved IBS and complex chronic illness. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
   <meta property="og:image"       content="https://vule.ca/og-image.jpg">
   <meta property="og:locale"      content="en_CA">
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="The Unresolved Case Review — 90-Minute Constitutional Assessment | Vu Le, R.TCMP | Ontario">
-  <meta name="twitter:description" content="A 90-minute constitutional assessment for patients whose IBS or complex chronic condition has not resolved despite prior treatment. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
+  <meta name="twitter:title"       content="Unresolved Case Review — Vu Le, R.TCMP | Mono, Ontario">
+  <meta name="twitter:description" content="90-minute constitutional assessment for unresolved IBS and complex chronic illness. Vu Le, R.TCMP, R.Ac. Virtual across Canada. In-person in Mono, Ontario.">
   <meta name="twitter:image"       content="https://vule.ca/og-image.jpg">
   <!-- Canonical -->
   <link rel="canonical" href="https://vule.ca/case-review.html">
@@ -225,7 +265,9 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
   </script>
 </head>
 <body>
-<nav id="nav">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav id="nav" aria-label="Main navigation">
   <a href="https://vule.ca/" class="nav-home">← Vu Le</a>
   <div class="nav-links">
     <a href="/ibs-resolution.html">IBS Resolution</a>
@@ -234,6 +276,7 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
     <a href="#enquire" class="cta">Book the Review — $750</a>
   </div>
 </nav>
+<main id="main-content">
 
 <!-- HERO -->
 <section class="hero">
@@ -456,5 +499,6 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
 <script>
 window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60)},{passive:true});
 </script>
+</main>
 </body>
 </html>

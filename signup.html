@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Receive a free clinical guide from Vu Minh Le, R.TCMP, R.Ac — Why You're Still Sick: the three layers conventional medicine rarely examines. Integrative constitutional medicine, Mono, Ontario.">
-<title>Why You're Still Sick — Free Clinical Guide | Vu Minh Le, R.TCMP</title>
+<meta name="description" content="Free clinical guide from Vu Minh Le, R.TCMP — Why You're Still Sick: the three layers conventional medicine rarely examines. Mono, Ontario.">
+<title>Why You're Still Sick — Free Guide | Vu Minh Le, R.TCMP</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,12 +28,12 @@
   }
 
   :root {
-    --gold: #9A7C4A;
+    --gold: #7A6238;
     --gold-light: #C4A97A;
     --ink: #151210;
     --cream: #F7F4EF;
     --cream-dark: #EDE9E1;
-    --muted: #5A4E3C;
+    --muted: #4A4038;
     --faint: #A89880;
   }
 
@@ -231,7 +231,7 @@
   .ml-embedded .ml-field-group select,
   .ml-embedded input[type="email"],
   .ml-embedded input[type="text"] {
-    border: 1px solid #9A7C4A !important;
+    border: 1px solid #7A6238 !important;
     background: #FFFFFF !important;
     color: #151210 !important;
     font-size: 14px !important;
@@ -261,7 +261,7 @@
     font-weight: 500 !important;
     letter-spacing: 0.15em !important;
     text-transform: uppercase !important;
-    color: #5A4E3C !important;
+    color: #4A4038 !important;
     margin-bottom: 0.4rem !important;
     font-family: 'Jost', sans-serif !important;
   }
@@ -295,7 +295,7 @@
 
   .ml-embedded .primary:hover,
   .ml-embedded button[type="submit"]:hover {
-    background: #9A7C4A !important;
+    background: #7A6238 !important;
   }
 
   /* Success state */
@@ -319,7 +319,7 @@
   .ml-embedded .ml-form-successContent p,
   .ml-embedded .ml-form-successBody p {
     font-size: 13px !important;
-    color: #5A4E3C !important;
+    color: #4A4038 !important;
     line-height: 1.65 !important;
   }
 
@@ -413,20 +413,60 @@
       gap: 1px;
     }
   }
+
+  /* === Accessibility fixes === */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    background: #0E0C0A;
+    color: #F8F5F0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0 0 6px 6px;
+    font-family: var(--sans, system-ui, sans-serif);
+    font-size: 0.875rem;
+    font-weight: 500;
+    z-index: 9999;
+    text-decoration: none;
+    transition: top 0.1s;
+  }
+  .skip-link:focus { top: 0; }
+  /* Visible focus ring for all interactive elements */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid #7A6238;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  /* Visually hidden utility (for sr-only labels) */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
 </style>
 
   <!-- Open Graph / Social -->
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://vule.ca/signup.html">
   <meta property="og:site_name"   content="Vu Le — Constitutional Medicine & Classical Feng Shui">
-  <meta property="og:title"       content="Why You're Still Sick — Free Clinical Guide | Vu Minh Le, R.TCMP">
-  <meta property="og:description" content="Receive a free clinical guide from Vu Minh Le, R.TCMP, R.Ac — Why You're Still Sick: the three layers conventional medicine rarely examines. Integrative constitutional medicine, Mono, Ontario.">
+  <meta property="og:title"       content="Why You're Still Sick — Free Guide | Vu Minh Le, R.TCMP">
+  <meta property="og:description" content="Free clinical guide from Vu Minh Le, R.TCMP — Why You're Still Sick: the three layers conventional medicine rarely examines. Mono, Ontario.">
   <meta property="og:image"       content="https://vule.ca/og-image.jpg">
   <meta property="og:locale"      content="en_CA">
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Why You're Still Sick — Free Clinical Guide | Vu Minh Le, R.TCMP">
-  <meta name="twitter:description" content="Receive a free clinical guide from Vu Minh Le, R.TCMP, R.Ac — Why You're Still Sick: the three layers conventional medicine rarely examines. Integrative constitutional medicine, Mono, Ontario.">
+  <meta name="twitter:title"       content="Why You're Still Sick — Free Guide | Vu Minh Le, R.TCMP">
+  <meta name="twitter:description" content="Free clinical guide from Vu Minh Le, R.TCMP — Why You're Still Sick: the three layers conventional medicine rarely examines. Mono, Ontario.">
   <meta name="twitter:image"       content="https://vule.ca/og-image.jpg">
   <!-- Canonical -->
   <link rel="canonical" href="https://vule.ca/signup.html">
@@ -451,9 +491,12 @@
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 
 <div class="top-rule"></div>
 
+<main id="main-content">
 <div class="page">
 
   <div class="wordmark">Vu Minh Le &nbsp;&middot;&nbsp; R.TCMP, R.Ac &nbsp;&middot;&nbsp; NCCAOM Diplomate</div>
@@ -520,5 +563,8 @@
   </p>
 </div>
 
+
+
+</main>
 </body>
 </html>
