@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fees & Services — Vu Le & Van Lam, R.TCMP | Mono, Ontario</title>
+<meta name="description" content="Fee schedule for clinical acupuncture, herbal medicine, and constitutional assessment services. Vu Le & Van Lam, Registered TCM Practitioners. Mono, Ontario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --gold: #7A6238;
+  --gold-lt: #A08040;
+  --gold-pale: #F2EBD9;
+  --ink: #0E0C0A;
+  --ink-2: #1A1612;
+  --ink-3: #221E18;
+  --cream: #F8F5F0;
+  --cream-2: #EFE9DF;
+  --muted: #4A4038;
+  --on-dark: rgba(255,255,255,0.72);
+  --on-dark-2: rgba(255,255,255,0.55);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22,1,0.36,1);
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--ink-2);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.85;
+  overflow-x: hidden;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.5rem 5vw;
+  background: rgba(14,12,10,0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(154,124,74,0.15);
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.1rem; font-weight: 500;
+  color: #fff; text-decoration: none; letter-spacing: 0.02em;
+}
+.nav-links {
+  display: flex; align-items: center; gap: 2rem;
+}
+.nav-links a {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 400;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.72);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: #fff; }
+.nav-links a.active { color: var(--gold-lt); }
+
+/* ── HAMBURGER ── */
+.hamburger {
+  display: none;
+  flex-direction: column; justify-content: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  padding: 0.5rem; position: absolute; right: 5vw; top: 50%; transform: translateY(-50%);
+}
+.hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: rgba(255,255,255,0.8); transition: all 0.3s;
+}
+.mobile-nav {
+  display: none; position: fixed; inset: 0; z-index: 200;
+  background: var(--ink); flex-direction: column;
+  align-items: center; justify-content: center; gap: 2rem;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 400;
+  color: rgba(255,255,255,0.85); text-decoration: none;
+}
+.mobile-nav a:hover { color: var(--gold-lt); }
+.mobile-close {
+  position: absolute; top: 1.5rem; right: 5vw;
+  background: none; border: none; color: rgba(255,255,255,0.6);
+  font-size: 1.2rem; cursor: pointer;
+}
+
+/* ── PAGE HERO ── */
+.page-hero {
+  padding: 9rem 5vw 4rem;
+  border-bottom: 0.5px solid rgba(154,124,74,0.2);
+  max-width: 860px;
+  margin: 0 auto;
+}
+.page-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold-lt); margin-bottom: 0.75rem;
+}
+.page-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400; line-height: 1.15;
+  color: #fff; margin-bottom: 1rem;
+}
+.page-title em { font-style: italic; font-weight: 300; }
+.page-intro {
+  font-family: var(--serif);
+  font-size: 1.05rem; font-weight: 400;
+  line-height: 1.85; color: var(--on-dark-2);
+  max-width: 620px;
+}
+
+/* ── MAIN CONTENT ── */
+.fees-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3.5rem 5vw 5rem;
+}
+
+/* ── SECTION LABEL ── */
+.fees-section-label {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold-lt); margin: 3rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid rgba(154,124,74,0.25);
+}
+.fees-section-label:first-child { margin-top: 0; }
+
+/* ── FEE TABLE ── */
+.fee-table {
+  width: 100%; border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+.fee-table thead tr {
+  border-bottom: 0.5px solid rgba(154,124,74,0.3);
+}
+.fee-table th {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  padding: 0.5rem 1rem 0.75rem;
+  text-align: left;
+}
+.fee-table th:last-child { text-align: right; }
+.fee-table tbody tr {
+  border-bottom: 0.5px solid rgba(255,255,255,0.06);
+  transition: background 0.15s;
+}
+.fee-table tbody tr:hover { background: rgba(154,124,74,0.05); }
+.fee-table td {
+  padding: 1rem 1rem;
+  vertical-align: top;
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+  color: rgba(255,255,255,0.88);
+}
+.fee-table td:nth-child(2) {
+  font-family: var(--sans);
+  font-size: 0.78rem; font-weight: 400;
+  color: rgba(255,255,255,0.4);
+  white-space: nowrap;
+  padding-top: 1.1rem;
+}
+.fee-table td:last-child {
+  font-family: var(--sans);
+  font-size: 1rem; font-weight: 500;
+  color: var(--gold-lt);
+  text-align: right;
+  white-space: nowrap;
+  padding-top: 1.05rem;
+}
+.fee-name { display: block; margin-bottom: 0.2rem; }
+.fee-desc {
+  font-family: var(--sans);
+  font-size: 0.8rem; font-weight: 400;
+  line-height: 1.6; color: rgba(255,255,255,0.45);
+  display: block;
+}
+.fee-badge {
+  display: inline-block;
+  font-family: var(--sans); font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--gold-lt); border: 0.5px solid rgba(154,124,74,0.4);
+  padding: 0.15rem 0.55rem; border-radius: 2px;
+  margin-left: 0.5rem; vertical-align: middle;
+}
+.fee-strikethrough {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.25);
+  text-decoration: line-through;
+  margin-right: 0.35rem;
+}
+
+/* ── NOTE BOX ── */
+.note-box {
+  border-left: 2px solid rgba(154,124,74,0.5);
+  background: rgba(154,124,74,0.06);
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.note-box p {
+  font-family: var(--sans);
+  font-size: 0.82rem; font-weight: 400;
+  line-height: 1.7; color: rgba(255,255,255,0.55);
+}
+.note-box p strong { color: rgba(255,255,255,0.78); font-weight: 500; }
+.note-box p + p { margin-top: 0.6rem; }
+
+/* ── HERB SUPPLY TABLE ── */
+.herb-table {
+  width: 100%; border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+}
+.herb-table tr {
+  border-bottom: 0.5px solid rgba(255,255,255,0.06);
+}
+.herb-table tr:last-child { border-bottom: none; }
+.herb-table td {
+  padding: 0.65rem 0.75rem;
+  font-family: var(--sans);
+  font-size: 0.82rem; font-weight: 400;
+  color: rgba(255,255,255,0.65);
+}
+.herb-table td:first-child { color: rgba(255,255,255,0.85); font-weight: 500; }
+.herb-table td:last-child { text-align: right; color: var(--gold-lt); font-weight: 500; }
+
+/* ── DISCOVERY BOX ── */
+.discovery-box {
+  border: 0.5px solid rgba(154,124,74,0.3);
+  border-radius: 4px;
+  padding: 1.4rem 1.6rem;
+  margin: 2rem 0;
+  background: rgba(154,124,74,0.05);
+}
+.discovery-box p {
+  font-family: var(--serif);
+  font-size: 1rem; font-weight: 400;
+  line-height: 1.8; color: var(--on-dark-2);
+}
+
+/* ── FOOD GUIDE BOX ── */
+.food-guide-box {
+  border: 0.5px solid rgba(154,124,74,0.35);
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  background: rgba(154,124,74,0.06);
+}
+.food-guide-box .fg-label {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--gold-lt); margin-bottom: 0.5rem;
+}
+.food-guide-box h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem; font-weight: 500;
+  color: #fff; margin-bottom: 0.5rem; line-height: 1.4;
+}
+.food-guide-box p {
+  font-family: var(--serif);
+  font-size: 0.95rem; font-weight: 400;
+  line-height: 1.75; color: rgba(255,255,255,0.55);
+  margin-bottom: 1rem;
+}
+.food-guide-box .fg-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 500;
+  letter-spacing: 0.04em; color: var(--gold-lt);
+  text-decoration: none;
+  border: 0.5px solid rgba(154,124,74,0.5);
+  padding: 0.55rem 1.1rem; border-radius: 4px;
+  transition: all 0.2s;
+}
+.food-guide-box .fg-btn:hover {
+  background: rgba(154,124,74,0.12); color: #fff;
+}
+.food-guide-box .fg-sub {
+  font-family: var(--sans);
+  font-size: 0.72rem; color: rgba(255,255,255,0.3);
+  margin: 0.75rem 0 0; line-height: 1.6;
+}
+
+/* ── AVAILABILITY BLOCK ── */
+.avail-block {
+  font-family: var(--sans);
+  font-size: 0.82rem; font-weight: 400;
+  line-height: 1.9; color: rgba(255,255,255,0.5);
+  border-top: 0.5px solid rgba(154,124,74,0.2);
+  padding-top: 1.5rem; margin-top: 2rem;
+}
+.avail-block strong { color: rgba(255,255,255,0.78); font-weight: 500; }
+.avail-block a { color: var(--gold-lt); text-decoration: none; }
+
+/* ── CTA ── */
+.fees-cta {
+  margin-top: 2.5rem;
+  display: flex; flex-wrap: wrap; gap: 1rem; align-items: center;
+}
+.btn-gold {
+  display: inline-block;
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink); background: var(--gold-lt);
+  padding: 0.85rem 1.8rem; border-radius: 2px;
+  text-decoration: none; transition: background 0.2s;
+}
+.btn-gold:hover { background: #b8924a; }
+.btn-ghost {
+  display: inline-block;
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  border: 0.5px solid rgba(255,255,255,0.2);
+  padding: 0.85rem 1.8rem; border-radius: 2px;
+  text-decoration: none; transition: all 0.2s;
+}
+.btn-ghost:hover { color: #fff; border-color: rgba(255,255,255,0.5); }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 0.5px solid rgba(154,124,74,0.2);
+  padding: 2.5rem 5vw 2rem;
+  max-width: 860px; margin: 0 auto;
+}
+.footer-bottom {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 0.5rem;
+}
+.footer-copy {
+  font-family: var(--sans); font-size: 0.72rem;
+  color: rgba(255,255,255,0.3); font-weight: 400;
+}
+.footer-reg {
+  font-family: var(--sans); font-size: 0.72rem;
+  color: rgba(255,255,255,0.3); font-weight: 400;
+}
+.footer-links {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
+  font-family: var(--sans); font-size: 0.72rem;
+  color: rgba(255,255,255,0.4); text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.footer-links a:hover { color: var(--gold-lt); }
+
+/* ── CTCMPAO NOTE ── */
+.ctcmpao-note {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 400;
+  line-height: 1.7; color: rgba(255,255,255,0.3);
+  margin-top: 2rem;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 680px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .page-hero { padding: 7rem 5vw 2.5rem; }
+  .fee-table th:nth-child(2),
+  .fee-table td:nth-child(2) { display: none; }
+  .fees-cta { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">Vu Le</a>
+  <div class="nav-links">
+    <a href="index.html#tcm">Clinical</a>
+    <a href="ibs-resolution.html">IBS Resolution</a>
+    <a href="case-review.html">Case Review</a>
+    <a href="index.html#fengshui">Feng Shui</a>
+    <a href="index.html#contact" class="active">Enquire</a>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <button class="mobile-close" onclick="toggleNav()" aria-label="Close menu">✕</button>
+  <a href="index.html" onclick="toggleNav()">Home</a>
+  <a href="index.html#tcm" onclick="toggleNav()">Clinical</a>
+  <a href="ibs-resolution.html" onclick="toggleNav()">IBS Resolution</a>
+  <a href="case-review.html" onclick="toggleNav()">Case Review</a>
+  <a href="index.html#fengshui" onclick="toggleNav()">Feng Shui</a>
+  <a href="index.html#contact" onclick="toggleNav()">Enquire</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <p class="page-eyebrow">Mono, Ontario · Private Home Clinic</p>
+  <h1 class="page-title">Fees &amp; Services —<br><em>clear and complete.</em></h1>
+  <p class="page-intro">All fees for clinical acupuncture, herbal medicine, and constitutional assessment services at the Mono home clinic. No hidden charges. Every service billed individually as rendered.</p>
+</div>
+
+<!-- MAIN -->
+<div class="fees-wrap">
+
+  <!-- CLINICAL VISITS -->
+  <p class="fees-section-label">Clinical visits — acupuncture &amp; herbal medicine</p>
+
+  <table class="fee-table">
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Duration</th>
+        <th>Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="fee-name">Initial Constitutional Assessment</span>
+          <span class="fee-desc">First visit. QEM™ constitutional intake, classical pulse and tongue diagnosis. Includes either acupuncture treatment or herbal medicine consultation with 5-day formula — your clinical need determines which.</span>
+        </td>
+        <td>45 min</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fee-name">Initial Assessment + Both Modalities</span>
+          <span class="fee-desc">First visit with both acupuncture and herbal medicine consultation. Includes 5-day custom herbal formula dispensed at the session.</span>
+        </td>
+        <td>45 min</td>
+        <td>$265</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fee-name">Acupuncture Treatment</span>
+          <span class="fee-desc">Follow-up acupuncture. Constitutional review and needle treatment. No herbal component. Extended health benefits eligible.</span>
+        </td>
+        <td>45 min</td>
+        <td>$115</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fee-name">Herbal Medicine Consultation</span>
+          <span class="fee-desc">Constitutional herbal review and dispensing. Includes first 5-day custom herbal formula. Not covered by extended health benefits — billed directly.</span>
+        </td>
+        <td>45 min</td>
+        <td>$115</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fee-name">Acupuncture + Herbal Medicine</span>
+          <span class="fee-desc">Combined follow-up. Full acupuncture treatment and herbal consultation with 5-day formula dispensed at the session.</span>
+        </td>
+        <td>45 min</td>
+        <td>$230</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SPECIALIST -->
+  <p class="fees-section-label">Specialist consultation</p>
+
+  <table class="fee-table">
+    <thead>
+      <tr>
+        <th>Service</th>
+        <th>Duration</th>
+        <th>Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <span class="fee-name">Discovery Conversation</span>
+          <span class="fee-desc">A direct conversation about your case before committing to a clinical session. Not a sales call — a genuine assessment of fit. No needles, no treatment.</span>
+        </td>
+        <td>30 min max</td>
+        <td>$75</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="fee-name">
+            The Unresolved Case Review
+            <span class="fee-badge">Introductory</span>
+          </span>
+          <span class="fee-desc">For complex, chronic, or previously unresolved cases. Consultation only — no needles. Deep QEM™ constitutional analysis and clear care pathway. A $200 non-refundable intake fee is collected at booking and applied to the full fee on the day. Standard fee of $750 resumes once this introductory phase closes.</span>
+        </td>
+        <td>60 min</td>
+        <td><span class="fee-strikethrough">$750</span>$500</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- HERBAL SUPPLY -->
+  <p class="fees-section-label">Additional herbal medicine supply</p>
+
+  <div class="note-box">
+    <p>The $115 herbal medicine consultation includes the first 5-day formula. If you require additional supply beyond the initial 5 days — herbs only, no further consultation required — it is available at <strong>$85 per 5-day unit.</strong></p>
+  </div>
+
+  <table class="herb-table">
+    <tr>
+      <td>5-day supply</td>
+      <td>Included in $115 herbal consultation</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Additional 5-day unit</td>
+      <td>Herbs only · no consultation</td>
+      <td>$85</td>
+    </tr>
+    <tr>
+      <td>10-day total</td>
+      <td>$115 consult + 1 × $85</td>
+      <td>$200</td>
+    </tr>
+    <tr>
+      <td>20-day total</td>
+      <td>$115 consult + 3 × $85</td>
+      <td>$370</td>
+    </tr>
+    <tr>
+      <td>30-day total</td>
+      <td>$115 consult + 5 × $85</td>
+      <td>$540</td>
+    </tr>
+  </table>
+
+  <!-- SHIPPING -->
+  <p class="fees-section-label">Herbal medicine delivery &amp; shipping</p>
+
+  <div class="note-box">
+    <p><strong>In-clinic pickup is included</strong> — no additional charge for patients collecting at the Mono clinic.</p>
+    <p><strong>Shipping is extra and billed at actual carrier cost,</strong> confirmed with you before dispatch. Canada Post Expedited for most Ontario destinations ($12–18 per shipment). Xpresspost or FedEx Priority for cross-Canada ($25–35 per shipment).</p>
+  </div>
+
+  <!-- INSURANCE -->
+  <p class="fees-section-label">Extended health benefits &amp; insurance</p>
+
+  <div class="note-box">
+    <p><strong>Acupuncture is eligible for extended health benefits</strong> where your plan provides coverage for registered TCM practitioners (R.TCMP / R.Ac).</p>
+    <p><strong>Herbal medicine is not covered by extended health benefits</strong> and is billed directly to the patient.</p>
+    <p><strong>Insurance disclaimer:</strong> It is the patient's sole responsibility to verify coverage with their insurance provider prior to treatment. Not all insurance plans cover services from this practice. We do not guarantee, confirm, or assume responsibility for any insurance reimbursement. All fees are due in full at the time of service regardless of insurance status.</p>
+  </div>
+
+  <!-- DISCOVERY -->
+  <div class="discovery-box">
+    <p><strong style="color:#fff;font-weight:500">Not sure where to begin?</strong><br>
+    A Discovery Conversation — $75 · 30 minutes maximum. A direct conversation about your case before you commit to a clinical session. Not a sales call — a genuine assessment of fit. <a href="mailto:vu@vule.ca" style="color:var(--gold-lt);text-decoration:none;">Email vu@vule.ca</a> to arrange.</p>
+  </div>
+
+  <!-- FOOD GUIDE -->
+  <div class="food-guide-box">
+    <p class="fg-label">Free patient resource</p>
+    <h3>The one page I give every new patient before we do anything else</h3>
+    <p>It is not a diet. It is not a protocol. It is the ground floor of how food actually works in the body — and most people have never been shown it. Download it free. Print it. Put it on your fridge.</p>
+    <a href="https://lemnvu.substack.com/p/the-one-page-i-give-every-new-patient" target="_blank" rel="noopener" class="fg-btn">Download the food guide &rarr;</a>
+    <p class="fg-sub">Opens on Substack — free to read and download. Subscribe while you are there for clinical essays and constitutional frameworks from Vu Le &amp; Van Lam.</p>
+  </div>
+
+  <!-- AVAILABILITY -->
+  <div class="avail-block">
+    <strong>Private home clinic — Mono, Ontario</strong><br>
+    Availability — Two days per week, by appointment only<br>
+    New patients — Accepted by referral and direct enquiry<br>
+    Contact — <a href="mailto:vu@vule.ca">vu@vule.ca</a>
+  </div>
+
+  <!-- CTA -->
+  <div class="fees-cta">
+    <a href="mailto:vu@vule.ca?subject=Clinical%20Enquiry" class="btn-gold">Begin a clinical enquiry</a>
+    <a href="case-review.html" class="btn-ghost">The Unresolved Case Review — $500</a>
+  </div>
+
+  <!-- CTCMPAO -->
+  <p class="ctcmpao-note">Vu Le and Van Lam are Registered Traditional Chinese Medicine Practitioners and Acupuncturists (R.TCMP, R.Ac) licensed in Ontario, Canada, and hold NCCAOM Diplomate credentials. This practice operates within the scope defined by the College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMPAO). All fees are in Canadian dollars and are HST-exempt.</p>
+
+</div><!-- /fees-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#tcm">Clinical Practice</a>
+    <a href="ibs-resolution.html">IBS Resolution</a>
+    <a href="case-review.html">Case Review</a>
+    <a href="index.html#fengshui">Feng Shui</a>
+    <a href="index.html#contact">Enquire</a>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Vu Le. All rights reserved.</p>
+    <p class="footer-reg">R.TCMP · R.Ac · NCCAOM · Ontario, Canada</p>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
