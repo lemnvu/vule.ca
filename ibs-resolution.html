@@ -34,7 +34,8 @@ nav.scrolled{background:rgba(14,12,10,0.96);backdrop-filter:blur(12px);padding:1
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 15% 85%,rgba(154,124,74,0.14) 0%,transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(154,124,74,0.06) 0%,transparent 40%);pointer-events:none}
 .hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(154,124,74,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(154,124,74,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
 .hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;position:relative;z-index:1}
-.hero-eyebrow{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;opacity:0;animation:up 0.9s 0.2s var(--ease) both}
+.hero-eyebrow{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-bottom:2rem;opacity:0;animation:up 0.9s 0.2s var(--ease) both}
+.hero-watermark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-size:clamp(14rem,22vw,22rem);font-weight:300;font-style:italic;color:transparent;-webkit-text-stroke:1px rgba(154,124,74,0.1);letter-spacing:-0.02em;pointer-events:none;user-select:none;white-space:nowrap;line-height:1;z-index:0}
 .hero-h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,5rem);font-weight:300;line-height:1.05;color:#fff;margin-bottom:2rem;opacity:0;animation:up 0.9s 0.4s var(--ease) both}
 .hero-h1 em{font-style:italic;color:var(--gold-lt);font-weight:300}
 .hero-rule{width:48px;height:1px;background:var(--gold);margin-bottom:2rem;opacity:0;animation:up 0.9s 0.6s var(--ease) both}
@@ -327,21 +328,22 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
     <a href="https://vule.ca/#tcm">Clinical</a>
     <a href="https://vule.ca/#books">Books</a>
     <a href="https://vule.ca/#contact">Enquire</a>
-    <a href="#consult" class="cta">Unresolved Case Review</a>
+    <a href="https://calendly.com/vule-ibs/ibs-assessment-first-treatment" target="_blank" rel="noopener" class="cta">Book Assessment — $150</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-watermark" aria-hidden="true">IBS</div>
   <div class="hero-inner">
     <div>
-      <p class="hero-eyebrow">IBS · Treatment-Resistant Cases</p>
-      <h1 class="hero-h1">You have tried.<br>It hasn't<br><em>held.</em></h1>
+      <p class="hero-eyebrow">IBS · Mono &amp; Orangeville · Ontario</p>
+      <h1 class="hero-h1">Still bloated.<br>Still flaring.<br><em>Still no answer.</em></h1>
       <div class="hero-rule"></div>
-      <p class="hero-sub">Most IBS patients who reach this page have already been through conventional medicine, integrative care, elimination diets, and specialist referrals. What they have not had is a constitutional assessment — one that reads the pattern beneath the symptoms, not just the symptoms themselves.</p>
+      <p class="hero-sub">If diet changes, supplements, medication, or prior treatment helped only temporarily — this assessment identifies why your IBS keeps returning, and what to do about it. One session. A complete constitutional picture. A clear path forward.</p>
       <div class="hero-btns">
-        <a href="#consult" class="btn-p">The Unresolved Case Review</a>
-        <a href="#program" class="btn-g">The 12-week protocol ↓</a>
+        <a href="https://calendly.com/vule-ibs/ibs-assessment-first-treatment" target="_blank" rel="noopener" class="btn-p">Book IBS Assessment — $150</a>
+        <a href="#why" class="btn-g">Why it keeps returning ↓</a>
       </div>
     </div>
     <div class="hero-pillars">
@@ -354,8 +356,8 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
         <div><div class="pillar-title">Influences standard treatment ignores</div><div class="pillar-body">Constitutional blueprint, environmental field, timing cycles, conscious belief, subconscious habit — the framework addresses all five simultaneously.</div></div>
       </div>
       <div class="hero-pillar">
-        <span class="pillar-n">2</span>
-        <div><div class="pillar-title">Ways to begin</div><div class="pillar-body">A single Unresolved Case Review for a complete constitutional picture and a clear path forward — or an Initial Constitutional Assessment to begin the clinical protocol directly.</div></div>
+        <span class="pillar-n">$150</span>
+        <div><div class="pillar-title">To begin — assessment + first treatment</div><div class="pillar-body">One 75-minute session covers your full constitutional evaluation and your first clinical intervention. A clear pattern diagnosis and protocol — not a sales consultation.</div></div>
       </div>
     </div>
   </div>
@@ -373,8 +375,8 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
 
       <div class="consult-price-block">
         <p class="consult-price-lbl">Investment</p>
-        <p class="consult-price">$500</p>
-        <p class="consult-price-note">Single session · 60 minutes · In-person (Mono, Ontario) or virtual across Canada<br><strong>Introductory rate — $500 (standard fee $750 resumes once this phase closes).</strong><br>A $200 non-refundable intake fee is collected at booking and applied to the full fee on the day.</p>
+        <p class="consult-price">$750</p>
+        <p class="consult-price-note">Single session · 90 minutes · In-person (Mono, Ontario) or virtual across Canada<br><strong>Includes written case summary delivered within 48 hours.</strong><br>A $200 non-refundable intake fee is collected at booking and applied to the full fee.</p>
       </div>
 
       <div class="consult-what">
@@ -383,10 +385,11 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
         <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Environmental field review: home and workplace influences on your digestive system</p></div>
         <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Diagnostic explanation of why prior treatments produced partial or temporary results</p></div>
         <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">A sequenced protocol outline: what I would do, in what order, and why</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Clear protocol direction — what to do, in what order, specific to your constitutional pattern</p></div>
+        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Written case summary (2–3 pages) delivered within 48 hours — yours to keep and share</p></div>
+        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Credit toward the QEM™ IBS Resolution Program if you choose to continue</p></div>
       </div>
 
-      <a href="mailto:vu@vule.ca?subject=Unresolved%20Case%20Review%20Enquiry" class="btn-p">Enquire About the Review</a>
+      <a href="https://calendly.com/vule-ibs/ibs-assessment-first-treatment" target="_blank" rel="noopener" class="btn-p">Book IBS Assessment — $150</a>
     </div>
 
     <div class="consult-right">
@@ -408,8 +411,8 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
       <div class="process-step">
         <div class="process-n">03</div>
         <div>
-          <p class="process-title">Protocol direction — at the close of the session</p>
-          <p class="process-body">At the end of the session you receive a clear clinical direction — what I would do, in what sequence, and why prior approaches reached a ceiling. This is verbal, direct, and specific to your pattern. There is no delay.</p>
+          <p class="process-title">Written summary — within 48 hours</p>
+          <p class="process-body">A concise written document: your constitutional profile, the diagnostic interpretation, a sequenced protocol recommendation, and a clear account of what prior approaches missed. This is something you can share with your physician, show a specialist, or simply return to.</p>
         </div>
       </div>
       <div class="process-step">
@@ -427,7 +430,7 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
 </section>
 
 <!-- WHY IBS PERSISTS -->
-<section class="sec why-sec">
+<section class="sec why-sec" id="why">
   <div class="sec-inner">
     <div class="why-grid">
       <div class="why-text">
@@ -437,7 +440,7 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
         <p>This is not a failure of effort or care — yours or theirs. It is a failure of framework.</p>
         <p><strong>IBS is not only a gut problem.</strong> In over two decades of clinical practice, it consistently presents as a whole-system expression — shaped by constitutional makeup, environmental pressure, timing cycles, and the conscious and subconscious patterns that organise daily life. A framework that addresses only one or two of these will produce partial, temporary results. That is precisely what most patients describe when they arrive here.</p>
         <p>The QEM™ framework addresses all five simultaneously. This is why it reaches what prior approaches have not.</p>
-        <a href="#consult" class="btn-p" style="margin-top:1.2rem;display:inline-block">Book the Unresolved Case Review</a>
+        <a href="https://calendly.com/vule-ibs/ibs-assessment-first-treatment" target="_blank" rel="noopener" class="btn-p" style="margin-top:1.2rem;display:inline-block">Book IBS Assessment — $150</a>
       </div>
       <div>
         <div class="bq">
@@ -502,20 +505,7 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
       <div class="j-card"><p class="j-phase">Integration</p><div class="j-wks">07–10</div><h3 class="j-title">Deep Pattern Work</h3><p class="j-body">Conscious reprogramming. Habit architecture redesign. Addressing the subconscious drivers that maintain the IBS cycle independently of dietary effort.</p><span class="j-fmt">Virtual · Weekly</span></div>
       <div class="j-card"><p class="j-phase">Resolution</p><div class="j-wks">11–12</div><h3 class="j-title">Consolidation &amp; Close</h3><p class="j-body">Resolution review. Long-term maintenance blueprint. Your independent plan for sustaining change without ongoing clinical dependence.</p><span class="j-fmt">In-Person or Virtual</span></div>
     </div>
-    <div class="jrn-note"><p>Acupuncture is billed per visit under registered CTCMPAO practice and is <strong>eligible for extended health benefits</strong> where your plan provides coverage. Herbal medicine is not covered by extended health benefits and is billed directly. The $115 herbal medicine consultation includes the first 5-day formula. Same-formula refills arranged by direct contact are $100 per 5-day supply: 10 days $200 · 20 days $400 · 30 days $600. In-clinic pickup is included. <strong>Shipping is extra and billed at actual carrier cost</strong> — Canada Post Expedited for most Ontario destinations ($12–18 per shipment); Xpresspost or FedEx Priority for cross-Canada ($25–35). Shipping cost is confirmed with you before dispatch. Formulas are dispensed directly from this clinic. We do not provide written formulas for third-party dispensing — granule quality, sourcing standards, and substitution practices vary significantly between suppliers. We ship Canada-wide. <strong>Insurance disclaimer:</strong> It is the patient's sole responsibility to verify coverage with their insurance provider prior to treatment. Not all insurance plans cover services from this practice. We do not guarantee, confirm, or assume responsibility for any insurance reimbursement. All fees are due in full at the time of service regardless of insurance status.</p></div>
-  </div>
-</section>
-
-<!-- FOOD GUIDE -->
-<section class="sec" style="padding-top:2.5rem;padding-bottom:2.5rem;">
-  <div class="sec-inner">
-    <div style="padding:1.75rem 2rem;border:0.5px solid rgba(154,124,74,0.35);border-radius:6px;background:rgba(154,124,74,0.05);max-width:680px">
-      <p style="font-size:0.75rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin:0 0 0.6rem;font-family:var(--sans)">Free patient resource</p>
-      <h3 style="font-size:1.3rem;font-weight:500;color:#fff;margin:0 0 0.6rem;line-height:1.4;font-family:var(--serif)">The one page I give every new patient before we do anything else</h3>
-      <p style="font-size:0.95rem;font-weight:300;line-height:1.75;color:var(--muted);margin:0 0 1.1rem;font-family:var(--serif)">Before constitutional assessment, before treatment, before anything else — this is the universal foundation. The relationship between what you eat, how you prepare it, when you eat it, and what your body is actually able to do with it. Download it free. Print it. Share it.</p>
-      <a href="https://lemnvu.substack.com/p/the-one-page-i-give-every-new-patient" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.04em;color:var(--gold);text-decoration:none;border:0.5px solid rgba(154,124,74,0.5);padding:0.6rem 1.2rem;border-radius:4px;">Download the food guide &rarr;</a>
-      <p style="font-family:var(--sans);font-size:0.75rem;color:rgba(255,255,255,0.35);margin:0.85rem 0 0;line-height:1.6">Opens on Substack — free to read and download. Subscribe while you are there for clinical essays and constitutional frameworks from Vu Le &amp; Van Lam.</p>
-    </div>
+    <div class="jrn-note"><p>Weekly acupuncture and custom constitutional herbal prescriptions are integrated as clinical adjuncts throughout the program — billed separately under registered CTCMPAO practice and <strong>eligible for extended health benefits</strong> where applicable.</p></div>
   </div>
 </section>
 
@@ -523,39 +513,44 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
 <section class="sec inv-sec">
   <div class="sec-inner">
     <p class="lbl">The investment</p>
-    <h2 class="sec-title">Clear fees.<br><em>Billed per visit.</em></h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.85;color:var(--muted);max-width:600px">Each service is billed individually as rendered. Acupuncture and herbal medicine are independent modalities — each complete on its own, or combined according to your clinical needs. Both are HST-exempt. <strong>Acupuncture is eligible for extended health benefits</strong> where your plan covers registered TCM practitioners. Herbal medicine is not covered by insurance and is billed directly. The consultation fee includes the first 5-day formula. Same-formula refills arranged by direct contact are $100 per 5-day supply.</p>
+    <h2 class="sec-title">Clear fees.<br><em>Defined deliverables.</em></h2>
+    <p style="font-size:1.05rem;font-weight:300;line-height:1.85;color:var(--muted);max-width:600px">Begin with the IBS Assessment &amp; First Treatment — a complete constitutional evaluation with your first clinical intervention included. For complex unresolved cases, the Unresolved Case Review provides a deeper diagnostic picture. Clinical treatments are extended-health-benefits eligible.</p>
     <table class="inv-table">
-      <thead><tr><th>Service</th><th>Format</th><th>Fee</th></tr></thead>
+      <thead><tr><th>Service</th><th>Format</th><th>Investment</th></tr></thead>
       <tbody>
         <tr class="featured-row">
-          <td>The Unresolved Case Review<span class="row-badge">Start here</span><br><small style="color:var(--muted);font-size:.85rem">60-min constitutional assessment · protocol direction · introductory rate. For complex, chronic, or previously unresolved IBS cases. Standard fee $750 resumes once this phase closes.</small></td>
-          <td style="color:var(--muted);font-size:.9rem">Single session · In-person or virtual</td>
-          <td class="price">$500</td>
-        </tr>
-        <tr>
-          <td>Initial Constitutional Assessment<br><small style="color:var(--muted);font-size:.85rem">First clinical visit. QEM™ intake and constitutional mapping. Includes acupuncture or herbal medicine consultation with 5-day formula — whichever your case calls for.</small></td>
-          <td style="color:var(--muted);font-size:.9rem">45 min · First visit</td>
+          <td>IBS Assessment + First Treatment<span class="row-badge">Start here</span><br><small style="color:var(--muted);font-size:.85rem">75-min constitutional evaluation · first clinical intervention included · clear pattern assessment and next-step protocol</small></td>
+          <td style="color:var(--muted);font-size:.9rem">In-Person · Mono, Ontario · Single session</td>
           <td class="price">$150</td>
         </tr>
         <tr>
-          <td>Acupuncture Treatment<br><small style="color:var(--muted);font-size:.85rem">Constitutional acupuncture. Clinical review and needle treatment. Extended health benefits eligible — submit to your plan under registered TCM practitioner.</small></td>
-          <td style="color:var(--muted);font-size:.9rem">45 min · Per visit</td>
-          <td class="price">$115</td>
+          <td>The Unresolved Case Review<br><small style="color:var(--muted);font-size:.85rem">90-min constitutional assessment · written case summary · protocol outline · credit toward program — for complex cases that have been through extensive prior treatment</small></td>
+          <td style="color:var(--muted);font-size:.9rem">In-Person or Virtual · Single session</td>
+          <td class="price">$750</td>
         </tr>
         <tr>
-          <td>Herbal Medicine Consultation<br><small style="color:var(--muted);font-size:.85rem">Constitutional herbal review and dispensing. Includes first 5-day custom herbal formula. Not covered by extended health benefits — billed directly. Same-formula refills arranged by direct contact — $100 per 5-day supply. Shipping extra. Formulas are dispensed from this clinic only — we do not provide written formulas for third-party dispensing. We ship Canada-wide.</small></td>
-          <td style="color:var(--muted);font-size:.9rem">45 min · Per visit</td>
-          <td class="price">$115</td>
+          <td>QEM™ IBS Resolution Program — 12 weeks<br><small style="color:var(--muted);font-size:.85rem">Constitutional coaching, protocol delivery, written materials, between-session support</small></td>
+          <td style="color:var(--muted);font-size:.9rem">Weekly · In-person + Virtual</td>
+          <td class="price">$2,800</td>
         </tr>
         <tr>
-          <td>Acupuncture + Herbal Medicine<br><small style="color:var(--muted);font-size:.85rem">Both modalities in a single session. Full acupuncture treatment and herbal consultation with 5-day formula dispensed at the visit.</small></td>
-          <td style="color:var(--muted);font-size:.9rem">45 min · Per visit</td>
-          <td class="price">$230</td>
+          <td>QEM™ Framework Only — 12 weeks<br><small style="color:var(--muted);font-size:.85rem">Full coaching program without weekly acupuncture commitment</small></td>
+          <td style="color:var(--muted);font-size:.9rem">Weekly · Primarily Virtual</td>
+          <td class="price">$1,800</td>
+        </tr>
+        <tr>
+          <td>Acupuncture — Clinical Adjunct<br><small style="color:var(--muted);font-size:.85rem">CTCMPAO-compliant · Extended health benefits eligible</small></td>
+          <td style="color:var(--muted);font-size:.9rem">Per session</td>
+          <td class="price">$180</td>
+        </tr>
+        <tr>
+          <td>Custom Constitutional Herbal Formula<br><small style="color:var(--muted);font-size:.85rem">Compounded specifically for your constitutional pattern</small></td>
+          <td style="color:var(--muted);font-size:.9rem">Per 5-day supply</td>
+          <td class="price">$200</td>
         </tr>
       </tbody>
     </table>
-    <div class="inv-note">The Unresolved Case Review ($200 non-refundable at booking, applied to the full fee on the day) is a complete clinical service — not a sales consultation. Most IBS patients follow a 12-visit protocol; your practitioner will outline the recommended sequence and frequency at your first session.</div>
+    <div class="inv-note">The $150 IBS Assessment includes your first clinical treatment — acupuncture or a 5-day constitutional herbal formula. The Unresolved Case Review ($200 non-refundable at booking; balance on the day) is credited in full toward the 12-week program if you choose to continue. <strong>Both are complete clinical services — not sales consultations.</strong></div>
   </div>
 </section>
 
@@ -589,11 +584,12 @@ footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-b
 <section class="cta-sec" id="enquire">
   <div class="cta-inner">
     <p class="lbl" style="text-align:center">Begin here</p>
-    <h2 class="cta-title">One session.<br><em>A complete picture.</em></h2>
-    <p class="cta-body">Bring your full history. I will apply a framework to it that you have not had applied before — and tell you clearly what it reveals and what to do about it.</p>
+    <h2 class="cta-title">One session.<br><em>A clear picture.</em></h2>
+    <p class="cta-body">Bring your history. In 75 minutes you will have a constitutional assessment, your first clinical treatment, and a clear account of what has been driving your symptoms and what to do about it.</p>
     <div class="cta-btns">
-      <a href="mailto:vu@vule.ca?subject=Unresolved%20Case%20Review%20Enquiry" class="btn-p" style="font-size:.75rem;padding:1.1rem 2.6rem">Enquire About the Review — $500</a>
+      <a href="https://calendly.com/vule-ibs/ibs-assessment-first-treatment" target="_blank" rel="noopener" class="btn-p" style="font-size:.75rem;padding:1.1rem 2.6rem">Book IBS Assessment — $150</a>
     </div>
+    <p style="text-align:center;margin-bottom:2rem"><a href="#consult" class="btn-g" style="font-size:.65rem">Complex case? Learn about the Unresolved Case Review — $750 ↑</a></p>
     <p class="cta-contact">In-person · Mono, Ontario  ·  Virtual across Canada<br><a href="mailto:vu@vule.ca">vu@vule.ca</a>  ·  <a href="tel:4168719239">(416) 871-9239</a></p>
   </div>
 </section>
@@ -611,7 +607,6 @@ document.querySelectorAll('.inf-card,.j-card').forEach(el=>io.observe(el));
 <!-- Internal navigation footer for SEO -->
 <nav aria-label="Site navigation" style="text-align:center;padding:2rem 5vw;border-top:1px solid rgba(154,124,74,0.15);font-family:'Jost',sans-serif;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;">
   <a href="/" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Home</a>
-  <a href="/fees.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Fees &amp; Services</a>
   <a href="/case-review.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Case Review</a>
   <a href="/herbs.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Herbal Medicine Guide</a>
   <a href="/signup.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Free Guide</a>
