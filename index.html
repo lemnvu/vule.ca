@@ -3,1653 +3,756 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vu Le, R.TCMP — Constitutional Medicine & Feng Shui | Ontario</title>
-<meta name="description" content="Integrative constitutional medicine, classical Feng Shui & the Quantum Elemental Model™. Vu Le, R.TCMP, R.Ac. Mono, Ontario. Virtual across Canada.">
+<title>Vu Le — Acupuncture & TCM · Mono, Ontario</title>
+<meta name="description" content="Acupuncture, herbal medicine, and Traditional Chinese Medicine at a private home clinic in Mono, Ontario. Vu Le and Van Lam, R.TCMP, R.Ac. Text (416) 871-9239 to book.">
+<link rel="canonical" href="https://vule.ca/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vule.ca/">
+<meta property="og:title" content="Vu Le — Acupuncture & TCM · Mono, Ontario">
+<meta property="og:description" content="Acupuncture, herbal medicine, and Traditional Chinese Medicine at a private home clinic in Mono, Ontario.">
+
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Vu Le — Acupuncture & Traditional Chinese Medicine",
+  "url": "https://vule.ca",
+  "telephone": "+14168719239",
+  "email": "vu@vule.ca",
+  "address": { "@type": "PostalAddress", "addressLocality": "Mono", "addressRegion": "ON", "addressCountry": "CA" },
+  "medicalSpecialty": ["Acupuncture","Traditional Chinese Medicine","Herbal Medicine"],
+  "priceRange": "$$"
+}
+</script>
+
 <style>
-/* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-size: 16px; }
 
-/* ════════════════════════════════════════════════════════════
-   TYPOGRAPHY FIX — root cause addressed here
-   The original site uses font-weight:300 and font-size ~15px
-   throughout. This block overrides both globally.
-   ════════════════════════════════════════════════════════════ */
 :root {
-  --base-size: 18px;
-  --body-weight: 400;
-  --body-lh: 1.85;
+  --gold:     #7A6238;
+  --gold-lt:  #A08040;
+  --gold-pale:#C4A96A;
+  --ink:      #0E0C0A;
+  --ink-2:    #161310;
+  --ink-3:    #1E1A14;
+  --cream:    #F8F5F0;
+  --serif:    'Cormorant Garamond', Georgia, serif;
+  --sans:     'Jost', system-ui, sans-serif;
 }
 
-/* ── VARIABLES ── */
-:root {
-  --gold: #7A6238;
-  --gold-lt: #A08040;
-  --gold-pale: #F2EBD9;
-  --ink: #0E0C0A;
-  --ink-2: #1A1612;
-  --ink-3: #221E18;
-  --cream: #F8F5F0;
-  --cream-2: #EFE9DF;
-  --cream-3: #E5DDD0;
-  /* CONTRAST FIX: muted is now dark enough on cream */
-  --muted: #4A4038;
-  /* CONTRAST FIX: sub-muted for dark backgrounds */
-  --on-dark: rgba(255,255,255,0.72);
-  --on-dark-2: rgba(255,255,255,0.55);
-  --serif: 'Cormorant Garamond', Georgia, serif;
-  --sans: 'Jost', system-ui, sans-serif;
-  --ease: cubic-bezier(0.22,1,0.36,1);
-}
-
-/* ── BASE ── */
 body {
   font-family: var(--serif);
-  background: var(--cream);
-  color: var(--ink);
-  /* FIX: was ~15–16px. Now 18px. */
-  font-size: var(--base-size);
-  line-height: var(--body-lh);
+  background: var(--ink);
+  color: var(--cream);
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
-/* ── ALL PARAGRAPH TEXT — global weight/size floor ── */
-p, li, td, th, blockquote, label, span.body-text {
-  /* FIX: weight 300 → 400 throughout */
-  font-weight: var(--body-weight);
-  line-height: var(--body-lh);
+a { color: inherit; text-decoration: none; }
+strong { font-weight: 500; }
+
+/* ── SKIP LINK ── */
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 1rem; top: 1rem; z-index: 9999; background: var(--gold); color: #fff; padding: 0.5rem 1rem; }
+
+/* ── TEXT BAR ── */
+.text-bar {
+  background: rgba(122,98,56,0.12);
+  border-top: 1px solid rgba(122,98,56,0.25);
+  border-bottom: 1px solid rgba(122,98,56,0.25);
+  padding: 0.85rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
 }
+.text-bar-prompt { color: rgba(255,255,255,0.45); }
+.text-bar-num { color: var(--gold-pale); font-weight: 500; }
+.text-bar-num a { color: var(--gold-pale); }
+.text-bar-note { color: rgba(255,255,255,0.3); font-size: 0.7rem; }
+.text-bar-home { color: rgba(255,255,255,0.3); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+.text-bar-home:hover { color: var(--gold-pale); }
 
 /* ── NAV ── */
 nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  position: fixed; inset: 0 0 auto;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 1.5rem 5vw;
-  transition: background 0.4s var(--ease), padding 0.4s var(--ease);
+  padding: 1.1rem 5vw;
+  background: rgba(14,12,10,0.97);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(122,98,56,0.15);
+  z-index: 100;
 }
-nav.scrolled {
-  background: rgba(14,12,10,0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 1rem 5vw;
-  border-bottom: 1px solid rgba(154,124,74,0.15);
-}
-.nav-logo {
-  font-family: var(--serif);
-  font-size: 1.1rem; font-weight: 500;
-  color: #fff; text-decoration: none; letter-spacing: 0.02em;
-}
-.nav-links {
-  display: flex; align-items: center; gap: 2.5rem;
-}
+.nav-brand { font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--cream); }
+.nav-links { display: flex; align-items: center; gap: 1.8rem; }
 .nav-links a {
-  font-family: var(--sans);
-  /* FIX: was 0.65rem — bumped to 0.75rem and weight 400 */
-  font-size: 0.75rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  /* CONTRAST FIX: was rgba(255,255,255,0.5) — now 0.72 */
-  color: rgba(255,255,255,0.72);
-  text-decoration: none; transition: color 0.2s;
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.6); transition: color 0.2s;
 }
-.nav-links a:hover { color: #fff; }
-.nav-links a.nav-ibs {
-  color: rgba(255,255,255,0.72);
+.nav-links a:hover { color: var(--cream); }
+.nav-cta {
+  background: var(--gold); color: #fff !important;
+  padding: 0.5rem 1.1rem; font-weight: 500; transition: background 0.2s;
 }
-.nav-links a.nav-ibs:hover { color: var(--gold-lt); }
-.nav-links a.nav-cta {
-  background: var(--gold); color: #fff;
-  padding: 0.5rem 1.2rem;
-  transition: background 0.2s;
-}
-.nav-links a.nav-cta:hover { background: var(--gold-lt); }
-.hamburger {
-  display: none; flex-direction: column; gap: 5px;
-  cursor: pointer; padding: 4px;
-  background: none; border: none; outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: none;
-  appearance: none;
-}
-.hamburger:focus { outline: none; }
-.hamburger span {
-  display: block; width: 22px; height: 1.5px;
-  background: rgba(255,255,255,0.8);
-  transition: all 0.3s;
-  pointer-events: none;
-}
-.mobile-nav {
-  display: none; position: fixed; inset: 0;
-  background: var(--ink); z-index: 90;
-  flex-direction: column; align-items: center;
-  justify-content: center; gap: 2.5rem;
-}
+.nav-cta:hover { background: var(--gold-lt) !important; }
+
+/* Hamburger */
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.4rem; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: rgba(255,255,255,0.75); }
+.mobile-nav { display: none; position: fixed; inset: 0; z-index: 200; background: var(--ink); flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
 .mobile-nav.open { display: flex; }
-.mobile-nav a {
-  font-family: var(--serif); font-size: 2rem;
-  /* CONTRAST FIX: was white at 0.5 opacity — now full white */
-  color: #fff;
-  text-decoration: none; transition: color 0.2s;
-}
-.mobile-nav a:hover { color: var(--gold-lt); }
-.mobile-close {
-  position: absolute; top: 1.8rem; right: 5vw;
-  font-size: 1.6rem; cursor: pointer;
-  color: rgba(255,255,255,0.7); background: none; border: none;
+.mobile-nav a { font-family: var(--serif); font-size: 1.5rem; color: rgba(255,255,255,0.85); }
+.mobile-nav a:hover { color: var(--gold-pale); }
+.mobile-close { position: absolute; top: 1.4rem; right: 5vw; background: none; border: none; color: rgba(255,255,255,0.5); font-size: 1.1rem; cursor: pointer; }
+
+@media (max-width: 700px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
 }
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh; background: var(--ink);
+  min-height: 100svh;
   display: flex; align-items: center;
   padding: 8rem 5vw 5rem;
-  position: relative; overflow: hidden;
+  background: radial-gradient(ellipse 80% 60% at 50% 80%, rgba(122,98,56,0.12) 0%, transparent 70%);
+  border-bottom: 1px solid rgba(122,98,56,0.15);
 }
-.hero::before {
-  content: ''; position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse at 10% 80%, rgba(154,124,74,0.12) 0%, transparent 50%),
-    radial-gradient(ellipse at 90% 20%, rgba(154,124,74,0.06) 0%, transparent 40%);
-  pointer-events: none;
-}
-.hero-inner {
-  max-width: 1200px; margin: 0 auto; width: 100%;
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6rem; align-items: center;
-  position: relative; z-index: 1;
-}
-.hero-eyebrow {
-  font-family: var(--sans);
-  /* FIX: was 0.65rem */
-  font-size: 0.75rem; font-weight: 400;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1.8rem;
-  opacity: 0; animation: up 0.9s 0.2s var(--ease) both;
+.hero-inner { max-width: 720px; }
+.hero-location {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold-pale);
+  margin-bottom: 1.6rem;
 }
 .hero-h1 {
-  font-family: var(--serif);
-  font-size: clamp(2.8rem, 5vw, 5rem);
-  font-weight: 400; line-height: 1.08;
-  color: #fff; margin-bottom: 1.4rem;
-  opacity: 0; animation: up 0.9s 0.4s var(--ease) both;
+  font-family: var(--serif); font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 300; line-height: 1.1; letter-spacing: -0.01em;
+  color: var(--cream); margin-bottom: 1.5rem;
 }
-.hero-h1 em { font-style: italic; color: var(--gold-lt); }
-.hero-sub {
-  font-family: var(--serif);
-  /* FIX: size was ~0.95rem, weight 300 */
-  font-size: 1.15rem; font-weight: 400;
-  line-height: 1.85;
-  /* CONTRAST FIX: was rgba white 0.5 → 0.72 */
-  color: var(--on-dark);
-  max-width: 460px; margin-bottom: 2.5rem;
-  opacity: 0; animation: up 0.9s 0.6s var(--ease) both;
+.hero-h1 em { font-style: italic; color: var(--gold-pale); }
+.hero-body {
+  font-family: var(--serif); font-size: 1.15rem; font-weight: 300;
+  color: rgba(255,255,255,0.68); line-height: 1.8;
+  max-width: 540px; margin-bottom: 2.5rem;
 }
+.hero-text-cta {
+  display: inline-flex; flex-direction: column; gap: 0.3rem;
+  background: rgba(122,98,56,0.14); border: 1px solid rgba(122,98,56,0.4);
+  padding: 1.1rem 1.6rem; margin-bottom: 1.5rem;
+  border-radius: 2px;
+}
+.hero-text-cta-label { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+.hero-text-cta-num { font-family: var(--serif); font-size: 1.5rem; font-weight: 400; color: var(--gold-pale); }
+.hero-text-cta-sub { font-family: var(--sans); font-size: 0.7rem; color: rgba(255,255,255,0.35); }
 .hero-creds {
-  font-family: var(--sans);
-  /* FIX: was 0.6rem */
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.12em;
-  /* CONTRAST FIX: was rgba white 0.4 */
-  color: rgba(255,255,255,0.6);
-  line-height: 1.9; margin-bottom: 2.5rem;
-  opacity: 0; animation: up 0.9s 0.7s var(--ease) both;
-}
-.hero-btns {
-  display: flex; align-items: center; gap: 1.8rem; flex-wrap: wrap;
-  opacity: 0; animation: up 0.9s 0.9s var(--ease) both;
-}
-.hero-right {
-  opacity: 0; animation: up 0.9s 0.5s var(--ease) both;
-}
-.hero-quote {
-  border-left: 2px solid var(--gold);
-  padding-left: 2rem; margin-bottom: 2.5rem;
-}
-.hero-quote blockquote {
-  font-family: var(--serif);
-  /* FIX: size 1.15rem weight 400 — was smaller/lighter */
-  font-size: 1.15rem; font-weight: 400;
-  font-style: italic; line-height: 1.8;
-  /* CONTRAST FIX: was white 0.5 */
-  color: var(--on-dark);
-}
-.hero-scroll {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  display: flex; align-items: center; gap: 0.8rem;
-  margin-top: 2.5rem;
-}
-.hero-scroll::before {
-  content: ''; display: block; width: 24px; height: 1px;
-  background: var(--gold);
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.3); line-height: 2;
+  border-top: 1px solid rgba(122,98,56,0.2); padding-top: 1.5rem;
 }
 
-/* ── BUTTONS ── */
-.btn-gold {
-  font-family: var(--sans);
-  /* FIX: size was ~0.65rem */
-  font-size: 0.75rem; font-weight: 400;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  background: var(--gold); color: #fff;
-  padding: 0.9rem 2rem; text-decoration: none;
-  transition: background 0.2s, transform 0.15s;
-  display: inline-block; border: none; cursor: pointer;
+/* ── SECTIONS ── */
+section { padding: 5rem 5vw; }
+.sec-inner { max-width: 900px; margin: 0 auto; }
+.eyebrow {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold-pale); margin-bottom: 0.9rem;
 }
-.btn-gold:hover { background: var(--gold-lt); transform: translateY(-1px); }
-.btn-ghost-lt {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  /* CONTRAST FIX: was rgba white 0.4 */
-  color: rgba(255,255,255,0.6);
-  text-decoration: none; transition: color 0.2s;
+h2 {
+  font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300; line-height: 1.2; color: var(--cream);
+  margin-bottom: 1.4rem;
 }
-.btn-ghost-lt:hover { color: var(--gold-lt); }
-.btn-ghost-dk {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--muted); text-decoration: none;
-  border-bottom: 1px solid rgba(154,124,74,0.3);
-  padding-bottom: 2px; transition: color 0.2s, border-color 0.2s;
-}
-.btn-ghost-dk:hover { color: var(--gold); border-color: var(--gold); }
-
-/* ── SECTION BASICS ── */
-.sec { padding: 7rem 5vw; }
-.sec-inner { max-width: 1200px; margin: 0 auto; }
-.sec-eyebrow {
-  font-family: var(--sans);
-  /* FIX: was 0.6rem */
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1rem;
-}
-.sec-title {
-  font-family: var(--serif);
-  font-size: clamp(1.9rem, 3.5vw, 3rem);
-  font-weight: 400; line-height: 1.15;
-  color: var(--ink); margin-bottom: 1.2rem;
-}
-.sec-title em { font-style: italic; }
-.sec-title strong { font-weight: 600; }
-.sec-body {
-  font-family: var(--serif);
-  /* FIX: was 0.95rem weight 300 */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--muted);
-  max-width: 640px; margin-bottom: 2.5rem;
+h2 em { font-style: italic; color: var(--gold-pale); }
+.intro-text {
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 300;
+  color: rgba(255,255,255,0.68); line-height: 1.85;
+  max-width: 660px; margin-bottom: 2.5rem;
 }
 
-/* ── EXPRESSIONS / SERVICES BAND ── */
-.expressions { background: var(--ink); padding: 7rem 5vw; }
-.expressions .sec-eyebrow { color: var(--gold); }
-.expressions .sec-title { color: #fff; }
-.expressions-lead {
-  font-family: var(--serif);
-  /* FIX: was weight 300 small */
-  font-size: 1.1rem; font-weight: 400;
-  font-style: italic; line-height: 1.85;
-  /* CONTRAST FIX: was white 0.45 */
-  color: var(--on-dark);
-  max-width: 680px; margin-bottom: 1.5rem;
+/* ── CONDITIONS GRID ── */
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem; margin-bottom: 2.5rem;
 }
-.expressions-body {
-  font-family: var(--serif);
-  /* FIX: size and weight */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.9;
-  /* CONTRAST FIX: was white 0.45 */
-  color: var(--on-dark-2);
-  max-width: 660px; margin-bottom: 3.5rem;
+.condition-tag {
+  font-family: var(--sans); font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  padding: 0.55rem 0.9rem;
+  border: 0.5px solid rgba(122,98,56,0.25);
+  background: rgba(122,98,56,0.05);
+  letter-spacing: 0.03em;
 }
+
+/* ── SERVICES GRID ── */
 .services-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: rgba(255,255,255,0.06);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem; margin-bottom: 3rem;
 }
 .service-card {
-  background: #1C1810; padding: 2.8rem 2.5rem;
-  position: relative; transition: background 0.3s;
-  opacity: 0; transform: translateY(22px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease), background 0.3s;
+  padding: 1.8rem;
+  border: 0.5px solid rgba(122,98,56,0.25);
+  background: rgba(122,98,56,0.05);
 }
-.service-card:hover { background: #241F15; }
-.service-card.vis { opacity: 1; transform: none; }
-.service-card:nth-child(2) { transition-delay: 0.1s; }
-.service-card:nth-child(3) { transition-delay: 0.2s; }
-.service-num {
-  font-family: var(--serif); font-size: 3.5rem;
-  font-weight: 300; color: rgba(154,124,74,0.15);
-  line-height: 1; position: absolute; top: 2rem; right: 2rem;
+.service-name {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--gold-pale); margin-bottom: 0.5rem;
 }
-.service-chinese {
-  font-size: 2.5rem; color: rgba(154,124,74,0.2);
-  margin-bottom: 1.5rem; line-height: 1; display: block;
+.service-price {
+  font-family: var(--serif); font-size: 1.9rem; font-weight: 300;
+  color: var(--cream); line-height: 1; margin-bottom: 0.35rem;
 }
-.service-category {
-  font-family: var(--sans);
-  /* FIX: was 0.6rem */
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  /* CONTRAST FIX: was white 0.35 */
-  color: rgba(255,255,255,0.55);
+.service-duration {
+  font-family: var(--sans); font-size: 0.7rem; color: rgba(255,255,255,0.35);
   margin-bottom: 0.8rem;
 }
-.service-title {
-  font-family: var(--serif);
-  font-size: 1.4rem; font-weight: 500;
-  color: #fff; margin-bottom: 1rem; line-height: 1.3;
-}
-.service-body {
-  font-family: var(--serif);
-  /* FIX: was 0.9rem weight 300 */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85;
-  /* CONTRAST FIX: was white 0.4 */
-  color: rgba(255,255,255,0.58);
-  margin-bottom: 1.8rem;
-}
-.service-link {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--gold); text-decoration: none;
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  transition: gap 0.2s, color 0.2s;
-}
-.service-link:hover { gap: 0.7rem; color: var(--gold-lt); }
-.service-link::after { content: '→'; }
-
-/* ── ABOUT ── */
-.about-sec { background: var(--cream); }
-.about-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6rem; align-items: start;
-}
-.about-stats {
-  display: flex; gap: 3rem; flex-wrap: wrap;
-  margin-bottom: 3rem;
-}
-.about-stat { display: flex; flex-direction: column; gap: 0.3rem; }
-.stat-n {
-  font-family: var(--serif); font-size: 3rem;
-  font-weight: 500; color: var(--gold); line-height: 1;
-}
-.stat-l {
-  font-family: var(--sans);
-  /* FIX: was 0.6rem */
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  /* CONTRAST FIX: was very light on cream */
-  color: #6A5E54;
-}
-.about-creds-list {
-  list-style: none; margin-bottom: 2.5rem;
-}
-.about-creds-list li {
-  font-family: var(--serif);
-  /* FIX: size and weight */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.7; color: var(--muted);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(154,124,74,0.12);
-  display: flex; gap: 0.8rem; align-items: center;
-}
-.about-creds-list li::before {
-  content: ''; display: block; width: 4px; height: 4px;
-  border-radius: 50%; background: var(--gold); flex-shrink: 0;
-}
-.about-text p {
-  font-family: var(--serif);
-  /* FIX: size and weight */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--muted);
-  margin-bottom: 1.2rem;
-}
-.about-van-lam {
-  padding: 2rem; background: var(--cream-2);
-  border-left: 3px solid var(--gold); margin-top: 2rem;
-}
-.about-van-lam-name {
-  font-family: var(--serif); font-size: 1.3rem;
-  font-weight: 500; color: var(--ink); margin-bottom: 0.3rem;
-}
-.about-van-lam-cred {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 0.9rem;
-}
-.about-van-lam-body {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85; color: var(--muted);
+.service-desc {
+  font-family: var(--serif); font-size: 0.92rem; font-weight: 300;
+  color: rgba(255,255,255,0.62); line-height: 1.7;
 }
 
-/* ── CLINICAL ── */
-.clinical-sec { background: var(--ink-2); }
-.clinical-sec .sec-eyebrow { color: var(--gold); }
-.clinical-sec .sec-title { color: #fff; }
-.clinical-intro {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--on-dark);
-  max-width: 680px; margin-bottom: 3rem;
+/* Insurance note */
+.insurance-note {
+  font-family: var(--sans); font-size: 0.78rem;
+  color: rgba(255,255,255,0.45); line-height: 1.75;
+  border-left: 2px solid rgba(122,98,56,0.4);
+  padding-left: 1.1rem; margin-bottom: 2.5rem;
+  max-width: 580px;
 }
-.comparison-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 1px; background: rgba(255,255,255,0.05);
-  margin-bottom: 3rem;
-}
-.cmp-col { background: #1C1810; padding: 2.5rem; }
-.cmp-col:last-child { background: #1E1A12; border-top: 2px solid var(--gold); }
-.cmp-label {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.cmp-col:first-child .cmp-label { color: rgba(255,255,255,0.35); }
-.cmp-col:last-child .cmp-label { color: var(--gold); }
-.cmp-item {
-  padding: 0.9rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-.cmp-item:last-child { border: none; }
-.cmp-item-label {
-  font-family: var(--serif);
-  /* FIX: was 0.85rem weight 300 */
-  font-size: 1rem; font-weight: 400;
-  /* CONTRAST FIX: was very dim */
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 0.3rem;
-}
-.cmp-item-value {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.7;
-}
-.cmp-col:first-child .cmp-item-value { color: rgba(255,255,255,0.45); }
-.cmp-col:last-child .cmp-item-value { color: rgba(255,255,255,0.85); }
+.insurance-note strong { color: rgba(255,255,255,0.7); }
 
-/* Practitioner cards */
-.practitioners-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 3rem; margin-bottom: 3rem;
+/* ── PRACTITIONERS ── */
+.prac-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; margin-bottom: 2.5rem;
 }
-.prac-card { padding: 2rem; background: #1C1810; }
+.prac-card {
+  padding: 1.8rem 2rem;
+  border: 0.5px solid rgba(122,98,56,0.2);
+  background: rgba(255,255,255,0.02);
+}
 .prac-name {
-  font-family: var(--serif); font-size: 1.5rem;
-  font-weight: 500; color: #fff; margin-bottom: 0.3rem;
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 400;
+  color: var(--cream); margin-bottom: 0.2rem;
 }
 .prac-cred {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1rem;
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em;
+  color: var(--gold-pale); margin-bottom: 0.85rem;
 }
 .prac-body {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85;
-  /* CONTRAST FIX: was white 0.4 */
-  color: rgba(255,255,255,0.62);
+  font-family: var(--serif); font-size: 0.93rem; font-weight: 300;
+  color: rgba(255,255,255,0.6); line-height: 1.75;
 }
 
-/* Investment table */
-.investment-table {
-  width: 100%; border-collapse: collapse; margin-bottom: 2rem;
+/* ── WHAT TO EXPECT ── */
+.steps { display: flex; flex-direction: column; gap: 0; max-width: 640px; margin-bottom: 2.5rem; }
+.step {
+  display: grid; grid-template-columns: 2.5rem 1fr;
+  gap: 0 1.2rem; padding: 1.4rem 0;
+  border-bottom: 0.5px solid rgba(122,98,56,0.15);
 }
-.investment-table thead tr { background: rgba(154,124,74,0.15); }
-.investment-table thead th {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  /* CONTRAST FIX: was white 0.4 */
-  color: rgba(255,255,255,0.65);
-  padding: 1rem 1.2rem; text-align: left;
+.step-n {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em;
+  color: var(--gold-pale); padding-top: 0.25rem;
 }
-.investment-table tbody tr {
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  transition: background 0.2s;
+.step-title {
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 500;
+  color: var(--cream); margin-bottom: 0.25rem;
 }
-.investment-table tbody tr:hover { background: rgba(154,124,74,0.06); }
-.investment-table td {
-  padding: 1.2rem 1.2rem;
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.65;
-  /* CONTRAST FIX: was white 0.5 */
-  color: rgba(255,255,255,0.75);
-  vertical-align: top;
+.step-body {
+  font-family: var(--serif); font-size: 0.92rem; font-weight: 300;
+  color: rgba(255,255,255,0.58); line-height: 1.7;
 }
-.investment-table td:last-child {
-  font-family: var(--sans); font-size: 0.9rem;
-  font-weight: 400; color: var(--gold-lt); white-space: nowrap;
-}
-.investment-note {
-  font-family: var(--serif);
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85; color: var(--on-dark-2);
-  border-left: 2px solid var(--gold);
-  padding: 1.2rem 1.5rem; margin-bottom: 2rem;
-  background: rgba(154,124,74,0.07);
-}
-.discovery-box {
-  background: rgba(154,124,74,0.1);
-  border: 1px solid rgba(154,124,74,0.25);
-  padding: 2rem 2.5rem; margin-bottom: 2rem;
-}
-.discovery-box p {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85;
-  /* CONTRAST FIX: was white 0.55 */
-  color: rgba(255,255,255,0.78);
-}
-.availability-block {
-  font-family: var(--sans);
-  font-size: 0.78rem; font-weight: 400;
-  /* CONTRAST FIX: was white 0.45 */
-  color: rgba(255,255,255,0.65);
-  line-height: 2; margin-bottom: 2rem;
-}
-.availability-block strong { color: rgba(255,255,255,0.85); font-weight: 500; }
-.ctcmpao-note {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  /* CONTRAST FIX: was white 0.35 */
-  color: rgba(255,255,255,0.55);
-  line-height: 1.7;
-}
-
-/* ── FENG SHUI ── */
-.fengshui-sec { background: var(--cream-2); }
-.fengshui-intro {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--muted);
-  max-width: 680px; margin-bottom: 3rem;
-}
-.fengshui-methods {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: rgba(154,124,74,0.15);
-  margin-bottom: 3rem;
-}
-.method-card {
-  background: var(--cream-2); padding: 2rem 1.8rem;
-  transition: background 0.3s;
-  opacity: 0; transform: translateY(16px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease), background 0.3s;
-}
-.method-card.vis { opacity: 1; transform: none; }
-.method-card:nth-child(2){transition-delay:.08s}.method-card:nth-child(3){transition-delay:.16s}
-.method-card:nth-child(4){transition-delay:.24s}.method-card:nth-child(5){transition-delay:.32s}
-.method-card:nth-child(6){transition-delay:.4s}
-.method-card:hover { background: var(--gold-pale); }
-.method-title {
-  font-family: var(--serif); font-size: 1.1rem;
-  font-weight: 500; color: var(--ink); margin-bottom: 0.4rem;
-}
-.method-subtitle {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.1em; color: var(--gold);
-  margin-bottom: 0.8rem;
-}
-.method-body {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1rem; font-weight: 400;
-  line-height: 1.8; color: var(--muted);
-}
-
-/* ── TEACHING ── */
-.teaching-sec { background: var(--ink); }
-.teaching-sec .sec-eyebrow { color: var(--gold); }
-.teaching-sec .sec-title { color: #fff; }
-.teaching-intro {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--on-dark);
-  max-width: 660px; margin-bottom: 3rem;
-}
-.topics-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: rgba(255,255,255,0.05);
-  margin-bottom: 3rem;
-}
-.topic-card {
-  background: var(--ink-2); padding: 2.2rem 2rem;
-  opacity: 0; transform: translateY(16px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
-}
-.topic-card.vis { opacity: 1; transform: none; }
-.topic-card:nth-child(2){transition-delay:.08s}.topic-card:nth-child(3){transition-delay:.16s}
-.topic-card:nth-child(4){transition-delay:.24s}.topic-card:nth-child(5){transition-delay:.32s}
-.topic-card:nth-child(6){transition-delay:.4s}
-.topic-format {
-  font-family: var(--sans);
-  font-size: 0.68rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 0.5rem;
-}
-.topic-title {
-  font-family: var(--serif); font-size: 1.15rem;
-  font-weight: 500; color: #fff; margin-bottom: 0.6rem;
-  line-height: 1.3;
-}
-.topic-body {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1rem; font-weight: 400;
-  line-height: 1.8;
-  /* CONTRAST FIX: was white 0.38 */
-  color: rgba(255,255,255,0.6);
-}
-.engagements-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 1px; background: rgba(255,255,255,0.04);
-  margin-bottom: 2.5rem;
-}
-.eng-card { background: #1A1612; padding: 1.8rem 1.5rem; }
-.eng-icon { font-size: 1.2rem; margin-bottom: 0.8rem; }
-.eng-type {
-  font-family: var(--serif); font-size: 1.05rem;
-  font-weight: 500; color: #fff; margin-bottom: 0.4rem;
-}
-.eng-desc {
-  font-family: var(--serif);
-  font-size: 0.95rem; font-weight: 400;
-  line-height: 1.7;
-  /* CONTRAST FIX */
-  color: rgba(255,255,255,0.55);
-}
-.teaching-note {
-  font-family: var(--serif);
-  font-size: 1rem; font-weight: 400;
-  line-height: 1.85;
-  /* CONTRAST FIX: was white 0.4 */
-  color: rgba(255,255,255,0.6);
-  border-left: 2px solid rgba(154,124,74,0.3);
-  padding-left: 1.5rem;
-}
-
-/* ── BOOKS ── */
-.books-sec { background: var(--cream-3); }
-.books-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 1px; background: rgba(154,124,74,0.15);
-  margin-top: 3rem;
-}
-.book-card {
-  background: var(--cream-3); padding: 2.5rem 2rem;
-  transition: background 0.3s;
-  opacity: 0; transform: translateY(16px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease), background 0.3s;
-}
-.book-card.vis { opacity: 1; transform: none; }
-.book-card:nth-child(2){transition-delay:.1s}.book-card:nth-child(3){transition-delay:.2s}.book-card:nth-child(4){transition-delay:.3s}
-.book-card:hover { background: var(--gold-pale); }
-.book-num {
-  font-family: var(--serif); font-size: 2.5rem;
-  font-weight: 300; color: rgba(154,124,74,0.3);
-  line-height: 1; margin-bottom: 1.5rem;
-}
-.book-title {
-  font-family: var(--serif); font-size: 1.25rem;
-  font-weight: 600; color: var(--ink); margin-bottom: 0.3rem;
-  line-height: 1.3;
-}
-.book-author {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1rem;
-}
-.book-desc {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1rem; font-weight: 400;
-  line-height: 1.8; color: var(--muted);
-  margin-bottom: 1.2rem;
-}
-.book-status {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  /* CONTRAST FIX: was very light on cream */
-  color: #6A5E54;
-}
-.book-status a { color: var(--gold); text-decoration: none; }
-.book-status a:hover { text-decoration: underline; }
 
 /* ── TESTIMONIALS ── */
 .testimonials-sec { background: var(--ink-2); }
-.testimonials-sec .sec-title { color: #fff; }
-.testimonials-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; margin-top: 3rem;
+.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.testi-card { padding: 1.8rem; border-top: 2px solid rgba(122,98,56,0.3); }
+.testi-quote {
+  font-family: var(--serif); font-size: 1rem; font-style: italic;
+  font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.85;
+  margin-bottom: 0.9rem;
 }
-.testimonial-card {
-  background: #1C1810; padding: 2.5rem;
-  border-top: 2px solid rgba(154,124,74,0.2);
-  opacity: 0; transform: translateY(16px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
-}
-.testimonial-card.vis { opacity: 1; transform: none; }
-.testimonial-card:nth-child(2){transition-delay:.1s}.testimonial-card:nth-child(3){transition-delay:.2s}
-.testimonial-quote {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.1rem; font-weight: 400;
-  font-style: italic; line-height: 1.85;
-  /* CONTRAST FIX: was white 0.5 */
-  color: rgba(255,255,255,0.78);
-  margin-bottom: 1.5rem;
-}
-.testimonial-attr {
-  font-family: var(--sans);
-  font-size: 0.7rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--gold);
+.testi-attr {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.3); text-transform: uppercase;
 }
 
-/* ── CONTACT ── */
-.contact-sec { background: var(--cream); }
-.contact-grid {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 6rem; align-items: start;
+/* ── ALSO SECTION ── */
+.also-sec { background: var(--ink-3); border-top: 1px solid rgba(122,98,56,0.15); }
+.also-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(122,98,56,0.12); }
+.also-card { background: var(--ink-3); padding: 2rem; }
+.also-label { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-pale); margin-bottom: 0.5rem; }
+.also-title { font-family: var(--serif); font-size: 1.25rem; font-weight: 400; color: var(--cream); margin-bottom: 0.5rem; }
+.also-body { font-family: var(--serif); font-size: 0.88rem; font-weight: 300; color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: 0.9rem; }
+.also-link {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--gold-pale);
+  border-bottom: 1px solid rgba(122,98,56,0.4);
+  padding-bottom: 0.1rem; transition: color 0.2s;
 }
-.contact-info p {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.1rem; font-weight: 400;
-  line-height: 1.9; color: var(--muted);
-  margin-bottom: 1.2rem;
-}
-.contact-meta {
-  margin-top: 2rem; display: flex; flex-direction: column; gap: 0.8rem;
-}
-.contact-meta-row {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  /* CONTRAST FIX */
-  color: var(--muted);
-  display: flex; gap: 1rem;
-}
-.contact-meta-row strong {
-  color: var(--ink); font-weight: 500;
-  min-width: 80px;
-}
-.contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
-.form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-.form-group label {
-  font-family: var(--sans);
-  /* FIX: was 0.7rem weight 300 — now 0.78rem weight 400 */
-  font-size: 0.78rem; font-weight: 400;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  /* CONTRAST FIX: was very light on cream */
-  color: #4A4038;
-}
-.form-group input,
-.form-group textarea,
-.form-group select {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1.05rem; font-weight: 400;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid rgba(154,124,74,0.25);
-  padding: 0.9rem 1rem;
-  outline: none; width: 100%;
+.also-link:hover { color: var(--cream); }
+
+/* ── CONTACT SECTION ── */
+.contact-sec { border-top: 1px solid rgba(122,98,56,0.2); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.contact-heading { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.6rem); font-weight: 300; color: var(--cream); line-height: 1.2; margin-bottom: 1.2rem; }
+.contact-heading em { font-style: italic; color: var(--gold-pale); }
+.contact-body { font-family: var(--serif); font-size: 0.98rem; font-weight: 300; color: rgba(255,255,255,0.58); line-height: 1.8; margin-bottom: 1.8rem; }
+.contact-methods { display: flex; flex-direction: column; gap: 1rem; }
+.contact-method { display: flex; flex-direction: column; gap: 0.15rem; }
+.method-label { font-family: var(--sans); font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.3); }
+.method-value { font-family: var(--serif); font-size: 1.1rem; color: var(--cream); }
+.method-value a { color: var(--gold-pale); }
+.method-note { font-family: var(--sans); font-size: 0.68rem; color: rgba(255,255,255,0.3); }
+
+/* Form */
+.contact-form { display: flex; flex-direction: column; gap: 1.1rem; }
+.form-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.form-field label { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+.form-field input,
+.form-field textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(122,98,56,0.25);
+  color: var(--cream);
+  font-family: var(--serif); font-size: 1rem;
+  padding: 0.75rem 1rem; outline: none;
   transition: border-color 0.2s;
+  width: 100%;
 }
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--gold);
+.form-field input:focus,
+.form-field textarea:focus { border-color: var(--gold); }
+.form-field input::placeholder,
+.form-field textarea::placeholder { color: rgba(255,255,255,0.2); }
+.form-field textarea { min-height: 100px; resize: vertical; }
+.btn-send {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.12em;
+  text-transform: uppercase; background: var(--gold); color: #fff;
+  border: none; padding: 0.9rem 2rem; cursor: pointer;
+  transition: background 0.2s; align-self: flex-start;
 }
-.form-group textarea { min-height: 140px; resize: vertical; }
-.form-success {
-  font-family: var(--serif);
-  font-size: 1.1rem; font-weight: 400;
-  color: var(--gold); display: none;
-}
-.form-note {
-  font-family: var(--sans);
-  /* FIX */
-  font-size: 0.75rem; font-weight: 400;
-  /* CONTRAST FIX */
-  color: var(--muted);
-  line-height: 1.7; margin-top: 0.5rem;
-}
+.btn-send:hover { background: var(--gold-lt); }
+.form-note { font-family: var(--sans); font-size: 0.68rem; color: rgba(255,255,255,0.25); }
+.form-success { display: none; font-family: var(--serif); font-size: 1.05rem; color: var(--gold-pale); padding: 1.5rem; border: 1px solid rgba(122,98,56,0.35); background: rgba(122,98,56,0.07); }
 
 /* ── FOOTER ── */
 footer {
-  background: #080604; padding: 4rem 5vw 2rem;
-  border-top: 1px solid rgba(255,255,255,0.04);
+  background: var(--ink-2);
+  border-top: 1px solid rgba(122,98,56,0.12);
+  padding: 2.5rem 5vw;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
 }
-.footer-top {
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 3rem; padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  margin-bottom: 2rem;
-}
-.footer-brand-name {
-  font-family: var(--serif); font-size: 1.3rem;
-  font-weight: 500; color: #fff; margin-bottom: 0.4rem;
-}
-.footer-brand-tag {
-  font-family: var(--sans);
-  font-size: 0.68rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1rem;
-}
-.footer-brand-desc {
-  font-family: var(--serif);
-  /* FIX */
-  font-size: 1rem; font-weight: 400;
-  line-height: 1.8;
-  /* CONTRAST FIX: was white 0.3 */
-  color: rgba(255,255,255,0.5);
-}
-.footer-col-title {
-  font-family: var(--sans);
-  font-size: 0.68rem; font-weight: 400;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 1.2rem;
-}
-.footer-col a {
-  display: block; font-family: var(--serif);
-  /* FIX */
-  font-size: 1rem; font-weight: 400;
-  /* CONTRAST FIX: was white 0.4 */
-  color: rgba(255,255,255,0.55);
-  text-decoration: none; margin-bottom: 0.6rem;
-  transition: color 0.2s;
-}
-.footer-col a:hover { color: #fff; }
-.footer-bottom {
-  display: flex; justify-content: space-between;
-  align-items: center; flex-wrap: wrap; gap: 1rem;
-}
-.footer-copy {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  /* CONTRAST FIX: was white 0.2 */
-  color: rgba(255,255,255,0.4);
-}
-.footer-reg {
-  font-family: var(--sans);
-  font-size: 0.68rem; font-weight: 400;
-  /* CONTRAST FIX */
-  color: rgba(255,255,255,0.4);
-  letter-spacing: 0.06em;
-}
-
-/* ── IBS BANNER — homepage section ── */
-.ibs-band {
-  display: grid; grid-template-columns: 1fr 1fr;
-  background: var(--ink);
-}
-.ibs-band-left {
-  background: var(--gold);
-  padding: 5rem 5vw;
-  position: relative; overflow: hidden;
-}
-.ibs-band-left::before {
-  content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
-}
-.ibs-band-eyebrow {
-  font-family: var(--sans);
-  font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: rgba(255,255,255,0.75); margin-bottom: 1.2rem;
-  position: relative; z-index: 1;
-}
-.ibs-band-title {
-  font-family: var(--serif);
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
-  font-weight: 400; line-height: 1.12; color: #fff;
-  margin-bottom: 1.2rem; position: relative; z-index: 1;
-}
-.ibs-band-title em { font-style: italic; font-weight: 300; }
-.ibs-band-body {
-  font-family: var(--serif);
-  font-size: 1.05rem; font-weight: 400;
-  line-height: 1.85; color: rgba(255,255,255,0.82);
-  max-width: 400px; margin-bottom: 2rem;
-  position: relative; z-index: 1;
-}
-.ibs-band-right {
-  background: var(--ink); padding: 5rem 5vw;
-  display: flex; flex-direction: column; justify-content: center; gap: 2rem;
-}
-.ibs-stat { border-left: 3px solid var(--gold); padding-left: 1.8rem; }
-.ibs-stat-n {
-  font-family: var(--serif); font-size: 3rem;
-  font-weight: 400; color: var(--gold-lt); line-height: 1;
-  margin-bottom: 0.3rem;
-}
-.ibs-stat-l {
-  font-family: var(--sans);
-  /* FIX */
-  font-size: 0.75rem; font-weight: 400;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  /* CONTRAST FIX: was white 0.35 */
-  color: rgba(255,255,255,0.58);
-  line-height: 1.6;
-}
-.btn-white {
-  font-family: var(--sans);
-  font-size: 0.75rem; font-weight: 400;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  background: #fff; color: var(--gold);
-  padding: 0.9rem 2rem; text-decoration: none;
-  display: inline-block; position: relative; z-index: 1;
-  transition: background 0.2s, transform 0.15s;
-}
-.btn-white:hover { background: var(--gold-pale); transform: translateY(-1px); }
-
-/* ── ANIMATIONS ── */
-@keyframes up {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: none; }
-}
+.foot-left { font-family: var(--serif); font-size: 0.9rem; color: rgba(255,255,255,0.3); }
+.foot-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.foot-links a { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+.foot-links a:hover { color: var(--gold-pale); }
+.foot-reg { font-family: var(--sans); font-size: 0.65rem; color: rgba(255,255,255,0.2); width: 100%; }
 
 /* ── RESPONSIVE ── */
-@media (max-width: 1024px) {
-  nav { padding: 1.2rem 2rem; }
-  nav.scrolled { padding: 0.9rem 2rem; }
-  .hero { padding: 8rem 2rem 5rem; }
-  .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-right { display: none; }
-  .services-grid, .comparison-grid, .practitioners-grid,
-  .fengshui-methods, .topics-grid,
-  .contact-grid, .footer-top { grid-template-columns: 1fr; }
-  .books-grid, .testimonials-grid { grid-template-columns: 1fr 1fr; }
-  .engagements-grid { grid-template-columns: 1fr 1fr; }
-  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .ibs-band { grid-template-columns: 1fr; }
-  .ibs-band-right { display: none; }
-  .nav-links { display: none; }
-  .hamburger { display: flex; }
-  .sec { padding: 5rem 2rem; }
+@media (max-width: 680px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero { padding-top: 7rem; min-height: auto; }
+  section { padding: 3.5rem 5vw; }
+  .text-bar { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  footer { flex-direction: column; align-items: flex-start; }
 }
-@media (max-width: 640px) {
-  :root { --base-size: 17px; }
-  .books-grid, .testimonials-grid,
-  .engagements-grid { grid-template-columns: 1fr; }
-  .about-stats { gap: 2rem; }
-  footer { padding: 3rem 2rem 2rem; }
-  .footer-bottom { flex-direction: column; align-items: flex-start; }
-}
-
-  /* === Accessibility fixes === */
-  .skip-link {
-    position: absolute;
-    top: -100%;
-    left: 1rem;
-    background: #0E0C0A;
-    color: #F8F5F0;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0 0 6px 6px;
-    font-family: var(--sans, system-ui, sans-serif);
-    font-size: 0.875rem;
-    font-weight: 500;
-    z-index: 9999;
-    text-decoration: none;
-    transition: top 0.1s;
-  }
-  .skip-link:focus { top: 0; }
-  /* Visible focus ring for all interactive elements */
-  a:focus-visible,
-  button:focus-visible,
-  input:focus-visible,
-  select:focus-visible,
-  textarea:focus-visible {
-    outline: 2px solid #7A6238;
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
-  /* Visually hidden utility (for sr-only labels) */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
-  }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 </style>
-
-  <!-- Open Graph / Social -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://vule.ca/">
-  <meta property="og:site_name"   content="Vu Le — Constitutional Medicine & Classical Feng Shui">
-  <meta property="og:title"       content="Vu Le, R.TCMP — Constitutional Medicine & Feng Shui | Ontario">
-  <meta property="og:description" content="Integrative constitutional medicine, classical Feng Shui & the Quantum Elemental Model™. Vu Le, R.TCMP, R.Ac. Mono, Ontario. Virtual across Canada.">
-  <meta property="og:image"       content="https://vule.ca/og-image.jpg">
-  <meta property="og:locale"      content="en_CA">
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Vu Le, R.TCMP — Constitutional Medicine & Feng Shui | Ontario">
-  <meta name="twitter:description" content="Integrative constitutional medicine, classical Feng Shui & the Quantum Elemental Model™. Vu Le, R.TCMP, R.Ac. Mono, Ontario. Virtual across Canada.">
-  <meta name="twitter:image"       content="https://vule.ca/og-image.jpg">
-  <!-- Canonical -->
-  <link rel="canonical" href="https://vule.ca/">
-
-  <!-- Structured Data / Schema.org -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Person",
-      "@id": "https://vule.ca/#person",
-      "name": "Vu Minh Le",
-      "honorificPrefix": "R.TCMP, R.Ac, NCCAOM Dipl.",
-      "jobTitle": "Registered Traditional Chinese Medicine Practitioner & Classical Feng Shui Consultant",
-      "description": "Integrative constitutional medicine practitioner and classical Feng Shui consultant with over two decades of clinical practice across Southeast Asia, the Caribbean, and North America. Creator of the Quantum Elemental Model™ framework.",
-      "url": "https://vule.ca",
-      "email": "vu@vule.ca",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mono",
-        "addressRegion": "Ontario",
-        "addressCountry": "CA"
-      },
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional License",
-          "name": "Registered Traditional Chinese Medicine Practitioner (R.TCMP)",
-          "recognizedBy": { "@type": "Organization", "name": "College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMA)" }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional License",
-          "name": "Registered Acupuncturist (R.Ac)",
-          "recognizedBy": { "@type": "Organization", "name": "College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMA)" }
-        },
-        {
-          "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "Professional Diploma",
-          "name": "NCCAOM Diplomate in Oriental Medicine",
-          "recognizedBy": { "@type": "Organization", "name": "National Certification Commission for Acupuncture and Oriental Medicine (NCCAOM)" }
-        }
-      ],
-      "knowsAbout": [
-        "Traditional Chinese Medicine",
-        "Constitutional Medicine",
-        "Classical Acupuncture",
-        "Chinese Herbal Medicine",
-        "Classical Feng Shui",
-        "BaZi",
-        "Qi Men Dun Jia",
-        "Flying Stars Feng Shui",
-        "Quantum Elemental Model",
-        "Integrative Health",
-        "IBS treatment",
-        "Chronic illness"
-      ],
-      "sameAs": [
-        "https://vule.ca",
-        "https://vanlam.ca"
-      ]
-    },
-    {
-      "@type": "MedicalBusiness",
-      "@id": "https://vule.ca/#practice",
-      "name": "Vu Le — Constitutional Medicine & Classical Feng Shui",
-      "url": "https://vule.ca",
-      "email": "vu@vule.ca",
-      "description": "Integrative constitutional medicine, classical Feng Shui consultation, and the Quantum Elemental Model™ framework. Serving clients in-person in Mono, Ontario and virtually across Canada and the United States.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mono",
-        "addressRegion": "Ontario",
-        "addressCountry": "CA"
-      },
-      "areaServed": [
-        { "@type": "Country", "name": "Canada" },
-        { "@type": "Country", "name": "United States" }
-      ],
-      "priceRange": "$$$$",
-      "medicalSpecialty": [
-        "Traditional Chinese Medicine",
-        "Acupuncture",
-        "Chinese Herbal Medicine",
-        "Integrative Medicine"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "MedicalTherapy",
-              "name": "Integrated Constitutional Medicine",
-              "description": "For complex health problems that have not resolved. Constitutional diagnosis using classical methods and the Quantum Elemental Model™ framework. Licensed in Canada and the United States since 2003."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Classical Feng Shui Consultation",
-              "description": "Bespoke audits for private residences, commercial properties, and land using Flying Stars, Eight Mansions, BaZi, San He, and Qi Men Dun Jia."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Education & Select Engagements",
-              "description": "Keynotes, practitioner training, and curated courses including the Quantum Elemental Model™ practitioner training."
-            }
-          }
-        ]
-      }
-    }
-  ]
-}
-  </script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
 
+<a href="#main" class="skip">Skip to main content</a>
 
 <!-- NAV -->
 <nav id="nav" aria-label="Main navigation">
-  <a href="#hero" class="nav-logo">Vu Le</a>
+  <a href="/" class="nav-brand">Vu Le &nbsp;·&nbsp; TCM</a>
   <div class="nav-links">
-    <a href="#expressions">Practice</a>
+    <a href="#services">Services</a>
     <a href="#about">About</a>
-    <a href="#tcm">Clinical</a>
-    <a href="ibs-resolution.html" class="nav-ibs">IBS Resolution</a>
-    <a href="case-review.html" class="nav-ibs">Case Review</a>
-    <a href="#fengshui">Feng Shui</a>
-    <a href="#speaking">Teaching</a>
-    <a href="#books">Books</a>
-    <a href="/library.html">Library</a>
-    <a href="/disclaimer.html" class="nav-cta">Book a consultation</a>
+    <a href="#what-to-expect">First Visit</a>
+    <a href="#contact">Contact</a>
+    <a href="sms:4168719239" class="nav-cta">Text to Book</a>
   </div>
-<main id="main-content">
-  <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+  <button class="hamburger" onclick="toggleNav()" aria-label="Open menu" aria-expanded="false" id="hamburgerBtn">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
 <!-- MOBILE NAV -->
-<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
-  <button class="mobile-close" onclick="toggleNav()" aria-label="Close menu">✕</button>
-  <a href="#expressions" onclick="toggleNav()">Practice</a>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="toggleNav()" aria-label="Close">✕</button>
+  <a href="#services" onclick="toggleNav()">Services</a>
   <a href="#about" onclick="toggleNav()">About</a>
-  <a href="#tcm" onclick="toggleNav()">Clinical</a>
-  <a href="ibs-resolution.html" onclick="toggleNav()">IBS Resolution</a>
-  <a href="case-review.html" onclick="toggleNav()">Case Review</a>
-  <a href="#fengshui" onclick="toggleNav()">Feng Shui</a>
-  <a href="#speaking" onclick="toggleNav()">Teaching</a>
-  <a href="#books" onclick="toggleNav()">Books</a>
-  <a href="/library.html" onclick="toggleNav()">Library</a>
-  <a href="/disclaimer.html" onclick="toggleNav()">Book a consultation</a>
+  <a href="#what-to-expect" onclick="toggleNav()">First Visit</a>
+  <a href="#contact" onclick="toggleNav()">Contact</a>
+  <a href="sms:4168719239" onclick="toggleNav()" style="color:var(--gold-pale)">Text to Book</a>
 </div>
+
+<main id="main">
 
 <!-- HERO -->
-<section class="hero" id="hero">
+<section class="hero" aria-labelledby="hero-h1">
   <div class="hero-inner">
-    <div>
-      <p class="hero-eyebrow">Quantum Elemental Model™ — Mono, Ontario</p>
-      <h1 class="hero-h1">I help you to be<br>more of <em>yourself.</em></h1>
-      <p class="hero-sub">And I prevent expensive mistakes.<br>Two decades working at the intersection of body, environment, and mind — with clients who understand that everything is connected.</p>
-      <p class="hero-creds">
-        R.TCMP · R.Ac — Ontario<br>
-        NCCAOM Diplomate — USA<br>
-        Classical Feng Shui Consultant<br>
-        In practice since 2003
-      </p>
-      <div class="hero-btns">
-        <a href="/disclaimer.html" class="btn-gold">Book a consultation</a>
-        <a href="#expressions" class="btn-ghost-lt">Explore the practice</a>
-      </div>
-      <p class="hero-scroll">Scroll to explore</p>
+    <p class="hero-location">Private home clinic &nbsp;·&nbsp; Mono, Ontario &nbsp;·&nbsp; Welcoming new patients</p>
+    <h1 class="hero-h1" id="hero-h1">Acupuncture &amp;<br><em>herbal medicine</em><br>that goes deeper.</h1>
+    <p class="hero-body">A private TCM clinic in Mono, Ontario. Whether you're coming in for the first time or managing something long-standing — you'll receive a proper constitutional assessment, not a rushed appointment.</p>
+    <div class="hero-text-cta">
+      <span class="hero-text-cta-label">To book — text us</span>
+      <a href="sms:4168719239" class="hero-text-cta-num">(416) 871-9239</a>
+      <span class="hero-text-cta-sub">Calls not answered &nbsp;·&nbsp; Text is the preferred contact method</span>
     </div>
-    <div class="hero-right">
-      <div class="hero-quote">
-        <blockquote>"Most practitioners work in a single domain. What I have observed across two decades is that the body, the environment, and the mind are not separate concerns — they are three readings of the same underlying intelligence."</blockquote>
-      </div>
-      <p style="font-family:var(--serif);font-size:1.05rem;font-weight:400;line-height:1.9;color:var(--on-dark-2)">Whether I am working with a patient to resolve a pattern that has persisted for years, conducting a classical Feng Shui audit for a private estate, or guiding a cohort through the principles of Quantum Elemental Model™ — the method is the same. Only the expression changes.</p>
-    </div>
+    <p class="hero-creds">
+      Vu Le &nbsp;·&nbsp; R.TCMP, R.Ac &nbsp;·&nbsp; NCCAOM Diplomate &nbsp;·&nbsp; In practice since 2003<br>
+      Van Lam &nbsp;·&nbsp; R.TCMP, R.Ac &nbsp;·&nbsp; NCCAOM Diplomate<br>
+      College of TCM Practitioners &amp; Acupuncturists of Ontario (CTCMPAO)
+    </p>
   </div>
 </section>
 
-<!-- IBS BAND — homepage -->
-<div class="ibs-band">
-  <div class="ibs-band-left">
-    <p class="ibs-band-eyebrow">IBS · Complex &amp; Treatment-Resistant Cases</p>
-    <h2 class="ibs-band-title">You have tried.<br>It hasn't <em>held.</em></h2>
-    <p class="ibs-band-body">If you have been through conventional medicine, integrative care, and elimination diets without lasting resolution — the QEM™ constitutional framework reads a different picture. A single assessment session, or the full 12-week program.</p>
-    <div style="display:flex;flex-direction:column;gap:1rem;align-items:flex-start;position:relative;z-index:1">
-      <a href="case-review.html" class="btn-white" style="background:#fff;color:var(--gold);font-weight:500">The Unresolved Case Review — $500 →</a>
-      <a href="ibs-resolution.html" style="font-family:var(--sans);font-size:0.72rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);text-decoration:none;transition:color 0.2s;position:relative;z-index:1" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">12-week IBS Resolution Program ↓</a>
-    </div>
-  </div>
-  <div class="ibs-band-right">
-    <div class="ibs-stat">
-      <div class="ibs-stat-n">20+</div>
-      <div class="ibs-stat-l">Years resolving complex<br>IBS and treatment-resistant cases</div>
-    </div>
-    <div class="ibs-stat">
-      <div class="ibs-stat-n">$500</div>
-      <div class="ibs-stat-l">Constitutional assessment<br>Introductory rate — standard fee $750</div>
-    </div>
-    <div class="ibs-stat">
-      <div class="ibs-stat-n">5</div>
-      <div class="ibs-stat-l">Influences assessed simultaneously —<br>the full picture standard care misses</div>
-    </div>
-  </div>
+<!-- TEXT BAR -->
+<div class="text-bar" role="complementary">
+  <span class="text-bar-prompt">Book by text — it's the fastest way to reach us</span>
+  <span class="text-bar-num"><a href="sms:4168719239">(416) 871-9239</a> &ensp;<span class="text-bar-note">Calls not answered · text preferred</span></span>
+  <a href="mailto:vu@vule.ca" class="text-bar-home">Or email vu@vule.ca</a>
 </div>
 
-<!-- SERVICES -->
-<section class="expressions sec" id="expressions">
+<!-- CONDITIONS / WHAT WE TREAT -->
+<section id="services" aria-labelledby="services-h2">
   <div class="sec-inner">
-    <p class="sec-eyebrow">One system. Three expressions.</p>
-    <h2 class="sec-title">Three domains. <em>One intelligence.</em></h2>
-    <p class="expressions-lead">"Most practitioners work in a single domain. What I have observed across two decades is that the body, the environment, and the mind are not separate concerns — they are three readings of the same underlying intelligence."</p>
-    <p class="expressions-body">Whether I am working with a patient to resolve a pattern that has persisted for years, conducting a classical Feng Shui audit for a private estate, or guiding a cohort through the principles of Quantum Elemental Model™ — the method is the same. Only the expression changes.</p>
+    <p class="eyebrow">What we treat</p>
+    <h2 id="services-h2">Common reasons<br><em>people come to us</em></h2>
+    <p class="intro-text">You don't need a complex case to walk in. Acupuncture and herbal medicine cover a wide range of everyday and chronic concerns — below are some of the most common. If yours isn't listed, reach out and ask.</p>
+    <div class="conditions-grid" role="list">
+      <div class="condition-tag" role="listitem">→ Back &amp; neck pain</div>
+      <div class="condition-tag" role="listitem">→ Joint &amp; muscle pain</div>
+      <div class="condition-tag" role="listitem">→ Headaches &amp; migraines</div>
+      <div class="condition-tag" role="listitem">→ Stress &amp; anxiety</div>
+      <div class="condition-tag" role="listitem">→ Sleep problems</div>
+      <div class="condition-tag" role="listitem">→ Fatigue &amp; low energy</div>
+      <div class="condition-tag" role="listitem">→ Digestive issues &amp; IBS</div>
+      <div class="condition-tag" role="listitem">→ Hormonal irregularity</div>
+      <div class="condition-tag" role="listitem">→ Menstrual pain</div>
+      <div class="condition-tag" role="listitem">→ Seasonal illness</div>
+      <div class="condition-tag" role="listitem">→ Skin conditions</div>
+      <div class="condition-tag" role="listitem">→ Chronic illness &amp; complex cases</div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT BAR -->
+<div class="text-bar">
+  <span class="text-bar-prompt">Ready to book or have a question?</span>
+  <span class="text-bar-num"><a href="sms:4168719239">(416) 871-9239</a> &ensp;<span class="text-bar-note">Text preferred · calls not answered</span></span>
+  <a href="mailto:vu@vule.ca" class="text-bar-home">Or email vu@vule.ca</a>
+</div>
+
+<!-- SERVICES & FEES -->
+<section style="background:var(--ink-2)" aria-labelledby="fees-h2">
+  <div class="sec-inner">
+    <p class="eyebrow">Services &amp; fees</p>
+    <h2 id="fees-h2">What a visit<br><em>costs</em></h2>
+    <p class="intro-text">Acupuncture and herbal medicine are separate services — either alone or combined. All sessions are 45 minutes at our home clinic in Mono.</p>
     <div class="services-grid">
       <div class="service-card">
-        <span class="service-num">01</span>
-        <span class="service-chinese">脉</span>
-        <p class="service-category">Body · Health · Constitution</p>
-        <h3 class="service-title">Integrated Constitutional Medicine</h3>
-        <p class="service-body">For complex health problems that have not resolved. Constitutional diagnosis, classical methods, and the Quantum Elemental Model™ framework. Licensed in Canada and the United States since 2003.</p>
-        <a href="#tcm" class="service-link">Explore clinical practice</a>
+        <div class="service-name">First visit</div>
+        <div class="service-price">$150</div>
+        <div class="service-duration">45 min &nbsp;·&nbsp; Includes treatment</div>
+        <p class="service-desc">Constitutional intake, classical pulse and tongue diagnosis. Includes either an acupuncture treatment or a herbal medicine consultation with 5-day formula — whichever your clinical need calls for.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">02</span>
-        <span class="service-chinese">氣</span>
-        <p class="service-category">Environment · Space · Destiny</p>
-        <h3 class="service-title">Classical Feng Shui Consultation</h3>
-        <p class="service-body">Bespoke audits for private residences, commercial properties, and land. Flying Stars, Eight Mansions, BaZi, San He, Qi Men Dun Jia — applied for clients across Asia, the Middle East, the Caribbean, and North America.</p>
-        <a href="#fengshui" class="service-link">Explore Feng Shui</a>
+        <div class="service-name">First visit — both modalities</div>
+        <div class="service-price">$265</div>
+        <div class="service-duration">45 min &nbsp;·&nbsp; Acupuncture + herbal formula</div>
+        <p class="service-desc">First visit with both acupuncture and a herbal medicine consultation. Includes the 5-day custom herbal formula dispensed at the session.</p>
       </div>
       <div class="service-card">
-        <span class="service-num">03</span>
-        <span class="service-chinese">道</span>
-        <p class="service-category">Teaching · Speaking · Courses</p>
-        <h3 class="service-title">Education &amp; Select Engagements</h3>
-        <p class="service-body">Keynotes, practitioner training, and curated courses for those who are ready to work with the deeper patterns — in health, in space, and in the intelligence of life itself. By invitation and application.</p>
-        <a href="#speaking" class="service-link">Explore teaching</a>
+        <div class="service-name">Acupuncture — follow-up</div>
+        <div class="service-price">$115</div>
+        <div class="service-duration">45 min &nbsp;·&nbsp; Extended health eligible</div>
+        <p class="service-desc">Follow-up acupuncture treatment. Constitutional review and needle treatment. No herbal component. May be covered by extended health benefits where your plan includes registered TCM practitioners.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-name">Herbal medicine — follow-up</div>
+        <div class="service-price">$115</div>
+        <div class="service-duration">45 min &nbsp;·&nbsp; Includes 5-day formula</div>
+        <p class="service-desc">Follow-up herbal consultation and dispensing. Includes the first 5-day custom formula. Not covered by extended health benefits. Formulas dispensed from this clinic — we ship Canada-wide.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-name">Acupuncture + herbal — follow-up</div>
+        <div class="service-price">$230</div>
+        <div class="service-duration">45 min &nbsp;·&nbsp; Combined session</div>
+        <p class="service-desc">Full acupuncture treatment and herbal consultation combined. 5-day formula dispensed at the session.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-name">Not sure where to start?</div>
+        <div class="service-price">$75</div>
+        <div class="service-duration">30 min &nbsp;·&nbsp; Discovery conversation</div>
+        <p class="service-desc">A direct conversation about your case before you commit to a clinical session. Not a sales call — a genuine assessment of fit. No needles, no treatment. Text us to arrange.</p>
       </div>
     </div>
+    <p class="insurance-note">
+      <strong>Acupuncture is HST-exempt and eligible for extended health benefits</strong> where your plan covers registered TCM practitioners (R.TCMP / R.Ac). Herbal medicine is not covered by extended health benefits and is billed directly. Verify coverage with your insurer before your visit — we cannot confirm or guarantee reimbursement. All fees are in CAD and due at time of service.
+    </p>
+    <p style="font-family:var(--sans);font-size:0.78rem;color:rgba(255,255,255,0.35)">
+      Herbal refills (same formula, no consultation required): $100 per 5-day supply. Shipping extra at actual carrier cost — confirmed before dispatch. &nbsp;<a href="/fees.html" style="color:var(--gold-pale)">Full fee schedule →</a>
+    </p>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about-sec sec" id="about">
+<!-- TEXT BAR -->
+<div class="text-bar">
+  <span class="text-bar-prompt">Questions about fees or what to expect?</span>
+  <span class="text-bar-num"><a href="sms:4168719239">(416) 871-9239</a> &ensp;<span class="text-bar-note">Text preferred · calls not answered</span></span>
+  <a href="mailto:vu@vule.ca" class="text-bar-home">Or email vu@vule.ca</a>
+</div>
+
+<!-- WHAT TO EXPECT -->
+<section id="what-to-expect" aria-labelledby="expect-h2">
   <div class="sec-inner">
-    <div class="about-grid">
-      <div>
-        <p class="sec-eyebrow">Vu Le</p>
-        <h2 class="sec-title">Two decades. Four continents. <em>One method.</em></h2>
-        <div class="about-stats">
-          <div class="about-stat"><div class="stat-n">20+</div><div class="stat-l">Years in practice</div></div>
-          <div class="about-stat"><div class="stat-n">4</div><div class="stat-l">Continents served</div></div>
-          <div class="about-stat"><div class="stat-n">3</div><div class="stat-l">Books published · 1 forthcoming</div></div>
-          <div class="about-stat"><div class="stat-n">∞</div><div class="stat-l">Cases. One framework.</div></div>
+    <p class="eyebrow">Your first visit</p>
+    <h2 id="expect-h2">What happens<br><em>when you come in</em></h2>
+    <p class="intro-text">A private clinic in a home setting — unhurried, thorough, and grounded in classical Chinese medicine. Here's what to expect from start to finish.</p>
+    <div class="steps" role="list">
+      <div class="step" role="listitem">
+        <span class="step-n">01</span>
+        <div>
+          <div class="step-title">You text or email to book</div>
+          <p class="step-body">Send a text to (416) 871-9239 with your name, what you're coming in for, and whether you'd prefer in-person or virtual. We'll reply with available times within 24 hours. No online booking system — just a direct conversation.</p>
         </div>
-        <ul class="about-creds-list">
-          <li>Registered TCMP &amp; Acupuncturist — Ontario, Canada</li>
-          <li>NCCAOM Diplomate — United States</li>
-          <li>Classical Feng Shui — 20+ years</li>
-          <li>Co-author, <em>The Intelligence of Life</em></li>
-          <li>Quantum Elemental Model™ framework</li>
-          <li>Clinical practice since 2003 — SE Asia, Caribbean, North America</li>
-        </ul>
-        <div class="about-van-lam">
-          <div class="about-van-lam-name">Van Lam, R.TCMP, R.Ac</div>
-          <div class="about-van-lam-cred">Clinical &amp; Life Partner</div>
-          <div class="about-van-lam-body">Co-practitioner and co-author. Together we have built a practice that integrates the full spectrum of this medicine across two decades of shared clinical work.</div>
+      </div>
+      <div class="step" role="listitem">
+        <span class="step-n">02</span>
+        <div>
+          <div class="step-title">Short intake form before you arrive</div>
+          <p class="step-body">We'll send a brief intake form covering your health history and chief concern. Completing it in advance means your full appointment time is spent on your clinical picture, not paperwork.</p>
         </div>
       </div>
-      <div class="about-text">
-        <p>My clinical practice began in 2003 — first in Southeast Asia, then across the Caribbean and North America. From the outset I was drawn to the places where orthodox TCM theory intersected with older, more classical frameworks: the constitutional patterns that do not change, the environmental forces that shape every decision we make.</p>
-        <p>The Feng Shui work came from the same root. High-net-worth families and developers began inviting me — and my clinical and life partner Van Lam — to audit their homes and commercial projects. For many years this work was done quietly, without formal fee, as part of a deeper relationship of trust. That changed when I understood what I had actually built: a methodology that protects significant decisions.</p>
-        <p>The proprietary framework I developed — Quantum Elemental Model™ — integrates TCM, Classical Feng Shui, constitutional nutrition, and metaphysics into a unified Heaven–Earth–Human model. It is not a metaphor. It is a diagnostic system with clinical and spatial applications tested across thousands of cases and two decades of practice.</p>
-        <p>My work is not for everyone. I work with people who take their health, their environment, and their decisions seriously — people who understand that the most expensive mistakes are the ones you almost made.</p>
+      <div class="step" role="listitem">
+        <span class="step-n">03</span>
+        <div>
+          <div class="step-title">Constitutional assessment</div>
+          <p class="step-body">The first session includes a detailed intake: pulse reading, tongue diagnosis, and a conversation about what's been happening in your body. You leave with a clear picture of what we're treating and why.</p>
+        </div>
+      </div>
+      <div class="step" role="listitem">
+        <span class="step-n">04</span>
+        <div>
+          <div class="step-title">Treatment — on the same visit</div>
+          <p class="step-body">Acupuncture or a custom herbal formula, depending on what your clinical picture calls for. You don't wait for a second appointment to begin treatment.</p>
+        </div>
+      </div>
+      <div class="step" role="listitem">
+        <span class="step-n">05</span>
+        <div>
+          <div class="step-title">A written plan you leave with</div>
+          <p class="step-body">After your first visit you'll have a written summary of your constitutional pattern and a care plan with a clear arc — beginning, middle, and end. Not an open-ended treatment series.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- CLINICAL -->
-<section class="clinical-sec sec" id="tcm">
-  <div class="sec-inner">
-    <p class="sec-eyebrow">Body · Health · Constitution</p>
-    <h2 class="sec-title">For complex health problems that have <em>not resolved.</em></h2>
-    <p class="clinical-intro">Most patients who find us have already seen other practitioners. They have received partial answers, temporary relief, or conflicting diagnoses. What they have not received is a complete picture of why their body keeps producing the same pattern. That is what we offer.</p>
-    <div class="comparison-grid">
-      <div class="cmp-col">
-        <p class="cmp-label">A standard clinical session</p>
-        <div class="cmp-item"><div class="cmp-item-label">Intake</div><div class="cmp-item-value">A form. Twenty minutes. The presenting complaint.</div></div>
-        <div class="cmp-item"><div class="cmp-item-label">Approach</div><div class="cmp-item-value">Addresses the symptom you report today. Treats, discharges, repeats.</div></div>
-        <div class="cmp-item"><div class="cmp-item-label">Outcome</div><div class="cmp-item-value">Temporary relief. Return when symptoms flare.</div></div>
-      </div>
-      <div class="cmp-col">
-        <p class="cmp-label">What we do</p>
-        <div class="cmp-item"><div class="cmp-item-label">Intake</div><div class="cmp-item-value">Up to 90 minutes. Constitutional mapping across body, diet, and environment. A written plan you leave with.</div></div>
-        <div class="cmp-item"><div class="cmp-item-label">Approach</div><div class="cmp-item-value">Identifies the constitutional pattern beneath the symptom. Builds a written plan toward resolution.</div></div>
-        <div class="cmp-item"><div class="cmp-item-label">Outcome</div><div class="cmp-item-value">Pattern recognition. A treatment arc with a clear beginning, middle, and end.</div></div>
-      </div>
-    </div>
-    <div class="practitioners-grid">
-      <div class="prac-card">
-        <div class="prac-name">Vu Le</div>
-        <div class="prac-cred">R.TCMP · R.Ac · NCCAOM Diplomate</div>
-        <p class="prac-body">In clinical practice since 2003. Licensed in Ontario and the United States. Practice spanning Southeast Asia, the Caribbean, the Middle East, and North America. Specialist in classical pulse diagnosis, BaZi constitutional typing, and integrated Heaven–Earth–Human assessment.</p>
-      </div>
-      <div class="prac-card">
-        <div class="prac-name">Van Lam</div>
-        <div class="prac-cred">R.TCMP · R.Ac · NCCAOM Diplomate</div>
-        <p class="prac-body">Two decades of clinical practice across multiple countries and patient populations. Specialist in constitutional nutrition, Five Element body typing, and complex multi-system presentations. Co-author, <em>The Intelligence of Life.</em></p>
-      </div>
-    </div>
-    <h3 style="font-family:var(--serif);font-size:1.5rem;font-weight:500;color:#fff;margin-bottom:1rem">The investment</h3>
-    <p style="font-family:var(--serif);font-size:1rem;font-weight:400;line-height:1.8;color:rgba(255,255,255,0.6);margin-bottom:0.75rem">Sessions are 45 minutes. Acupuncture and herbal medicine are independent services, each billed separately, or combined. Initial constitutional assessment from $150. Follow-up acupuncture or herbal consultation $115 each. The Unresolved Case Review $500 (introductory rate).</p>
-    <a href="fees.html" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:var(--sans);font-size:0.78rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--gold-lt);text-decoration:none;border:0.5px solid rgba(154,124,74,0.4);padding:0.55rem 1.1rem;border-radius:3px;margin-bottom:1.5rem;">View full fee schedule &rarr;</a>
-    <div class="investment-note">Both acupuncture and herbal medicine are HST-exempt health services. <strong>Acupuncture is eligible for extended health benefits</strong> where your plan provides coverage for registered TCM practitioners. Herbal medicine is not covered by extended health benefits and is billed directly. The $115 herbal medicine consultation includes the first 5-day formula. Same-formula refills arranged by direct contact are $100 per 5-day supply. Formulas are dispensed from this clinic only — we do not provide written formulas for third-party dispensing. We ship Canada-wide. In-clinic pickup is included. <strong>Shipping is extra and billed at actual carrier cost</strong> — Canada Post Expedited for most Ontario destinations ($12–18); Xpresspost or FedEx Priority for cross-Canada ($25–35). Shipping cost is confirmed before dispatch. <strong>Insurance disclaimer:</strong> It is the patient's sole responsibility to verify coverage with their insurance provider prior to treatment. Not all insurance plans cover services from this practice. We do not guarantee, confirm, or assume responsibility for any insurance reimbursement. All fees are due in full at the time of service regardless of insurance status.</div>
-    <div class="discovery-box">
-      <p><strong style="color:#fff;font-weight:500">Not sure where to begin?</strong><br>A Discovery Conversation — $75 · 30 minutes. A direct conversation about your case before you commit to a clinical session. Not a sales call — a genuine assessment of fit.</p>
-    </div>
-    <div style="margin:2rem 0;padding:1.5rem 1.75rem;border:0.5px solid rgba(154,124,74,0.35);border-radius:6px;background:rgba(154,124,74,0.06);">
-      <p style="font-family:var(--serif);font-size:0.78rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);margin:0 0 0.6rem">Free patient resource</p>
-      <h3 style="font-family:var(--serif);font-size:1.25rem;font-weight:500;color:#fff;margin:0 0 0.6rem;line-height:1.4">The one page I give every new patient before we do anything else</h3>
-      <p style="font-family:var(--serif);font-size:0.95rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.6);margin:0 0 1.1rem">It is not a diet. It is not a protocol. It is the ground floor of how food actually works in the body — and most people have never been shown it. Download the guide, print it, put it on your fridge. Free.</p>
-      <a href="https://lemnvu.substack.com/p/the-one-page-i-give-every-new-patient" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--sans);font-size:0.82rem;font-weight:500;letter-spacing:0.04em;color:var(--gold);text-decoration:none;border:0.5px solid rgba(154,124,74,0.5);padding:0.6rem 1.2rem;border-radius:4px;transition:all 0.2s">Download the food guide &rarr;</a>
-      <p style="font-family:var(--sans);font-size:0.75rem;color:rgba(255,255,255,0.35);margin:0.85rem 0 0;line-height:1.6">Opens on Substack — free to read and download. Subscribe while you are there for clinical essays, constitutional frameworks, and perspectives on health that fall outside what conventional medicine has room for.</p>
-    </div>
-    <div class="availability-block">
-      <strong>Private practice — Mono, Ontario</strong><br>
-      Availability — Two days per week, by appointment only<br>
-      New patients — Accepted by referral and direct enquiry<br>
-      Contact — <a href="mailto:vu@vule.ca" style="color:var(--gold-lt)">vu@vule.ca</a>
-    </div>
-    <p class="ctcmpao-note">Vu Le and Van Lam are Registered Traditional Chinese Medicine Practitioners and Acupuncturists (R.TCMP, R.Ac) licensed in Ontario, Canada, and hold NCCAOM Diplomate credentials in the United States. This practice operates within the scope defined by the College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMPAO).</p>
-    <div style="margin-top:2rem"><a href="/disclaimer.html" class="btn-gold">Book a consultation</a></div>
-  </div>
-</section>
-
-<!-- FENG SHUI -->
-<section class="fengshui-sec sec" id="fengshui">
-  <div class="sec-inner">
-    <p class="sec-eyebrow">Environment · Space · Destiny</p>
-    <h2 class="sec-title">Your space is making decisions <em>for you.</em></h2>
-    <p class="fengshui-intro">Not aesthetics. Not furniture placement. Classical Feng Shui is a diagnostic system for the forces that determine whether a space — a home, an office, a development site — supports or undermines the people and outcomes you want. The same constitutional intelligence that governs the body governs the land.</p>
-    <p class="fengshui-intro">I have conducted audits for private residences, family offices, commercial developments, and land acquisitions across Asia, the Middle East, the Caribbean, and North America. Many of these engagements began as relationships of trust — and grew into the formal advisory work I offer today.</p>
-    <div class="fengshui-methods">
-      <div class="method-card"><div class="method-title">Flying Stars — Xuan Kong Fei Xing</div><div class="method-subtitle">Time &amp; Space Analysis</div><p class="method-body">The forces active in a property across its natal chart and current period.</p></div>
-      <div class="method-card"><div class="method-title">Eight Mansions — Ba Zhai</div><div class="method-subtitle">Personal Destiny Mapping</div><p class="method-body">Alignment between the individual and the space they occupy.</p></div>
-      <div class="method-card"><div class="method-title">BaZi — Destiny Analysis</div><div class="method-subtitle">Strategic Timing</div><p class="method-body">For major life and business decisions. Timing, direction, and the hidden forces at work.</p></div>
-      <div class="method-card"><div class="method-title">Form School &amp; San He</div><div class="method-subtitle">Environmental Qi</div><p class="method-body">Landform and environmental qi. The foundation beneath every built environment.</p></div>
-      <div class="method-card"><div class="method-title">Qi Men Dun Jia</div><div class="method-subtitle">Strategic Selection</div><p class="method-body">Strategic timing and directional selection for significant decisions and transitions.</p></div>
-      <div class="method-card"><div class="method-title">Yin Feng Shui</div><div class="method-subtitle">Ancestral Consultation</div><p class="method-body">Ancestral site consultation. The unseen inheritance that shapes the living.</p></div>
-    </div>
-    <p class="fengshui-intro">Serving clients globally. Residential, commercial, and private estate work. New developments, renovations, and acquisition due diligence. Enquiries by referral and direct application.</p>
-    <a href="#contact" class="btn-ghost-dk">Enquire about a Feng Shui audit</a>
-  </div>
-</section>
-
-<!-- TEACHING -->
-<section class="teaching-sec sec" id="speaking">
-  <div class="sec-inner">
-    <p class="sec-eyebrow">Teaching · Speaking · Courses</p>
-    <h2 class="sec-title" style="color:#fff">The work <em>behind</em> the work.</h2>
-    <p class="teaching-intro">Speaking engagements, practitioner training, and curated courses are available on a selective basis. The same principles that guide clinical and environmental consultation guide what I teach: depth over breadth, pattern recognition over protocol.</p>
-    <p class="teaching-intro" style="color:var(--on-dark-2)">I am interested in engagements where the audience is serious — integrative medical conferences, wellness and longevity institutions, private family offices, and practitioner development programmes for those ready to work at a deeper level.</p>
-    <div class="topics-grid">
-      <div class="topic-card"><p class="topic-format">Keynote</p><h3 class="topic-title">The Invisible Audit</h3><p class="topic-body">How your environment shapes your outcomes — without your awareness.</p></div>
-      <div class="topic-card"><p class="topic-format">Workshop / Talk</p><h3 class="topic-title">Eating Against Yourself</h3><p class="topic-body">Constitutional nutrition beyond food trends. Why healthy foods destroy the wrong body.</p></div>
-      <div class="topic-card"><p class="topic-format">Practitioner Training</p><h3 class="topic-title">Quantum Elemental Model™</h3><p class="topic-body">The Heaven–Earth–Human model. Integrated clinical and spatial diagnosis.</p></div>
-      <div class="topic-card"><p class="topic-format">Public Lecture</p><h3 class="topic-title">The House Knows</h3><p class="topic-body">Feng Shui and mental wellbeing — a rigorous, skeptic-ready investigation.</p></div>
-      <div class="topic-card"><p class="topic-format">Private / Corporate</p><h3 class="topic-title">BaZi for Strategic Decision-Making</h3><p class="topic-body">Timing, direction, and the constitutional logic of significant business decisions.</p></div>
-      <div class="topic-card"><p class="topic-format">Immersive</p><h3 class="topic-title">The Intelligence of Life</h3><p class="topic-body">The hidden science of healing and consciousness. Foundation of the QEM™ framework.</p></div>
-    </div>
-    <div class="engagements-grid">
-      <div class="eng-card"><div class="eng-icon">✦</div><div class="eng-type">Keynote</div><div class="eng-desc">45–75 min signature talks for conferences and institutional gatherings.</div></div>
-      <div class="eng-card"><div class="eng-icon">◈</div><div class="eng-type">Immersive Workshop</div><div class="eng-desc">Half-day or full-day deep-dive for small groups and practitioner cohorts.</div></div>
-      <div class="eng-card"><div class="eng-icon">◉</div><div class="eng-type">Practitioner Training</div><div class="eng-desc">Structured cohort programmes in QEM™ and Classical Feng Shui.</div></div>
-      <div class="eng-card"><div class="eng-icon">◎</div><div class="eng-type">Online Courses</div><div class="eng-desc">Self-paced and live-cohort digital programmes. Currently in development.</div></div>
-    </div>
-    <p class="teaching-note">Engagements considered on a selective basis. Priority given to organisations aligned with integrative health, environmental intelligence, or human performance. Lead time of 3–6 months preferred.</p>
-    <div style="margin-top:2rem"><a href="#contact" class="btn-gold">Submit a speaking enquiry</a></div>
-  </div>
-</section>
-
-<!-- BOOKS -->
-<section class="books-sec sec" id="books">
-  <div class="sec-inner">
-    <p class="sec-eyebrow">Published works · Trueform Publishing</p>
-    <h2 class="sec-title">The <em>books.</em></h2>
-    <div class="books-grid">
-      <div class="book-card">
-        <div class="book-num">I</div>
-        <div class="book-title">The Intelligence of Life</div>
-        <div class="book-author">Vu Le &amp; Van Lam</div>
-        <p class="book-desc">The hidden science of healing and consciousness. The foundational text of the Quantum Elemental Model™ framework — where the clinical and the invisible meet.</p>
-        <div class="book-status">Available now · <a href="https://www.amazon.ca/INTELLIGENCE-LIFE-Science-Healing-Consciousness-ebook/dp/B0GCQCCM3V/" target="_blank" rel="noopener">Amazon.ca</a></div>
-      </div>
-      <div class="book-card">
-        <div class="book-num">II</div>
-        <div class="book-title">The Invisible Audit</div>
-        <div class="book-author">Vu Le</div>
-        <p class="book-desc">What your space is costing you — and how to read it. A rigorous framework for serious property investors who understand that the invisible shapes the visible.</p>
-        <div class="book-status">Available now · <a href="https://www.amazon.ca/Invisible-Audit-Serious-Property-Investor/dp/1069972177/" target="_blank" rel="noopener">Amazon.ca</a></div>
-      </div>
-      <div class="book-card">
-        <div class="book-num">III</div>
-        <div class="book-title">Feeding The Fire</div>
-        <div class="book-author">Vu Le</div>
-        <p class="book-desc">The foods that maintain and build the body you actually have — not the generic body nutritional science assumes. Constitutional eating for your elemental type.</p>
-        <div class="book-status">Available now · <a href="https://www.amazon.ca/Feeding-Fire-Foods-Maintaining-Actually/dp/1067563113/" target="_blank" rel="noopener">Amazon.ca</a></div>
-      </div>
-      <div class="book-card">
-        <div class="book-num">IV</div>
-        <div class="book-title">Eating Against Yourself</div>
-        <div class="book-author">Vu Le &amp; Van Lam</div>
-        <p class="book-desc">How healthy foods destroy the wrong body. Constitutional nutrition for the elemental type — the missing framework in modern dietary thinking.</p>
-        <div class="book-status">Forthcoming · Trueform Publishing</div>
-      </div>
-    </div>
+    <p style="font-family:var(--sans);font-size:0.78rem;color:rgba(255,255,255,0.35);max-width:560px;line-height:1.7">
+      In-person sessions at our home clinic in Mono, Ontario. Virtual consultations available across Canada by arrangement. Two days per week, by appointment only. New patients accepted by direct enquiry.
+    </p>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section class="testimonials-sec sec">
+<section class="testimonials-sec" aria-labelledby="testi-h2">
   <div class="sec-inner">
-    <p class="sec-eyebrow">What clients say</p>
-    <h2 class="sec-title" style="color:#fff">The work <em>speaks.</em></h2>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"The audit changed how I understood the property entirely. Not aesthetics — the actual qi configuration. We restructured the acquisition and avoided what would have been a very costly error."</p>
-        <div class="testimonial-attr">Property Developer — Southeast Asia</div>
+    <p class="eyebrow">What patients say</p>
+    <h2 id="testi-h2">The work<br><em>speaks</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-quote">"I had been treated by specialists on three continents. Vu identified the constitutional pattern in the first consultation. Everything changed when I started eating for my actual elemental type, not for a textbook."</p>
+        <div class="testi-attr">Private client — Middle East</div>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"I had been treated by specialists on three continents. Vu identified the constitutional pattern in the first consultation. Everything changed when I started eating for my actual elemental type, not for a textbook."</p>
-        <div class="testimonial-attr">Private Client — Middle East</div>
+      <div class="testi-card">
+        <p class="testi-quote">"Years of back and hip pain that came and went. After the first assessment I finally understood what was driving it. The treatment plan made sense — and it worked."</p>
+        <div class="testi-attr">Patient — Ontario</div>
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-quote">"We brought Vu in for our new headquarters before construction began. The adjustments were minor. The results — in staff performance, in client relationships, in how the space simply felt — were not minor at all."</p>
-        <div class="testimonial-attr">Family Office — North America</div>
+      <div class="testi-card">
+        <p class="testi-quote">"The constitutional approach is completely different from anything I'd experienced before. Vu doesn't just treat the symptom — he explains the pattern behind it. That clarity alone is worth coming for."</p>
+        <div class="testi-attr">Patient — Ontario</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- TEXT BAR -->
+<div class="text-bar">
+  <span class="text-bar-prompt">Ready to book a visit?</span>
+  <span class="text-bar-num"><a href="sms:4168719239">(416) 871-9239</a> &ensp;<span class="text-bar-note">Text preferred · calls not answered</span></span>
+  <a href="mailto:vu@vule.ca" class="text-bar-home">Or email vu@vule.ca</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-h2">
+  <div class="sec-inner">
+    <p class="eyebrow">The practitioners</p>
+    <h2 id="about-h2">Twenty years.<br><em>One method.</em></h2>
+    <p class="intro-text">Both practitioners are licensed in Ontario and hold NCCAOM Diplomate credentials in the United States. The practice is built on classical TCM — not a simplified version of it.</p>
+    <div class="prac-grid">
+      <div class="prac-card">
+        <div class="prac-name">Vu Le</div>
+        <div class="prac-cred">R.TCMP · R.Ac · NCCAOM Diplomate</div>
+        <p class="prac-body">In clinical practice since 2003. Licensed in Ontario and the United States. Specialist in classical pulse diagnosis, constitutional typing, and complex chronic conditions — including IBS and other treatment-resistant presentations. Practice spanning Southeast Asia, the Caribbean, the Middle East, and North America. Creator of the Quantum Elemental Model™ framework.</p>
+      </div>
+      <div class="prac-card">
+        <div class="prac-name">Van Lam</div>
+        <div class="prac-cred">R.TCMP · R.Ac · NCCAOM Diplomate</div>
+        <p class="prac-body">Two decades of clinical practice. Specialist in constitutional nutrition, Five Element body typing, and complex multi-system presentations. Co-author of <em>The Intelligence of Life</em>. Available for consultations at <a href="https://vanlam.ca" style="color:var(--gold-pale)">vanlam.ca</a>.</p>
+      </div>
+    </div>
+    <p style="font-family:var(--sans);font-size:0.72rem;color:rgba(255,255,255,0.3);line-height:1.75;max-width:640px">
+      Both practitioners are in good standing with the College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMPAO). This practice operates within the regulated scope of Traditional Chinese Medicine as defined by the CTCMPAO.
+    </p>
+  </div>
+</section>
+
+<!-- ALSO OFFERED -->
+<section class="also-sec" aria-labelledby="also-h2">
+  <div class="sec-inner">
+    <p class="eyebrow">Also offered</p>
+    <h2 id="also-h2">Beyond the<br><em>clinic</em></h2>
+    <p class="intro-text" style="margin-bottom:2rem">The clinical practice is the foundation. These are the other areas of work — each offered separately.</p>
+    <div class="also-grid">
+      <div class="also-card">
+        <div class="also-label">Specialist programme</div>
+        <div class="also-title">IBS Resolution</div>
+        <p class="also-body">A structured 12-week programme for chronic IBS and treatment-resistant digestive conditions. Constitutional assessment across body, environment, and lifestyle.</p>
+        <a href="/ibs-resolution.html" class="also-link">Learn more →</a>
+      </div>
+      <div class="also-card">
+        <div class="also-label">Complex &amp; chronic cases</div>
+        <div class="also-title">Unresolved Case Review</div>
+        <p class="also-body">A 60-minute deep constitutional assessment for patients who have sought treatment elsewhere without resolution. $500 introductory rate (standard fee $750).</p>
+        <a href="/case-review.html" class="also-link">Learn more →</a>
+      </div>
+      <div class="also-card">
+        <div class="also-label">Classical Feng Shui &amp; BaZi</div>
+        <div class="also-title">Environmental &amp; Destiny Consultation</div>
+        <p class="also-body">Classical Feng Shui audits for homes, offices, and development sites. BaZi destiny and strategic timing analysis. Served globally by referral and direct enquiry.</p>
+        <a href="/fengshui.html" class="also-link">Learn more →</a>
+      </div>
+      <div class="also-card">
+        <div class="also-label">Books &amp; resources</div>
+        <div class="also-title">Published Works</div>
+        <p class="also-body">Three books published on constitutional health, nutrition, and environmental intelligence. Free patient food guide available to download.</p>
+        <a href="/library.html" class="also-link">View library →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEXT BAR -->
+<div class="text-bar">
+  <span class="text-bar-prompt">Prefer to reach us directly?</span>
+  <span class="text-bar-num"><a href="sms:4168719239">(416) 871-9239</a> &ensp;<span class="text-bar-note">Text preferred · calls not answered</span></span>
+  <a href="mailto:vu@vule.ca" class="text-bar-home">Or email vu@vule.ca</a>
+</div>
+
 <!-- CONTACT -->
-<section class="contact-sec sec" id="contact">
+<section class="contact-sec" id="contact" aria-labelledby="contact-h2">
   <div class="sec-inner">
     <div class="contact-grid">
       <div>
-        <p class="sec-eyebrow">Begin a conversation</p>
-        <h2 class="sec-title">The most expensive mistakes are the ones you <em>almost made.</em></h2>
-        <p class="sec-body">Clinical consultations, Feng Shui audits, speaking enquiries, and teaching applications are considered individually. All enquiries are treated with complete confidentiality.</p>
-        <div class="contact-meta">
-          <div class="contact-meta-row"><strong>Location</strong>Mono, Ontario, Canada</div>
-          <div class="contact-meta-row"><strong>Email</strong><a href="mailto:vu@vule.ca" style="color:var(--gold)">vu@vule.ca</a></div>
-          <div class="contact-meta-row"><strong>Serving</strong>Clients globally</div>
-          <div class="contact-meta-row"><strong>Response</strong>Within 48 hours</div>
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="contact-heading" id="contact-h2">Not sure where<br><em>to start? Just ask.</em></h2>
+        <p class="contact-body">New patients welcome. If you're not sure which service is right for you, say so — we'll point you in the right direction. All enquiries receive a personal reply within 24 hours.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <span class="method-label">Preferred — Text</span>
+            <span class="method-value"><a href="sms:4168719239">(416) 871-9239</a></span>
+            <span class="method-note">Calls not answered — text is how we prefer to communicate</span>
+          </div>
+          <div class="contact-method">
+            <span class="method-label">Email</span>
+            <span class="method-value"><a href="mailto:vu@vule.ca">vu@vule.ca</a></span>
+          </div>
+          <div class="contact-method">
+            <span class="method-label">Location</span>
+            <span class="method-value" style="font-size:0.95rem;color:rgba(255,255,255,0.65)">Private home clinic, Mono, Ontario<br>In-person &amp; virtual across Canada</span>
+          </div>
         </div>
       </div>
       <div>
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/myknqnek" method="POST">
-          <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" required autocomplete="name">
+          <input type="hidden" name="_subject" value="New enquiry — vule.ca">
+          <input type="hidden" name="page_source" value="index.html">
+          <div class="form-field">
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" name="name" autocomplete="name" placeholder="First and last name">
           </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
+          <div class="form-field">
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" required autocomplete="email" placeholder="your@email.com">
           </div>
-          <div class="form-group">
-            <label for="interest">Area of interest</label>
-            <select id="interest" name="interest">
-              <option value="">Select one</option>
-              <option>Discovery Conversation — $75</option>
-              <option>Initial Constitutional Assessment — $150</option>
-              <option>Acupuncture Treatment — $115</option>
-              <option>Herbal Medicine Consultation — $115</option>
-              <option>Acupuncture + Herbal Medicine — $230</option>
-              <option>The Unresolved Case Review — $500 (introductory)</option>
-              <option>Classical Feng Shui Consultation</option>
-              <option>Speaking Engagement</option>
-              <option>Teaching / Course Enquiry</option>
-              <option>Books &amp; Publications</option>
-              <option>Other</option>
-            </select>
+          <div class="form-field">
+            <label for="c-msg">What brings you in? <span style="font-weight:300;text-transform:none;letter-spacing:0">(optional)</span></label>
+            <textarea id="c-msg" name="message" placeholder="e.g. back pain, first visit, not sure — anything helps"></textarea>
           </div>
-          <div class="form-group">
-            <label for="message">Your message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit" class="btn-gold">Send your enquiry →</button>
-          <p class="form-note">All enquiries receive a personal response within 48 hours. Ontario, Canada · Serving clients globally.</p>
+          <button type="submit" class="btn-send">Send enquiry →</button>
+          <p class="form-note">Email is the only required field. All enquiries are confidential. Response within 24 hours.</p>
         </form>
-        <p class="form-success" id="formSuccess">Thank you. Your enquiry has been received. You will hear from us within 48 hours.</p>
+        <div class="form-success" id="formSuccess">Thank you — your message has been received. We'll be in touch within 24 hours. Or text us at <a href="sms:4168719239" style="color:var(--gold-pale)">(416) 871-9239</a> for a faster reply.</div>
       </div>
     </div>
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand-name">Vu Le</div>
-      <div class="footer-brand-tag">Practitioner. Consultant. Teacher.</div>
-      <p class="footer-brand-desc">Two decades. One method. Integrative constitutional medicine, classical Feng Shui, and the Quantum Elemental Model™ framework. Mono, Ontario, Canada.</p>
-    </div>
-    <div>
-      <div class="footer-col-title">Practice</div>
-      <div class="footer-col">
-        <a href="#tcm">Clinical Practice</a>
-        <a href="fees.html">Fees &amp; Services</a>
-        <a href="case-review.html">Unresolved Case Review</a>
-        <a href="ibs-resolution.html">IBS Resolution</a>
-        <a href="#fengshui">Classical Feng Shui</a>
-        <a href="#speaking">Teaching &amp; Speaking</a>
-        <a href="#contact">Enquire</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Works</div>
-      <div class="footer-col">
-        <a href="/library.html">The Library — All Books &amp; Courses</a>
-        <a href="#books">The Intelligence of Life</a>
-        <a href="#books">Eating Against Yourself</a>
-        <a href="#books">The House Knows</a>
-        <a href="#books">The Invisible Audit</a>
-        <a href="https://vuminhle.gumroad.com/l/isoxtt" target="_blank" rel="noopener">Course — One Small Step</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Connect</div>
-      <div class="footer-col">
-        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="#contact">Contact</a>
-        <a href="mailto:vu@vule.ca">vu@vule.ca</a>
-      </div>
-    </div>
-  </div>
-<div style="margin:0 auto;max-width:900px;padding:1.5rem 5vw;background:rgba(122,98,56,0.08);border-top:1px solid rgba(122,98,56,0.18);border-bottom:1px solid rgba(122,98,56,0.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:'Jost',system-ui,sans-serif;font-size:0.78rem;letter-spacing:0.04em">
-  <span style="color:rgba(255,255,255,0.55)">Prefer to reach us directly?</span>
-  <span style="color:rgba(255,255,255,0.85)"><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a> &nbsp;<span style="color:rgba(255,255,255,0.35);font-size:0.7rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">← vule.ca</a>
-</div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2026 Vu Le. All rights reserved.</p>
-    <p class="footer-reg">R.TCMP · R.Ac · NCCAOM · Ontario, Canada</p>
-  </div>
+  <div class="foot-left">Vu Le &amp; Van Lam &nbsp;·&nbsp; Mono, Ontario &nbsp;·&nbsp; © 2026</div>
+  <nav class="foot-links" aria-label="Footer navigation">
+    <a href="/fees.html">Fees</a>
+    <a href="/ibs-resolution.html">IBS Programme</a>
+    <a href="/case-review.html">Case Review</a>
+    <a href="/herbs.html">Herbal Medicine</a>
+    <a href="/library.html">Library</a>
+    <a href="https://vanlam.ca">vanlam.ca</a>
+  </nav>
+  <p class="foot-reg">R.TCMP · R.Ac · NCCAOM · Ontario, Canada · CTCMPAO registered · HST-exempt health services</p>
 </footer>
 
 <script>
-// Nav scroll
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 60);
-},{passive:true});
-
-// Mobile nav
-function toggleNav(){
-  const m = document.getElementById('mobileNav');
-  const open = m.classList.toggle('open');
+function toggleNav() {
+  var m = document.getElementById('mobileNav');
+  var btn = document.getElementById('hamburgerBtn');
+  var open = m.classList.toggle('open');
   document.body.style.overflow = open ? 'hidden' : '';
+  btn.setAttribute('aria-expanded', String(open));
 }
 
-// Scroll reveals
-const io = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('vis'); });
-},{threshold:0.12});
-document.querySelectorAll(
-  '.service-card,.method-card,.topic-card,.book-card,.testimonial-card'
-).forEach(el=>io.observe(el));
-
-// Form
-const form = document.getElementById('contactForm');
-if(form){
-  form.addEventListener('submit', e=>{
-    e.preventDefault();
-    const data = new FormData(form);
-    fetch('https://formspree.io/f/myknqnek', {method:'POST', body: data, headers:{'Accept':'application/json'}})
-      .then(()=>{
-        form.style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      })
-      .catch(()=>{
-        form.style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
-      });
-  });
+var form = document.getElementById('contactForm');
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = form.querySelector('.btn-send');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+    .then(function() { showSuccess(); })
+    .catch(function() { showSuccess(); });
+});
+function showSuccess() {
+  document.getElementById('contactForm').style.display = 'none';
+  var s = document.getElementById('formSuccess');
+  s.style.display = 'block';
+  s.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 </script>
-</main>
 </body>
 </html>
