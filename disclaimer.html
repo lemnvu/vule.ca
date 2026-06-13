@@ -201,7 +201,7 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
   <div class="sec-inner">
     <p class="sec-eyebrow">Scope of practice</p>
     <h2 class="sec-title" id="scope-heading">What this practice <em>does and does not</em> do.</h2>
-    <p class="sec-body">The Quantum Elemental Model™ framework operates entirely within the regulated scope of Traditional Chinese Medicine. The following points help set clear expectations before your first visit.</p>
+    <p class="sec-body">The Quantum Elemental Medicine&#x2122; framework operates entirely within the regulated scope of Traditional Chinese Medicine. The following points help set clear expectations before your first visit.</p>
     <div class="scope-grid" role="list">
       <div class="scope-card" role="listitem">
         <div class="scope-icon" aria-hidden="true">&#x25CE;</div>
@@ -256,30 +256,17 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
 <!-- GATE FORM -->
 <section class="sec gate-sec" id="gate-form" aria-labelledby="gate-heading">
   <div class="sec-inner">
-    <p class="sec-eyebrow">Book your visit</p>
-    <h2 class="sec-title" id="gate-heading">Two ways to <em>reach us.</em></h2>
-    <p class="gate-intro">Choose whichever is easier for you — the form below, or a text message. Either way we will get back to you within 24 hours to confirm a time.</p>
+    <p class="sec-eyebrow">Acknowledge &amp; continue</p>
+    <h2 class="sec-title" id="gate-heading">Ready to <em>book your visit?</em></h2>
+    <p class="gate-intro">Enter your name and email address below, confirm that you have read and understood the above, and we will be in touch to confirm your appointment within 48 hours.</p>
 
-    <!-- TEXT OPTION -->
-    <div style="margin-bottom:2.5rem;padding:1.5rem 1.75rem;border:0.5px solid rgba(154,124,74,0.4);border-radius:6px;background:rgba(154,124,74,0.06);max-width:700px">
-      <p style="font-family:var(--sans);font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem">Preferred — Text us directly</p>
-      <p style="font-family:var(--serif);font-size:1.3rem;font-weight:500;color:#fff;margin-bottom:0.4rem">
-        <a href="sms:4168719239" style="color:#fff;text-decoration:none">(416) 871-9239</a>
-      </p>
-      <p style="font-family:var(--serif);font-size:0.95rem;font-weight:300;color:rgba(255,255,255,0.65);line-height:1.75;margin-bottom:0.75rem">Text your name, what you are coming in for, and whether you prefer in-person (Mono, Ontario) or virtual. We will reply with available times. <strong style="color:rgba(255,255,255,0.85)">Calls are not answered — text is the preferred way to reach us.</strong></p>
-      <a href="sms:4168719239" style="display:inline-flex;align-items:center;gap:0.5rem;font-family:var(--sans);font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;background:var(--gold);color:#fff;padding:0.8rem 1.8rem;text-decoration:none;border-radius:2px;transition:background 0.2s" onmouseover="this.style.background='#A08040'" onmouseout="this.style.background='var(--gold)'">Text (416) 871-9239 →</a>
-    </div>
-
-    <!-- DIVIDER -->
-    <p style="font-family:var(--sans);font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:2rem;max-width:700px">Or use the form below — we will respond by email within 24 hours</p>
-
-    <form class="gate-form" id="gateForm" action="https://formspree.io/f/myknqnek" method="POST" aria-label="Booking enquiry form" novalidate>
+    <form class="gate-form" id="gateForm" action="https://formspree.io/f/myknqnek" method="POST" aria-label="Booking consent form" novalidate>
       <input type="hidden" name="_subject" value="New booking enquiry &#x2014; disclaimer acknowledged">
       <input type="hidden" name="page_source" value="disclaimer.html">
 
       <div class="form-group">
         <label for="g-name">Your name</label>
-        <input type="text" id="g-name" name="name" autocomplete="name" placeholder="First and last name">
+        <input type="text" id="g-name" name="name" required autocomplete="name" placeholder="First and last name">
       </div>
 
       <div class="form-group">
@@ -288,29 +275,49 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
       </div>
 
       <div class="form-group full">
-        <label for="g-message">What brings you in? <span style="font-weight:300;text-transform:none;letter-spacing:0">(optional — keep it brief)</span></label>
-        <textarea id="g-message" name="message" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:#fff;font-family:var(--serif);font-size:1rem;padding:0.75rem 1rem;outline:none;width:100%;min-height:90px;resize:vertical;transition:border-color 0.2s" placeholder="e.g. back pain, first visit, not sure where to start — anything helps"></textarea>
+        <label for="g-practitioner">Who would you like to see?</label>
+        <select id="g-practitioner" name="practitioner">
+          <option value="">Please select</option>
+          <option value="Vu Le — vule.ca">Vu Le &#x2014; R.TCMP, R.Ac (vule.ca)</option>
+          <option value="Van Lam — vanlam.ca">Van Lam &#x2014; R.TCMP, R.Ac (vanlam.ca)</option>
+          <option value="Not sure — new enquiry">Not sure &#x2014; I would like guidance</option>
+        </select>
+      </div>
+
+      <div class="form-group full">
+        <label for="g-interest">What brings you in?</label>
+        <select id="g-interest" name="interest">
+          <option value="">Please select</option>
+          <option>Initial consultation &#x2014; general</option>
+          <option>QEM&#x2122; IBS Resolution Program</option>
+          <option>The Unresolved Case Review (90 min)</option>
+          <option>Discovery Conversation ($75)</option>
+          <option>Acupuncture &#x2014; follow-up</option>
+          <option>Herbal medicine &#x2014; follow-up</option>
+          <option>Constitutional consulting &#x2014; Van Lam</option>
+          <option>Not sure &#x2014; I would like to discuss</option>
+        </select>
       </div>
 
       <div class="checkbox-group full">
         <input type="checkbox" id="consent-check" name="consent_acknowledged" value="yes" class="consent-check" required aria-required="true">
         <label class="checkbox-label" for="consent-check">
-          <strong>I have read and understood</strong> the scope of practice and informed consent statement above.
+          <strong>I have read and understood</strong> the scope of practice and informed consent statement above. I confirm that the information I provide will be accurate and complete, and I consent to be contacted by Vu Le and/or Van Lam at the email address I have provided.
         </label>
       </div>
 
       <div class="gate-actions full">
         <button type="submit" class="btn-gold" id="submitBtn" disabled aria-describedby="submit-note">
-          Send enquiry <span class="btn-arrow" aria-hidden="true">&#x2192;</span>
+          Confirm and continue <span class="btn-arrow" aria-hidden="true">&#x2192;</span>
         </button>
-        <p class="form-note" id="submit-note">Your email address is the only required field. All enquiries are confidential.</p>
+        <p class="form-note" id="submit-note">Your email is the only required field. All enquiries are treated with complete confidentiality.</p>
       </div>
     </form>
 
     <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
-      <strong>Received — thank you.</strong><br><br>
-      We will be in touch at the email address you provided within 24 hours to confirm a time. If you would like a faster response, feel free to text <a href="sms:4168719239" style="color:var(--gold-lt)">(416) 871-9239</a> directly.<br><br>
-      In the meantime, you are welcome to review the <a href="https://vule.ca/herbs.html" style="color:var(--gold-lt)">herbal medicine guide</a> or explore the <a href="https://vule.ca/ibs-resolution.html" style="color:var(--gold-lt)">IBS Resolution Program</a>.
+      <strong>Thank you &#x2014; your acknowledgement has been received.</strong><br><br>
+      A confirmation has been sent to the email address you provided. You will hear back within 48 hours with next steps for your appointment.<br><br>
+      In the meantime, you are welcome to review the <a href="https://vule.ca/herbs.html" style="color:var(--gold-lt)">herbal medicine preparation guide</a> or explore the <a href="https://vule.ca/ibs-resolution.html" style="color:var(--gold-lt)">IBS Resolution Program</a>.
     </div>
   </div>
 </section>
@@ -324,7 +331,7 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
       <div class="next-card" role="listitem">
         <div class="next-num" aria-hidden="true">01</div>
         <div class="next-label">Confirmation</div>
-        <p class="next-desc">You will receive a reply within 24 hours — by email if you used the form, or by text if you messaged directly. We will confirm availability and send intake materials ahead of your visit.</p>
+        <p class="next-desc">You will receive an email confirmation within 48 hours. If you have indicated a preferred practitioner and area of interest, we will confirm availability and send intake materials ahead of your visit.</p>
       </div>
       <div class="next-card" role="listitem">
         <div class="next-num" aria-hidden="true">02</div>
@@ -343,7 +350,7 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
 <!-- FEEL BAND -->
 <div class="feel-band" role="complementary">
   <div class="feel-band-text">Good medicine begins with a clear conversation.</div>
-  <div class="feel-band-sub">Vu Le &nbsp;&middot;&nbsp; Van Lam &nbsp;&middot;&nbsp; Quantum Elemental Model™ &nbsp;&middot;&nbsp; Mono, Ontario</div>
+  <div class="feel-band-sub">Vu Le &nbsp;&middot;&nbsp; Van Lam &nbsp;&middot;&nbsp; Quantum Elemental Medicine&#x2122; &nbsp;&middot;&nbsp; Mono, Ontario</div>
 </div>
 
 <!-- FOOTER -->
@@ -358,6 +365,11 @@ footer { background: var(--ink-3); padding: 2.5rem 5vw; display: flex; justify-c
   </nav>
 </footer>
 
+<div style="margin:0 auto;max-width:900px;padding:1.5rem 5vw;background:rgba(122,98,56,0.08);border-top:1px solid rgba(122,98,56,0.18);border-bottom:1px solid rgba(122,98,56,0.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:'Jost',system-ui,sans-serif;font-size:0.78rem;letter-spacing:0.04em">
+  <span style="color:rgba(255,255,255,0.55)">Prefer to reach us directly?</span>
+  <span style="color:rgba(255,255,255,0.85)"><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a> &nbsp;<span style="color:rgba(255,255,255,0.35);font-size:0.7rem">Text preferred &mdash; calls not answered</span></span>
+  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">← vule.ca</a>
+</div>
 </main>
 
 <script>
@@ -407,7 +419,7 @@ function showSuccess() {
   "description": "Informed consent and scope of practice notice for patients booking with Vu Le, R.TCMP at vule.ca.",
   "isPartOf": {
     "@type": "MedicalBusiness",
-    "name": "Vu Le — Quantum Elemental Model™",
+    "name": "Vu Le — Quantum Elemental Medicine™",
     "url": "https://vule.ca"
   }
 }
