@@ -2,653 +2,350 @@
 <html lang="en-CA">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IBS Resolution Program — Vu Le, R.TCMP | Ontario, Canada</title>
-<meta name="description" content="Constitutional medicine for IBS that hasn't resolved. Vu Le, R.TCMP uses the Quantum Elemental Model™ to address root patterns. Virtual across Canada.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IBS Resolution Programme — Virtual · Vu Le TCM · Canada-wide</title>
+<meta name="description" content="A structured virtual TCM programme for IBS that hasn't resolved. Constitutional herbal medicine prescribed and shipped Canada-wide. Text (416) 871-9239.">
+<link rel="canonical" href="https://vule.ca/ibs-resolution.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
-  --gold:#7A6238;--gold-lt:#A08040;--gold-pale:#F2EBD9;--gold-ultra:#FAF6EE;
-  --ink:#0E0C0A;--ink-2:#1A1612;--ink-3:#221E18;
-  --cream:#F8F5F0;--cream-2:#EFE9DF;--muted:#4A4038;
-  --serif:'Cormorant Garamond',Georgia,serif;
-  --sans:'Jost',system-ui,sans-serif;
-  --ease:cubic-bezier(0.22,1,0.36,1);
+  --bg:#F8F4EE;--bg2:#F2EDE3;--ink:#1C1612;--ink2:#2C2420;--muted:#5A4A40;--dim:#8A7A70;
+  --gold:#9C7E4A;--sage:#7A9E8E;--red:#C0392B;--ora:#D35400;--yel:#D4AC0D;--grn:#27AE60;
+  --bdr:rgba(156,126,74,0.18);--bdr2:rgba(156,126,74,0.10);
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;
 }
-body{font-family:var(--serif);background:var(--cream);color:var(--ink);font-size:18px;line-height:1.75;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 4rem;transition:background 0.4s,padding 0.4s}
-nav.scrolled{background:rgba(14,12,10,0.96);backdrop-filter:blur(12px);padding:1rem 4rem;border-bottom:1px solid rgba(154,124,74,0.12)}
-.nav-home{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s}
-.nav-home:hover{color:var(--gold-lt)}
-.nav-links{display:flex;align-items:center;gap:2.5rem}
-.nav-links a{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
-.nav-links a:hover{color:#fff}
-.nav-links a.cta{color:var(--gold-lt);border-bottom:1px solid rgba(154,124,74,0.4);padding-bottom:1px}
-.nav-links a.cta:hover{color:#fff;border-color:#fff}
-
-/* HERO */
-.hero{min-height:100vh;background:var(--ink);display:flex;align-items:center;padding:8rem 4rem 5rem;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 15% 85%,rgba(154,124,74,0.14) 0%,transparent 50%),radial-gradient(ellipse at 85% 15%,rgba(154,124,74,0.06) 0%,transparent 40%);pointer-events:none}
-.hero::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(154,124,74,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(154,124,74,0.04) 1px,transparent 1px);background-size:80px 80px;pointer-events:none}
-.hero-inner{max-width:1200px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;position:relative;z-index:1}
-.hero-eyebrow{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.82);margin-bottom:2rem;opacity:0;animation:up 0.9s 0.2s var(--ease) both}
-.hero-watermark{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-size:clamp(14rem,22vw,22rem);font-weight:300;font-style:italic;color:transparent;-webkit-text-stroke:1px rgba(154,124,74,0.1);letter-spacing:-0.02em;pointer-events:none;user-select:none;white-space:nowrap;line-height:1;z-index:0}
-.hero-h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,5rem);font-weight:300;line-height:1.05;color:#fff;margin-bottom:2rem;opacity:0;animation:up 0.9s 0.4s var(--ease) both}
-.hero-h1 em{font-style:italic;color:var(--gold-lt);font-weight:300}
-.hero-rule{width:48px;height:1px;background:var(--gold);margin-bottom:2rem;opacity:0;animation:up 0.9s 0.6s var(--ease) both}
-.hero-sub{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.5);max-width:480px;margin-bottom:3rem;opacity:0;animation:up 0.9s 0.7s var(--ease) both}
-.hero-btns{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;opacity:0;animation:up 0.9s 0.9s var(--ease) both}
-.btn-p{font-family:var(--sans);font-size:0.68rem;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;background:var(--gold);color:#fff;padding:1rem 2.2rem;text-decoration:none;transition:background 0.2s,transform 0.15s;display:inline-block}
-.btn-p:hover{background:var(--gold-lt);transform:translateY(-1px)}
-.btn-g{font-family:var(--sans);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s}
-.btn-g:hover{color:var(--gold-lt)}
-.hero-pillars{display:flex;flex-direction:column;gap:0;opacity:0;animation:up 0.9s 0.6s var(--ease) both}
-.hero-pillar{padding:1.8rem 0;border-bottom:1px solid rgba(154,124,74,0.12);display:flex;gap:1.4rem;align-items:flex-start}
-.hero-pillar:first-child{padding-top:0}
-.hero-pillar:last-child{border:none}
-.pillar-n{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);flex-shrink:0;padding-top:0.3rem}
-.pillar-title{font-family:var(--serif);font-size:1rem;font-weight:500;color:#fff;line-height:1.3;margin-bottom:0.3rem}
-.pillar-body{font-size:0.88rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.38)}
-
-/* GENERAL SECTIONS */
-.sec{padding:7rem 4rem}
-.sec-inner{max-width:1200px;margin:0 auto}
-.lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
-.sec-title{font-family:var(--serif);font-size:clamp(2rem,3.8vw,3.2rem);font-weight:300;line-height:1.15;color:var(--ink);margin-bottom:1.2rem}
-.sec-title em{font-style:italic;font-weight:300}
-.sec-title strong{font-weight:600}
-
-/* SECOND OPINION — FEATURED OFFER */
-.consult-sec{background:var(--ink-2);padding:8rem 4rem}
-.consult-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
-.consult-badge{display:inline-block;font-family:var(--sans);font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(154,124,74,0.4);padding:0.35rem 0.9rem;margin-bottom:1.8rem}
-.consult-title{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.6rem);font-weight:300;line-height:1.1;color:#fff;margin-bottom:1.5rem}
-.consult-title em{font-style:italic;color:var(--gold-lt)}
-.consult-rule{width:48px;height:1px;background:var(--gold);margin-bottom:1.8rem}
-.consult-body{font-size:1.05rem;font-weight:300;line-height:1.9;color:rgba(255,255,255,0.5);margin-bottom:2.5rem}
-.consult-body strong{color:rgba(255,255,255,0.85);font-weight:400}
-.consult-price-block{background:rgba(154,124,74,0.08);border:1px solid rgba(154,124,74,0.22);padding:2.5rem;margin-bottom:2.5rem}
-.consult-price-lbl{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(154,124,74,0.7);margin-bottom:0.8rem}
-.consult-price{font-family:var(--serif);font-size:3.8rem;font-weight:300;color:var(--gold-lt);line-height:1;margin-bottom:0.6rem}
-.consult-price-note{font-family:var(--sans);font-size:0.72rem;font-weight:300;color:rgba(255,255,255,0.35);line-height:1.6}
-.consult-price-note strong{color:rgba(255,255,255,0.6);font-weight:400}
-.consult-what{margin-bottom:2.5rem}
-.consult-what-title{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem}
-.consult-item{display:flex;gap:1rem;align-items:flex-start;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.consult-item:last-child{border:none}
-.consult-dash{color:var(--gold);flex-shrink:0;line-height:1.7}
-.consult-text{font-size:0.95rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.65)}
-.consult-right{display:flex;flex-direction:column;gap:0}
-.consult-process-lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem}
-.process-step{padding:2rem 0;border-bottom:1px solid rgba(154,124,74,0.1);display:flex;gap:1.5rem;align-items:flex-start}
-.process-step:last-child{border:none}
-.process-n{font-family:var(--serif);font-size:2.4rem;font-weight:300;color:rgba(154,124,74,0.18);line-height:1;flex-shrink:0;width:3rem}
-.process-title{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:#fff;margin-bottom:0.4rem;line-height:1.3}
-.process-body{font-size:0.88rem;font-weight:300;line-height:1.7;color:rgba(255,255,255,0.38)}
-.consult-note{margin-top:2rem;padding:1.5rem 1.8rem;background:rgba(154,124,74,0.06);border-left:2px solid rgba(154,124,74,0.35);font-size:0.9rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.4);font-style:italic}
-.consult-note strong{color:rgba(255,255,255,0.7);font-style:normal;font-weight:400}
-
-/* WHY IBS PERSISTS */
-.why-sec{background:var(--cream)}
-.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
-.why-text p{font-size:1.05rem;font-weight:300;line-height:1.9;color:var(--muted);margin-bottom:1.2rem}
-.why-text p strong{font-weight:500;color:var(--ink)}
-.bq{background:var(--ink);border-left:3px solid var(--gold);padding:3rem 2.5rem}
-.bq-text{font-family:var(--serif);font-size:1.15rem;font-style:italic;font-weight:300;line-height:1.75;color:#fff;margin-bottom:1.2rem}
-.bq-attr{font-family:var(--sans);font-size:0.62rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold)}
-
-/* DIFF */
-.diff-sec{background:var(--ink-2)}
-.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.05);margin-top:3.5rem}
-.diff-col{background:var(--ink-3);padding:2.5rem 2.2rem}
-.diff-col:last-child{background:#1E1A12;border-top:2px solid var(--gold)}
-.diff-col-lbl{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1.5rem}
-.diff-col:first-child .diff-col-lbl{color:rgba(255,255,255,0.3)}
-.diff-col:last-child .diff-col-lbl{color:var(--gold)}
-.diff-item{display:flex;gap:1rem;align-items:flex-start;padding:0.8rem 0;border-bottom:1px solid rgba(255,255,255,0.05)}
-.diff-item:last-child{border:none}
-.diff-dash{flex-shrink:0;line-height:1.7;color:rgba(255,255,255,0.2)}
-.diff-col:last-child .diff-dash{color:var(--gold)}
-.diff-text{font-size:0.95rem;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.35)}
-.diff-col:last-child .diff-text{color:rgba(255,255,255,0.8)}
-
-/* FIVE INFLUENCES */
-.inf-sec{background:var(--cream-2)}
-.inf-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:rgba(154,124,74,0.15);border:1px solid rgba(154,124,74,0.15);margin-top:3.5rem}
-.inf-card{background:var(--cream-2);padding:2.2rem 1.8rem;opacity:0;transform:translateY(18px);transition:opacity 0.6s var(--ease),transform 0.6s var(--ease),background 0.3s}
-.inf-card.vis{opacity:1;transform:none}
-.inf-card:nth-child(2){transition-delay:.08s}.inf-card:nth-child(3){transition-delay:.16s}.inf-card:nth-child(4){transition-delay:.24s}.inf-card:nth-child(5){transition-delay:.32s}
-.inf-card:hover{background:var(--gold-ultra)}
-.inf-n{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem;display:block}
-.inf-title{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);line-height:1.3;margin-bottom:0.8rem}
-.inf-body{font-size:0.9rem;font-weight:300;line-height:1.75;color:var(--muted)}
-
-/* 12-WEEK JOURNEY */
-.jrn-sec{background:var(--ink)}
-.jrn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.04);margin-top:3.5rem}
-.j-card{background:var(--ink-2);padding:2.5rem 2rem;opacity:0;transform:translateY(16px);transition:opacity 0.7s var(--ease),transform 0.7s var(--ease)}
-.j-card.vis{opacity:1;transform:none}
-.j-card:nth-child(2){transition-delay:.1s}.j-card:nth-child(3){transition-delay:.2s}.j-card:nth-child(4){transition-delay:.3s}
-.j-phase{font-family:var(--sans);font-size:0.58rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
-.j-wks{font-family:var(--serif);font-size:2.8rem;font-weight:300;color:rgba(255,255,255,0.08);line-height:1;margin-bottom:1.5rem}
-.j-title{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:#fff;margin-bottom:.8rem;line-height:1.3}
-.j-body{font-size:.9rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,0.4)}
-.j-fmt{display:inline-block;margin-top:1.3rem;font-family:var(--sans);font-size:0.58rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(154,124,74,0.28);padding:.25rem .65rem}
-.jrn-note{margin-top:2.5rem;padding:1.8rem 2.2rem;background:rgba(154,124,74,0.07);border-left:2px solid var(--gold)}
-.jrn-note p{font-size:1rem;font-weight:300;line-height:1.8;color:rgba(255,255,255,0.45);font-style:italic}
-.jrn-note strong{color:rgba(255,255,255,0.75);font-style:normal}
-
-/* INVESTMENT TABLE */
-.inv-sec{background:var(--cream)}
-.inv-table{width:100%;border-collapse:collapse;margin-top:2.5rem}
-.inv-table thead tr{background:var(--ink)}
-.inv-table thead th{font-family:var(--sans);font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.4);padding:1rem 1.2rem;text-align:left;font-weight:400}
-.inv-table tbody tr{border-bottom:1px solid rgba(154,124,74,0.12);transition:background 0.2s}
-.inv-table tbody tr:hover{background:var(--gold-ultra)}
-.inv-table tbody tr.featured-row{background:var(--gold-pale)}
-.inv-table tbody tr.featured-row:hover{background:#ecdcb8}
-.inv-table tbody tr:last-child{border:none}
-.inv-table td{padding:1.3rem 1.2rem;font-size:1rem;font-weight:300;line-height:1.65;color:var(--ink);vertical-align:top}
-.inv-table td.price{font-family:var(--sans);font-size:.9rem;font-weight:400;color:var(--gold);white-space:nowrap}
-.featured-row td.price{font-size:1.05rem;font-weight:500}
-.row-badge{display:inline-block;font-family:var(--sans);font-size:0.55rem;letter-spacing:0.16em;text-transform:uppercase;background:var(--gold);color:#fff;padding:0.2rem 0.5rem;margin-left:0.7rem;vertical-align:middle}
-.inv-note{margin-top:1.8rem;padding:1.5rem 1.8rem;background:var(--gold-pale);border-left:2px solid var(--gold);font-size:.95rem;font-weight:300;line-height:1.8;color:var(--muted);font-style:italic}
-.inv-note strong{font-weight:500;color:var(--ink);font-style:normal}
-
-/* FOR WHOM */
-.whom-sec{background:var(--cream-2)}
-.whom-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(154,124,74,0.15);margin-top:3rem}
-.whom-col{padding:3rem 2.5rem}
-.whom-col:last-child{background:var(--ink-2)}
-.whom-lbl{font-family:var(--sans);font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:1.8rem;color:var(--gold)}
-.whom-col:last-child .whom-lbl{color:rgba(154,124,74,0.5)}
-.whom-item{display:flex;gap:1rem;align-items:flex-start;padding:.8rem 0;border-bottom:1px solid rgba(154,124,74,0.1)}
-.whom-item:last-child{border:none}
-.whom-dash{color:var(--gold);flex-shrink:0;line-height:1.7}
-.whom-col:last-child .whom-dash{color:rgba(154,124,74,0.3)}
-.whom-text{font-size:1rem;font-weight:300;line-height:1.7;color:var(--ink)}
-.whom-col:last-child .whom-text{color:rgba(255,255,255,0.38)}
-
-/* CTA */
-.cta-sec{background:var(--ink);padding:8rem 4rem;text-align:center;position:relative;overflow:hidden}
-.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(154,124,74,0.14) 0%,transparent 55%);pointer-events:none}
-.cta-inner{max-width:660px;margin:0 auto;position:relative;z-index:1}
-.cta-title{font-family:var(--serif);font-size:clamp(2.2rem,4.5vw,4rem);font-weight:300;line-height:1.15;color:#fff;margin-bottom:1.5rem}
-.cta-title em{font-style:italic;color:var(--gold-lt)}
-.cta-body{font-size:1.05rem;font-weight:300;line-height:1.85;color:rgba(255,255,255,0.48);margin-bottom:3rem}
-.cta-btns{display:flex;justify-content:center;align-items:center;gap:2.5rem;flex-wrap:wrap;margin-bottom:2.5rem}
-.cta-contact{font-family:var(--sans);font-size:.65rem;letter-spacing:.1em;color:rgba(255,255,255,0.2)}
-.cta-contact a{color:rgba(154,124,74,0.6);text-decoration:none;transition:color 0.2s}
-.cta-contact a:hover{color:var(--gold-lt)}
-footer{background:#080604;padding:3rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;border-top:1px solid rgba(255,255,255,0.04)}
-.foot-l{font-family:var(--sans);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,0.18)}
-.foot-l a{color:var(--gold);text-decoration:none;opacity:.7;transition:opacity .2s}
-.foot-l a:hover{opacity:1}
-.foot-d{font-family:var(--sans);font-size:.6rem;color:rgba(255,255,255,0.14);max-width:500px;line-height:1.6;text-align:right}
-@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@media(max-width:1024px){
-  nav{padding:1.2rem 2rem}nav.scrolled{padding:.9rem 2rem}
-  .hero{padding:8rem 2rem 5rem}.hero-inner{grid-template-columns:1fr;gap:3rem}
-  .hero-pillars{flex-direction:row;flex-wrap:wrap;gap:1.5rem}
-  .hero-pillar{border:none;padding:0;flex:1;min-width:200px}
-  .sec{padding:5rem 2rem}
-  .consult-sec{padding:5rem 2rem}.consult-inner{grid-template-columns:1fr;gap:3rem}
-  .why-grid{grid-template-columns:1fr;gap:3rem}
-  .diff-grid{grid-template-columns:1fr}.inf-grid{grid-template-columns:1fr 1fr}
-  .jrn-grid{grid-template-columns:1fr 1fr}.whom-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
+body{font-family:var(--serif);background:var(--bg);color:var(--ink);overflow-x:hidden;line-height:1.75}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(248,244,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr)}
+.nav-logo{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:1.6rem;align-items:center}
+.nav-links a{font-family:var(--sans);font-size:.65rem;font-weight:500;color:var(--ink2);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-sms{background:var(--red);color:#fff !important;padding:.38rem .9rem}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink)}
+.mob-nav{display:none;position:fixed;inset:0;background:var(--bg);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:var(--sans);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.mob-close{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+.orb{position:fixed;border-radius:50%;pointer-events:none;filter:blur(55px);will-change:transform;z-index:0}
+.orb1{width:320px;height:320px;background:radial-gradient(circle,rgba(211,84,0,.14),transparent 70%);top:-60px;right:-30px;animation:o1 24s ease-in-out infinite}
+.orb2{width:260px;height:260px;background:radial-gradient(circle,rgba(39,174,96,.11),transparent 70%);bottom:5%;left:-30px;animation:o2 30s ease-in-out infinite}
+@keyframes o1{0%,100%{transform:translate(0,0)}33%{transform:translate(-30px,22px)}66%{transform:translate(18px,-14px)}}
+@keyframes o2{0%,100%{transform:translate(0,0)}45%{transform:translate(25px,-20px)}85%{transform:translate(-14px,18px)}}
+.smoke{position:fixed;bottom:0;left:0;width:100%;pointer-events:none;z-index:0}
+.smoke span{display:block;position:absolute;bottom:0;border-radius:50%;filter:blur(18px);animation:sr linear infinite}
+.s1{left:30%;width:75px;height:75px;background:rgba(210,200,185,.11);animation-duration:21s}
+.s2{left:70%;width:85px;height:85px;background:rgba(210,200,185,.09);animation-duration:26s;animation-delay:-10s}
+@keyframes sr{0%{transform:translateY(0) scale(1);opacity:0}10%{opacity:1}80%{opacity:.25}100%{transform:translateY(-600px) scale(3);opacity:0}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.vis{opacity:1;transform:translateY(0)}
+.page-hero{padding:8rem 2.5rem 4rem;position:relative;z-index:2;max-width:1100px;margin:0 auto}
+.hero-eye{font-family:var(--sans);font-size:.6rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ora);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.hero-eye::before{content:'';display:inline-block;width:20px;height:1px;background:var(--ora)}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.6rem,5vw,3.8rem);font-weight:400;line-height:1.08;color:var(--ink);margin-bottom:1rem}
+.hero-h1 em{font-style:italic;color:var(--ora)}
+.hero-sub{font-family:var(--sans);font-size:.88rem;color:var(--ink2);line-height:1.9;max-width:600px;margin-bottom:2rem}
+.btn-sms{display:inline-flex;align-items:center;gap:.6rem;background:var(--ink);color:var(--bg);font-family:var(--sans);font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.9rem 1.6rem;text-decoration:none;transition:background .2s}
+.btn-sms:hover{background:var(--ink2)}
+.cta-note{font-family:var(--sans);font-size:.65rem;color:var(--ink2);line-height:1.75;margin-top:.75rem;max-width:340px}
+.cta-disclaimer{font-family:var(--sans);font-size:.58rem;color:var(--muted);line-height:1.65;max-width:360px;margin-top:.6rem;border-left:2px solid var(--ora);padding-left:.6rem}
+.sec{padding:4rem 2.5rem;position:relative;z-index:2}
+.sec-inner{max-width:1100px;margin:0 auto}
+.sec-eye{font-family:var(--sans);font-size:.58rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.sec-h{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;line-height:1.12;color:var(--ink);margin-bottom:1rem}
+.sec-h em{font-style:italic;color:var(--ora)}
+.sec-body{font-family:var(--sans);font-size:.85rem;color:var(--ink2);line-height:1.85;max-width:620px;margin-bottom:1.5rem}
+.divider{border:none;border-top:1px solid var(--bdr);margin:0 2.5rem}
+/* Who this is for */
+.who-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);margin-bottom:2rem}
+.who-cell{background:var(--bg);padding:1.4rem}
+.who-check{font-family:var(--sans);font-size:.72rem;color:var(--ink2);line-height:1.75;display:flex;gap:.6rem;align-items:flex-start}
+.who-check::before{content:'—';color:var(--ora);flex-shrink:0;margin-top:.1rem}
+/* Programme stages */
+.stages{display:flex;flex-direction:column;max-width:720px;gap:0}
+.stage{display:flex;gap:1.4rem;padding:1.4rem 0;border-bottom:1px solid var(--bdr2)}
+.stage:last-child{border:none}
+.stage-n{font-family:var(--sans);font-size:.57rem;font-weight:500;letter-spacing:.15em;color:var(--ora);flex-shrink:0;padding-top:.22rem;min-width:28px}
+.stage-title{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);margin-bottom:.28rem}
+.stage-body{font-family:var(--sans);font-size:.8rem;color:var(--ink2);line-height:1.78}
+/* Why TCM */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:2rem}
+.why-item{border-left:2px solid var(--bdr);padding-left:1.2rem}
+.why-title{font-family:var(--serif);font-size:.95rem;font-weight:500;color:var(--ink);margin-bottom:.3rem}
+.why-body{font-family:var(--sans);font-size:.75rem;color:var(--ink2);line-height:1.75}
+/* Fee box */
+.fee-box{background:var(--bg2);border:1px solid var(--bdr);padding:1.6rem;max-width:500px;margin-bottom:1rem}
+.fee-label{font-family:var(--sans);font-size:.57rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:.5rem}
+.fee-amount{font-family:var(--serif);font-size:2rem;color:var(--ink);margin-bottom:.4rem}
+.fee-desc{font-family:var(--sans);font-size:.72rem;color:var(--ink2);line-height:1.7}
+/* SMS nudge */
+.sms-nudge{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:1.4rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:2}
+.nudge-text{font-family:var(--serif);font-size:1rem;color:var(--ink)}
+.nudge-right{display:flex;flex-direction:column;gap:.2rem;text-align:right}
+.nudge-num{font-family:var(--sans);font-size:.85rem;font-weight:500;color:var(--ink);text-decoration:none}
+.nudge-sub{font-family:var(--sans);font-size:.6rem;color:var(--dim)}
+.sub-section{background:var(--ink);padding:2.5rem 2.5rem;position:relative;z-index:2}
+.sub-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.sub-h{font-family:var(--serif);font-size:1.5rem;font-weight:400;color:var(--bg);margin-bottom:.4rem}
+.sub-body{font-family:var(--sans);font-size:.76rem;color:rgba(248,244,238,.5);line-height:1.75}
+.sub-form{display:flex;gap:.5rem}
+.sub-input{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:.6rem 1rem;font-family:var(--sans);font-size:.72rem;color:var(--bg);outline:none}
+.sub-input::placeholder{color:rgba(248,244,238,.3)}
+.sub-btn{background:var(--ora);color:#fff;border:none;font-family:var(--sans);font-size:.65rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1.1rem;cursor:pointer;transition:background .2s}
+.sub-btn:hover{background:#b84800}
+.sub-note{font-family:var(--sans);font-size:.57rem;color:rgba(248,244,238,.3);margin-top:.45rem}
+footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem 1.2rem;position:relative;z-index:2}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:1.5rem}
+.footer-brand{font-family:var(--serif);font-size:.95rem;color:var(--ink);margin-bottom:.35rem}
+.footer-tagline{font-family:var(--sans);font-size:.6rem;color:var(--dim);line-height:1.6}
+.footer-col-head{font-family:var(--sans);font-size:.54rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.footer-col a{display:block;font-family:var(--sans);font-size:.66rem;color:var(--muted);text-decoration:none;margin-bottom:.32rem;transition:color .2s}
+.footer-col a:hover{color:var(--ink)}
+.footer-disc{font-family:var(--sans);font-size:.57rem;color:var(--dim);line-height:1.65;border-top:1px solid var(--bdr2);padding-top:.9rem;max-width:900px}
+.footer-copy{font-family:var(--sans);font-size:.57rem;color:var(--dim);margin-top:.4rem}
+@media(max-width:700px){
+  .nav-links{display:none}.hamburger{display:flex}
+  .who-grid,.why-grid,.sub-inner,.footer-top{grid-template-columns:1fr}
+  .sms-nudge{flex-direction:column;text-align:center}.nudge-right{text-align:center}
+  .sec,.page-hero{padding-left:1.5rem;padding-right:1.5rem}
 }
-@media(max-width:640px){.inf-grid,.jrn-grid{grid-template-columns:1fr}footer{flex-direction:column;align-items:flex-start}.foot-d{text-align:left}}
-
-  /* === Accessibility fixes === */
-  .skip-link {
-    position: absolute;
-    top: -100%;
-    left: 1rem;
-    background: #0E0C0A;
-    color: #F8F5F0;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0 0 6px 6px;
-    font-family: var(--sans, system-ui, sans-serif);
-    font-size: 0.875rem;
-    font-weight: 500;
-    z-index: 9999;
-    text-decoration: none;
-    transition: top 0.1s;
-  }
-  .skip-link:focus { top: 0; }
-  /* Visible focus ring for all interactive elements */
-  a:focus-visible,
-  button:focus-visible,
-  input:focus-visible,
-  select:focus-visible,
-  textarea:focus-visible {
-    outline: 2px solid #7A6238;
-    outline-offset: 3px;
-    border-radius: 2px;
-  }
-  /* Visually hidden utility (for sr-only labels) */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
-  }
+@media(prefers-reduced-motion:reduce){.orb,.smoke span{animation:none}}
 </style>
-
-  <!-- Open Graph / Social -->
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://vule.ca/ibs-resolution.html">
-  <meta property="og:site_name"   content="Vu Le — Constitutional Medicine & Classical Feng Shui">
-  <meta property="og:title"       content="IBS Resolution Program — Vu Le, R.TCMP | Ontario, Canada">
-  <meta property="og:description" content="Constitutional medicine for IBS that hasn't resolved. Vu Le, R.TCMP uses the Quantum Elemental Model™ to address root patterns. Virtual across Canada.">
-  <meta property="og:image"       content="https://vule.ca/og-image.jpg">
-  <meta property="og:locale"      content="en_CA">
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="IBS Resolution Program — Vu Le, R.TCMP | Ontario, Canada">
-  <meta name="twitter:description" content="Constitutional medicine for IBS that hasn't resolved. Vu Le, R.TCMP uses the Quantum Elemental Model™ to address root patterns. Virtual across Canada.">
-  <meta name="twitter:image"       content="https://vule.ca/og-image.jpg">
-  <!-- Canonical -->
-  <link rel="canonical" href="https://vule.ca/ibs-resolution.html">
-
-  <!-- Structured Data / Schema.org -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MedicalTherapy",
-      "@id": "https://vule.ca/ibs-resolution.html#therapy",
-      "name": "IBS Resolution Program",
-      "description": "A constitutional medicine program for patients whose irritable bowel syndrome has not resolved despite prior conventional or integrative treatment. Using the Quantum Elemental Model™ framework, Vu Le, R.TCMP, R.Ac addresses root constitutional patterns rather than symptom management.",
-      "relevantSpecialty": "Traditional Chinese Medicine",
-      "study": {
-        "@type": "MedicalStudy",
-        "studySubject": { "@type": "MedicalCondition", "name": "Irritable Bowel Syndrome" }
-      },
-      "provider": { "@id": "https://vule.ca/#person" }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://vule.ca/ibs-resolution.html#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What makes the IBS Resolution Program different from conventional IBS treatment?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The IBS Resolution Program uses constitutional medicine — identifying the underlying pattern of imbalance unique to each patient — rather than managing symptoms in isolation. Using the Quantum Elemental Model™ framework, Vu Le, R.TCMP assesses the body, environment, and mind as an integrated system, addressing patterns that conventional and standard integrative approaches often miss."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the IBS Resolution Program available virtually?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. The program is available virtually across Canada. In-person consultations are available in Mono, Ontario."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is this program for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This program is for patients who have already tried conventional medical treatment, dietary changes, and integrative therapies for IBS and have not achieved lasting resolution. It is designed for complex, unresolved cases."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is constitutional medicine?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Constitutional medicine is an approach rooted in classical Chinese medicine that identifies each person's unique physiological and energetic constitution. Rather than treating a diagnosis, it addresses the underlying pattern of imbalance — why this person developed this condition in this way — and corrects it at the root."
-          }
-        }
-      ]
-    }
-  ]
-}
-  </script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="orb orb1" aria-hidden="true"></div>
+<div class="orb orb2" aria-hidden="true"></div>
+<div class="smoke" aria-hidden="true"><span class="s1"></span><span class="s2"></span></div>
 
-<nav id="nav" aria-label="Main navigation">
-  <a href="https://vule.ca/" class="nav-home">← Vu Le</a>
+<div class="mob-nav" id="mobNav">
+  <button class="mob-close" onclick="document.getElementById('mobNav').classList.remove('open')">✕</button>
+  <a href="/">Home</a><a href="/virtual.html">Virtual</a><a href="/herbs.html">Herbal</a>
+  <a href="/ibs-resolution.html">IBS</a><a href="/fees.html">Fees</a>
+  <a href="/discover.html">Approach</a><a href="sms:4168719239">Text to begin</a>
+</div>
+
+<nav>
+  <a href="/" class="nav-logo">Vu Le · TCM</a>
   <div class="nav-links">
-    <a href="https://vule.ca/#tcm">Clinical</a>
-    <a href="https://vule.ca/#books">Books</a>
-    <a href="https://vule.ca/#contact">Enquire</a>
-    <a href="/disclaimer.html" class="cta">Book — Assessment + First Treatment — $150</a>
+    <a href="/virtual.html">Virtual</a><a href="/herbs.html">Herbal</a>
+    <a href="/ibs-resolution.html" style="color:var(--gold)">IBS</a>
+    <a href="/fees.html">Fees</a><a href="/discover.html">Approach</a>
+    <a href="sms:4168719239" class="nav-sms">Text to begin</a>
   </div>
+  <button class="hamburger" onclick="document.getElementById('mobNav').classList.add('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-watermark" aria-hidden="true">IBS</div>
-  <div class="hero-inner">
+<div class="page-hero">
+  <p class="hero-eye">IBS Resolution · Virtual programme · Canada-wide</p>
+  <h1 class="hero-h1">IBS that hasn't resolved.<br>There is a <em>reason for that.</em></h1>
+  <p class="hero-sub">IBS is one of the most consistently responsive conditions to constitutional herbal medicine — when it's addressed at the root. If you've tried elimination diets, probiotics, and everything your GP has suggested without lasting resolution, this programme is designed for cases exactly like yours. No clinic visit required.</p>
+  <a href="sms:4168719239" class="btn-sms">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    Text (416) 871-9239 to enquire
+  </a>
+  <p class="cta-note">Send your name, date of birth, callback number, and a brief description of your IBS pattern. I'll call you back within 24–48 hours.</p>
+  <p class="cta-disclaimer">Results are based on clinical observation and vary between individuals. No outcome is guaranteed. This programme is not a substitute for gastroenterological investigation or emergency care.</p>
+</div>
+
+<hr class="divider">
+
+<!-- WHO THIS IS FOR -->
+<section class="sec" aria-labelledby="who-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Who this programme is for</p>
+    <h2 class="sec-h reveal" id="who-h2">If you recognise yourself<br>in any of <em>these descriptions.</em></h2>
+    <div class="who-grid reveal">
+      <div class="who-cell">
+        <p class="who-check">Your IBS has been present for more than six months and hasn't significantly improved with conventional treatment.</p>
+        <p class="who-check" style="margin-top:.8rem">You cycle between constipation and diarrhoea, or one dominates and nothing holds the improvement.</p>
+        <p class="who-check" style="margin-top:.8rem">Your symptoms worsen with stress, change with seasons, or flare for no apparent dietary reason.</p>
+        <p class="who-check" style="margin-top:.8rem">Bloating is present most days — particularly after eating, in the afternoon, or at specific times that don't correspond to what you ate.</p>
+      </div>
+      <div class="who-cell">
+        <p class="who-check">You've tried multiple elimination diets without lasting resolution — or found that what you eliminate keeps changing.</p>
+        <p class="who-check" style="margin-top:.8rem">Your IBS is accompanied by fatigue, brain fog, or low mood that wasn't there before the digestive symptoms began.</p>
+        <p class="who-check" style="margin-top:.8rem">You've been told everything is normal on investigation, but you know it isn't.</p>
+        <p class="who-check" style="margin-top:.8rem">You're looking for a practitioner who will spend the time to understand the full picture — not just the most recent flare.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sms-nudge">
+  <p class="nudge-text">Does this sound like your situation? Let's talk.</p>
+  <div class="nudge-right">
+    <a href="sms:4168719239" class="nudge-num">(416) 871-9239</a>
+    <span class="nudge-sub">Text first — I'll call you back within 24–48 hours</span>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- WHY TCM -->
+<section class="sec" aria-labelledby="why-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Why TCM for IBS</p>
+    <h2 class="sec-h reveal" id="why-h2">IBS has a pattern.<br>TCM is built to <em>read it.</em></h2>
+    <p class="sec-body reveal">In classical TCM, what Western medicine calls IBS maps to specific organ system imbalances — Liver overacting on Spleen, Spleen Qi deficiency, Damp-Heat accumulation, Kidney Yang deficiency. These are not metaphors. They are clinical categories that produce predictable, distinct presentations — and respond to different formulas. Understanding which pattern you carry is the entire basis of effective treatment.</p>
+    <div class="why-grid reveal">
+      <div class="why-item">
+        <div class="why-title">The stress-IBS connection</div>
+        <p class="why-body">In TCM, the Liver governs the smooth flow of Qi throughout the body — including through the digestive tract. Chronic stress causes Liver Qi stagnation, which directly disrupts digestive function. This is why IBS reliably worsens under stress — not as a psychological phenomenon, but as a physiological one.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-title">Why elimination diets often fail</div>
+        <p class="why-body">Elimination diets address triggers, not the constitutional vulnerability that makes those triggers a problem. Two people with identical diets can have completely different digestive function based on their constitutional pattern. Until the pattern is addressed, sensitivity to triggers tends to widen rather than narrow.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-title">The QEM™ advantage</div>
+        <p class="why-body">The Quantum Elemental Model™ adds temporal precision to constitutional analysis — your date of birth reveals an elemental profile that predicts which organ systems are under pressure at which times. This explains why IBS flares seasonally or at specific life stages, and produces a more targeted formula than pattern diagnosis alone.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-title">Herbal medicine as the primary tool</div>
+        <p class="why-body">For digestive conditions, herbal medicine is often more effective than acupuncture alone — because the formula works continuously between sessions, not just during treatment. The formula is your daily medicine, adjusted as your pattern responds and shifts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PROGRAMME STRUCTURE -->
+<section class="sec" aria-labelledby="prog-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">How the programme works</p>
+    <h2 class="sec-h reveal" id="prog-h2">A structured arc.<br>Not an <em>open-ended series.</em></h2>
+    <p class="sec-body reveal">This is not an indefinite treatment relationship. The IBS Resolution Programme has a clear structure with a beginning, a middle, and an expected endpoint. You will know at every stage what we are working toward and why.</p>
+    <div class="stages">
+      <div class="stage reveal">
+        <div class="stage-n">01</div>
+        <div>
+          <div class="stage-title">Initial text and callback</div>
+          <p class="stage-body">You text your name, date of birth, callback number, and a brief description of your IBS pattern. I call you back within 24–48 hours. We talk through your full history — onset, triggers, patterns, what you've tried, and how your digestive function varies across seasons, stress levels, and life stages.</p>
+        </div>
+      </div>
+      <div class="stage reveal">
+        <div class="stage-n">02</div>
+        <div>
+          <div class="stage-title">Constitutional assessment</div>
+          <p class="stage-body">Tongue photograph, self-reported BP and heart rate, and a thorough clinical interview. QEM™ natal chart analysis from your date of birth produces your elemental profile. From this, the specific constitutional pattern driving your IBS is identified — not assumed from symptom name alone.</p>
+        </div>
+      </div>
+      <div class="stage reveal">
+        <div class="stage-n">03</div>
+        <div>
+          <div class="stage-title">First formula — 5-day trial</div>
+          <p class="stage-body">A custom formula is compounded and shipped. The first five days confirm the formula direction. You report back by text — how your bowels responded, any changes in energy, sleep, or bloating. This feedback is built into the next prescription adjustment.</p>
+        </div>
+      </div>
+      <div class="stage reveal">
+        <div class="stage-n">04</div>
+        <div>
+          <div class="stage-title">Formula refinement</div>
+          <p class="stage-body">The formula is adjusted based on your response. This is the most critical phase — the initial formula establishes the direction, and refinement makes it precise. Most cases require one to three adjustments before the formula is settled.</p>
+        </div>
+      </div>
+      <div class="stage reveal">
+        <div class="stage-n">05</div>
+        <div>
+          <div class="stage-title">Maintenance and consolidation</div>
+          <p class="stage-body">Once the pattern is responding, refill intervals extend. The goal is resolution that holds without continued formula support — not indefinite dependence on herbal medicine. When that point is reached, we discuss what maintenance looks like, if anything.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FEES -->
+<section class="sec" aria-labelledby="fee-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Investment</p>
+    <h2 class="sec-h reveal" id="fee-h2">Fees for the<br>IBS Resolution <em>Programme.</em></h2>
+    <div class="fee-box reveal">
+      <p class="fee-label">Initial consultation + first formula</p>
+      <div class="fee-amount">$150</div>
+      <p class="fee-desc">Constitutional assessment, QEM™ analysis, first 5-day custom formula, and shipping. This is the starting point — billed at the standard initial assessment rate.</p>
+    </div>
+    <div class="fee-box reveal">
+      <p class="fee-label">Formula refills (same formula)</p>
+      <div class="fee-amount">$100 <span style="font-size:1rem;color:var(--dim)">/ 5-day supply</span></div>
+      <p class="fee-desc">No consultation required for same-formula refills. Arranged directly by text. Shipping billed at actual carrier cost. Formula adjustments discussed and applied as needed.</p>
+    </div>
+    <p style="font-family:var(--sans);font-size:.72rem;color:var(--muted);line-height:1.7;max-width:540px;margin-top:.5rem">Herbal medicine is subject to HST and is not covered by extended health benefits. All fees billed individually as rendered. Results are based on clinical observation and vary between individuals — no outcome is guaranteed.</p>
+  </div>
+</section>
+
+<div class="sms-nudge">
+  <p class="nudge-text">Ready to begin? One text is all it takes.</p>
+  <div class="nudge-right">
+    <a href="sms:4168719239" class="nudge-num">(416) 871-9239</a>
+    <span class="nudge-sub">Text first — I'll call you back within 24–48 hours</span>
+  </div>
+</div>
+
+<div class="sub-section">
+  <div class="sub-inner">
     <div>
-      <p class="hero-eyebrow">IBS · Mono &amp; Orangeville · Ontario</p>
-      <h1 class="hero-h1">Still bloated.<br>Still flaring.<br><em>Still no answer.</em></h1>
-      <div class="hero-rule"></div>
-      <p class="hero-sub">If diet changes, supplements, medication, or prior treatment helped only temporarily — this assessment identifies why your IBS keeps returning, and what to do about it. One session. A complete constitutional picture. A clear path forward.</p>
-      <div class="hero-btns">
-        <a href="/disclaimer.html" class="btn-p">Assessment + First Treatment — $150</a>
-        <a href="#why" class="btn-g">Why it keeps returning ↓</a>
-      </div>
+      <h2 class="sub-h">Clinical writing — free.</h2>
+      <p class="sub-body">Essays on digestive health, constitutional patterns, and the reasoning behind herbal medicine. Published on Substack.</p>
     </div>
-    <div class="hero-pillars">
-      <div class="hero-pillar">
-        <span class="pillar-n">20+</span>
-        <div><div class="pillar-title">Years resolving complex IBS cases</div><div class="pillar-body">Patients referred after years of failed treatment across conventional, naturopathic, and integrative settings — assessed, reconstituted, resolved.</div></div>
-      </div>
-      <div class="hero-pillar">
-        <span class="pillar-n">5</span>
-        <div><div class="pillar-title">Influences standard treatment ignores</div><div class="pillar-body">Constitutional blueprint, environmental field, timing cycles, conscious belief, subconscious habit — the framework addresses all five simultaneously.</div></div>
-      </div>
-      <div class="hero-pillar">
-        <span class="pillar-n">$150</span>
-        <div><div class="pillar-title">To begin — assessment + first treatment</div><div class="pillar-body">One 75-minute session covers your full constitutional evaluation and your first clinical intervention. A clear pattern diagnosis and protocol — not a sales consultation.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SECOND OPINION CONSULT — FEATURED -->
-<section class="consult-sec" id="consult">
-  <div class="consult-inner">
     <div>
-      <span class="consult-badge">Featured offer</span>
-      <h2 class="consult-title">The Unresolved<br>Case <em>Review.</em></h2>
-      <div class="consult-rule"></div>
-      <p class="consult-body">A single, structured 90-minute session for patients who have received a prior IBS diagnosis, have invested in treatment, and have not found lasting resolution. <strong>You bring the full history. I apply a different framework to it — and tell you what it reveals.</strong></p>
-      <p class="consult-body" style="margin-top:-1rem">This is not a second opinion that replicates what you have already had. It is a constitutional assessment through the QEM™ lens — reading your elemental type, environmental field, and timing patterns against your case history. The result is a diagnostic picture that most prior practitioners could not have produced, because they did not have the framework to produce it.</p>
-
-      <div class="consult-price-block">
-        <p class="consult-price-lbl">Investment</p>
-        <p class="consult-price">$750</p>
-        <p class="consult-price-note">Single session · 90 minutes · In-person (Mono, Ontario) or virtual across Canada<br><strong>Includes written case summary delivered within 48 hours.</strong><br>A $200 non-refundable intake fee is collected at booking and applied to the full fee.</p>
-      </div>
-
-      <div class="consult-what">
-        <p class="consult-what-title">What the review includes</p>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Full QEM™ constitutional assessment: elemental type, organ vulnerability, cycle patterns</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Environmental field review: home and workplace influences on your digestive system</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Diagnostic explanation of why prior treatments produced partial or temporary results</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">A sequenced protocol outline: what I would do, in what order, and why</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Written case summary (2–3 pages) delivered within 48 hours — yours to keep and share</p></div>
-        <div class="consult-item"><span class="consult-dash">—</span><p class="consult-text">Credit toward the QEM™ IBS Resolution Program if you choose to continue</p></div>
-      </div>
-
-      <a href="/disclaimer.html" class="btn-p">Assessment + First Treatment — $150</a>
-    </div>
-
-    <div class="consult-right">
-      <p class="consult-process-lbl">How the session works</p>
-      <div class="process-step">
-        <div class="process-n">01</div>
-        <div>
-          <p class="process-title">Structured intake — before we meet</p>
-          <p class="process-body">You complete a detailed intake document: full treatment history, current symptom picture with timing and triggers, birth date and time, current home and work location. This is where the constitutional and environmental assessment begins — not in the room.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="process-n">02</div>
-        <div>
-          <p class="process-title">The assessment session — 90 minutes</p>
-          <p class="process-body">The first third is mine: I present my constitutional findings from your intake — your elemental profile, the environmental pressures I've identified, the timing patterns relevant to your case. You will hear a diagnosis, not a set of questions. The second third is collaborative — you refine the picture. The final third is the protocol: what I would do and why everything prior fell short.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="process-n">03</div>
-        <div>
-          <p class="process-title">Written summary — within 48 hours</p>
-          <p class="process-body">A concise written document: your constitutional profile, the diagnostic interpretation, a sequenced protocol recommendation, and a clear account of what prior approaches missed. This is something you can share with your physician, show a specialist, or simply return to.</p>
-        </div>
-      </div>
-      <div class="process-step">
-        <div class="process-n">04</div>
-        <div>
-          <p class="process-title">Optional continuation</p>
-          <p class="process-body">If the assessment reveals your case is suited to the full QEM™ IBS Resolution Program, you will receive a clear recommendation and the review fee is credited toward the program investment. There is no obligation and no pressure — the review is complete and valuable on its own.</p>
-        </div>
-      </div>
-      <div class="consult-note">
-        <strong>This session is designed for patients who have a confirmed IBS diagnosis, have engaged in prior treatment, and have not resolved.</strong> If you are early in your diagnostic journey, the 12-week program below may be the more appropriate starting point.
-      </div>
+      <form class="sub-form" action="https://lemnvu.substack.com/api/v1/free" method="post" target="_blank">
+        <input class="sub-input" type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button class="sub-btn" type="submit">Subscribe</button>
+      </form>
+      <p class="sub-note">No spam. Unsubscribe any time.</p>
     </div>
   </div>
-</section>
-
-<!-- WHY IBS PERSISTS -->
-<section class="sec why-sec" id="why">
-  <div class="sec-inner">
-    <div class="why-grid">
-      <div class="why-text">
-        <p class="lbl">Why it persists</p>
-        <h2 class="sec-title">A framework problem —<br>not a <em>treatment failure.</em></h2>
-        <p>If you have lived with IBS for years, you know this cycle. Tests come back normal. A medication addresses one symptom while creating others. Elimination diets produce results that don't last. Practitioners treat the gut while leaving untouched the deeper patterns that are generating the problem.</p>
-        <p>This is not a failure of effort or care — yours or theirs. It is a failure of framework.</p>
-        <p><strong>IBS is not only a gut problem.</strong> In over two decades of clinical practice, it consistently presents as a whole-system expression — shaped by constitutional makeup, environmental pressure, timing cycles, and the conscious and subconscious patterns that organise daily life. A framework that addresses only one or two of these will produce partial, temporary results. That is precisely what most patients describe when they arrive here.</p>
-        <p>The QEM™ framework addresses all five simultaneously. This is why it reaches what prior approaches have not.</p>
-        <a href="/disclaimer.html" class="btn-p" style="margin-top:1.2rem;display:inline-block">Assessment + First Treatment — $150</a>
-      </div>
-      <div>
-        <div class="bq">
-          <p class="bq-text">"The patients who resolve fastest in this framework are the ones who have already tried everything else. They arrive exhausted and appropriately skeptical. What shifts is not persuasion — it is the constitutional assessment, which identifies something in their pattern that a decade of prior treatment never reached."</p>
-          <p class="bq-attr">— Vu Le, R.TCMP, R.Ac · NCCAOM Diplomate</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TEXT BAR -->
-<div style="background:rgba(122,98,56,0.09);border-top:1px solid rgba(122,98,56,0.2);border-bottom:1px solid rgba(122,98,56,0.2);padding:0.9rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-family:'Jost',system-ui,sans-serif;font-size:0.75rem;letter-spacing:0.03em">
-  <span style="color:rgba(255,255,255,0.45)">Prefer to reach us directly?</span>
-  <span><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a>&ensp;<span style="color:rgba(255,255,255,0.3);font-size:0.68rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">&#x2190; vule.ca</a>
 </div>
-<!-- END TEXT BAR -->
-<!-- DIFF TABLE -->
-<section class="sec diff-sec">
-  <div class="sec-inner">
-    <p class="lbl">What changes</p>
-    <h2 class="sec-title" style="color:#fff">Standard IBS treatment versus<br>the QEM™ <strong>constitutional approach.</strong></h2>
-    <div class="diff-grid">
-      <div class="diff-col">
-        <p class="diff-col-lbl">Standard IBS treatment</p>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Treats the presenting symptom. Returns when symptoms return.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Generic dietary protocols applied without constitutional assessment.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">No defined endpoint — ongoing management without a resolution arc.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Environmental and timing factors not assessed or addressed.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Subconscious habit patterns not treated as clinical variables.</p></div>
-      </div>
-      <div class="diff-col">
-        <p class="diff-col-lbl">QEM™ IBS Resolution</p>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Identifies the constitutional pattern beneath the symptom. Builds toward resolution.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Dietary guidance matched precisely to your elemental type — not a standard protocol.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Structured program with a defined clinical arc and a clear endpoint.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Environmental and seasonal influences assessed and integrated into the protocol.</p></div>
-        <div class="diff-item"><span class="diff-dash">—</span><p class="diff-text">Subconscious habit architecture addressed as a primary clinical intervention.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- FIVE INFLUENCES -->
-<section class="sec inf-sec" id="program">
-  <div class="sec-inner">
-    <p class="lbl">The QEM™ framework</p>
-    <h2 class="sec-title">Five influences.<br><strong>One integrated approach.</strong></h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.85;color:var(--muted);max-width:620px;margin-top:1rem">Where standard treatment addresses one or two variables, the QEM™ framework addresses five simultaneously — which is why it reaches what prior approaches have not.</p>
-    <div class="inf-grid">
-      <div class="inf-card"><span class="inf-n">01</span><h3 class="inf-title">Constitutional Blueprint</h3><p class="inf-body">Your elemental type and inherited tendencies — the fixed foundation that determines which interventions will and will not work for you specifically.</p></div>
-      <div class="inf-card"><span class="inf-n">02</span><h3 class="inf-title">Environmental Field</h3><p class="inf-body">The influence of your home, workplace, geography, and seasonal pressure on your digestive system. What surrounds you shapes what happens inside you.</p></div>
-      <div class="inf-card"><span class="inf-n">03</span><h3 class="inf-title">Timing &amp; Cycles</h3><p class="inf-body">The organ clock, circadian rhythm, and seasonal vulnerability — explaining why IBS symptoms follow predictable temporal patterns and how to intervene effectively.</p></div>
-      <div class="inf-card"><span class="inf-n">04</span><h3 class="inf-title">Conscious Programming</h3><p class="inf-body">The beliefs held about the condition — including the medical narrative that IBS is chronic and permanent. These beliefs have measurable physiological consequences.</p></div>
-      <div class="inf-card"><span class="inf-n">05</span><h3 class="inf-title">Subconscious Patterns</h3><p class="inf-body">Eating behaviour, stress response, sleep architecture — the entrenched habits running beneath conscious awareness that sustain the IBS cycle regardless of dietary effort.</p></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TEXT BAR -->
-<div style="background:rgba(122,98,56,0.09);border-top:1px solid rgba(122,98,56,0.2);border-bottom:1px solid rgba(122,98,56,0.2);padding:0.9rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-family:'Jost',system-ui,sans-serif;font-size:0.75rem;letter-spacing:0.03em">
-  <span style="color:rgba(255,255,255,0.45)">Prefer to reach us directly?</span>
-  <span><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a>&ensp;<span style="color:rgba(255,255,255,0.3);font-size:0.68rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">&#x2190; vule.ca</a>
-</div>
-<!-- END TEXT BAR -->
-<!-- 12-WEEK PROGRAM -->
-<section class="sec jrn-sec">
-  <div class="sec-inner">
-    <p class="lbl">The 12-week program</p>
-    <h2 class="sec-title" style="color:#fff">A structured arc from<br><strong>assessment to resolution.</strong></h2>
-    <div class="jrn-grid">
-      <div class="j-card"><p class="j-phase">Foundation</p><div class="j-wks">01–02</div><h3 class="j-title">Constitutional Assessment</h3><p class="j-body">Deep constitutional mapping. Five Influence assessment. Your personalised 12-week protocol is built from this session. Nothing generic — everything specific to your pattern.</p><span class="j-fmt">In-Person · Mono, Ontario</span></div>
-      <div class="j-card"><p class="j-phase">Activation</p><div class="j-wks">03–06</div><h3 class="j-title">Protocol in Motion</h3><p class="j-body">Constitutional dietary recalibration. Environmental adjustments. Timing-based interventions targeting your specific organ and cycle vulnerabilities.</p><span class="j-fmt">Virtual · Weekly</span></div>
-      <div class="j-card"><p class="j-phase">Integration</p><div class="j-wks">07–10</div><h3 class="j-title">Deep Pattern Work</h3><p class="j-body">Conscious reprogramming. Habit architecture redesign. Addressing the subconscious drivers that maintain the IBS cycle independently of dietary effort.</p><span class="j-fmt">Virtual · Weekly</span></div>
-      <div class="j-card"><p class="j-phase">Resolution</p><div class="j-wks">11–12</div><h3 class="j-title">Consolidation &amp; Close</h3><p class="j-body">Resolution review. Long-term maintenance blueprint. Your independent plan for sustaining change without ongoing clinical dependence.</p><span class="j-fmt">In-Person or Virtual</span></div>
-    </div>
-    <div class="jrn-note"><p>Weekly acupuncture and custom constitutional herbal prescriptions are integrated as clinical adjuncts throughout the program — billed separately under registered CTCMPAO practice and <strong>eligible for extended health benefits</strong> where applicable.</p></div>
-  </div>
-</section>
-
-<!-- INVESTMENT -->
-<section class="sec inv-sec">
-  <div class="sec-inner">
-    <p class="lbl">The investment</p>
-    <h2 class="sec-title">Clear fees.<br><em>Defined deliverables.</em></h2>
-    <p style="font-size:1.05rem;font-weight:300;line-height:1.85;color:var(--muted);max-width:600px">Begin with the IBS Assessment &amp; First Treatment — a complete constitutional evaluation with your first clinical intervention included. For complex unresolved cases, the Unresolved Case Review provides a deeper diagnostic picture. Clinical treatments are extended-health-benefits eligible.</p>
-    <table class="inv-table">
-      <thead><tr><th>Service</th><th>Format</th><th>Investment</th></tr></thead>
-      <tbody>
-        <tr class="featured-row">
-          <td>IBS Assessment + First Treatment<span class="row-badge">Start here</span><br><small style="color:var(--muted);font-size:.85rem">75-min constitutional evaluation · first clinical intervention included · clear pattern assessment and next-step protocol</small></td>
-          <td style="color:var(--muted);font-size:.9rem">In-Person · Mono, Ontario · Single session</td>
-          <td class="price">$150</td>
-        </tr>
-        <tr>
-          <td>The Unresolved Case Review<br><small style="color:var(--muted);font-size:.85rem">90-min constitutional assessment · written case summary · protocol outline · credit toward program — for complex cases that have been through extensive prior treatment</small></td>
-          <td style="color:var(--muted);font-size:.9rem">In-Person or Virtual · Single session</td>
-          <td class="price">$750</td>
-        </tr>
-        <tr>
-          <td>QEM™ IBS Resolution Program — 12 weeks<br><small style="color:var(--muted);font-size:.85rem">Constitutional coaching, protocol delivery, written materials, between-session support</small></td>
-          <td style="color:var(--muted);font-size:.9rem">Weekly · In-person + Virtual</td>
-          <td class="price">$2,800</td>
-        </tr>
-        <tr>
-          <td>QEM™ Framework Only — 12 weeks<br><small style="color:var(--muted);font-size:.85rem">Full coaching program without weekly acupuncture commitment</small></td>
-          <td style="color:var(--muted);font-size:.9rem">Weekly · Primarily Virtual</td>
-          <td class="price">$1,800</td>
-        </tr>
-        <tr>
-          <td>Acupuncture — Clinical Adjunct<br><small style="color:var(--muted);font-size:.85rem">CTCMPAO-compliant · Extended health benefits eligible</small></td>
-          <td style="color:var(--muted);font-size:.9rem">Per session</td>
-          <td class="price">$180</td>
-        </tr>
-        <tr>
-          <td>Custom Constitutional Herbal Formula<br><small style="color:var(--muted);font-size:.85rem">Compounded specifically for your constitutional pattern</small></td>
-          <td style="color:var(--muted);font-size:.9rem">Per 5-day supply</td>
-          <td class="price">$200</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="inv-note">The $150 IBS Assessment includes your first clinical treatment — acupuncture or a 5-day constitutional herbal formula. The Unresolved Case Review ($200 non-refundable at booking; balance on the day) is credited in full toward the 12-week program if you choose to continue. <strong>Both are complete clinical services — not sales consultations.</strong></div>
-  </div>
-</section>
-
-
-<!-- TEXT BAR -->
-<div style="background:rgba(122,98,56,0.09);border-top:1px solid rgba(122,98,56,0.2);border-bottom:1px solid rgba(122,98,56,0.2);padding:0.9rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-family:'Jost',system-ui,sans-serif;font-size:0.75rem;letter-spacing:0.03em">
-  <span style="color:rgba(255,255,255,0.45)">Prefer to reach us directly?</span>
-  <span><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a>&ensp;<span style="color:rgba(255,255,255,0.3);font-size:0.68rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">&#x2190; vule.ca</a>
-</div>
-<!-- END TEXT BAR -->
-<!-- FOR WHOM -->
-<section class="sec whom-sec">
-  <div class="sec-inner">
-    <p class="lbl">Is this right for you</p>
-    <h2 class="sec-title">This work is built for patients<br><em>who have already tried,</em> and haven't resolved.</h2>
-    <div class="whom-grid">
-      <div class="whom-col">
-        <p class="whom-lbl">You are in the right place if —</p>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have a confirmed IBS diagnosis and prior treatment has not produced lasting change</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have tried multiple practitioners — conventional, integrative, or both — without resolution</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You suspect there is more driving your IBS than gut physiology alone</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are ready to receive a different kind of assessment — constitutional, environmental, and temporal</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You want clarity on what has been missed and a credible path forward</p></div>
-      </div>
-      <div class="whom-col">
-        <p class="whom-lbl">This may not be right if —</p>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You have not yet received a formal IBS diagnosis from a physician</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are seeking passive treatment with no dietary or lifestyle engagement</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You require emergency or acute medical management</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are not open to the environmental or constitutional dimensions of the assessment</p></div>
-        <div class="whom-item"><span class="whom-dash">—</span><p class="whom-text">You are looking for a quick fix rather than a root-pattern approach</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-sec" id="enquire">
-  <div class="cta-inner">
-    <p class="lbl" style="text-align:center">Begin here</p>
-    <h2 class="cta-title">One session.<br><em>A clear picture.</em></h2>
-    <p class="cta-body">Bring your history. In 75 minutes you will have a constitutional assessment, your first clinical treatment, and a clear account of what has been driving your symptoms and what to do about it.</p>
-    <div class="cta-btns">
-      <a href="/disclaimer.html" class="btn-p" style="font-size:.75rem;padding:1.1rem 2.6rem">Assessment + First Treatment — $150</a>
-    </div>
-    <p style="text-align:center;margin-bottom:2rem"><a href="#consult" class="btn-g" style="font-size:.65rem">Complex case? Learn about the Unresolved Case Review — $750 ↑</a></p>
-    <p class="cta-contact">In-person · Mono, Ontario  ·  Virtual across Canada<br><a href="mailto:vu@vule.ca">vu@vule.ca</a>  ·  <a href="sms:4168719239">(416) 871-9239</a> <span style="opacity:0.6;font-size:0.9em">(text preferred — calls not answered)</span></p>
-  </div>
-</section>
-
-
-<!-- TEXT BAR -->
-<div style="background:rgba(122,98,56,0.09);border-top:1px solid rgba(122,98,56,0.2);border-bottom:1px solid rgba(122,98,56,0.2);padding:0.9rem 5vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-family:'Jost',system-ui,sans-serif;font-size:0.75rem;letter-spacing:0.03em">
-  <span style="color:rgba(255,255,255,0.45)">Prefer to reach us directly?</span>
-  <span><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a>&ensp;<span style="color:rgba(255,255,255,0.3);font-size:0.68rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.35);text-decoration:none;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">&#x2190; vule.ca</a>
-</div>
-<!-- END TEXT BAR -->
 <footer>
-  <div class="foot-l"><a href="https://vule.ca/">← Back to Vu Le</a>  ·  Vu Le Integrative Medicine  ·  Mono, Ontario  ·  <a href="mailto:vu@vule.ca">vu@vule.ca</a></div>
-  <p class="foot-d">The QEM™ IBS Resolution Program and Unresolved Case Review are health education and constitutional assessment services. Acupuncture and herbal medicine are delivered separately by Vu Le and Van Lam, Registered TCM Practitioners (CTCMPAO). This page does not constitute medical advice.</p>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Vu Le · TCM</div>
+        <p class="footer-tagline">Virtual TCM consultations &amp; herbal medicine shipped Canada-wide.<br>Private home clinic · Mono, Ontario · In practice since 2003.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-head">Services</div>
+        <a href="/virtual.html">Virtual Consultation</a>
+        <a href="/herbs.html">Herbal Medicine</a>
+        <a href="/ibs-resolution.html">IBS Resolution</a>
+        <a href="/case-review.html">Case Review</a>
+        <a href="/fees.html">Fees</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-head">Practice</div>
+        <a href="/discover.html">Our Approach</a>
+        <a href="/fengshui.html">Feng Shui · BaZi</a>
+        <a href="/disclaimer.html">Practice Information</a>
+        <a href="https://lemnvu.substack.com" target="_blank" rel="noopener">Substack</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-head">Contact</div>
+        <a href="sms:4168719239">(416) 871-9239 — text</a>
+        <a href="mailto:vu@vule.ca">vu@vule.ca</a>
+      </div>
+    </div>
+    <p class="footer-disc">Vu Le is a Registered Traditional Chinese Medicine Practitioner and Acupuncturist (R.TCMP, R.Ac), licensed by the CTCMPAO (Ontario), and holds NCBAHM Diplomate credentials. The IBS Resolution Programme is a virtual TCM service available to patients in Ontario, Saskatchewan, Manitoba, Nova Scotia, New Brunswick, PEI, Yukon, NWT, and Nunavut. It is not a substitute for gastroenterological investigation or emergency medical care. Results vary between individuals and no outcome is guaranteed.</p>
+    <p class="footer-copy">© 2026 Vu Le · TCM · vule.ca</p>
+  </div>
 </footer>
-<script>
-window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>60)},{passive:true});
-const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.12});
-document.querySelectorAll('.inf-card,.j-card').forEach(el=>io.observe(el));
-</script>
 
-<!-- Internal navigation footer for SEO -->
-<div style="margin:0 auto;max-width:900px;padding:1.5rem 5vw;background:rgba(122,98,56,0.08);border-top:1px solid rgba(122,98,56,0.18);border-bottom:1px solid rgba(122,98,56,0.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-family:'Jost',system-ui,sans-serif;font-size:0.78rem;letter-spacing:0.04em">
-  <span style="color:rgba(255,255,255,0.55)">Prefer to reach us directly?</span>
-  <span style="color:rgba(255,255,255,0.85)"><a href="sms:4168719239" style="color:#A08040;text-decoration:none;font-weight:500">(416) 871-9239</a> &nbsp;<span style="color:rgba(255,255,255,0.35);font-size:0.7rem">Text preferred &mdash; calls not answered</span></span>
-  <a href="https://vule.ca/" style="color:rgba(255,255,255,0.45);text-decoration:none;font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase" onmouseover="this.style.color='#A08040'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">← vule.ca</a>
-</div>
-<nav aria-label="Site navigation" style="text-align:center;padding:2rem 5vw;border-top:1px solid rgba(154,124,74,0.15);font-family:'Jost',sans-serif;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;">
-  <a href="/" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Home</a>
-  <a href="/case-review.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Case Review</a>
-  <a href="/herbs.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Herbal Medicine Guide</a>
-  <a href="/signup.html" style="color:#7A6238;text-decoration:none;margin:0 1.5rem;">Free Guide</a>
-</nav>
-<main id="main-content">
-</main>
+<script>
+const nav=document.querySelector('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50),{passive:true});
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
