@@ -67,6 +67,22 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .ship-table th{font-family:var(--sans);font-size:.71rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:.55rem 0;text-align:left;border-bottom:1px solid var(--bdr)}
 .ship-table td{font-family:var(--sans);font-size:.74rem;color:var(--ink2);padding:.6rem 0;border-bottom:1px solid var(--bdr2)}
 .ship-table tr:last-child td{border:none}
+/* Payment block */
+.payment-block{background:var(--bg2);border:1px solid var(--bdr);padding:0;margin-bottom:2.5rem;overflow:hidden}
+.payment-block-head{background:var(--ink);padding:1rem 1.6rem;display:flex;align-items:center;gap:.8rem}
+.payment-block-head-label{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(248,244,238,.6)}
+.payment-block-head-title{font-family:var(--serif);font-size:1.1rem;color:#F8F4EE}
+.payment-block-body{padding:1.6rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.payment-method{display:flex;flex-direction:column;gap:.4rem}
+.pm-label{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.pm-value{font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
+.pm-note{font-family:var(--sans);font-size:.80rem;color:var(--ink2);line-height:1.65}
+.pm-email{font-family:var(--sans);font-size:.92rem;font-weight:500;color:var(--ink);letter-spacing:.01em}
+.pm-email a{color:var(--ora);text-decoration:none}
+.pm-email a:hover{text-decoration:underline}
+.payment-rule{font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.75;padding:1rem 1.6rem;border-top:1px solid var(--bdr);background:rgba(156,126,74,.04)}
+.payment-rule strong{color:var(--ink)}
+@media(max-width:700px){.payment-block-body{grid-template-columns:1fr}}
 /* SMS nudge */
 .sms-nudge{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:1.4rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:2}
 .nudge-text{font-family:var(--serif);font-size:1rem;color:var(--ink)}
@@ -126,6 +142,28 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
 
 <div class="sec">
   <div class="sec-inner">
+
+    <!-- PAYMENT POLICY -->
+    <div class="payment-block reveal">
+      <div class="payment-block-head">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(248,244,238,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span class="payment-block-head-label">Payment policy</span>
+        <span class="payment-block-head-title">Payment is required before service is rendered.</span>
+      </div>
+      <div class="payment-block-body">
+        <div class="payment-method">
+          <span class="pm-label">Accepted method</span>
+          <span class="pm-value">Interac e-Transfer</span>
+          <span class="pm-note">The only payment method accepted. No credit cards, cheques, or cash.</span>
+        </div>
+        <div class="payment-method">
+          <span class="pm-label">Send e-Transfer to</span>
+          <span class="pm-email"><a href="mailto:lemnvu@outlook.com">lemnvu@outlook.com</a></span>
+          <span class="pm-note">Use your name and service as the message. Auto-deposit is enabled — no security question needed.</span>
+        </div>
+      </div>
+      <div class="payment-rule"><strong>When to pay:</strong> Payment is due in full before your consultation begins or before herbal formulas are dispensed. For the Unresolved Case Review, a $200 non-refundable deposit is required to confirm the booking; the balance is due before the session. Formulas are not shipped until payment is confirmed.</div>
+    </div>
 
     <!-- VIRTUAL CONSULTATIONS -->
     <p class="sec-label reveal">Virtual consultations</p>
@@ -236,7 +274,6 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
         <div class="footer-col-head">Practice</div>
         <a href="/discover.html">Our Approach</a>
         <a href="/library.html">Books &amp; Courses</a>
-  <a href="/library.html">Library</a>
         <a href="/fengshui.html">Feng Shui · BaZi</a>
         <a href="/disclaimer.html">Practice Information</a>
         <a href="https://lemnvu.substack.com" target="_blank" rel="noopener">Substack</a>
