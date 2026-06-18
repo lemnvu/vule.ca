@@ -45,11 +45,11 @@ body{font-family:var(--serif);background:var(--bg);color:var(--ink);overflow-x:h
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(248,244,238,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
 nav.scrolled{box-shadow:0 2px 20px rgba(28,22,18,0.08)}
 .nav-logo{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:1.6rem;align-items:center}
-.nav-links a{font-family:var(--sans);font-size:.78rem;font-weight:500;color:var(--ink2);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
+.nav-links{display:flex;gap:.9rem;align-items:center;flex-wrap:nowrap}
+.nav-links a{font-family:var(--sans);font-size:.62rem;font-weight:500;color:var(--ink2);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
 .nav-links a:hover{color:var(--gold)}
 .nav-back{color:var(--gold)}
-.nav-sms{background:var(--red);color:#fff !important;padding:.38rem .9rem}
+.nav-sms{background:var(--red);color:#fff !important;padding:.35rem .75rem}
 .nav-sms:hover{background:#a93226 !important}
 .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
 .hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:.3s}
@@ -199,14 +199,16 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
 .pill{font-family:var(--sans);font-size:.76rem;color:var(--ink2);border:1px solid var(--bdr);padding:.15rem .55rem;background:rgba(248,244,238,.8)}
 
 /* ── MOBILE ── */
+@media(max-width:960px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+}
 @media(max-width:700px){
   .hero{grid-template-columns:1fr;min-height:auto}
   .hero-right{border-left:none;border-top:1px solid var(--bdr);padding:2rem 1.5rem}
   .hero-left{padding:4rem 1.5rem 2rem}
   .about-grid,.footer-top,.sub-inner{grid-template-columns:1fr}
   .herb-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
-  .hamburger{display:flex}
   .sec{padding:3.5rem 1.5rem}
   .sms-nudge{flex-direction:column;text-align:center}
   .nudge-right{text-align:center}
