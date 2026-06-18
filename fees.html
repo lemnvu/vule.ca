@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fees &amp; Services — Vu Le TCM · Virtual · Canada-wide</title>
-<meta name="description" content="Full fee schedule for virtual TCM consultations, herbal medicine, and specialist services. All fees listed. Text (416) 871-9239.">
+<title>Fees & Payment — Vu Le · TCM · vule.ca</title>
+<meta name="description" content="Complete fee schedule for virtual TCM, herbal medicine, acupuncture, and Feng Shui. Payment by Interac e-Transfer. Vu Le, R.TCMP, R.Ac.">
 <link rel="canonical" href="https://vule.ca/fees.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,119 +13,149 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:18px}
 :root{
-  --bg:#F8F4EE;--bg2:#F2EDE3;--ink:#1C1612;--ink2:#2C2420;--muted:#5A4A40;--dim:#8A7A70;
-  --gold:#9C7E4A;--sage:#7A9E8E;--red:#C0392B;--ora:#D35400;--yel:#D4AC0D;--grn:#27AE60;
+  --bg:#F8F4EE;--bg2:#F2EDE3;--bg3:#EDE6DA;
+  --ink:#1C1612;--ink2:#2C2420;--muted:#5A4A40;--dim:#8A7A70;
+  --gold:#9C7E4A;--gold2:#B8976A;
+  --sage:#7A9E8E;--red:#C0392B;--ora:#D35400;--yel:#D4AC0D;--grn:#27AE60;
   --bdr:rgba(156,126,74,0.18);--bdr2:rgba(156,126,74,0.10);
-  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',system-ui,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
 }
 body{font-family:var(--serif);background:var(--bg);color:var(--ink);overflow-x:hidden;line-height:1.75}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(248,244,238,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr)}
-.nav-logo{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
-.nav-links{display:flex;gap:.9rem;align-items:center;flex-wrap:nowrap}
-.nav-links a{font-family:var(--sans);font-size:.62rem;font-weight:500;color:var(--ink2);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
-.nav-links a:hover{color:var(--gold)}
-.nav-back{color:var(--gold)}
-.nav-sms{background:var(--red);color:#fff !important;padding:.35rem .75rem}
-.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
-.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink)}
-.mob-nav{display:none;position:fixed;inset:0;background:var(--bg);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
-.mob-nav.open{display:flex}
-.mob-nav a{font-family:var(--sans);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none}
-.mob-close{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--ink)}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}
 .reveal.vis{opacity:1;transform:translateY(0)}
-.page-hero{padding:8rem 2.5rem 3rem;position:relative;z-index:2;max-width:1100px;margin:0 auto}
-.hero-eye{font-family:var(--sans);font-size:.74rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
-.hero-eye::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
-.hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,4.5vw,3.4rem);font-weight:400;line-height:1.08;color:var(--ink);margin-bottom:.8rem}
-.hero-h1 em{font-style:italic;color:var(--gold)}
-.hero-sub{font-family:var(--sans);font-size:.97rem;color:var(--ink2);line-height:1.85;max-width:560px}
-.sec{padding:3rem 2.5rem;position:relative;z-index:2}
+.sec{padding:5rem 2.5rem;position:relative;z-index:2}
 .sec-inner{max-width:1100px;margin:0 auto}
+.sec-eye{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.sec-h{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:400;line-height:1.12;color:var(--ink);margin-bottom:1rem}
+.sec-h em{font-style:italic;color:var(--ora)}
+.sec-body{font-family:var(--sans);font-size:.97rem;color:var(--ink2);line-height:1.85;max-width:600px;margin-bottom:1.8rem}
 .divider{border:none;border-top:1px solid var(--bdr);margin:0 2.5rem}
-.sec-label{font-family:var(--sans);font-size:.71rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--bdr)}
-.fee-table{width:100%;border-collapse:collapse;margin-bottom:2rem}
-.fee-table th{font-family:var(--sans);font-size:.71rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:.6rem 0;text-align:left;border-bottom:1px solid var(--bdr)}
-.fee-table th:last-child{text-align:right}
-.fee-table td{padding:.85rem 0;border-bottom:1px solid var(--bdr2);vertical-align:top}
-.fee-table tr:last-child td{border:none}
-.fn{font-family:var(--serif);font-size:.95rem;color:var(--ink);display:block}
-.fd{font-family:var(--sans);font-size:.84rem;color:var(--ink2);display:block;margin-top:.18rem;line-height:1.6;max-width:480px}
-.fs{font-family:var(--sans);font-size:.76rem;color:var(--dim);display:block;margin-top:.15rem}
-.fp{font-family:var(--sans);font-size:.88rem;font-weight:500;color:var(--ink);text-align:right;white-space:nowrap;padding-left:1.5rem}
-.badge{font-family:var(--sans);font-size:.70rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;background:rgba(156,126,74,.12);color:var(--gold);border:1px solid var(--bdr);padding:.12rem .45rem;margin-left:.4rem;vertical-align:middle}
-/* Refill grid */
-.refill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-bottom:1rem;max-width:480px}
-.refill-cell{background:var(--bg2);border:1px solid var(--bdr);padding:.9rem;text-align:center}
-.r-days{font-family:var(--sans);font-size:.76rem;color:var(--dim);margin-bottom:.25rem}
-.r-price{font-family:var(--serif);font-size:1.2rem;color:var(--ink)}
-/* Note boxes */
-.note-box{background:var(--bg2);border:1px solid var(--bdr);padding:1.2rem 1.4rem;margin:1rem 0;font-family:var(--sans);font-size:.9rem;color:var(--ink2);line-height:1.75}
-.note-box strong{color:var(--ink)}
-.warn-box{background:rgba(192,57,43,.05);border-left:3px solid var(--red);padding:1rem 1.2rem;margin:1rem 0;font-family:var(--sans);font-size:.73rem;color:var(--ink2);line-height:1.75}
-/* Shipping */
-.ship-table{width:100%;max-width:560px;border-collapse:collapse;margin:1rem 0 1.5rem}
-.ship-table th{font-family:var(--sans);font-size:.71rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding:.55rem 0;text-align:left;border-bottom:1px solid var(--bdr)}
-.ship-table td{font-family:var(--sans);font-size:.74rem;color:var(--ink2);padding:.6rem 0;border-bottom:1px solid var(--bdr2)}
-.ship-table tr:last-child td{border:none}
-/* Payment block */
-.payment-block{background:var(--bg2);border:1px solid var(--bdr);padding:0;margin-bottom:2.5rem;overflow:hidden}
-.payment-block-head{background:var(--ink);padding:1rem 1.6rem;display:flex;align-items:center;gap:.8rem}
-.payment-block-head-label{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(248,244,238,.6)}
-.payment-block-head-title{font-family:var(--serif);font-size:1.1rem;color:#F8F4EE}
-.payment-block-body{padding:1.6rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
-.payment-method{display:flex;flex-direction:column;gap:.4rem}
-.pm-label{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-.pm-value{font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
-.pm-note{font-family:var(--sans);font-size:.80rem;color:var(--ink2);line-height:1.65}
-.pm-email{font-family:var(--sans);font-size:.92rem;font-weight:500;color:var(--ink);letter-spacing:.01em}
-.pm-email a{color:var(--ora);text-decoration:none}
-.pm-email a:hover{text-decoration:underline}
-.payment-rule{font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.75;padding:1rem 1.6rem;border-top:1px solid var(--bdr);background:rgba(156,126,74,.04)}
-.payment-rule strong{color:var(--ink)}
-@media(max-width:700px){
-  .nav-links{display:none}
-  .hamburger{display:flex}.payment-block-body{grid-template-columns:1fr}}
-/* SMS nudge */
+.btn-sms{display:inline-flex;align-items:center;gap:.6rem;background:var(--ink);color:var(--bg);font-family:var(--sans);font-size:.82rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:.9rem 1.6rem;text-decoration:none;transition:background .2s}
+.btn-sms:hover{background:var(--ink2)}
+.cta-note{font-family:var(--sans);font-size:.80rem;color:var(--ink2);line-height:1.75;max-width:340px;margin-top:.75rem}
+.cta-disc{font-family:var(--sans);font-size:.74rem;color:var(--muted);line-height:1.65;max-width:360px;margin-top:.6rem;border-left:2px solid var(--ora);padding-left:.6rem}
 .sms-nudge{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:1.4rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:2}
 .nudge-text{font-family:var(--serif);font-size:1rem;color:var(--ink)}
 .nudge-right{display:flex;flex-direction:column;gap:.2rem;text-align:right}
 .nudge-num{font-family:var(--sans);font-size:.97rem;font-weight:500;color:var(--ink);text-decoration:none}
 .nudge-sub{font-family:var(--sans);font-size:.74rem;color:var(--dim)}
-footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem 1.2rem;position:relative;z-index:2}
-.footer-inner{max-width:1100px;margin:0 auto}
-.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:1.5rem}
-.footer-brand{font-family:var(--serif);font-size:.95rem;color:var(--ink);margin-bottom:.35rem}
-.footer-tagline{font-family:var(--sans);font-size:.74rem;color:var(--dim);line-height:1.6}
-.footer-col-head{font-family:var(--sans);font-size:.54rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
-.footer-col a{display:block;font-family:var(--sans);font-size:.66rem;color:var(--muted);text-decoration:none;margin-bottom:.32rem;transition:color .2s}
-.footer-col a:hover{color:var(--ink)}
-.footer-disc{font-family:var(--sans);font-size:.71rem;color:var(--dim);line-height:1.65;border-top:1px solid var(--bdr2);padding-top:.9rem;max-width:900px}
-.footer-copy{font-family:var(--sans);font-size:.71rem;color:var(--dim);margin-top:.4rem}
+.page-hero{padding:8rem 2.5rem 4rem;position:relative;z-index:2;max-width:860px}
+.hero-eye{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;display:flex;align-items:center;gap:.5rem}
+.hero-eye::before{content:'';display:inline-block;width:20px;height:1px;background:var(--gold)}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:400;line-height:1.06;color:var(--ink);margin-bottom:1.2rem}
+.hero-h1 em{font-style:italic;color:var(--ora)}
+.hero-body{font-family:var(--sans);font-size:.97rem;line-height:1.9;color:var(--ink2);max-width:580px;margin-bottom:2rem}
+.step-list{display:flex;flex-direction:column;gap:0;max-width:700px}
+.step{display:flex;gap:1.4rem;padding:1.4rem 0;border-bottom:1px solid var(--bdr2)}
+.step:last-child{border:none}
+.step-n{font-family:var(--sans);font-size:.70rem;font-weight:500;letter-spacing:.15em;color:var(--gold);flex-shrink:0;padding-top:.2rem;min-width:24px}
+.step-title{font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin-bottom:.25rem}
+.step-body{font-family:var(--sans);font-size:.92rem;color:var(--ink2);line-height:1.75}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.label-sm{font-family:var(--sans);font-size:.70rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem}
+.prose{font-family:var(--sans);font-size:.95rem;color:var(--ink2);line-height:1.85}
+.prose p{margin-bottom:1rem}
+.prose p:last-child{margin-bottom:0}
+.insight{background:var(--bg2);border-left:3px solid var(--gold);padding:1.2rem 1.4rem;margin:1.5rem 0}
+.insight p{font-family:var(--serif);font-size:1.05rem;font-style:italic;color:var(--ink);line-height:1.55}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);margin-bottom:2rem}
+.card{background:var(--bg);padding:1.6rem}
+.card-title{font-family:var(--serif);font-size:1rem;color:var(--ink);margin-bottom:.4rem}
+.card-body{font-family:var(--sans);font-size:.90rem;color:var(--ink2);line-height:1.75}
+.sub-section{background:var(--ink);padding:3rem 2.5rem;position:relative;z-index:2}
+.sub-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.sub-h{font-family:var(--serif);font-size:1.6rem;font-weight:400;color:var(--bg);margin-bottom:.5rem}
+.sub-body{font-family:var(--sans);font-size:.92rem;color:rgba(248,244,238,.55);line-height:1.75}
+.sub-form{display:flex;gap:.5rem}
+.sub-input{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);padding:.6rem 1rem;font-family:var(--sans);font-size:.84rem;color:var(--bg);outline:none}
+.sub-input::placeholder{color:rgba(248,244,238,.3)}
+.sub-btn{background:var(--ora);color:#fff;border:none;font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.6rem 1.2rem;cursor:pointer;white-space:nowrap}
+.sub-note{font-family:var(--sans);font-size:.70rem;color:rgba(248,244,238,.3);margin-top:.5rem}
+.pay-block{background:var(--bg2);border:1px solid var(--bdr);overflow:hidden;margin-bottom:2rem}
+.pay-head{background:var(--ink);padding:1rem 1.6rem;display:flex;align-items:center;gap:.8rem}
+.pay-head-title{font-family:var(--serif);font-size:1.05rem;color:#F8F4EE}
+.pay-body{padding:1.6rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.pay-label{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.pay-val{font-family:var(--serif);font-size:1.05rem;color:var(--ink);margin-bottom:.2rem}
+.pay-note{font-family:var(--sans);font-size:.82rem;color:var(--ink2);line-height:1.65}
+.pay-email a{color:var(--ora);text-decoration:none}
+.pay-rule{font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.75;padding:1rem 1.6rem;border-top:1px solid var(--bdr);background:rgba(156,126,74,.04)}
+.pay-rule strong{color:var(--ink)}
+.acu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);margin-bottom:1.5rem}
+.acu-cell{background:var(--bg);padding:1.8rem}
+.acu-day{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.4rem}
+.acu-addr{font-family:var(--sans);font-size:.88rem;color:var(--ink2);line-height:1.75;margin-bottom:.8rem}
+.acu-note{font-family:var(--sans);font-size:.86rem;color:var(--ink2);line-height:1.7;margin-bottom:1rem}
+.btn-book{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--ink);padding:.7rem 1.2rem;text-decoration:none}
 @media(max-width:700px){
-  .nav-links{display:none}
-  .hamburger{display:flex}
-  .refill-grid{grid-template-columns:repeat(2,1fr)}
-  .footer-top{grid-template-columns:1fr}
-  .sms-nudge{flex-direction:column;text-align:center}.nudge-right{text-align:center}
-  .sec,.page-hero{padding-left:1.5rem;padding-right:1.5rem}
-  .fee-table th:nth-child(2),.fee-table td:nth-child(2){display:none}
+  .two-col,.card-grid,.acu-grid,.pay-body,.sub-inner{grid-template-columns:1fr}
+  .sec{padding:3.5rem 1.5rem}
+  .page-hero{padding:6rem 1.5rem 3rem}
+  .sms-nudge{flex-direction:column;text-align:center}
+  .nudge-right{text-align:center}
 }
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(248,244,238,0.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 2px 20px rgba(28,22,18,0.08)}
+.nav-logo{font-family:var(--serif);font-size:1.05rem;font-weight:500;color:var(--ink);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.nav-links{display:flex;gap:.9rem;align-items:center}
+.nav-links a{font-family:var(--sans);font-size:.65rem;font-weight:500;color:var(--ink2);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-sms{background:var(--red);color:#fff !important;padding:.35rem .8rem}
+.nav-sms:hover{background:#a93226 !important}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.4rem}
+.hamburger span{display:block;width:22px;height:1.5px;background:var(--ink);transition:.3s}
+.mob-nav{display:none;position:fixed;inset:0;background:var(--bg);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+.mob-nav.open{display:flex}
+.mob-nav a{font-family:var(--sans);font-size:.9rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.mob-close{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--ink)}
+@media(max-width:700px){.nav-links{display:none}.hamburger{display:flex}}
+.orb{position:fixed;border-radius:50%;pointer-events:none;filter:blur(55px);will-change:transform;z-index:0}
+.orb1{width:340px;height:340px;background:radial-gradient(circle,rgba(156,126,74,.10),transparent 70%);top:-60px;right:-30px;animation:o1 28s ease-in-out infinite}
+.orb2{width:260px;height:260px;background:radial-gradient(circle,rgba(212,172,13,.08),transparent 70%);bottom:8%;left:-30px;animation:o2 34s ease-in-out infinite}
+.orb3{width:200px;height:200px;background:radial-gradient(circle,rgba(122,158,142,.07),transparent 70%);top:45%;left:22%;animation:o3 24s ease-in-out infinite}
+@keyframes o1{0%,100%{transform:translate(0,0)}33%{transform:translate(-30px,22px)}66%{transform:translate(16px,-14px)}}
+@keyframes o2{0%,100%{transform:translate(0,0)}50%{transform:translate(24px,-20px)}}
+@keyframes o3{0%,100%{transform:translate(0,0)}50%{transform:translate(20px,-16px)}}
+footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5rem 1.5rem;position:relative;z-index:2}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+.footer-brand{font-family:var(--serif);font-size:1rem;color:var(--ink);margin-bottom:.4rem}
+.footer-tagline{font-family:var(--sans);font-size:.76rem;color:var(--dim);line-height:1.6}
+.footer-col-head{font-family:var(--sans);font-size:.70rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.footer-col a{display:block;font-family:var(--sans);font-size:.82rem;color:var(--muted);text-decoration:none;margin-bottom:.35rem;transition:color .2s}
+.footer-col a:hover{color:var(--ink)}
+.footer-disc{font-family:var(--sans);font-size:.72rem;color:var(--dim);line-height:1.65;border-top:1px solid var(--bdr2);padding-top:1rem;max-width:900px}
+.footer-copy{font-family:var(--sans);font-size:.72rem;color:var(--dim);margin-top:.5rem}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr}}
+.fee-table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:.88rem;margin-bottom:2rem}
+.fee-table th{background:var(--bg3);font-weight:500;text-align:left;padding:.7rem .9rem;border:1px solid var(--bdr);font-size:.70rem;letter-spacing:.08em;text-transform:uppercase}
+.fee-table td{padding:.7rem .9rem;border:1px solid var(--bdr2);color:var(--ink2);vertical-align:top;line-height:1.55}
+.fee-table tr:nth-child(even) td{background:rgba(248,244,238,.5)}
+.ft-sub{font-size:.80rem;color:var(--dim);display:block;margin-top:.2rem}
 </style>
 </head>
 <body>
-
-<div class="mob-nav" id="mobNav">
-  <button class="mob-close" onclick="document.getElementById('mobNav').classList.remove('open')">✕</button>
-  <a href="/">Home</a><a href="/virtual.html">Virtual</a><a href="/herbs.html">Herbal</a>
-  <a href="/ibs-resolution.html">IBS</a><a href="/fees.html">Fees</a>
-  <a href="/discover.html">Approach</a>
-    <a href="/qem.html">QEM&#x2122;</a>
-    <a href="/library.html">Library</a><a href="sms:4168719239">Text to begin</a>
+<div class="orb orb1" aria-hidden="true"></div>
+<div class="orb orb2" aria-hidden="true"></div>
+<div class="orb orb3" aria-hidden="true"></div>
+<div class="mob-nav" id="mobNav" role="dialog" aria-label="Navigation">
+  <button class="mob-close" onclick="document.getElementById('mobNav').classList.remove('open')" aria-label="Close">&#x2715;</button>
+  <a href="/">Home</a>
+  <a href="/virtual.html">Virtual</a>
+  <a href="/herbs.html">Herbal</a>
+  <a href="/ibs-resolution.html">IBS</a>
+  <a href="/fees.html">Fees</a>
+  <a href="/discover.html">Our Approach</a>
+  <a href="/qem.html">QEM™ Reference</a>
+  <a href="/library.html">Books &amp; Courses</a>
+  <a href="/fengshui.html">Feng Shui &middot; BaZi</a>
+  <a href="sms:4168719239">Text to begin</a>
 </div>
-
-<nav>
-  <a href="/" class="nav-logo">Vu Le · TCM</a>
+<nav id="nav">
+  <a href="/" class="nav-logo">Vu Le &middot; TCM</a>
   <div class="nav-links">
     <a href="/virtual.html">Virtual</a>
     <a href="/fees.html" class="active">Fees</a>
@@ -138,163 +168,113 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
     <span></span><span></span><span></span>
   </button>
 </nav>
-
-<div class="page-hero">
-  <p class="hero-eye">Fees &amp; services</p>
-  <h1 class="hero-h1">Clear pricing.<br><em>Everything listed.</em></h1>
-  <p class="hero-sub">All fees in Canadian dollars. Each service is billed individually as rendered — no packages, no bundles. A receipt is provided for every transaction.</p>
-</div>
-
-<div class="sec">
+<section class="sec" aria-labelledby="acu-h2">
   <div class="sec-inner">
-
-    <!-- PAYMENT POLICY -->
-    <div class="payment-block reveal">
-      <div class="payment-block-head">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(248,244,238,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-        <span class="payment-block-head-label">Payment policy</span>
-        <span class="payment-block-head-title">Payment is required before service is rendered.</span>
+    <p class="sec-eye reveal">In-person acupuncture</p>
+    <h2 class="sec-h reveal" id="acu-h2">Acupuncture at<br><em>two locations.</em></h2>
+    <p class="sec-body reveal">Acupuncture requires an in-person visit. Available at two Ontario clinic locations on fixed days each week. Appointment required at both.</p>
+    <div class="acu-grid reveal">
+      <div class="acu-cell">
+        <p class="label-sm">Mississauga &mdash; Derry Health Center</p>
+        <p class="acu-day">Wednesday &amp; Saturday</p>
+        <p class="acu-addr">6980 Maritz Drive, Unit 3<br>Mississauga, ON&nbsp; L5W 1Z3</p>
+        <p class="acu-note">Call <a href="tel:9057958818" style="color:var(--ink);font-weight:500">(905) 795-8818</a> or book online.</p>
+        <a href="https://www.derryhealthcenter.com/" target="_blank" rel="noopener" class="btn-book">Book online &#x2192;</a>
       </div>
-      <div class="payment-block-body">
-        <div class="payment-method">
-          <span class="pm-label">Accepted method</span>
-          <span class="pm-value">Interac e-Transfer</span>
-          <span class="pm-note">The only payment method accepted. No credit cards, cheques, or cash.</span>
-        </div>
-        <div class="payment-method">
-          <span class="pm-label">Send e-Transfer to</span>
-          <span class="pm-email"><a href="mailto:lemnvu@outlook.com">lemnvu@outlook.com</a></span>
-          <span class="pm-note">Use your name and service as the message. Auto-deposit is enabled — no security question needed.</span>
-        </div>
+      <div class="acu-cell">
+        <p class="label-sm">Mono &mdash; Home Clinic</p>
+        <p class="acu-day">Monday &amp; Thursday</p>
+        <p class="acu-addr">713604 1st Line EHS<br>Mono, ON&nbsp; L9W 5V5</p>
+        <p class="acu-note">Text <a href="sms:4168719239" style="color:var(--ink);font-weight:500">(416) 871-9239</a> to book. Calls not answered.</p>
+        <a href="sms:4168719239" class="btn-book">Text to book &#x2192;</a>
       </div>
-      <div class="payment-rule"><strong>When to pay:</strong> Payment is due in full before your consultation begins or before herbal formulas are dispensed. For the Unresolved Case Review, a $200 non-refundable deposit is required to confirm the booking; the balance is due before the session. Formulas are not shipped until payment is confirmed.</div>
     </div>
-
-    <!-- VIRTUAL CONSULTATIONS -->
-    <p class="sec-label reveal">Virtual consultations</p>
-    <table class="fee-table reveal" aria-label="Virtual consultation fees">
-      <thead><tr><th>Service</th><th>Duration</th><th>Fee</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><span class="fn">Initial Constitutional Assessment</span><span class="fd">Virtual · QEM™ intake, tongue assessment via photo/video, constitutional analysis · includes herbal medicine consultation with 5-day formula or acupuncture discussion</span><span class="fs">Extended health benefits may apply for acupuncture component — verify with your insurer</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">45 min</td>
-          <td class="fp">$150</td>
-        </tr>
-        <tr>
-          <td><span class="fn">Herbal Medicine Consultation</span><span class="fd">Virtual · constitutional herbal review · includes first 5-day custom formula + shipping</span><span class="fs">Subject to HST · Not covered by extended health benefits</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">45 min</td>
-          <td class="fp">$115</td>
-        </tr>
-        <tr>
-          <td><span class="fn">Follow-up Consultation</span><span class="fd">Virtual · constitutional review and treatment adjustment · herbal or acupuncture</span><span class="fs">Acupuncture follow-up: HST-exempt, extended health may apply</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">45 min</td>
-          <td class="fp">$115</td>
-        </tr>
-        <tr>
-          <td><span class="fn">Discovery Conversation</span><span class="fd">A genuine conversation about your case before committing to a clinical session. Not a sales call — an honest assessment of whether this practice is the right fit.</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">30 min</td>
-          <td class="fp">$75</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- SPECIALIST -->
-    <p class="sec-label reveal">Specialist consultation</p>
-    <table class="fee-table reveal" aria-label="Specialist consultation fees">
-      <thead><tr><th>Service</th><th>Duration</th><th>Fee</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><span class="fn">Unresolved Case Review <span class="badge">Introductory</span></span><span class="fd">For complex, chronic, or previously treated cases. Deep QEM™ constitutional analysis and a specific care pathway. Consultation only — no needles, no treatment during session. A $200 non-refundable intake fee collected at booking is applied to the full fee on the day.</span><span class="fs">Standard fee $750 · Introductory rate while available</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">60 min</td>
-          <td class="fp">$500</td>
-        </tr>
-        <tr>
-          <td><span class="fn">BaZi Constitutional Reading</span><span class="fd">A complete elemental map of your health trajectory across time. Combines classical BaZi natal chart analysis with QEM™ constitutional profiling. Available following a Case Review where temporal dimension is clinically significant.</span></td>
-          <td style="font-family:var(--sans);font-size:.86rem;color:var(--dim);white-space:nowrap;padding-right:1rem">60 min</td>
-          <td class="fp">$1,000</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- HERBAL REFILLS -->
-    <p class="sec-label reveal">Same-formula herbal refills</p>
-    <div class="note-box reveal">No consultation required for same-formula refills. Arrange directly by text. Shipping is in addition to formula cost, billed at actual carrier rate, confirmed before dispatch. Subject to HST. Not covered by extended health benefits.</div>
-    <div class="refill-grid reveal">
-      <div class="refill-cell"><div class="r-days">5-day</div><div class="r-price">$100</div></div>
-      <div class="refill-cell"><div class="r-days">10-day</div><div class="r-price">$200</div></div>
-      <div class="refill-cell"><div class="r-days">20-day</div><div class="r-price">$400</div></div>
-      <div class="refill-cell"><div class="r-days">30-day</div><div class="r-price">$600</div></div>
-    </div>
-
-    <!-- SHIPPING -->
-    <p class="sec-label reveal" style="margin-top:2rem">Herbal medicine shipping</p>
-    <table class="ship-table reveal" aria-label="Shipping costs">
-      <thead><tr><th>Destination</th><th>Carrier</th><th>Estimated cost</th></tr></thead>
-      <tbody>
-        <tr><td>Ontario (most destinations)</td><td>Canada Post Expedited</td><td>$12–18</td></tr>
-        <tr><td>Other provinces / territories</td><td>Xpresspost or FedEx Priority</td><td>$25–35</td></tr>
-        <tr><td>Mono clinic pickup</td><td>In-clinic</td><td>No charge</td></tr>
-      </tbody>
-    </table>
-    <p style="font-family:var(--sans);font-size:.82rem;color:var(--dim);margin-bottom:2rem">Shipping billed at actual carrier cost, confirmed before dispatch. Formulas are dispensed directly from this clinic — no third-party dispensing.</p>
-
-    <!-- INSURANCE -->
-    <p class="sec-label reveal">Extended health benefits &amp; insurance</p>
-    <div class="note-box reveal">
-      <strong>Acupuncture</strong> is HST-exempt and may be eligible for extended health benefits where your plan covers Registered TCM Practitioners (R.TCMP / R.Ac). Coverage varies significantly between plans.<br><br>
-      <strong>Herbal medicine</strong> is subject to HST and is not covered by extended health benefits. All herbal products are billed directly to the patient.<br><br>
-      <strong>Virtual consultations</strong> — check your specific plan for telemedicine or alternative health coverage.
-    </div>
-    <div class="warn-box reveal">
-      It is the patient's sole responsibility to confirm coverage with their insurance provider before treatment. This clinic does not contact insurers, submit claims, pre-authorize treatment, or guarantee reimbursement. All fees are due in full at time of service regardless of insurance status. We do not direct-bill.
-    </div>
-
+    <p style="font-family:var(--sans);font-size:.80rem;color:var(--dim)">Appointment required. Same-day subject to availability.</p>
   </div>
-</div>
+</section>
 
-<div class="sms-nudge">
-  <p class="nudge-text">Questions about fees or which service to begin with?</p>
-  <div class="nudge-right">
-    <a href="sms:4168719239" class="nudge-num">(416) 871-9239</a>
-    <span class="nudge-sub">Text first — I'll call you back within 24–48 hours</span>
-  </div>
+<div class="page-hero reveal">
+  <p class="hero-eye">Fees &amp; payment</p>
+  <h1 class="hero-h1">Clear pricing.<br><em>Everything listed.</em></h1>
+  <p class="hero-body">All fees in Canadian dollars. Billed individually as rendered &mdash; no packages. Payment is required before service is rendered.</p>
 </div>
 
 <hr class="divider">
 
-<!-- ACUPUNCTURE LOCATIONS -->
-<section class="sec" aria-labelledby="acu-h2">
+<section class="sec" aria-labelledby="pay-h2">
   <div class="sec-inner">
-    <p class="sec-eye reveal">In-person acupuncture</p>
-    <h2 class="sec-h reveal" id="acu-h2">Acupuncture available<br><em>at two locations.</em></h2>
-    <p class="sec-body reveal">Acupuncture treatment requires an in-person visit. Available at two Ontario clinic locations on fixed days each week. Appointment required at both.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);margin-bottom:1.5rem" class="reveal">
-      <div style="background:var(--bg);padding:1.8rem">
-        <p style="font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Mississauga — Derry Health Center</p>
-        <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.4rem">Wednesday &amp; Saturday</p>
-        <p style="font-family:var(--sans);font-size:.86rem;color:var(--ink2);line-height:1.75;margin-bottom:.8rem">6980 Maritz Drive, Unit 3<br>Mississauga, ON&nbsp; L5W 1Z3</p>
-        <p style="font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.7;margin-bottom:1rem">Call <a href="tel:9057958818" style="color:var(--ink);font-weight:500">(905) 795-8818</a> or book online.</p>
-        <a href="https://www.derryhealthcenter.com/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--ink);padding:.7rem 1.2rem;text-decoration:none">Book at Derry Health Center \u2192</a>
+    <p class="sec-eye reveal">Payment policy</p>
+    <h2 class="sec-h reveal" id="pay-h2">Interac e-Transfer<br><em>before service.</em></h2>
+    <div class="pay-block reveal">
+      <div class="pay-head">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(248,244,238,0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+        <span class="pay-head-title">Payment is required before service is rendered.</span>
       </div>
-      <div style="background:var(--bg);padding:1.8rem">
-        <p style="font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Mono — Home Clinic</p>
-        <p style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.4rem">Monday &amp; Thursday</p>
-        <p style="font-family:var(--sans);font-size:.86rem;color:var(--ink2);line-height:1.75;margin-bottom:.8rem">713604 1st Line EHS<br>Mono, ON&nbsp; L9W 5V5</p>
-        <p style="font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.7;margin-bottom:1rem">Text <a href="sms:4168719239" style="color:var(--ink);font-weight:500">(416) 871-9239</a> to book. Calls not answered.</p>
-        <a href="sms:4168719239" style="display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--ink);padding:.7rem 1.2rem;text-decoration:none">Text to book \u2192</a>
+      <div class="pay-body">
+        <div>
+          <p class="pay-label">Accepted method</p>
+          <p class="pay-val">Interac e-Transfer only</p>
+          <p class="pay-note">No credit cards, cheques, or cash.</p>
+        </div>
+        <div>
+          <p class="pay-label">Send e-Transfer to</p>
+          <p class="pay-val pay-email"><a href="mailto:lemnvu@outlook.com">lemnvu@outlook.com</a></p>
+          <p class="pay-note">Auto-deposit enabled &mdash; no security question needed. Use your name and service as the message.</p>
+        </div>
       </div>
+      <p class="pay-rule"><strong>When to pay:</strong> Full payment before consultation begins or before formulas are dispensed. For the Unresolved Case Review, a $200 non-refundable deposit confirms booking; balance due before the session. Formulas are not shipped until payment is confirmed.</p>
     </div>
-    <p style="font-family:var(--sans);font-size:.80rem;color:var(--dim);line-height:1.7">Same-day bookings subject to availability.</p>
   </div>
 </section>
 
+<hr class="divider">
 
+<section class="sec" aria-labelledby="fees-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Fee schedule</p>
+    <h2 class="sec-h reveal" id="fees-h2">All services<br><em>and prices.</em></h2>
+    <table class="fee-table reveal">
+      <thead><tr><th>Service</th><th>Format</th><th>Fee (CAD)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Initial Constitutional Assessment</strong><br><span class="ft-sub">QEM&#x2122; intake, tongue &amp; constitutional analysis. Includes herbal or acupuncture consult.</span></td><td>Virtual</td><td>$150</td></tr>
+        <tr><td><strong>Herbal Medicine Consultation</strong><br><span class="ft-sub">Includes 5-day custom formula + shipping.</span></td><td>Virtual</td><td>$115</td></tr>
+        <tr><td><strong>Same-formula Refill</strong><br><span class="ft-sub">No consultation required. 5-day supply. Text to arrange.</span></td><td>Text</td><td>$100</td></tr>
+        <tr><td><strong>Discovery Conversation</strong><br><span class="ft-sub">30 min. Is this the right fit? No treatment.</span></td><td>Virtual</td><td>$75</td></tr>
+        <tr><td><strong>Follow-up Consultation</strong><br><span class="ft-sub">Returning patients. Pattern review and formula adjustment.</span></td><td>Virtual</td><td>$95</td></tr>
+        <tr><td><strong>IBS Resolution Programme</strong><br><span class="ft-sub">Structured virtual programme. Herbal medicine included. See <a href="/ibs-resolution.html" style="color:var(--gold)">IBS page</a>.</span></td><td>Virtual</td><td>Enquire</td></tr>
+        <tr><td><strong>Unresolved Case Review</strong><br><span class="ft-sub">60 min. QEM&#x2122; constitutional analysis + care pathway. $200 deposit to confirm.</span></td><td>Virtual</td><td>$500 / $750</td></tr>
+        <tr><td><strong>Acupuncture &mdash; Initial</strong><br><span class="ft-sub">In-person only. Mississauga or Mono. Includes constitutional assessment.</span></td><td>In-person</td><td>$130</td></tr>
+        <tr><td><strong>Acupuncture &mdash; Follow-up</strong><br><span class="ft-sub">In-person only. Mississauga or Mono.</span></td><td>In-person</td><td>$95</td></tr>
+        <tr><td><strong>Feng Shui / BaZi Consultation</strong><br><span class="ft-sub">Residential, commercial, or destiny analysis. Fee by scope. See <a href="/fengshui.html" style="color:var(--gold)">Feng Shui page</a>.</span></td><td>Remote / in-person</td><td>Enquire</td></tr>
+      </tbody>
+    </table>
+    <div class="insight reveal">
+      <p>Insurance: receipts are issued for every transaction. It is the patient&#x2019;s sole responsibility to verify coverage with their insurer before treatment. This clinic does not direct-bill.</p>
+    </div>
+  </div>
+</section>
+
+<div class="sub-section" aria-labelledby="sub-h">
+  <div class="sub-inner">
+    <div>
+      <h2 class="sub-h" id="sub-h">Clinical writing &mdash; free.</h2>
+      <p class="sub-body">Constitutional medicine, elemental patterns, and the reasoning behind what works. Published on Substack. No cost to subscribe.</p>
+    </div>
+    <div>
+      <form class="sub-form" action="https://lemnvu.substack.com/api/v1/free" method="post" target="_blank">
+        <input class="sub-input" type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button class="sub-btn" type="submit">Subscribe</button>
+      </form>
+      <p class="sub-note">No spam. Unsubscribe any time.</p>
+    </div>
+  </div>
+</div>
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div class="footer-brand">Vu Le · TCM</div>
-        <p class="footer-tagline">Virtual TCM consultations &amp; herbal medicine shipped Canada-wide.<br>Private home clinic · Mono, Ontario · In practice since 2003.</p>
+        <div class="footer-brand">Vu Le &middot; TCM</div>
+        <p class="footer-tagline">Virtual TCM consultations &amp; herbal medicine shipped Canada-wide.<br>Private home clinic &middot; Mono, Ontario &middot; In practice since 2003.</p>
       </div>
       <div class="footer-col">
         <div class="footer-col-head">Services</div>
@@ -307,26 +287,26 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
       <div class="footer-col">
         <div class="footer-col-head">Practice</div>
         <a href="/discover.html">Our Approach</a>
+        <a href="/qem.html">QEM&#x2122; Reference</a>
         <a href="/library.html">Books &amp; Courses</a>
-        <a href="/fengshui.html">Feng Shui · BaZi</a>
+        <a href="/fengshui.html">Feng Shui &middot; BaZi</a>
         <a href="/disclaimer.html">Practice Information</a>
         <a href="https://lemnvu.substack.com" target="_blank" rel="noopener">Substack</a>
       </div>
       <div class="footer-col">
         <div class="footer-col-head">Contact</div>
-        <a href="sms:4168719239">(416) 871-9239 — text</a>
+        <a href="sms:4168719239">(416) 871-9239 &#x2014; text</a>
         <a href="mailto:vu@vule.ca">vu@vule.ca</a>
       </div>
     </div>
-    <p class="footer-disc">Vu Le is a Registered Traditional Chinese Medicine Practitioner and Acupuncturist (R.TCMP, R.Ac), licensed by the CTCMPAO (Ontario), and holds NCBAHM Diplomate credentials. All fees in Canadian dollars. Fees subject to change without notice. Results are based on clinical observation and vary between individuals. No outcome is guaranteed. Not a substitute for emergency or physician care.</p>
-    <p class="footer-copy">© 2026 Vu Le · TCM · vule.ca</p>
+    <p class="footer-disc">Vu Le is a Registered Traditional Chinese Medicine Practitioner and Acupuncturist (R.TCMP, R.Ac), licensed by the College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario (CTCMPAO), and holds NCBAHM Diplomate credentials. Virtual consultations are available to patients located in Ontario, Saskatchewan, Manitoba, Nova Scotia, New Brunswick, Prince Edward Island, Yukon, Northwest Territories, and Nunavut. Acupuncture available in-person at Derry Health Center, Mississauga (Wed &amp; Sat — call (905) 795-8818 or book at derryhealthcenter.com) and Mono home clinic (Mon &amp; Thu — text (416) 871-9239). Results are based on clinical observation and vary between individuals. No outcome is guaranteed. Not a substitute for emergency or physician care. If you are experiencing a medical emergency, call 911. It is the patient&#x2019;s sole responsibility to verify insurance coverage before treatment. This clinic does not direct-bill.</p>
+    <p class="footer-copy">&#xa9; 2026 Vu Le &middot; TCM &middot; vule.ca</p>
   </div>
 </footer>
-
 <script>
-const nav=document.querySelector('nav');
+const nav=document.getElementById('nav');
 window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>50),{passive:true});
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('vis')}),{threshold:.1});
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
 </body>
