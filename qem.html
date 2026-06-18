@@ -44,7 +44,7 @@ body{font-family:var(--serif);background:var(--bg);color:var(--ink);overflow-x:h
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:.9rem 2.5rem;background:rgba(248,244,238,0.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--bdr);transition:box-shadow .3s}
 nav.scrolled{box-shadow:0 2px 20px rgba(28,22,18,0.08)}
 .nav-logo{font-family:var(--serif);font-size:1rem;font-weight:500;color:var(--ink);letter-spacing:.08em;text-decoration:none}
-.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links{display:flex;gap:.9rem;align-items:center;flex-wrap:nowrap}
 .nav-links a{font-family:var(--sans);font-size:.65rem;font-weight:500;color:var(--ink2);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--gold)}
 .nav-back{color:var(--gold) !important}
@@ -166,11 +166,9 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:1.5rem 2.5r
 .foot-disc{font-family:var(--sans);font-size:.68rem;color:var(--dim);line-height:1.6;width:100%;border-top:1px solid var(--bdr2);padding-top:.8rem;margin-top:.2rem}
 
 /* MOBILE */
-@media(max-width:960px){
+@media(max-width:680px){
   .nav-links{display:none}
   .hamburger{display:flex}
-}
-@media(max-width:680px){
   .doc-header{padding:6rem 0 2rem}
   .page-wrap{padding:0 1.2rem}
   .comparison{grid-template-columns:1fr}
@@ -216,10 +214,9 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:1.5rem 2.5r
 <nav id="nav">
   <a href="/" class="nav-logo">Vu Le &middot; TCM</a>
   <div class="nav-links">
-    <a href="/" class="nav-back">&#x2190; Clinic home</a>
-    <a href="/discover.html">Approach</a>
     <a href="/virtual.html">Virtual</a>
     <a href="/fees.html">Fees</a>
+    <a href="/discover.html">Approach</a>
     <a href="/qem.html" class="active">QEM&#x2122;</a>
     <a href="/library.html">Library</a>
     <a href="sms:4168719239" class="nav-sms">Text to begin</a>

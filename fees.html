@@ -83,11 +83,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .pm-email a:hover{text-decoration:underline}
 .payment-rule{font-family:var(--sans);font-size:.84rem;color:var(--ink2);line-height:1.75;padding:1rem 1.6rem;border-top:1px solid var(--bdr);background:rgba(156,126,74,.04)}
 .payment-rule strong{color:var(--ink)}
-@media(max-width:960px){
+@media(max-width:700px){
   .nav-links{display:none}
-  .hamburger{display:flex}
-}
-@media(max-width:700px){.payment-block-body{grid-template-columns:1fr}}
+  .hamburger{display:flex}.payment-block-body{grid-template-columns:1fr}}
 /* SMS nudge */
 .sms-nudge{background:var(--bg2);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);padding:1.4rem 2.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;position:relative;z-index:2}
 .nudge-text{font-family:var(--serif);font-size:1rem;color:var(--ink)}
@@ -105,6 +103,8 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
 .footer-disc{font-family:var(--sans);font-size:.71rem;color:var(--dim);line-height:1.65;border-top:1px solid var(--bdr2);padding-top:.9rem;max-width:900px}
 .footer-copy{font-family:var(--sans);font-size:.71rem;color:var(--dim);margin-top:.4rem}
 @media(max-width:700px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
   .refill-grid{grid-template-columns:repeat(2,1fr)}
   .footer-top{grid-template-columns:1fr}
   .sms-nudge{flex-direction:column;text-align:center}.nudge-right{text-align:center}
@@ -128,8 +128,6 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2rem 2.5rem
   <a href="/" class="nav-logo">Vu Le · TCM</a>
   <div class="nav-links">
     <a href="/virtual.html">Virtual</a>
-    <a href="/herbs.html">Herbal</a>
-    <a href="/ibs-resolution.html">IBS</a>
     <a href="/fees.html" class="active">Fees</a>
     <a href="/discover.html">Approach</a>
     <a href="/qem.html">QEM&#x2122;</a>
