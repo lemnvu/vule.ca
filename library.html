@@ -104,12 +104,8 @@ nav.scrolled{box-shadow:0 2px 20px rgba(28,22,18,0.08)}
 .books-list{display:flex;flex-direction:column;gap:3rem;margin-bottom:1rem}
 .book-card{display:grid;grid-template-columns:180px 1fr;gap:2.5rem;align-items:start;padding-bottom:3rem;border-bottom:1px solid var(--bdr)}
 .book-card:last-child{border:none;padding-bottom:0}
-.book-cover{background:var(--bg3);border:1px solid var(--bdr);aspect-ratio:5/7;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.4rem 1rem;position:relative;flex-shrink:0}
-.book-cover::before{content:'';position:absolute;inset:6px;border:1px solid rgba(156,126,74,0.28)}
-.book-cover-title{font-family:var(--serif);font-size:.95rem;font-weight:400;color:var(--ink);text-align:center;line-height:1.25;position:relative;z-index:1;margin-bottom:.6rem}
-.book-cover-rule{width:24px;height:1.5px;background:var(--gold);margin:.5rem auto;position:relative;z-index:1}
-.book-cover-author{font-family:var(--sans);font-size:.55rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);position:relative;z-index:1;text-align:center}
-.book-cover-series{font-family:var(--sans);font-size:.52rem;color:var(--dim);text-align:center;margin-top:.5rem;line-height:1.4;position:relative;z-index:1}
+.book-cover{width:180px;flex-shrink:0;border:1px solid var(--bdr);overflow:hidden;background:var(--bg3)}
+.book-cover img{display:block;width:100%;height:auto}
 .book-meta{display:flex;flex-direction:column;gap:1rem}
 .book-tag{font-family:var(--sans);font-size:.71rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:.2rem}
 .book-title{font-family:var(--serif);font-size:clamp(1.5rem,2.5vw,2rem);font-weight:400;color:var(--ink);line-height:1.15;margin-bottom:.4rem}
@@ -124,6 +120,24 @@ nav.scrolled{box-shadow:0 2px 20px rgba(28,22,18,0.08)}
 .btn-secondary{font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--bdr);padding-bottom:.15rem;transition:border-color .2s}
 .btn-secondary:hover{border-color:var(--gold)}
 
+/* GUMROAD PRODUCTS */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem;margin-bottom:2rem}
+.product-card{background:var(--bg2);border:1px solid var(--bdr);display:flex;flex-direction:column;overflow:hidden;transition:border-color .2s,box-shadow .2s}
+.product-card:hover{border-color:var(--gold);box-shadow:0 4px 24px rgba(156,126,74,.1)}
+.product-card-top{display:flex;gap:1.2rem;padding:1.5rem;align-items:flex-start}
+.product-thumb{width:72px;height:100px;object-fit:cover;flex-shrink:0;border:1px solid var(--bdr);background:var(--bg3)}
+.product-thumb-placeholder{width:72px;height:100px;flex-shrink:0;border:1px solid var(--bdr);background:var(--bg3);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.7rem;color:var(--dim);text-align:center;padding:.3rem}
+.product-info{display:flex;flex-direction:column;gap:.35rem;flex:1}
+.product-badge{font-family:var(--sans);font-size:.64rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--grn);display:flex;align-items:center;gap:.35rem}
+.product-badge::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--grn)}
+.product-title{font-family:var(--serif);font-size:1.1rem;color:var(--ink);line-height:1.25}
+.product-authors{font-family:var(--sans);font-size:.74rem;color:var(--dim)}
+.product-price{font-family:var(--sans);font-size:1rem;font-weight:500;color:var(--ink);margin-top:.2rem}
+.product-desc{font-family:var(--sans);font-size:.88rem;color:var(--ink2);line-height:1.8;padding:0 1.5rem 1.2rem}
+.product-cta{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;border-top:1px solid var(--bdr);background:rgba(248,244,238,.6);margin-top:auto}
+.product-cta-link{display:inline-flex;align-items:center;gap:.5rem;background:var(--ink);color:var(--bg);font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.7rem 1.2rem;text-decoration:none;transition:background .2s}
+.product-cta-link:hover{background:var(--ink2)}
+.product-cta-note{font-family:var(--sans);font-size:.70rem;color:var(--dim);line-height:1.5}
 /* COURSES */
 .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;margin-bottom:2rem}
 .course-card{background:var(--bg2);border:1px solid var(--bdr);padding:1.8rem;display:flex;flex-direction:column;gap:.7rem;transition:border-color .2s,background .2s}
@@ -171,7 +185,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
   .sec{padding:3.5rem 1.5rem}
   .page-hero{padding:6rem 1.5rem 3rem}
   .book-card{grid-template-columns:1fr}
-  .book-cover{width:140px;aspect-ratio:5/7}
+  .book-cover{width:120px}
   .sub-inner,.footer-top{grid-template-columns:1fr}
   .sms-nudge{flex-direction:column;text-align:center}
   .nudge-right{text-align:center}
@@ -230,7 +244,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
 <div class="page-hero reveal">
   <p class="hero-eye">Books &amp; Courses</p>
   <h1 class="hero-h1">The QEM&#x2122;<br><em>library.</em></h1>
-  <p class="hero-body">Books and educational courses by Vu Le and Van Lam. Each title addresses a distinct entry point into constitutional medicine, BaZi analysis, and classical Feng Shui &#x2014; written for patients, practitioners, and anyone who wants to understand why their body works the way it does.</p>
+  <p class="hero-body">Books, digital guides, and educational courses by Vu Le and Van Lam. Some are available to buy and download immediately on Gumroad. Others are part of the broader QEM&#x2122; series on constitutional medicine, BaZi, and classical Feng Shui &#x2014; written for patients, practitioners, and anyone who wants to understand why their body works the way it does.</p>
 </div>
 
 <hr class="divider">
@@ -252,14 +266,11 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
       <!-- BOOK 1 -->
       <div class="book-card reveal">
         <div class="book-cover">
-          <div class="book-cover-title">The Intelligence<br>of Life</div>
-          <div class="book-cover-rule"></div>
-          <div class="book-cover-author">Le &middot; Lam</div>
-          <div class="book-cover-series">QEM&#x2122; Series &middot; Vol. I</div>
+          <img src="cover-intelligence-of-life.jpg" alt="The Intelligence of Life — Vu Le &amp; Van Lam" loading="lazy">
         </div>
         <div class="book-meta">
           <div>
-            <p class="book-tag">Question 1 &mdash; The framework</p>
+            <p class="book-tag">The hidden science of healing &amp; consciousness</p>
             <h3 class="book-title">The Intelligence of Life</h3>
             <p class="book-authors">Vu Le &amp; Van Lam &nbsp;&middot;&nbsp; QEM&#x2122; Series, Volume I</p>
           </div>
@@ -268,7 +279,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
             <p>The body is not broken. It is responding appropriately to conditions that haven&#x2019;t been properly identified yet.</p>
           </div>
           <div class="book-actions">
-            <a href="https://www.amazon.ca" target="_blank" rel="noopener" class="btn-primary">Get on Amazon &#x2192;</a>
+            <a href="https://www.amazon.ca/INTELLIGENCE-LIFE-Science-Healing-Consciousness-ebook/dp/B0GCQCCM3V" target="_blank" rel="noopener" class="btn-primary">Get on Amazon &#x2192;</a>
             <a href="/discover.html" class="btn-secondary">Read the framework &#x2192;</a>
           </div>
         </div>
@@ -277,24 +288,21 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
       <!-- BOOK 2 -->
       <div class="book-card reveal">
         <div class="book-cover">
-          <div class="book-cover-title">Eating Against<br>Yourself</div>
-          <div class="book-cover-rule"></div>
-          <div class="book-cover-author">Le &middot; Lam</div>
-          <div class="book-cover-series">QEM&#x2122; Series &middot; Vol. II</div>
+          <img src="cover-feeding-the-fire.jpg" alt="Feeding the Fire — Vu Minh Le" loading="lazy">
         </div>
         <div class="book-meta">
           <div>
-            <p class="book-tag">Question 2 &mdash; Nutrition</p>
-            <h3 class="book-title">Eating Against Yourself</h3>
-            <p class="book-authors">Vu Le &amp; Van Lam &nbsp;&middot;&nbsp; QEM&#x2122; Series, Volume II</p>
+            <p class="book-tag">How the foods you trust are maintaining your IBS</p>
+            <h3 class="book-title">Feeding the Fire</h3>
+            <p class="book-authors">Vu Minh Le &nbsp;&middot;&nbsp; Trueform Publishing</p>
           </div>
-          <p class="book-desc">Constitutional food guidance &#x2014; specific to your body type, not a generic list. Most nutritional advice treats the body as a single standard system. This book treats it as five distinct constitutional types, each of which processes food differently, thrives on different foods, and deteriorates on the foods that supposedly benefit everyone. The same meal can strengthen one person and undermine another.</p>
+          <p class="book-desc">How the foods you trust are maintaining your IBS &#x2014; and what actually heals it. Most IBS dietary advice is constitutional-type blind. This book identifies the foods that are most likely triggering your specific pattern of inflammation, why they appear healthy by conventional standards, and what to eat instead based on your constitutional type and elemental profile.</p>
           <div class="book-insight">
-            <p>There is no universally healthy diet. There is only the diet that is healthy for your constitution, in this season, at this point in your elemental cycle.</p>
+            <p>The fire isn&#x2019;t the problem. What you&#x2019;re feeding it is.</p>
           </div>
           <div class="book-actions">
-            <a href="https://www.amazon.ca" target="_blank" rel="noopener" class="btn-primary">Get on Amazon &#x2192;</a>
-            <a href="/herbs.html" class="btn-secondary">Herbal medicine &#x2192;</a>
+            <a href="https://www.amazon.ca/dp/1067563113" target="_blank" rel="noopener" class="btn-primary">Get on Amazon &#x2192;</a>
+            <a href="/ibs-resolution.html" class="btn-secondary">IBS Resolution Programme &#x2192;</a>
           </div>
         </div>
       </div>
@@ -302,18 +310,15 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
       <!-- BOOK 3 -->
       <div class="book-card reveal">
         <div class="book-cover">
-          <div class="book-cover-title">The Invisible<br>Audit</div>
-          <div class="book-cover-rule"></div>
-          <div class="book-cover-author">Le &middot; Lam</div>
-          <div class="book-cover-series">QEM&#x2122; Series &middot; Vol. III</div>
+          <img src="cover-invisible-audit.jpg" alt="The Invisible Audit — Vu Minh Le" loading="lazy">
         </div>
         <div class="book-meta">
           <div>
-            <p class="book-tag">Question 3 &mdash; Environment &amp; timing</p>
+            <p class="book-tag">What every serious property investor is missing</p>
             <h3 class="book-title">The Invisible Audit</h3>
-            <p class="book-authors">Vu Le &amp; Van Lam &nbsp;&middot;&nbsp; QEM&#x2122; Series, Volume III</p>
+            <p class="book-authors">Vu Minh Le &nbsp;&middot;&nbsp; Trueform Publishing</p>
           </div>
-          <p class="book-desc">Every layer of influence the QEM&#x2122; framework examines &#x2014; the factors most practitioners never check. Most health frameworks account for diet, sleep, and stress. The Invisible Audit accounts for those &#x2014; and then continues: your home&#x2019;s orientation, the room you sleep in, the season you were born in, your ten-year elemental cycle, and the energy of the current year all interact with your constitutional type to shape how you feel.</p>
+          <p class="book-desc">Every layer of influence the QEM&#x2122; framework examines &#x2014; the factors most practitioners never check. Most health and property frameworks account for the visible. The Invisible Audit accounts for those &#x2014; and then continues: your home&#x2019;s orientation, the room you sleep in, the season you were born in, your ten-year elemental cycle, and the energy of the current year all interact with your constitutional type to shape how you feel and what your space produces.</p>
           <div class="book-insight">
             <p>The invisible shapes the visible. What you cannot see is often more determinative than what you can.</p>
           </div>
@@ -340,6 +345,61 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
 </div>
 
 <hr class="divider">
+
+<hr class="divider">
+
+<!-- GUMROAD PRODUCTS -->
+<section class="sec" aria-labelledby="products-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Digital products</p>
+    <h2 class="sec-h reveal" id="products-h2">Buy &amp; download<br><em>instantly.</em></h2>
+    <p class="sec-body reveal">Standalone guides available immediately on Gumroad. No waiting, no shipping. Pay and download.</p>
+    <div class="products-grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card reveal">
+        <div class="product-card-top">
+          <div class="product-thumb-placeholder">&#x1F4D6;<br>Cover</div>
+          <div class="product-info">
+            <span class="product-badge">Available now</span>
+            <div class="product-title">The 3-Food Reset</div>
+            <div class="product-authors">Vu Le &amp; Van Lam</div>
+            <div class="product-price">CAD $49</div>
+          </div>
+        </div>
+        <p class="product-desc">Why your healthy foods are keeping you inflamed &#x2014; and what to do instead. A practical guide to the three most common foods that trigger constitutional inflammation, how to identify which ones are working against your specific body type, and what to eat instead. Based on the QEM&#x2122; constitutional framework.</p>
+        <div class="product-cta">
+          <a href="https://vuminhle.gumroad.com/l/kvkaal" target="_blank" rel="noopener" class="product-cta-link">
+            Buy now &#x2192;
+          </a>
+          <span class="product-cta-note">Instant download<br>via Gumroad</span>
+        </div>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card reveal">
+        <div class="product-card-top">
+          <div class="product-thumb-placeholder">&#x1F4D6;<br>Cover</div>
+          <div class="product-info">
+            <span class="product-badge">Available now</span>
+            <div class="product-title">The Life You Want, One Small Step at a Time</div>
+            <div class="product-authors">Vu Le &amp; Van Lam</div>
+            <div class="product-price">CAD $19</div>
+          </div>
+        </div>
+        <p class="product-desc">A practical guide to meaningful change without overwhelm. Each step is grounded in the QEM&#x2122; principle that sustainable change follows constitutional alignment, not willpower. Written for patients and practitioners navigating the gap between intention and lasting habit.</p>
+        <div class="product-cta">
+          <a href="https://vuminhle.gumroad.com/l/isoxtt" target="_blank" rel="noopener" class="product-cta-link">
+            Buy now &#x2192;
+          </a>
+          <span class="product-cta-note">Instant download<br>via Gumroad</span>
+        </div>
+      </div>
+
+    </div>
+    <p style="font-family:var(--sans);font-size:.80rem;color:var(--dim);line-height:1.7">Purchases are processed securely by <a href="https://gumroad.com" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none">Gumroad</a>. Download link delivered immediately by email after purchase. All sales final.</p>
+  </div>
+</section>
 
 <!-- COURSES -->
 <section class="sec" aria-labelledby="courses-h2">
