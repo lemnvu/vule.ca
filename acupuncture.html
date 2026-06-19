@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Practice Information — Vu Le · TCM · vule.ca</title>
-<meta name="description" content="Scope of practice, informed consent, virtual jurisdiction, and regulatory standing. Vu Le, R.TCMP, R.Ac, NCBAHM Diplomate.">
-<link rel="canonical" href="https://vule.ca/disclaimer.html">
+<title>Acupuncture — Mississauga & Mono — Vu Le · TCM · vule.ca</title>
+<meta name="description" content="In-person acupuncture at Derry Health Center, Mississauga (Wed & Sat) and the Mono home clinic (Mon & Thu). Vu Le, R.TCMP, R.Ac.">
+<link rel="canonical" href="https://vule.ca/acupuncture.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -130,7 +130,23 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
 .footer-disc{font-family:var(--sans);font-size:.72rem;color:var(--dim);line-height:1.65;border-top:1px solid var(--bdr2);padding-top:1rem;max-width:900px}
 .footer-copy{font-family:var(--sans);font-size:.72rem;color:var(--dim);margin-top:.5rem}
 @media(max-width:700px){.footer-top{grid-template-columns:1fr}}
-
+.acu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bdr);margin-bottom:1.5rem}
+.acu-cell{background:var(--bg);padding:1.8rem}
+.acu-day{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:.4rem}
+.acu-addr{font-family:var(--sans);font-size:.88rem;color:var(--ink2);line-height:1.75;margin-bottom:.8rem}
+.acu-note{font-family:var(--sans);font-size:.86rem;color:var(--ink2);line-height:1.7;margin-bottom:1rem}
+.btn-book{display:inline-flex;align-items:center;gap:.4rem;font-family:var(--sans);font-size:.76rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--bg);background:var(--ink);padding:.7rem 1.2rem;text-decoration:none}
+.check-list{display:flex;flex-direction:column;gap:0;max-width:680px}
+.check-item{display:flex;gap:1rem;padding:.9rem 0;border-bottom:1px solid var(--bdr2)}
+.check-item:last-child{border:none}
+.check-icon{font-family:var(--sans);font-size:.9rem;flex-shrink:0;padding-top:.05rem}
+.check-text{font-family:var(--sans);font-size:.90rem;color:var(--ink2);line-height:1.7}
+.check-text strong{color:var(--ink)}
+@media(max-width:700px){.acu-grid{grid-template-columns:1fr}}.fee-table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:.88rem;margin-bottom:1.5rem}
+.fee-table th{background:var(--bg3);font-weight:500;text-align:left;padding:.7rem .9rem;border:1px solid var(--bdr);font-size:.70rem;letter-spacing:.08em;text-transform:uppercase}
+.fee-table td{padding:.7rem .9rem;border:1px solid var(--bdr2);color:var(--ink2);vertical-align:top;line-height:1.55}
+.fee-table tr:nth-child(even) td{background:rgba(248,244,238,.5)}
+.ft-sub{font-size:.80rem;color:var(--dim);display:block;margin-top:.2rem}
 </style>
 </head>
 <body>
@@ -155,7 +171,7 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
   <a href="/" class="nav-logo">Vu Le &middot; TCM</a>
   <div class="nav-links">
     <a href="/virtual.html">Virtual</a>
-    <a href="/acupuncture.html">Acupuncture</a>
+    <a href="/acupuncture.html" class="active">Acupuncture</a>
     <a href="/fees.html">Fees</a>
     <a href="/discover.html">Approach</a>
     <a href="/qem.html">QEM&#x2122;</a>
@@ -167,79 +183,17 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
   </button>
 </nav>
 <div class="page-hero reveal">
-  <p class="hero-eye">Practice information</p>
-  <h1 class="hero-h1">Scope, consent<br>&amp; <em>jurisdiction.</em></h1>
-  <p class="hero-body">What this practice does, what it doesn&#x2019;t do, where it can serve you, and what you should know before we begin.</p>
+  <p class="hero-eye">In-person treatment</p>
+  <h1 class="hero-h1">Acupuncture at<br><em>two locations.</em></h1>
+  <p class="hero-body">Acupuncture treatment requires an in-person visit. Available at two Ontario clinic locations on fixed days each week. Virtual consultation and herbal medicine remain available Canada-wide regardless of where you live.</p>
 </div>
 
 <hr class="divider">
 
-<section class="sec" aria-labelledby="scope-h2">
-  <div class="sec-inner">
-    <p class="sec-eye reveal">Scope of practice</p>
-    <h2 class="sec-h reveal" id="scope-h2">What this practice<br><em>does and does not do.</em></h2>
-    <div class="card-grid reveal">
-      <div class="card"><div class="card-title">This is not a medical diagnosis</div><p class="card-body">TCM practitioners do not diagnose or treat medical conditions as defined under the Medicine Act. What we offer is a constitutional assessment expressed in classical Chinese medical language.</p></div>
-      <div class="card"><div class="card-title">We do not replace your physician</div><p class="card-body">This practice is complementary, not a substitute for primary care. We encourage you to maintain your relationship with your physician and are happy to work alongside your healthcare team.</p></div>
-      <div class="card"><div class="card-title">Herbal prescriptions are individualised</div><p class="card-body">Disclose all current medications and supplements at intake so herb-drug interactions can be properly assessed. Withholding health information may affect safety and effectiveness.</p></div>
-      <div class="card"><div class="card-title">Results vary and timelines are honest</div><p class="card-body">Constitutional medicine works cumulatively. No outcome is guaranteed. What we commit to is a rigorous, pattern-informed clinical approach at every contact.</p></div>
-      <div class="card"><div class="card-title">Emergency situations</div><p class="card-body">This practice is not equipped to manage acute emergencies. If you are experiencing a medical emergency, call 911 or go to your nearest emergency department.</p></div>
-      <div class="card"><div class="card-title">Regulatory standing</div><p class="card-body">Vu Le is registered with the CTCMPAO and holds NCBAHM Diplomate credentials. In good standing.</p></div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section class="sec" aria-labelledby="consent-h2" style="background:var(--bg2)">
-  <div class="sec-inner">
-    <p class="sec-eye reveal">Informed consent</p>
-    <h2 class="sec-h reveal" id="consent-h2">What you&#x2019;re agreeing to<br><em>when we work together.</em></h2>
-    <div style="background:var(--bg);border:1px solid var(--bdr);padding:2rem" class="reveal">
-      <div class="prose">
-        <p><strong>Nature of treatment.</strong> Services by Vu Le (R.TCMP, R.Ac, NCBAHM Diplomate) are within the regulated scope of Traditional Chinese Medicine under the Regulated Health Professions Act (Ontario). Services include virtual constitutional assessment, Chinese herbal medicine prescription, and clinical follow-up. Acupuncture, cupping, moxibustion, and physical modalities are in-person only.</p>
-        <p><strong>Risks and benefits.</strong> Chinese herbal medicine carries risks including adverse reactions and herb-drug interactions. You will disclose your full health history &mdash; including all medications, supplements, allergies, and medical conditions &mdash; at intake and at each subsequent contact.</p>
-        <p><strong>Voluntary participation.</strong> Participation is entirely voluntary. You may withdraw consent or decline any recommendation at any time without penalty.</p>
-        <p><strong>Not a substitute for medical care.</strong> TCM does not replace primary medical care. You will continue to consult your physician for conditions within the scope of medicine.</p>
-        <p><strong>Confidentiality.</strong> Your health information is private and treated with the same confidentiality obligations that apply to all regulated healthcare practitioners in Ontario.</p>
-        <p><strong>Communication.</strong> This practice communicates by text. By initiating contact at (416) 871-9239, you consent to receive clinical follow-up by SMS. You may withdraw at any time.</p>
-        <p><strong>Payment.</strong> Payment is required before service. Interac e-Transfer to lemnvu@outlook.com. Formulas are not dispatched until payment is confirmed.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<section class="sec" aria-labelledby="juris-h2">
-  <div class="sec-inner">
-    <p class="sec-eye reveal">Virtual consultation jurisdiction</p>
-    <h2 class="sec-h reveal" id="juris-h2">Where we can<br><em>serve you virtually.</em></h2>
-    <p class="sec-body reveal">Virtual TCM consultations are conducted under CTCMPAO telepractice guidelines (May 2021). Virtual consultations are not available to patients currently residing in BC, Alberta, Quebec, or Newfoundland &amp; Labrador.</p>
-    <div style="display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.5rem" class="reveal">
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Ontario</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Saskatchewan</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Manitoba</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Nova Scotia</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">New Brunswick</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Prince Edward Island</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Yukon</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Northwest Territories</span>
-      <span style="font-family:var(--sans);font-size:.78rem;color:var(--ink2);border:1px solid var(--bdr);padding:.2rem .65rem;background:rgba(248,244,238,.9)">Nunavut</span>
-    </div>
-
-    <div class="step-list reveal">
-      <div class="step"><div class="step-n" style="color:var(--grn)">&#x2713;</div><div><div class="step-title">Constitutional assessment, herbal medicine, IBS programme, Case Review</div><p class="step-body">Fully available virtually.</p></div></div>
-      <div class="step"><div class="step-n" style="color:var(--red)">&#x2715;</div><div><div class="step-title">Acupuncture, cupping, moxibustion, tuina</div><p class="step-body">In-person only. Available at Derry Health Center, Mississauga (Wed &amp; Sat) and Mono home clinic (Mon &amp; Thu).</p></div></div>
-    </div>
-  </div>
-</section>
-
 <section class="sec" aria-labelledby="acu-h2">
   <div class="sec-inner">
-    <p class="sec-eye reveal">In-person acupuncture</p>
-    <h2 class="sec-h reveal" id="acu-h2">Acupuncture at<br><em>two locations.</em></h2>
-    <p class="sec-body reveal">Acupuncture requires an in-person visit. Available at two Ontario clinic locations on fixed days each week. Appointment required at both.</p>
+    <p class="sec-eye reveal">Clinic locations</p>
+    <h2 class="sec-h reveal" id="acu-h2">Two clinics.<br><em>Fixed weekly days.</em></h2>
     <div class="acu-grid reveal">
       <div class="acu-cell">
         <p class="label-sm">Mississauga &mdash; Derry Health Center</p>
@@ -256,39 +210,50 @@ footer{background:var(--bg2);border-top:1px solid var(--bdr);padding:2.5rem 2.5r
         <a href="sms:4168719239" class="btn-book">Text to book &#x2192;</a>
       </div>
     </div>
-    <p style="font-family:var(--sans);font-size:.80rem;color:var(--dim)">Appointment required. Same-day subject to availability.</p>
+    <p style="font-family:var(--sans);font-size:.80rem;color:var(--dim)">Appointment required at both locations. Same-day bookings subject to availability.</p>
   </div>
 </section>
 
-<section class="sec" aria-labelledby="cred-h2" style="background:var(--bg2)">
+<hr class="divider">
+
+<section class="sec" aria-labelledby="what-h2">
   <div class="sec-inner">
-    <p class="sec-eye reveal">Credentials</p>
-    <h2 class="sec-h reveal" id="cred-h2">Regulatory standing<br>&amp; <em>qualifications.</em></h2>
-    <div class="card-grid reveal" style="max-width:680px">
-      <div class="card">
-        <p class="label-sm">Practitioner</p>
-        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);margin-bottom:.2rem">Vu Le</div>
-        <div style="font-family:var(--sans);font-size:.76rem;color:var(--dim);margin-bottom:.6rem">R.TCMP &middot; R.Ac &middot; NCBAHM Diplomate<br>In practice since 2003</div>
-        <p class="card-body">Registered with CTCMPAO. Specialises in complex, chronic, and treatment-resistant presentations. Creator of the Quantum Elemental Model&#x2122;.</p>
-      </div>
-      <div class="card">
-        <p class="label-sm">Regulatory bodies</p>
-        <div style="font-family:var(--serif);font-size:1rem;color:var(--ink);margin-bottom:.2rem">CTCMPAO</div>
-        <div style="font-family:var(--sans);font-size:.76rem;color:var(--dim);margin-bottom:.6rem">College of Traditional Chinese Medicine Practitioners and Acupuncturists of Ontario</div>
-        <p class="card-body">NCBAHM (National Certification Board for Acupuncture and Herbal Medicine, ncbahm.org) &mdash; US-based diplomate credentialing in acupuncture and Chinese herbal medicine.</p>
-      </div>
+    <p class="sec-eye reveal">What to expect</p>
+    <h2 class="sec-h reveal" id="what-h2">Constitutionally informed<br><em>treatment.</em></h2>
+    <p class="sec-body reveal">Acupuncture at this practice follows the same QEM&#x2122; constitutional framework used in virtual consultations. Point selection accounts for your elemental type and current cycle &mdash; not only the presenting pattern.</p>
+    <div class="check-list reveal">
+      <div class="check-item"><div class="check-icon" style="color:var(--grn)">&#x2713;</div><div class="check-text"><strong>Initial visit</strong> &mdash; includes a full constitutional assessment alongside acupuncture treatment.</div></div>
+      <div class="check-item"><div class="check-icon" style="color:var(--grn)">&#x2713;</div><div class="check-text"><strong>Follow-up visits</strong> &mdash; treatment adjusted as your pattern shifts.</div></div>
+      <div class="check-item"><div class="check-icon" style="color:var(--grn)">&#x2713;</div><div class="check-text"><strong>Combined with herbal medicine</strong> &mdash; many patients use acupuncture and herbal formulas together for compounding effect.</div></div>
+      <div class="check-item"><div class="check-icon" style="color:var(--grn)">&#x2713;</div><div class="check-text"><strong>Cupping, moxibustion, and tuina</strong> &mdash; available as part of in-person treatment where clinically appropriate.</div></div>
     </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="sec" aria-labelledby="fee-h2">
+  <div class="sec-inner">
+    <p class="sec-eye reveal">Fees</p>
+    <h2 class="sec-h reveal" id="fee-h2">In-person<br><em>pricing.</em></h2>
+    <table class="fee-table reveal">
+      <thead><tr><th>Service</th><th>Fee (CAD)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Acupuncture &mdash; Initial</strong><br><span class="ft-sub">Includes constitutional assessment.</span></td><td>$130</td></tr>
+        <tr><td><strong>Acupuncture &mdash; Follow-up</strong></td><td>$95</td></tr>
+      </tbody>
+    </table>
     <div class="insight reveal">
-      <p><strong>Insurance note:</strong> It is the patient&#x2019;s sole responsibility to verify insurance coverage before treatment. This clinic does not direct-bill. Receipts issued for every transaction.</p>
+      <p>Payment by Interac e-Transfer to lemnvu@outlook.com, due before treatment. Receipts provided for every transaction. It is the patient&#x2019;s sole responsibility to verify insurance coverage before treatment &mdash; this clinic does not direct-bill.</p>
     </div>
   </div>
 </section>
 
 <div class="sms-nudge">
-  <p class="nudge-text">Ready to begin?</p>
+  <p class="nudge-text">Mono clinic &mdash; text to book your appointment.</p>
   <div class="nudge-right">
     <a href="sms:4168719239" class="nudge-num">(416) 871&#x2011;9239</a>
-    <span class="nudge-sub">Text first &mdash; I&#x2019;ll call you back within 24&ndash;48 hours</span>
+    <span class="nudge-sub">Mon &amp; Thu &middot; calls not answered</span>
   </div>
 </div>
 <footer>
