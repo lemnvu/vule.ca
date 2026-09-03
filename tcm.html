@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vu Le — R.TCMP, R.Ac | Acupuncture & Traditional Chinese Medicine | Mono, Ontario</title>
+<meta name="description" content="Vu Le, Registered TCM Practitioner and Acupuncturist. Acupuncture and traditional Chinese medicine at a private rural clinic in Mono, Ontario. Mondays and Thursdays, 10am–5pm. Text to book: 416-871-9239.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://vule.ca/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Vu Le — Acupuncture & TCM, Mono Ontario">
+<meta property="og:description" content="Traditional Chinese Medicine and acupuncture at a private rural clinic in Mono, Ontario. Mondays and Thursdays by appointment.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vule.ca/">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Vu Le — Traditional Chinese Medicine & Acupuncture",
+  "url": "https://vule.ca",
+  "telephone": "+14168719239",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "713604 1st Line EHS",
+    "addressLocality": "Mono",
+    "addressRegion": "ON",
+    "addressCountry": "CA"
+  },
+  "openingHours": ["Mo 10:00-17:00", "Th 10:00-17:00"],
+  "medicalSpecialty": "Traditional Chinese Medicine",
+  "employee": {
+    "@type": "Person",
+    "name": "Vu Le",
+    "honorificPrefix": "R.TCMP, R.Ac",
+    "colleague": { "@type": "Person", "name": "Vu Le", "url": "https://vule.ca" }
+  }
+}
+</script>
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --sage: #6B8C6E;
+  --sage-lt: #8AAD8D;
+  --sage-pale: #EAF0E8;
+  --birch: #C8B99A;
+  --birch-lt: #E4D9C8;
+  --linen: #F7F4EE;
+  --linen-2: #EEE9DF;
+  --bark: #3D3328;
+  --bark-2: #5A4D3E;
+  --mist: rgba(255,255,255,0.88);
+  --mist-2: rgba(255,255,255,0.6);
+  --serif: 'Playfair Display', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22,1,0.36,1);
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--linen);
+  color: var(--bark);
+  font-size: 18px;
+  line-height: 1.85;
+  overflow-x: hidden;
+}
+
+/* ── SKIP LINK ── */
+.skip-link {
+  position: absolute; top: -100px; left: 1rem;
+  background: var(--sage); color: #fff;
+  padding: 0.5rem 1rem; border-radius: 4px;
+  font-family: var(--sans); font-size: 0.85rem;
+  text-decoration: none; z-index: 999;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 5vw;
+  background: rgba(247,244,238,0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(107,140,110,0.18);
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.05rem; font-weight: 500;
+  color: var(--bark); text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.nav-logo span { color: var(--sage); }
+.nav-links {
+  display: flex; align-items: center; gap: 2.25rem;
+}
+.nav-links a {
+  font-family: var(--sans);
+  font-size: 0.78rem; font-weight: 400;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--bark-2);
+  text-decoration: none; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--sage); }
+.nav-links .nav-cta {
+  background: var(--sage); color: #fff;
+  padding: 0.5rem 1.1rem; border-radius: 40px;
+  letter-spacing: 0.06em; font-weight: 500;
+  transition: background 0.2s;
+}
+.nav-links .nav-cta:hover { background: var(--sage-lt); color: #fff; }
+
+/* ── HAMBURGER ── */
+.hamburger {
+  display: none;
+  flex-direction: column; justify-content: center; gap: 5px;
+  background: none; border: none; cursor: pointer;
+  padding: 0.5rem;
+}
+.hamburger span {
+  display: block; width: 22px; height: 1.5px;
+  background: var(--bark); transition: all 0.3s;
+}
+.mobile-nav {
+  display: none; position: fixed; inset: 0; z-index: 200;
+  background: var(--linen); flex-direction: column;
+  align-items: center; justify-content: center; gap: 2rem;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  font-family: var(--serif); font-size: 1.6rem; font-weight: 400;
+  color: var(--bark); text-decoration: none;
+}
+.mobile-nav a:hover { color: var(--sage); }
+.mobile-close {
+  position: absolute; top: 1.5rem; right: 5vw;
+  background: none; border: none; color: var(--bark-2);
+  font-size: 1.4rem; cursor: pointer; line-height: 1;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  padding: 7rem 5vw 4rem;
+}
+
+/* Video-like animated nature background */
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 40%, rgba(138,173,141,0.28) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 80% at 20% 70%, rgba(200,185,154,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 100% at 50% 50%, rgba(234,240,232,0.4) 0%, transparent 80%),
+    linear-gradient(160deg, #f0ede5 0%, #e8ead8 40%, #dde6d5 100%);
+  animation: breathe 12s ease-in-out infinite alternate;
+}
+@keyframes breathe {
+  0%   { filter: brightness(1) saturate(1); }
+  50%  { filter: brightness(1.04) saturate(1.08); }
+  100% { filter: brightness(0.97) saturate(0.95); }
+}
+
+/* Drifting leaf/branch silhouettes */
+.hero-bg::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(ellipse 4px 20px at 15% 25%, rgba(107,140,110,0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 3px 15px at 80% 15%, rgba(107,140,110,0.09) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 12px at 60% 70%, rgba(107,140,110,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 5px 25px at 90% 60%, rgba(107,140,110,0.08) 0%, transparent 100%),
+    radial-gradient(ellipse 3px 18px at 35% 85%, rgba(107,140,110,0.07) 0%, transparent 100%);
+  animation: sway 18s ease-in-out infinite alternate;
+  transform-origin: center bottom;
+}
+@keyframes sway {
+  0%   { transform: rotate(-1deg) translateX(0); }
+  100% { transform: rotate(1.5deg) translateX(8px); }
+}
+
+/* Light rays */
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    105deg,
+    transparent 0%, transparent 18%,
+    rgba(255,255,255,0.04) 18%, rgba(255,255,255,0.04) 19%
+  );
+  animation: rays 20s ease-in-out infinite alternate;
+}
+@keyframes rays {
+  0%   { opacity: 0.4; transform: rotate(0deg); }
+  100% { opacity: 0.8; transform: rotate(2deg); }
+}
+
+.hero-inner {
+  position: relative; z-index: 1;
+  max-width: 700px;
+}
+.hero-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1.25rem;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 0.1s forwards;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+  font-weight: 400; line-height: 1.12;
+  color: var(--bark); margin-bottom: 1.5rem;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 0.25s forwards;
+}
+.hero h1 em {
+  font-style: italic; font-weight: 400;
+  color: var(--sage);
+}
+.hero-lead {
+  font-family: var(--sans);
+  font-size: 1.05rem; font-weight: 300; line-height: 1.75;
+  color: var(--bark-2); max-width: 520px;
+  margin-bottom: 2.5rem;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 0.4s forwards;
+}
+.hero-actions {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 0.55s forwards;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--sage); color: #fff;
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.85rem 1.75rem; border-radius: 50px;
+  text-decoration: none; transition: background 0.2s, transform 0.2s;
+}
+.btn-primary:hover { background: var(--sage-lt); transform: translateY(-1px); }
+.btn-outline {
+  display: inline-flex; align-items: center;
+  border: 1.5px solid rgba(107,140,110,0.45); color: var(--sage);
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 400;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.85rem 1.75rem; border-radius: 50px;
+  text-decoration: none; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--sage-pale); border-color: var(--sage); }
+
+.hero-availability {
+  margin-top: 2.5rem; padding-top: 2rem;
+  border-top: 1px solid rgba(107,140,110,0.18);
+  display: flex; gap: 2rem; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 0.7s forwards;
+}
+.avail-item {
+  display: flex; flex-direction: column; gap: 0.2rem;
+}
+.avail-label {
+  font-family: var(--sans); font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage);
+}
+.avail-value {
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 400;
+  color: var(--bark);
+}
+
+/* scroll cue */
+.scroll-cue {
+  position: absolute; bottom: 2.5rem; left: 50%;
+  transform: translateX(-50%); z-index: 2;
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  opacity: 0; animation: fadeUp 0.9s var(--ease) 1.1s forwards;
+}
+.scroll-line {
+  width: 1px; height: 48px;
+  background: linear-gradient(to bottom, var(--sage), transparent);
+  animation: scrollPulse 2.5s ease-in-out infinite;
+}
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.5; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.2); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── SECTION BASE ── */
+section { padding: 6rem 5vw; }
+.section-inner { max-width: 1000px; margin: 0 auto; }
+.section-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 0.75rem;
+}
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 400; line-height: 1.2;
+  color: var(--bark); margin-bottom: 1.25rem;
+}
+.section-title em { font-style: italic; color: var(--sage); }
+.section-lead {
+  font-family: var(--sans);
+  font-size: 1rem; font-weight: 300; line-height: 1.8;
+  color: var(--bark-2); max-width: 600px;
+}
+
+/* ── ABOUT ── */
+#about {
+  background: #fff;
+  border-top: 1px solid rgba(107,140,110,0.12);
+  border-bottom: 1px solid rgba(107,140,110,0.12);
+}
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; align-items: center;
+}
+.about-image-block {
+  position: relative;
+}
+.about-portrait {
+  width: 100%; aspect-ratio: 3/4;
+  background:
+    radial-gradient(ellipse at 40% 30%, rgba(107,140,110,0.3) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 70%, rgba(200,185,154,0.3) 0%, transparent 50%),
+    linear-gradient(160deg, var(--sage-pale) 0%, var(--birch-lt) 100%);
+  border-radius: 3px;
+  display: flex; align-items: flex-end; justify-content: center;
+  overflow: hidden;
+}
+.portrait-initials {
+  font-family: var(--serif); font-size: 8rem; font-weight: 400;
+  color: rgba(107,140,110,0.18); line-height: 1;
+  padding-bottom: 1rem; user-select: none;
+}
+.about-badge {
+  position: absolute; bottom: -1.5rem; right: -1.5rem;
+  background: var(--sage); color: #fff;
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  padding: 0.75rem 1rem; border-radius: 3px;
+  line-height: 1.5;
+}
+.about-content .section-title { margin-top: 0; }
+.about-body {
+  font-family: var(--sans);
+  font-size: 0.97rem; line-height: 1.85;
+  color: var(--bark-2); margin-bottom: 1.5rem;
+}
+.about-credentials {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin-top: 2rem;
+}
+.cred-tag {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--sage); border: 1px solid rgba(107,140,110,0.35);
+  padding: 0.3rem 0.75rem; border-radius: 3px;
+}
+
+/* ── APPROACH ── */
+#approach {
+  background: var(--linen);
+}
+.approach-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; margin-top: 3.5rem;
+}
+.approach-card {
+  background: #fff;
+  border: 1px solid rgba(107,140,110,0.12);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.approach-card:hover {
+  box-shadow: 0 8px 32px rgba(107,140,110,0.1);
+  transform: translateY(-3px);
+}
+.card-icon {
+  width: 44px; height: 44px; margin-bottom: 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.card-icon svg { width: 32px; height: 32px; stroke: var(--sage); fill: none; stroke-width: 1.5; }
+.card-title {
+  font-family: var(--serif); font-size: 1.2rem; font-weight: 500;
+  color: var(--bark); margin-bottom: 0.75rem;
+}
+.card-body {
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
+  line-height: 1.8; color: var(--bark-2);
+}
+
+/* ── CLINIC ── */
+#clinic {
+  background: var(--sage-pale);
+  border-top: 1px solid rgba(107,140,110,0.15);
+}
+.clinic-grid {
+  display: grid; grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem; align-items: start;
+}
+.clinic-details { display: flex; flex-direction: column; gap: 2rem; }
+.clinic-detail-row {
+  display: flex; gap: 1.25rem; align-items: flex-start;
+}
+.detail-icon {
+  width: 36px; height: 36px; flex-shrink: 0;
+  background: rgba(107,140,110,0.12); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 0.1rem;
+}
+.detail-icon svg { width: 18px; height: 18px; stroke: var(--sage); fill: none; stroke-width: 1.5; }
+.detail-label {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 0.25rem;
+}
+.detail-value {
+  font-family: var(--sans); font-size: 0.95rem; font-weight: 400;
+  color: var(--bark); line-height: 1.6;
+}
+.detail-value a { color: var(--sage); text-decoration: none; }
+.detail-value a:hover { text-decoration: underline; }
+
+.clinic-scene {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(107,140,110,0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(200,185,154,0.3) 0%, transparent 50%),
+    linear-gradient(160deg, #e8f0e4 0%, #f0e8d8 100%);
+  border-radius: 4px; padding: 3rem 2.5rem;
+  position: relative; overflow: hidden;
+}
+.scene-title {
+  font-family: var(--serif); font-size: 1.5rem; font-weight: 400;
+  color: var(--bark); margin-bottom: 1rem; font-style: italic;
+}
+.scene-body {
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
+  line-height: 1.85; color: var(--bark-2);
+}
+.scene-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.75rem;
+}
+.scene-tag {
+  font-family: var(--sans); font-size: 0.7rem; font-weight: 400;
+  color: var(--bark-2); background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(107,140,110,0.2);
+  padding: 0.25rem 0.7rem; border-radius: 30px;
+}
+.scene-decor {
+  position: absolute; bottom: -20px; right: -20px;
+  width: 120px; height: 120px; opacity: 0.1;
+  background: radial-gradient(circle, var(--sage) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+/* ── FEES ── */
+#fees {
+  background: #fff;
+  border-top: 1px solid rgba(107,140,110,0.12);
+}
+.fees-intro {
+  font-family: var(--sans);
+  font-size: 0.97rem; font-weight: 300; line-height: 1.8;
+  color: var(--bark-2); max-width: 600px; margin-bottom: 3rem;
+}
+
+.fee-section-label {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--sage); margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(107,140,110,0.18);
+}
+.fee-section-label:first-of-type { margin-top: 0; }
+
+.fee-table {
+  width: 100%; border-collapse: collapse; margin-bottom: 1rem;
+}
+.fee-table thead tr {
+  border-bottom: 1px solid rgba(107,140,110,0.15);
+}
+.fee-table th {
+  font-family: var(--sans);
+  font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(61,51,40,0.45);
+  padding: 0.5rem 1rem 0.75rem;
+  text-align: left;
+}
+.fee-table th:last-child { text-align: right; }
+.fee-table tbody tr {
+  border-bottom: 1px solid rgba(107,140,110,0.08);
+  transition: background 0.15s;
+}
+.fee-table tbody tr:hover { background: var(--sage-pale); }
+.fee-table td {
+  padding: 1rem 1rem;
+  vertical-align: top;
+  font-family: var(--serif);
+  font-size: 1rem; color: var(--bark);
+}
+.fee-table td:nth-child(2) {
+  font-family: var(--sans);
+  font-size: 0.78rem; color: rgba(61,51,40,0.45);
+  white-space: nowrap; padding-top: 1.15rem;
+}
+.fee-table td:last-child {
+  font-family: var(--sans);
+  font-size: 0.97rem; font-weight: 500;
+  color: var(--sage); text-align: right; white-space: nowrap; padding-top: 1.1rem;
+}
+.fee-name { display: block; margin-bottom: 0.2rem; font-weight: 500; }
+.fee-desc {
+  font-family: var(--sans);
+  font-size: 0.8rem; font-weight: 300;
+  line-height: 1.6; color: var(--bark-2); display: block;
+}
+.fee-badge {
+  display: inline-block;
+  font-family: var(--sans); font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--sage); border: 1px solid rgba(107,140,110,0.35);
+  padding: 0.15rem 0.55rem; border-radius: 2px;
+  margin-left: 0.5rem; vertical-align: middle;
+}
+.fee-strikethrough {
+  font-size: 0.85rem; color: rgba(61,51,40,0.3);
+  text-decoration: line-through; margin-right: 0.35rem;
+}
+
+.note-box {
+  border-left: 2px solid rgba(107,140,110,0.4);
+  background: var(--sage-pale);
+  border-radius: 0 4px 4px 0;
+  padding: 1rem 1.25rem; margin-bottom: 1.25rem;
+}
+.note-box p {
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 300;
+  line-height: 1.75; color: var(--bark-2);
+}
+.note-box p + p { margin-top: 0.6rem; }
+.note-box strong { font-weight: 500; color: var(--bark); }
+
+.herb-table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
+.herb-table tr { border-bottom: 1px solid rgba(107,140,110,0.08); }
+.herb-table td {
+  padding: 0.75rem 1rem;
+  font-family: var(--sans); font-size: 0.88rem;
+  color: var(--bark-2);
+}
+.herb-table td:first-child { font-weight: 400; color: var(--bark); }
+.herb-table td:last-child { text-align: right; font-weight: 500; color: var(--sage); }
+
+.insurance-note {
+  background: var(--linen-2); border-radius: 4px;
+  padding: 1.5rem 1.75rem; margin-top: 2rem;
+}
+.insurance-note p {
+  font-family: var(--sans); font-size: 0.85rem; font-weight: 300;
+  line-height: 1.75; color: var(--bark-2);
+}
+.insurance-note p + p { margin-top: 0.5rem; }
+.insurance-note strong { font-weight: 500; color: var(--bark); }
+
+/* ── CONTACT ── */
+#contact {
+  background: var(--bark);
+  color: #fff;
+}
+#contact .section-eyebrow { color: var(--sage-lt); }
+#contact .section-title { color: #fff; }
+.contact-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 4rem; margin-top: 3rem; align-items: start;
+}
+.contact-lead {
+  font-family: var(--sans); font-size: 1rem; font-weight: 300;
+  line-height: 1.8; color: rgba(255,255,255,0.7); margin-bottom: 2rem;
+}
+.contact-method {
+  display: flex; gap: 1rem; align-items: flex-start;
+  margin-bottom: 1.75rem;
+}
+.contact-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: rgba(107,140,110,0.18); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+}
+.contact-icon svg { width: 20px; height: 20px; stroke: var(--sage-lt); fill: none; stroke-width: 1.5; }
+.contact-method-label {
+  font-family: var(--sans); font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage-lt); margin-bottom: 0.3rem;
+}
+.contact-method-value {
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 400; color: #fff;
+}
+.contact-method-note {
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
+  color: rgba(255,255,255,0.5); margin-top: 0.2rem;
+}
+.contact-method-note a { color: var(--sage-lt); text-decoration: none; }
+
+.contact-note-card {
+  background: rgba(107,140,110,0.12); border: 1px solid rgba(107,140,110,0.25);
+  border-radius: 4px; padding: 2rem 1.75rem;
+}
+.contact-note-card p {
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
+  line-height: 1.8; color: rgba(255,255,255,0.7);
+}
+.contact-note-card p + p { margin-top: 1rem; }
+.contact-note-card strong { font-weight: 500; color: rgba(255,255,255,0.9); }
+.partner-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: var(--sage-lt); text-decoration: none; font-weight: 400;
+}
+.partner-link:hover { text-decoration: underline; }
+
+.text-cta-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: var(--sage); color: #fff;
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  padding: 0.9rem 2rem; border-radius: 50px;
+  text-decoration: none; margin-top: 1.5rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.text-cta-btn:hover { background: var(--sage-lt); transform: translateY(-1px); }
+
+/* ── FOOTER ── */
+footer {
+  background: #2A231B;
+  padding: 3rem 5vw 2rem;
+  border-top: 1px solid rgba(107,140,110,0.15);
+}
+.footer-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+.footer-links {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem;
+}
+.footer-links a {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 300;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--sage-lt); }
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 1.25rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+}
+.footer-copy {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 300;
+  color: rgba(255,255,255,0.35);
+}
+.footer-reg {
+  font-family: var(--sans); font-size: 0.72rem; font-weight: 300;
+  color: rgba(255,255,255,0.25); letter-spacing: 0.05em;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 800px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .about-grid, .clinic-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .approach-grid { grid-template-columns: 1fr; }
+  .about-badge { bottom: 1rem; right: 1rem; }
+  .hero { min-height: 90svh; }
+}
+@media (max-width: 480px) {
+  section { padding: 4rem 5vw; }
+  .hero-actions { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg, .hero-bg::before, .hero-bg::after, .scroll-line { animation: none; }
+  * { transition: none !important; }
+}
+</style>
+</head>
+
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- NAV -->
+<nav aria-label="Main navigation">
+  <a href="/" class="nav-logo">Van <span>Lam</span></a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#approach">Practice</a>
+    <a href="#clinic">Clinic</a>
+    <a href="#fees">Fees</a>
+    <a href="#contact" class="nav-cta">Book by Text</a>
+  </div>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Open menu" aria-expanded="false" id="hamburgerBtn">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Mobile menu">
+  <button class="mobile-close" onclick="toggleNav()" aria-label="Close menu">✕</button>
+  <a href="#about" onclick="toggleNav()">About</a>
+  <a href="#approach" onclick="toggleNav()">Practice</a>
+  <a href="#clinic" onclick="toggleNav()">Clinic</a>
+  <a href="#fees" onclick="toggleNav()">Fees</a>
+  <a href="#contact" onclick="toggleNav()">Book by Text</a>
+</div>
+
+<!-- HERO -->
+<main id="main">
+<section class="hero" aria-label="Introduction">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Vu Le · R.TCMP, R.Ac · Mono, Ontario</p>
+
+    <h1>Rooted medicine<br>for a<br><em>quieter life.</em></h1>
+
+    <p class="hero-lead">Traditional Chinese medicine and acupuncture, practised at a private rural clinic in the hills north of Toronto. Unhurried. Grounded in classical diagnosis. Every session begins with listening.</p>
+
+    <div class="hero-actions">
+      <a href="sms:4168719239" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        Text to book · 416-871-9239
+      </a>
+      <a href="#approach" class="btn-outline">How it works</a>
+    </div>
+
+    <div class="hero-availability" aria-label="Clinic hours">
+      <div class="avail-item">
+        <span class="avail-label">Clinic days</span>
+        <span class="avail-value">Monday & Thursday</span>
+      </div>
+      <div class="avail-item">
+        <span class="avail-label">Hours</span>
+        <span class="avail-value">10 am – 5 pm</span>
+      </div>
+      <div class="avail-item">
+        <span class="avail-label">Location</span>
+        <span class="avail-value">Mono, Ontario</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-title">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-image-block">
+        <div class="about-portrait" role="img" aria-label="Vu Le, TCM Practitioner">
+          <span class="portrait-initials" aria-hidden="true">VL</span>
+        </div>
+        <div class="about-badge" aria-label="Credentials">
+          R.TCMP · R.Ac<br>NCCAOM Diplomate
+        </div>
+      </div>
+
+      <div class="about-content">
+        <p class="section-eyebrow">About Vu Le</p>
+        <h2 id="about-title" class="section-title">Practitioner.<br><em>Not a protocol.</em></h2>
+
+        <p class="about-body">Vu Le is a Registered Traditional Chinese Medicine Practitioner and Acupuncturist, licenced in Ontario and holding NCCAOM Diplomate credentials. She practises classical constitutional diagnosis — pulse, tongue, and the full picture of how a person is actually living — before anything is decided about treatment.</p>
+
+        <p class="about-body">Her approach draws on the Quantum Elemental Model™ (QEM™), a constitutional framework that maps the body's elemental balance and points toward the root of chronic patterns, not merely their symptoms. She works alongside her clinical partner, Vu Le (R.TCMP, R.Ac) at <a href="https://vule.ca" style="color:var(--sage);text-decoration:none;">vule.ca</a>, and both practices share the same rural Mono clinic space.</p>
+
+        <p class="about-body">Appointments are by arrangement only. She prefers to be reached by text.</p>
+
+        <div class="about-credentials" aria-label="Professional credentials">
+          <span class="cred-tag">R.TCMP</span>
+          <span class="cred-tag">R.Ac</span>
+          <span class="cred-tag">NCCAOM Diplomate</span>
+          <span class="cred-tag">QEM™ Framework</span>
+          <span class="cred-tag">CTCMPAO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" aria-labelledby="approach-title">
+  <div class="section-inner">
+    <p class="section-eyebrow">Clinical practice</p>
+    <h2 id="approach-title" class="section-title">What we do —<br><em>and how.</em></h2>
+    <p class="section-lead">Two classical modalities, one constitutional view. Every visit builds on what came before. Nothing is rushed.</p>
+
+    <div class="approach-grid">
+      <div class="approach-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2L12 22M2 12L22 12M5 5L19 19M19 5L5 19" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="card-title">Acupuncture</h3>
+        <p class="card-body">Fine needles placed at specific points to shift how qi moves through the body's channels. Effective for pain, stress, sleep, hormonal regulation, digestive complaints, and conditions that haven't responded to other approaches. Eligible for most extended health benefit plans.</p>
+      </div>
+
+      <div class="approach-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M8 8c0 0-3 3-3 7h14c0-4-3-7-3-7M10 20h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="card-title">Herbal Medicine</h3>
+        <p class="card-body">Classical Chinese herbal formulas, custom-blended for each patient's constitution. Not off-the-shelf supplements — granule medicines prepared and dispensed in-clinic. The first 5-day formula is included in the herbal consultation fee. Same-formula refills can be arranged by text.</p>
+      </div>
+
+      <div class="approach-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3L4 9v12h16V9L12 3z" stroke-linecap="round" stroke-linejoin="round"/><rect x="9" y="14" width="6" height="8"/></svg>
+        </div>
+        <h3 class="card-title">Constitutional Diagnosis</h3>
+        <p class="card-body">Pulse reading, tongue observation, and a careful case history — the classical intake that informs everything else. The QEM™ framework maps your elemental constitution and helps identify the root of patterns that have persisted despite other treatments. First visit is always an assessment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC -->
+<section id="clinic" aria-labelledby="clinic-title">
+  <div class="section-inner">
+    <div class="clinic-grid">
+      <div>
+        <p class="section-eyebrow">The clinic</p>
+        <h2 id="clinic-title" class="section-title">Rural. Quiet.<br><em>Off the path.</em></h2>
+
+        <div class="clinic-details">
+          <div class="clinic-detail-row">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="detail-label">Address</p>
+              <p class="detail-value">713604 1st Line EHS<br>Mono, Ontario</p>
+            </div>
+          </div>
+
+          <div class="clinic-detail-row">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <p class="detail-label">Clinic hours</p>
+              <p class="detail-value">Monday & Thursday<br>10:00 am – 5:00 pm<br>By appointment only</p>
+            </div>
+          </div>
+
+          <div class="clinic-detail-row">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <div>
+              <p class="detail-label">How to book</p>
+              <p class="detail-value">
+                Text only — <a href="sms:4168719239">416-871-9239</a><br>
+                <small style="color:var(--bark-2);font-size:0.8rem;">Calls are not answered. Text is preferred.</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="clinic-detail-row">
+            <div class="detail-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h.01M9 15h.01M15 9h.01M15 15h.01M12 12h.01"/></svg>
+            </div>
+            <div>
+              <p class="detail-label">Parking</p>
+              <p class="detail-value">Plenty of parking on-site. Private rural property — no meters, no scrambling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="clinic-scene">
+          <p class="scene-title">What arriving feels like.</p>
+          <p class="scene-body">The clinic sits in a natural setting north of Orangeville — surrounded by trees, away from traffic, on a quiet rural road. The treatment space is bright and spacious, with high ceilings and daylight, simply furnished. Unhurried. Nothing clinical about it except the care.</p>
+          <p class="scene-body" style="margin-top:1rem;">Patients consistently note the difference that the setting makes — it is easier to arrive somewhere quiet when the work of getting well asks you to slow down.</p>
+          <div class="scene-tags">
+            <span class="scene-tag">Rural setting</span>
+            <span class="scene-tag">Natural light</span>
+            <span class="scene-tag">Spacious</span>
+            <span class="scene-tag">Ample parking</span>
+            <span class="scene-tag">Cozy</span>
+            <span class="scene-tag">Private</span>
+            <span class="scene-tag">Off the beaten path</span>
+          </div>
+          <div class="scene-decor" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEES -->
+<section id="fees" aria-labelledby="fees-title">
+  <div class="section-inner">
+    <p class="section-eyebrow">Fees &amp; services</p>
+    <h2 id="fees-title" class="section-title">Clear and<br><em>complete.</em></h2>
+    <p class="fees-intro">All fees for clinical acupuncture, herbal medicine, and constitutional assessment. No hidden charges. Every service billed individually as rendered. Fees are in Canadian dollars and are HST-exempt.</p>
+
+    <!-- CLINICAL VISITS -->
+    <p class="fee-section-label">Clinical visits — acupuncture &amp; herbal medicine</p>
+
+    <table class="fee-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Duration</th>
+          <th>Fee</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="fee-name">Initial Constitutional Assessment</span>
+            <span class="fee-desc">First visit. QEM™ constitutional intake, classical pulse and tongue diagnosis. Includes either acupuncture treatment or herbal medicine consultation with 5-day formula — your clinical need determines which.</span>
+          </td>
+          <td>45 min</td>
+          <td>$150</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fee-name">Initial Assessment + Both Modalities</span>
+            <span class="fee-desc">First visit with both acupuncture and herbal medicine consultation. Includes 5-day custom herbal formula dispensed at the session.</span>
+          </td>
+          <td>45 min</td>
+          <td>$265</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fee-name">Acupuncture Treatment</span>
+            <span class="fee-desc">Follow-up acupuncture. Constitutional review and needle treatment. No herbal component. Extended health benefits eligible.</span>
+          </td>
+          <td>45 min</td>
+          <td>$115</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fee-name">Herbal Medicine Consultation</span>
+            <span class="fee-desc">Constitutional herbal review and dispensing. Includes first 5-day custom herbal formula. Not covered by extended health benefits — billed directly.</span>
+          </td>
+          <td>45 min</td>
+          <td>$115</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fee-name">Acupuncture + Herbal Medicine</span>
+            <span class="fee-desc">Combined follow-up. Full acupuncture treatment and herbal consultation with 5-day formula dispensed at the session.</span>
+          </td>
+          <td>45 min</td>
+          <td>$230</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SPECIALIST -->
+    <p class="fee-section-label">Specialist consultation</p>
+
+    <table class="fee-table">
+      <thead>
+        <tr><th>Service</th><th>Duration</th><th>Fee</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="fee-name">Discovery Conversation</span>
+            <span class="fee-desc">A direct conversation about your case before committing to a clinical session. Not a sales call — a genuine assessment of fit. No needles, no treatment.</span>
+          </td>
+          <td>30 min max</td>
+          <td>$75</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="fee-name">
+              The Unresolved Case Review
+              <span class="fee-badge">Introductory</span>
+            </span>
+            <span class="fee-desc">For complex, chronic, or previously unresolved cases. Consultation only — no needles. Deep QEM™ constitutional analysis and clear care pathway. A $200 non-refundable intake fee is collected at booking and applied to the full fee on the day. Standard fee of $750 resumes once this introductory phase closes.</span>
+          </td>
+          <td>60 min</td>
+          <td><span class="fee-strikethrough">$750</span>$500</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- HERBAL SUPPLY -->
+    <p class="fee-section-label">Additional herbal medicine supply</p>
+
+    <div class="note-box">
+      <p>The $115 herbal medicine consultation includes the first 5-day formula. Same-formula refills — arranged by text, no consultation required — are <strong>$100 per 5-day supply,</strong> prepared and ready for pickup.</p>
+    </div>
+
+    <table class="herb-table">
+      <tr>
+        <td>5-day supply</td>
+        <td>Included in $115 herbal consultation</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Same-formula refill · 5-day</td>
+        <td>No consultation · text to arrange</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Same-formula refill · 10-day</td>
+        <td>2 × $100</td>
+        <td>$200</td>
+      </tr>
+      <tr>
+        <td>Same-formula refill · 20-day</td>
+        <td>4 × $100</td>
+        <td>$400</td>
+      </tr>
+      <tr>
+        <td>Same-formula refill · 30-day</td>
+        <td>6 × $100</td>
+        <td>$600</td>
+      </tr>
+    </table>
+
+    <div class="note-box">
+      <p><strong>On third-party dispensing.</strong> Herbal formulas are dispensed directly from this clinic. We do not provide written formulas for third-party dispensing — not as a restriction, but as a clinical guarantee. Granule quality, sourcing standards, and substitution practices vary significantly between suppliers. A formula prepared elsewhere is not the same formula. Contact by text to arrange direct dispatch if you are outside the area.</p>
+    </div>
+
+    <!-- SHIPPING -->
+    <p class="fee-section-label">Herbal medicine delivery &amp; shipping</p>
+
+    <div class="note-box">
+      <p><strong>In-clinic pickup is included</strong> — no additional charge for patients collecting at the Mono clinic.</p>
+      <p><strong>Shipping is extra and billed at actual carrier cost,</strong> confirmed with you before dispatch. Canada Post Expedited for most Ontario destinations ($12–18 per shipment). Xpresspost or FedEx Priority for cross-Canada ($25–35 per shipment).</p>
+    </div>
+
+    <!-- INSURANCE -->
+    <p class="fee-section-label">Extended health benefits &amp; insurance</p>
+
+    <div class="insurance-note">
+      <p><strong>Acupuncture is eligible for extended health benefits</strong> where your plan provides coverage for registered TCM practitioners (R.TCMP / R.Ac).</p>
+      <p><strong>Herbal medicine is not covered by extended health benefits</strong> and is billed directly to the patient.</p>
+      <p><strong>Insurance disclaimer:</strong> It is the patient's sole responsibility to verify coverage with their insurance provider prior to treatment. Not all insurance plans cover services from this practice. We do not guarantee, confirm, or assume responsibility for any insurance reimbursement. All fees are due in full at the time of service regardless of insurance status.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="section-inner">
+    <p class="section-eyebrow">Get in touch</p>
+    <h2 id="contact-title" class="section-title">Ready when<br><em>you are.</em></h2>
+
+    <div class="contact-grid">
+      <div>
+        <p class="contact-lead">Vu Le sees patients on Mondays and Thursdays, 10am to 5pm. All bookings are by appointment. Please reach out by text — calls are not answered.</p>
+
+        <div class="contact-method">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <p class="contact-method-label">Book by text</p>
+            <p class="contact-method-value"><a href="sms:4168719239" style="color:#fff;text-decoration:none;">416-871-9239</a></p>
+            <p class="contact-method-note">Texts only — calls are not answered. Include your name and a brief reason for reaching out.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact-method-label">Clinic address</p>
+            <p class="contact-method-value" style="font-size:1.1rem;">713604 1st Line EHS<br>Mono, Ontario</p>
+            <p class="contact-method-note">Plenty of on-site parking. Rural property — easy to find, worth the drive.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <p class="contact-method-label">Availability</p>
+            <p class="contact-method-value" style="font-size:1.1rem;">Monday & Thursday</p>
+            <p class="contact-method-note">10:00 am – 5:00 pm · By appointment only</p>
+          </div>
+        </div>
+
+        <a href="sms:4168719239" class="text-cta-btn" aria-label="Send a text to book an appointment">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          Text to book
+        </a>
+      </div>
+
+      <div>
+        <div class="contact-note-card">
+          <p><strong>Not sure whether Vu Le or Van Lam is the right practitioner for you?</strong></p>
+          <p>Both are Registered TCM Practitioners and Acupuncturists working from the same Mono clinic. They share the QEM™ constitutional framework and often cross-refer patients. If you are unsure who to see, text the number above and say so — you'll get a straight answer about which practice is a better fit.</p>
+          <p style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.1);">
+            <strong>Licensed by the CTCMPAO.</strong> Vu Le is a Registered Traditional Chinese Medicine Practitioner and Acupuncturist (R.TCMP, R.Ac) licensed in Ontario, Canada, and holds NCCAOM Diplomate credentials.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#approach">Practice</a>
+      <a href="#clinic">Clinic</a>
+      <a href="#fees">Fees</a>
+      <a href="#contact">Book</a>
+      <a href="https://vule.ca">vule.ca</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Vu Le. All rights reserved.</p>
+      <p class="footer-reg">R.TCMP · R.Ac · NCCAOM · Ontario, Canada</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  const nav = document.getElementById('mobileNav');
+  const btn = document.getElementById('hamburgerBtn');
+  const open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
+// Close mobile nav on outside click
+document.getElementById('mobileNav').addEventListener('click', function(e) {
+  if (e.target === this) toggleNav();
+});
+
+// Scroll-reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.approach-card, .clinic-detail-row, .about-badge').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(20px)';
+  el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
