@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Autumn Event | Mono Home Clinic | Vu Le & Van Lam</title>
+    <title>Autumn Constitutional Alignment | Mono Home Clinic | Vu Le & Van Lam</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,28 +131,20 @@
             font-weight: 600;
         }
 
-        /* Pricing Cards */
+        /* Feature Offer Card Section */
         .pricing-section {
-            padding: 10px 0 50px;
-        }
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 28px;
+            padding: 10px 0 40px;
         }
         .price-card {
             background: var(--card-bg);
             border: 1px solid var(--accent-gold);
             border-radius: 4px;
-            padding: 44px 32px 36px;
+            padding: 44px 36px 36px;
             text-align: center;
             position: relative;
             box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .price-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            max-width: 620px;
+            margin: 0 auto;
         }
         .card-tag {
             position: absolute;
@@ -171,15 +163,13 @@
         }
         .price-card h3 {
             font-family: var(--font-heading);
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 2rem;
+            margin-bottom: 8px;
             color: var(--text-main);
         }
         .price-box {
             margin: 16px 0 20px;
         }
-        
-        /* Strikethrough & Regular Pricing */
         .regular-price {
             font-size: 1.05rem;
             color: #8C8580;
@@ -188,18 +178,16 @@
         }
         .promo-price {
             font-family: var(--font-heading);
-            font-size: 3.8rem;
+            font-size: 4rem;
             font-weight: 600;
             color: var(--text-main);
             line-height: 1;
         }
         .promo-price span.currency {
-            font-size: 1.8rem;
+            font-size: 2rem;
             vertical-align: top;
             margin-right: 2px;
         }
-        
-        /* Savings Badge */
         .savings-badge {
             display: inline-block;
             background-color: rgba(163, 72, 54, 0.08);
@@ -213,18 +201,51 @@
             border-radius: 4px;
             margin-top: 10px;
         }
-
         .period {
             font-size: 0.9rem;
             color: var(--text-muted);
             margin-top: 6px;
         }
         .price-card p.desc {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: var(--text-muted);
-            margin-bottom: 28px;
+            margin-bottom: 24px;
             font-weight: 300;
-            min-height: 50px;
+        }
+        .offer-options {
+            text-align: left;
+            background: var(--subtle-cream);
+            padding: 20px 24px;
+            border-radius: 4px;
+            margin-bottom: 28px;
+            border: 1px solid var(--border-color);
+        }
+        .offer-options h4 {
+            font-size: 0.82rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 8px;
+        }
+        .offer-options ul {
+            list-style: none;
+            padding: 0;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+        .offer-options li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            font-weight: 300;
+        }
+        .offer-options li::before {
+            content: "•";
+            color: var(--accent-gold);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
         }
 
         /* Buttons */
@@ -257,13 +278,71 @@
             color: #FFFFFF;
         }
 
+        /* Standard Fee Schedule Table Section */
+        .fee-schedule-section {
+            padding: 40px 0 50px;
+        }
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            font-weight: 300;
+        }
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            font-size: 0.92rem;
+        }
+        .fee-table th {
+            background-color: var(--subtle-cream);
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+            font-weight: 600;
+        }
+        .fee-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-main);
+            vertical-align: top;
+        }
+        .fee-table tr:last-child td {
+            border-bottom: none;
+        }
+        .fee-table tr.highlight-row {
+            background-color: #FAF6F0;
+        }
+        .service-name {
+            font-weight: 500;
+        }
+        .fee-amount {
+            text-align: right;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
         /* Event Box */
         .event-frame {
             background-color: var(--subtle-cream);
             border: 1px solid var(--border-color);
             padding: 40px;
             border-radius: 4px;
-            margin: 20px 0 60px;
+            margin: 20px 0 50px;
             text-align: center;
         }
         .event-frame h2 {
@@ -277,6 +356,23 @@
             font-weight: 500;
             letter-spacing: 0.05em;
             margin-bottom: 16px;
+        }
+
+        /* Dispensary Note */
+        .dispensary-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 28px;
+            border-radius: 4px;
+            margin-bottom: 50px;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+        }
+        .dispensary-box h4 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
         }
 
         /* Hosts Section */
@@ -293,6 +389,7 @@
         @media (max-width: 640px) {
             .hosts-grid { grid-template-columns: 1fr; }
             .hero h1 { font-size: 2.5rem; }
+            .fee-table th:nth-child(3), .fee-table td:nth-child(3) { display: none; }
         }
         .host-card {
             background: var(--card-bg);
@@ -326,7 +423,7 @@
             padding: 40px;
             border-radius: 4px;
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
         .location-section h3 {
             font-family: var(--font-heading);
@@ -340,9 +437,21 @@
             font-weight: 300;
         }
 
+        /* Legal & Regulatory Footer */
+        .disclaimer-section {
+            border-top: 1px solid var(--border-color);
+            padding: 32px 0;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .disclaimer-section p {
+            margin-bottom: 10px;
+        }
+
         /* Footer */
         footer {
-            padding: 40px 0;
+            padding: 30px 0;
             border-top: 1px solid var(--border-color);
             text-align: center;
             font-size: 0.85rem;
@@ -364,7 +473,7 @@
     <!-- Header -->
     <header>
         <div class="container">
-            <div class="brand-subtitle">Mono Home Clinic Special Event</div>
+            <div class="brand-subtitle">TRUEFORM PUBLISHING & CLINICAL SERVICES</div>
             <div class="brand-title">Vu Le & Van Lam</div>
         </div>
     </header>
@@ -373,52 +482,40 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <div class="event-badge">Seasonal Wellness Rate Reduction</div>
+            <div class="event-badge">Seasonal Alignment Window</div>
             <h1>Autumn Healing Event</h1>
-            <p class="lead">We invite you into our quiet home sanctuary in Mono for a focused month of restorative acupuncture and custom natural medicine at exclusive rate reductions.</p>
+            <p class="lead">We invite you into our quiet home sanctuary in Mono for a seasonal transition assessment to establish your functional baseline and restore constitutional resilience.</p>
         </section>
 
         <!-- Highlights Banner -->
         <div class="savings-highlight-bar">
-            <strong>Limited Event Pricing:</strong> Experience comprehensive clinical evaluation and treatment with significant savings off regular initial consultation rates.
+            <strong>Exclusive Autumn Rate:</strong> Complete initial constitutional diagnostic intake and targeted session for <strong>$99 CAD</strong> (Regularly $150).
         </div>
 
-        <!-- Pricing Cards Section -->
+        <!-- Featured Offer Section -->
         <section class="pricing-section">
-            <div class="pricing-grid">
+            <div class="price-card">
+                <div class="card-tag">Special Autumn Offer</div>
+                <h3>Initial Constitutional Assessment + 1 Modality</h3>
                 
-                <!-- Acupuncture Option -->
-                <div class="price-card">
-                    <div class="card-tag">Special Promotional Rate</div>
-                    <h3>Acupuncture Session</h3>
-                    
-                    <div class="price-box">
-                        <div class="regular-price">Regular Rate: $150 – $180</div>
-                        <div class="promo-price"><span class="currency">$</span>100</div>
-                        <div class="savings-badge">Save up to $80 per session</div>
-                        <div class="period">per clinical session</div>
-                    </div>
-
-                    <p class="desc">Includes baseline evaluation and precision acupuncture tailored to your body baseline and constitutional balance.</p>
-                    <a href="https://vule.ca/booking" class="btn">Book Acupuncture Session</a>
+                <div class="price-box">
+                    <div class="regular-price">Regular Rate: $150</div>
+                    <div class="promo-price"><span class="currency">$</span>99</div>
+                    <div class="savings-badge">Save $51 on First Visit</div>
+                    <div class="period">45-Minute Initial Session • Fees HST-Exempt</div>
                 </div>
 
-                <!-- Herbal Medicine Option -->
-                <div class="price-card">
-                    <div class="card-tag">Special Promotional Rate</div>
-                    <h3>Custom Herbal Medicine</h3>
-                    
-                    <div class="price-box">
-                        <div class="regular-price">Regular Rate: $140 – $160</div>
-                        <div class="promo-price"><span class="currency">$</span>100</div>
-                        <div class="savings-badge">Save up to $60 per batch</div>
-                        <div class="period">for 5 days of customized herbs</div>
-                    </div>
+                <p class="desc">Includes comprehensive Quantum Elemental Model™ (QEM™) constitutional intake, classical pulse and tongue diagnostics, and your choice of primary treatment modality.</p>
 
-                    <p class="desc">Includes custom formulation and compounding for a 5-day herbal protocol aligned with your individual needs.</p>
-                    <a href="https://vule.ca/booking" class="btn">Reserve Custom Herbal Formula</a>
+                <div class="offer-options">
+                    <h4>Select Your Primary Treatment:</h4>
+                    <ul>
+                        <li><strong>Acupuncture Treatment:</strong> Tailored needle therapy targeting constitutional root dynamics. <em>(Eligible for Extended Health Benefits)</em></li>
+                        <li><strong>Herbal Consultation:</strong> Custom formula prescription including your first 5-day granule supply compounded on-site.</li>
+                    </ul>
                 </div>
 
+                <a href="https://vule.ca/booking" class="btn">Book Mono Assessment</a>
             </div>
         </section>
 
@@ -427,7 +524,67 @@
             <h2>Event Window & Terms</h2>
             <div class="date-range">September 7, 2026 – October 7, 2026</div>
             <p style="max-width: 620px; margin: 0 auto; color: var(--text-muted); font-size: 0.98rem; font-weight: 300;">
-                These savings are offered exclusively for appointments scheduled and completed at our private Mono Home Clinic location during this 30-day promotional period. Limited spots available.
+                This rate is available exclusively for initial visits scheduled and completed at our private Mono Home Clinic location during this 30-day seasonal promotional period.
+            </p>
+        </section>
+
+        <!-- Full Fee Schedule Table Section -->
+        <section class="fee-schedule-section">
+            <h2 class="section-title">Complete Clinical Fee Schedule</h2>
+            <p class="section-subtitle">All services billed individually as rendered. Fees are in CAD and HST-exempt. No hidden charges.</p>
+
+            <table class="fee-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th style="text-align: right;">Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight-row">
+                        <td class="service-name">Initial Assessment + 1 Modality</td>
+                        <td>Autumn Intro (Sept 7 – Oct 7). QEM™ intake, pulse/tongue diagnosis + acupuncture OR 5-day herbal formula.</td>
+                        <td>45 min</td>
+                        <td class="fee-amount">$99 <span style="text-decoration: line-through; font-weight: normal; font-size: 0.8rem; color: #8C8580;">$150</span></td>
+                    </tr>
+                    <tr>
+                        <td class="service-name">Initial Assessment + Both Modalities</td>
+                        <td>Full visit with both acupuncture and herbal consultation. Includes 5-day custom formula dispensed at session.</td>
+                        <td>45 min</td>
+                        <td class="fee-amount">$265</td>
+                    </tr>
+                    <tr>
+                        <td class="service-name">Acupuncture Treatment</td>
+                        <td>Follow-up acupuncture. Constitutional review and needle treatment. Extended health benefits eligible.</td>
+                        <td>45 min</td>
+                        <td class="fee-amount">$115</td>
+                    </tr>
+                    <tr>
+                        <td class="service-name">Herbal Medicine Consultation</td>
+                        <td>Constitutional herbal review and dispensing. Includes first 5-day custom formula. Billed directly.</td>
+                        <td>45 min</td>
+                        <td class="fee-amount">$115</td>
+                    </tr>
+                    <tr>
+                        <td class="service-name">Acupuncture + Herbal Medicine</td>
+                        <td>Combined follow-up. Full acupuncture treatment and herbal consultation with 5-day formula dispensed at session.</td>
+                        <td>45 min</td>
+                        <td class="fee-amount">$230</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- On-Site Dispensary Callout -->
+        <section class="dispensary-box">
+            <h4>Direct On-Site Dispensary & Mono Pickup</h4>
+            <p style="margin-bottom: 10px;">
+                Herbal formulas are dispensed directly from our clinic dispensary to ensure granule quality and constituent purity. In-clinic pickup is complimentary for patients collecting at the Mono clinic.
+            </p>
+            <p>
+                <em>Refill Notice:</em> Same-formula refills ($100 per 5-day supply) can be arranged by text without additional consultation fees.
             </p>
         </section>
 
@@ -442,12 +599,12 @@
                 <div class="host-card">
                     <h4>Vu Minh Le</h4>
                     <div class="host-role">R.TCMP, R.Ac, NCCAOM Diplomate</div>
-                    <p>Specializing in constitutional diagnostic evaluation, root-cause resolution, and targeted acupuncture treatments.</p>
+                    <p>Specializing in Quantum Elemental Model™ diagnostic evaluation, classical pulse diagnosis, and precision acupuncture.</p>
                 </div>
                 <div class="host-card">
                     <h4>Van Lam</h4>
                     <div class="host-role">Holistic Health Specialist</div>
-                    <p>Co-developing custom herbal formulas, functional dietary alignments, and personalized patient care plans.</p>
+                    <p>Co-developing custom herbal formulations, systemic health frameworks, and clinical patient care models.</p>
                 </div>
             </div>
         </section>
@@ -455,8 +612,14 @@
         <!-- Location Section -->
         <section class="location-section">
             <h3>Mono Home Clinic</h3>
-            <p>Our home sanctuary in Mono, Ontario offers an unhurried, peaceful setting for deep healing and physical restoration.</p>
-            <a href="https://vule.ca/contact" class="btn btn-secondary" style="max-width: 280px; margin: 0 auto;">Location & Contact Info</a>
+            <p>Our sanctuary in Mono, Ontario provides a quiet, unhurried space for deep physical recovery and natural constitutional balance.</p>
+            <a href="https://vule.ca/contact" class="btn btn-secondary" style="max-width: 280px; margin: 0 auto;">Location & Directions</a>
+        </section>
+
+        <!-- Legal & Insurance Disclaimers -->
+        <section class="disclaimer-section">
+            <p><strong>Extended Health Benefits & Insurance:</strong> Acupuncture services are eligible for extended health benefits where your plan provides coverage for Registered Traditional Chinese Medicine Practitioners (R.TCMP) or Registered Acupuncturists (R.Ac). Herbal medicine consultations and supplies are not covered by extended benefits and are billed directly.</p>
+            <p><strong>Insurance Disclaimer:</strong> It is the patient's sole responsibility to verify coverage with their insurance provider prior to treatment. We do not guarantee, confirm, or assume responsibility for any insurance reimbursement. All fees are due in full at the time of service regardless of insurance status. All services billed individually as rendered in compliance with CTCMPAO standards.</p>
         </section>
 
     </main>
@@ -464,7 +627,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Vu Le & Van Lam | TRUEFORM. Main site: <a href="https://vule.ca">vule.ca</a></p>
+            <p>&copy; 2026 Vu Le & Van Lam | TRUEFORM PUBLISHING & CLINICAL SERVICES. Main site: <a href="https://vule.ca">vule.ca</a></p>
         </div>
     </footer>
 
