@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Autumn Wellness Event | Mono Home Clinic | Vu Le & Van Lam</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --card-bg: #FFFFFF;
+            --text-main: #2C2A29;
+            --text-muted: #5C5855;
+            --accent-gold: #C5A059;
+            --accent-gold-hover: #B08B45;
+            --border-color: #E8E2D9;
+            --subtle-cream: #F4EFEA;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Jost', -apple-system, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Container */
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Announcement Banner */
+        .top-banner {
+            background-color: var(--text-main);
+            color: var(--bg-color);
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.88rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .top-banner span {
+            color: var(--accent-gold);
+            font-weight: 500;
+        }
+
+        /* Header / Brand Nav */
+        header {
+            padding: 36px 0 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .brand-subtitle {
+            font-size: 0.85rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .brand-title {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: var(--text-main);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        .event-badge {
+            display: inline-block;
+            background: var(--subtle-cream);
+            border: 1px solid var(--border-color);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3.2rem;
+            line-height: 1.15;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+        .hero p.lead {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto 32px;
+            font-weight: 300;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            padding: 20px 0 50px;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 24px;
+        }
+        .price-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 40px 32px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .price-card.featured {
+            border: 1px solid var(--accent-gold);
+            background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F5 100%);
+        }
+        .card-tag {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent-gold);
+            color: #FFF;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .price-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+        .price-box {
+            margin: 20px 0 24px;
+        }
+        .amount {
+            font-family: var(--font-heading);
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: var(--text-main);
+            line-height: 1;
+        }
+        .amount span {
+            font-size: 1.8rem;
+            vertical-align: top;
+            margin-right: 2px;
+        }
+        .period {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+        .price-card p.desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            font-weight: 300;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 16px 28px;
+            background-color: var(--accent-gold);
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 0.88rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 500;
+            border-radius: 2px;
+            transition: background-color 0.25s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: var(--accent-gold-hover);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--text-main);
+        }
+        .btn-secondary:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        /* Event Frame */
+        .event-frame {
+            background-color: var(--subtle-cream);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 4px;
+            margin: 30px 0 60px;
+            text-align: center;
+        }
+        .event-frame h2 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .date-range {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        /* Hosts Section */
+        .clinic-hosts {
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        .hosts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 32px;
+        }
+        @media (max-width: 640px) {
+            .hosts-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+        }
+        .host-card {
+            background: var(--card-bg);
+            padding: 28px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+        }
+        .host-card h4 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+        .host-role {
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+        .host-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* Location Callout */
+        .location-section {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 4px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .location-section h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+        .location-section p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 24px;
+            font-weight: 300;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        footer a {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-banner">
+        Limited Time Event: <span>September 7 – October 7, 2026</span> • Exclusively at Mono Home Clinic
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="brand-subtitle">Mono Home Clinic Special Event</div>
+            <div class="brand-title">Vu Le & Van Lam</div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="event-badge">Seasonal Wellness Celebration</div>
+            <h1>Restorative Care in Mono</h1>
+            <p class="lead">We invite you into our quiet home sanctuary in Mono for a focused month of personal alignment, physical balance, and custom natural medicine.</p>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+            <div class="pricing-grid">
+                
+                <!-- Acupuncture Option -->
+                <div class="price-card featured">
+                    <div class="card-tag">Event Rate</div>
+                    <h3>Acupuncture Session</h3>
+                    <p class="desc">A full baseline evaluation and personalized acupuncture treatment focused on restoring your physical default balance.</p>
+                    <div class="price-box">
+                        <div class="amount"><span>$</span>100</div>
+                        <div class="period">per session</div>
+                    </div>
+                    <a href="https://vule.ca/booking" class="btn">Reserve Acupuncture</a>
+                </div>
+
+                <!-- Herbal Medicine Option -->
+                <div class="price-card featured">
+                    <div class="card-tag">Event Rate</div>
+                    <h3>Custom Herbal Medicine</h3>
+                    <p class="desc">A tailor-made 5-day herbal formulation compounded specifically to align with your personal constitution.</p>
+                    <div class="price-box">
+                        <div class="amount"><span>$</span>100</div>
+                        <div class="period">for 5 days of customized herbs</div>
+                    </div>
+                    <a href="https://vule.ca/booking" class="btn">Reserve Herbal Formula</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Event Details Box -->
+        <section class="event-frame">
+            <h2>Event Window & Availability</h2>
+            <div class="date-range">September 7, 2026 – October 7, 2026</div>
+            <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 0.98rem; font-weight: 300;">
+                This reduced rate is offered exclusively for sessions and preparations hosted at our Mono Home Clinic during this one-month event. Appointments are limited to ensure calm, unhurried attention for every patient.
+            </p>
+        </section>
+
+        <!-- Practitioners / Home Clinic Focus -->
+        <section class="clinic-hosts">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem;">Hosted by Vu Le & Van Lam</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300;">Personalized holistic care in a natural, peaceful setting.</p>
+            </div>
+
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <h4>Vu Minh Le</h4>
+                    <div class="host-role">R.TCMP, R.Ac, NCCAOM Diplomate</div>
+                    <p>Providing constitutional root-cause analysis and precision acupuncture focused on restoring physical baseline health and vitality.</p>
+                </div>
+                <div class="host-card">
+                    <h4>Van Lam</h4>
+                    <div class="host-role">Holistic Health Specialist</div>
+                    <p>Collaborating on custom herbal compounding, dietary alignment, and patient care to ensure a seamless healing experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location-section">
+            <h3>Visit Us in Mono, Ontario</h3>
+            <p>Set amidst the quiet landscapes of Mono, our home clinic offers a relaxed, intentional space designed for real rejuvenation away from busy urban routines.</p>
+            <a href="https://vule.ca/contact" class="btn btn-secondary" style="max-width: 280px; margin: 0 auto;">Location & Contact Info</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vu Le & Van Lam | TRUEFORM. Main site: <a href="https://vule.ca">vule.ca</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
