@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vu Le | Writer, Researcher & Environmental Consultant</title>
+  <title>Vu Le | Author, TCM Practitioner & Feng Shui Consultant</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
     a {
       color: var(--green-spruce);
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     a:hover {
@@ -87,16 +87,18 @@
 
     nav {
       display: flex;
-      gap: 2rem;
+      gap: 1.8rem;
+      align-items: center;
     }
 
     nav a {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      font-weight: 400;
     }
 
-    /* Hero Section with Custom Background Image */
+    /* Hero Section */
     .hero {
       position: relative;
       min-height: 80vh;
@@ -104,20 +106,20 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
       background: linear-gradient(
-          rgba(253, 251, 247, 0.85), 
-          rgba(253, 251, 247, 0.85)
+          rgba(253, 251, 247, 0.88), 
+          rgba(253, 251, 247, 0.88)
         ), 
         url('73473E36-BD1D-4579-8540-8902C95AE027.jpg') center/cover no-repeat;
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 820px;
     }
 
     .hero h1 {
-      font-size: 3.2rem;
+      font-size: 3.4rem;
       line-height: 1.2;
       margin-bottom: 1.5rem;
     }
@@ -126,7 +128,49 @@
       font-size: 1.25rem;
       color: var(--text-charcoal);
       max-width: 680px;
-      margin: 0 auto;
+      margin: 0 auto 2rem auto;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      font-weight: 400;
+    }
+
+    .btn-primary {
+      background-color: var(--green-spruce);
+      color: var(--bg-ivory);
+      border: 1px solid var(--green-spruce);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--amber-gold);
+      border-color: var(--amber-gold);
+      color: #FFFFFF;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: var(--green-spruce);
+      border: 1px solid var(--green-spruce);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--green-spruce);
+      color: var(--bg-ivory);
     }
 
     /* Section Wrapper */
@@ -147,7 +191,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
-      margin-top: 3rem;
+      margin-top: 2.5rem;
     }
 
     .card {
@@ -156,6 +200,15 @@
       border-radius: 4px;
       border: 1px solid var(--border-light);
       box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
     }
 
     .card h3 {
@@ -163,9 +216,46 @@
       margin-bottom: 1rem;
     }
 
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--amber-gold);
+    }
+
+    .card-link:hover {
+      color: var(--green-spruce);
+    }
+
     .accent-border {
       border-left: 3px solid var(--amber-gold);
       padding-left: 1.5rem;
+    }
+
+    /* Substack Callout Box */
+    .newsletter-card {
+      background-color: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 3.5rem 2.5rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.02);
+    }
+
+    .newsletter-card h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .newsletter-card p {
+      max-width: 620px;
+      margin: 0 auto 2rem auto;
+      color: var(--text-charcoal);
     }
 
     /* About Grid Layout */
@@ -246,9 +336,11 @@
   <header>
     <div class="brand-title">Vu Le</div>
     <nav>
+      <a href="/tcm">TCM Practice</a>
+      <a href="/fengshui">Feng Shui</a>
+      <a href="#writing">Writing</a>
       <a href="#philosophy">Philosophy</a>
       <a href="#services">Consulting</a>
-      <a href="#research">Research</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -257,63 +349,96 @@
   <section class="hero" style="max-width: 100%;">
     <div class="hero-content">
       <h1>Aligning Human Potential with the Rhythms of Nature</h1>
-      <p>Research, strategic environmental insights, and wisdom-driven analysis to foster harmony between people, systems, and the earth.</p>
+      <p>Traditional medicine, spatial environmental alignment, and wisdom-driven analysis to foster harmony between people, systems, and nature.</p>
+      <div class="btn-group">
+        <a href="/tcm" class="btn btn-primary">TCM & Herbal Practice</a>
+        <a href="/fengshui" class="btn btn-outline">Feng Shui & Metaphysics</a>
+      </div>
     </div>
   </section>
 
   <section id="philosophy">
     <h2 class="section-title">Living and Building in Flow</h2>
     <p style="text-align: center; max-width: 750px; margin: 0 auto 3rem auto;">
-      True sustainability begins with alignment. When we listen to the fundamental cycles of the natural world, we uncover principles that apply as much to personal well-being as they do to ecological and organizational systems.
+      True balance begins with alignment. When we listen to the fundamental cycles of the natural world, we uncover principles that apply as much to personal physiology as they do to spatial environments and modern organizations.
     </p>
 
     <div class="philosophy-grid">
       <div class="card accent-border">
-        <h3>Flowing with Nature</h3>
-        <p>Observing natural laws, systemic patterns, and organic rhythms to solve modern complexities with ease and clarity.</p>
+        <div>
+          <h3>Flowing with Nature</h3>
+          <p>Observing natural cycles, constitutional default states, and systemic patterns to restore equilibrium with clarity.</p>
+        </div>
       </div>
       <div class="card accent-border">
-        <h3>Environmental Stewardship</h3>
-        <p>Respecting the earth not merely as a resource, but as a living, interconnected ecosystem requiring mindful care.</p>
+        <div>
+          <h3>Environmental Resonance</h3>
+          <p>Aligning spatial dynamics, architectural flow, and land energies to create deeply supportive living and working environments.</p>
+        </div>
       </div>
       <div class="card accent-border">
-        <h3>Compassion in Practice</h3>
-        <p>Approaching every inquiry with active empathy, loving-kindness, and deep consideration for others and oneself.</p>
+        <div>
+          <h3>Compassion in Practice</h3>
+          <p>Approaching health and environmental inquiry with active empathy, loving-kindness, and deep consideration for self and client.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="services" style="background-color: rgba(235, 231, 223, 0.3); max-width: 100%;">
     <div style="max-width: 1000px; margin: 0 auto;">
-      <h2 class="section-title">Interdisciplinary Analysis & Consulting</h2>
+      <h2 class="section-title">Clinical Practice & Strategic Consulting</h2>
       
       <div class="philosophy-grid">
         <div class="card">
-          <h3>Environmental & Systemic Analysis</h3>
-          <p>Strategic consulting focused on spatial balance, ecological alignment, and the subtle dynamics between built environments and natural landscapes.</p>
+          <div>
+            <h3>Traditional Chinese Medicine</h3>
+            <p>Comprehensive acupuncture, personalized herbal formulations, and dietary thermal balancing aimed at default programming and root health restoration.</p>
+          </div>
+          <a href="/tcm" class="card-link">Explore TCM Practice &rarr;</a>
         </div>
         <div class="card">
-          <h3>Qualitative & Systems Research</h3>
-          <p>Synthesizing complex traditional knowledge models with modern contextual inquiries to yield actionable, holistic insights.</p>
+          <div>
+            <h3>Feng Shui & Metaphysical Consulting</h3>
+            <p>Spatial environmental audits, Qi Men Dun Jia strategic timing, and classical I Ching analysis for homes, businesses, and executive guidance.</p>
+          </div>
+          <a href="/fengshui" class="card-link">Explore Spatial Consulting &rarr;</a>
         </div>
         <div class="card">
-          <h3>Educational Writing & Content</h3>
-          <p>Translating deep, systemic observations into accessible frameworks, essays, and educational materials for sustainable living.</p>
+          <div>
+            <h3>Systems Research & Content</h3>
+            <p>Translating deep traditional frameworks into actionable, accessible models, guides, and educational materials for sustainable daily living.</p>
+          </div>
+          <a href="#writing" class="card-link">Read Written Works &rarr;</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Substack Newsletter Section -->
+  <section id="writing">
+    <div class="newsletter-card">
+      <h3>Reflections & Essays</h3>
+      <p>I write regularly on constitutional vitality, spatial design, thermal food dynamics, and practical wisdom for modern living. If you appreciate quiet depth and systemic insights, you are welcome to subscribe on Substack.</p>
+      <a href="https://lemnvu.substack.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Read & Subscribe on Substack</a>
+    </div>
+  </section>
+
   <section id="research">
-    <h2 class="section-title">Explorations & Published Works</h2>
+    <h2 class="section-title">Explorations & Research</h2>
     <div style="max-width: 750px; margin: 0 auto;">
       <div class="card" style="margin-bottom: 2rem;">
-        <h3>The Quantum Elemental Model (QEM)</h3>
-        <p>An ongoing research initiative exploring the interplay of elemental forces, baseline body tendencies, and systemic balance in personal and environmental health.</p>
+        <div>
+          <h3>The Quantum Elemental Model™ (QEM)</h3>
+          <p>A proprietary framework exploring the interplay of elemental forces, baseline body tendencies, thermal food profiling, and systemic environmental balance.</p>
+        </div>
       </div>
       <div class="card">
-        <h3>Essays & Commentary</h3>
-        <p>Periodic writings focusing on nature-centric living, environmental resonance, and practical wisdom for modern living.</p>
+        <div>
+          <h3>Essays & Commentary</h3>
+          <p>Periodic writings focusing on nature-centric living, body default patterns, and practical wisdom for modern wellness.</p>
+        </div>
+        <a href="https://lemnvu.substack.com/" target="_blank" rel="noopener noreferrer" class="card-link">Browse Recent Essays &rarr;</a>
       </div>
     </div>
   </section>
@@ -325,23 +450,24 @@
       </div>
       <div>
         <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">Rooted in Tradition, Focused on Harmony</h2>
-        <p>With an extensive background deeply rooted in traditional Eastern vitality analysis and energy systems, my focus has always been on understanding cause, effect, and underlying balance.</p>
-        <p>Over years of study and synthesis, this foundation naturally expanded into environmental analysis, qualitative research, and systemic consulting.</p>
-        <p>I view every project—whether an essay, an environmental inquiry, or a consultation—as an opportunity to cultivate clarity, practice self-compassion, and honor our shared connection to the natural world.</p>
+        <p>With a comprehensive clinical background in Traditional Chinese Medicine and Classical Metaphysics, my practice centers on identifying root drivers, structural balance, and long-term vitality.</p>
+        <p>This foundation integrates personal clinical consultations in Mississauga and Mono, Ontario with spatial environmental alignment and qualitative systems research.</p>
+        <p>Every inquiry—whether a clinical intake, a spatial consultation, or an essay—is approached as an opportunity to cultivate clarity, practice empathy, and restore alignment with the natural world.</p>
       </div>
     </div>
   </section>
 
   <footer id="contact">
     <h2>Let’s Begin a Conversation</h2>
-    <p>Reach out for research collaborations, writing inquiries, or strategic environmental consulting.</p>
+    <p>Reach out for clinical appointments, spatial consultations, or strategic inquiries.</p>
     
     <div class="contact-details">
       <p><strong>Phone:</strong> <a href="tel:4168719239">416-871-9239</a></p>
       <p><strong>Email:</strong> <a href="mailto:contact@vule.ca">contact@vule.ca</a></p>
+      <p><strong>Substack:</strong> <a href="https://lemnvu.substack.com/" target="_blank" rel="noopener noreferrer">lemnvu.substack.com</a></p>
     </div>
     
-    <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 1rem;">Ontario, Canada</p>
+    <p style="font-size: 0.95rem; opacity: 0.9; margin-top: 1rem;">Mississauga & Mono, Ontario, Canada</p>
     
     <div class="copyright">
       &copy; 2026 Vu Le. All rights reserved.
